@@ -16,7 +16,7 @@ class Navigation extends React.Component {
         });
         e.preventDefault();
         try {
-            await axios.post("/auth/logout");
+            await axios.post(`${process.env.REACT_APP_API_KEY}/auth/logout`);
             localStorage.clear();
             window.location = `/`
         } catch (error) {

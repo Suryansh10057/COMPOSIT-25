@@ -34,7 +34,7 @@ export default function RegisterTechnova() {
     const handleSubmit = async (e, eventName) => {
         e.preventDefault()
         try {
-            const res = await axios.post(`/eventRegistration/${eventName}/${participantId}`, registerTechnovaData)
+            const res = await axios.post(`${process.env.REACT_APP_API_KEY}/${eventName}/${participantId}`, registerTechnovaData)
             setState({ displayMsg: `Dear ${userData.name}. You have Successfully registered for ${eventName}.` })
             openForm()
         }

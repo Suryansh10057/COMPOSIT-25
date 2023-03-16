@@ -15,14 +15,14 @@ class Login extends React.Component {
   handleClick = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://composit-api.onrender.com/auth/login", this.state);
+      const res = await axios.post(`${process.env.REACT_APP_API_KEY}/auth/login`, this.state);
       const compUser = res.data.details;
       localStorage.setItem("COMPOSITuser", JSON.stringify(compUser));
       
     //   const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
       this.setState({ errorr: `Login Successful ${compUser.name}` })
     //   window.location = `/events/${compUser._id}`
-    window.location = `/events`
+    window.location = `/`
     } catch (err) {
       this.setState({ errorr: err.response.data.message })
       console.log(err.response.data.message, "error")

@@ -27,7 +27,7 @@ class PricingOne extends React.Component {
 
             try {
                 console.log(source)
-                await axios.post(`/eventRegistration/${source}/${participantId}`, participantId)
+                await axios.post(`${process.env.REACT_APP_API_KEY}/eventRegistration/${source}/${participantId}`, participantId)
                 this.setState({ displayMsg: `Registered Successfully for ${source}` })
                 alert(this.state.displayMsg)
                 window.location = '/events'
