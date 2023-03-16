@@ -37,7 +37,7 @@ export default function Signup() {
         e.preventDefault()
 
         try {
-            await axios.post("/auth/register", signupData)
+            await axios.post("https://composit-api.onrender.com/auth/register", signupData)
             // const res = await axios.post("/auth/login", this.state);
             // const compUser = signupData.name;
             // localStorage.setItem("COMPuser", compUser);
