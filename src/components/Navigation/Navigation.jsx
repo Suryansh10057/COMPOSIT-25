@@ -10,6 +10,12 @@ class Navigation extends React.Component {
         isOpen: false
     };
 
+    toggleNavbar = () => {
+      this.setState({
+          collapsed: !this.state.collapsed,
+      });
+    }
+
     logout = async (e) => {
         this.setState({
             collapsed: !this.state.collapsed,
