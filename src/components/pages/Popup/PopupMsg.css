@@ -35,6 +35,11 @@
   z-index: 9;
   background-color: #1c87c9;
 }
+
+.formPopup h2{
+  color: #fff;
+  font-size: 15px;
+}
 .formContainer {
   max-width: 300px;
   padding: 20px;
@@ -104,12 +109,13 @@
   .formPopup {
     display: none;
     position: fixed;
-    left: 45%;
-    top: 15%;
+    left: 50%;
+    top: 28%;
     transform: translate(-50%, 5%);
-    border: 3px solid #3f0071;
+    border: 3px solid #150050;
     z-index: 9;
-    background-color: #1c87c9;
+    background-color: #610094;
+    padding: 15px;
   }
   .formContainer {
     max-width: 300px;
@@ -147,6 +153,8 @@
     opacity: 1;
   }
   .popupTextLink{
-    color: white;
+    color: #3dfd02;
+    font-weight: 500;
+    font-size: 16px;
   }
 
