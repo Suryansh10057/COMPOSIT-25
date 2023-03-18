@@ -376,7 +376,8 @@ class SpeakersOne extends React.Component {
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" className="linkedin">
+                  <a href="https://www.linkedin.com/in/ramona-kodkani-91621b221" target="_blank" className="linkedin">
+
                     <i className="icofont-linkedin"></i>
                   </a>
                 </li>

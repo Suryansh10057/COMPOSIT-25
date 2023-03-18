@@ -40,15 +40,15 @@ class EventIdeathon extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-                {userData ? (
-                  <Link to="/register_ideathon" className="btn btn-primary">
-                    Register
-                  </Link>
-                ) : (
-                  <Link to="/signup" className="btn btn-primary">
-                    Register
-                  </Link>
-                )}
+              {userData ? <a
+                  href="#"
+                  target="_blank"
+                  className="btn btn-secondary"
+                >
+                  Link to Submission
+                </a> :
+                <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
+                }
                 <Link
                   to="#"
                   // target="_blank"

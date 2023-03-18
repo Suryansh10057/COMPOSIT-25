@@ -54,8 +54,8 @@ class MainBanner extends React.Component {
                     <div className="d-table">
                         <div className="d-table-cell">
                             <div className="container">
-                                <div className='notifSuccess'>Registrations are open for Enigma, Techtoon, Technova, Ideathon, Metaclix, Metallomania. </div>
-                                <div className='notifRed'>Registrations for CAD, School Quiz, Excavate and Case Study will begin tomorrow.</div>
+                                {/* <div className='notifSuccess'>Registrations are open for Enigma, Techtoon, Technova, Ideathon, Metaclix, Metallomania. </div>
+                                <div className='notifRed'>Registrations for CAD, School Quiz, Excavate and Case Study will begin tomorrow.</div> */}
                                 
                                 <div className="main-banner-content">
                                     <p>Are you <span>ready</span> to attend?</p>

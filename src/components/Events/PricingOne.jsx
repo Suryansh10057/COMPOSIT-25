@@ -50,11 +50,11 @@ class PricingOne extends React.Component {
                                     <p>Test your research acumen and get a glimpse of presenting scientific work in a conference-like environment!</p>
                                 </ul>
                                 <Link to="/event_technova" className="btn btn-primary">READ MORE</Link>
-                                {userData ?
-                                    <Link to="/register_technova" className="btn btn-secondary">Register</Link>
+                                {/* {userData ?
+                                    <Link to="/signup" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                }
+                                } */}
                             </div>
                         </div>
 
@@ -67,11 +67,11 @@ class PricingOne extends React.Component {
                                     <p>Pitch your next amazing business idea and get valuable feedback!</p>
                                 </ul>
                                 <Link to="/event_ideathon" className="btn btn-primary">READ MORE</Link>
-                                {userData ?
+                                {/* {userData ?
                                     <Link to="/register_ideathon" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                }
+                                } */}
                             </div>
                         </div>
 
@@ -84,11 +84,11 @@ class PricingOne extends React.Component {
                                     <p>Test your knowledge in general as well as core topics. So Quizzers, get ready for Buzzers!</p>
                                 </ul>
                                 <Link to="/event_enigma" className="btn btn-primary">READ MORE</Link>
-                                {userData ?
+                                {/* {userData ?
                                     <Link to="/register_enigma" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                }
+                                } */}
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
