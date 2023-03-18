@@ -31,6 +31,7 @@ export default function RegisterEnigma() {
             [event.target.name]: event.target.value,
         })
     }
+    registerEnigmaData.pid1 = userData.regID
     const handleSubmit = async (e, eventName) => {
         e.preventDefault()
         try {
@@ -50,7 +51,7 @@ export default function RegisterEnigma() {
                 <div className="d-table-cell">
                     <div className="signup-form">
                         <Link to="/" className="btn-modal btn-primary">&#xab; Back to Home</Link>
-                        <h3>Register for School Quiz</h3>
+                        <h3>Register for Enigma</h3>
                         <form>
                             <div className="form-group">
                                 <label>Team Leader's (Your's) Participant's Id</label>
@@ -58,7 +59,7 @@ export default function RegisterEnigma() {
                                     type="text"
                                     className="form-control"
                                     placeholder="Participant 1 Id"
-                                    value={userData._id}
+                                    value={userData.regID}
                                     name="pid1"
                                     required
                                     disabled
@@ -87,8 +88,8 @@ export default function RegisterEnigma() {
             </div>
             <div className="loginPopup" id='loginPopup'>
                 <div className="formPopup" id="popupForm">
-                    <h2>{state.displayMsg}</h2>
-                    <Link to="/events" className='popupTextLink'>Register for other events.</Link>
+                    <p className='popupMsg'>{state.displayMsg}.</p>
+                    <Link to="/events" className='popupLink center'>Register for other events.</Link>
                 </div>
             </div>
         </section>

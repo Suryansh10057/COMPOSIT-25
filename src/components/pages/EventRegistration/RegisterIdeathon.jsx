@@ -31,6 +31,7 @@ export default function RegisterIdeathon() {
             [event.target.name]: event.target.value,
         })
     }
+    registerIdeathonData.pid1 = userData.regID
     const handleSubmit = async (e, eventName) => {
         e.preventDefault()
         try {
@@ -57,7 +58,7 @@ export default function RegisterIdeathon() {
                                     type="text"
                                     className="form-control"
                                     placeholder="Participant 1 Id"
-                                    value={userData._id}
+                                    value={userData.regID}
                                     name="pid1"
                                     required
                                     disabled
@@ -95,9 +96,9 @@ export default function RegisterIdeathon() {
                 </div>
             </div>
             <div className="loginPopup" id='loginPopup'>
-                <div className="formPopup" id="popupForm">
-                    <h2>{state.displayMsg}</h2>
-                    <Link to="/events" className='popupTextLink'>Register for other events.</Link>
+            <div className="formPopup" id="popupForm">
+                    <p className='popupMsg'>{state.displayMsg}.</p>
+                    <Link to="/events" className='popupLink center'>Register for other events.</Link>
                 </div>
             </div>
         </section>

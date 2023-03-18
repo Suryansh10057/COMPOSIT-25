@@ -5,7 +5,7 @@ import '../Popup/PopupMsg.css'
 
 export default function RegisterTechnova() {
     const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
-    const participantId = userData._id
+    const participantId = userData.regID
     const [registerTechnovaData, setRegisterTechnovaData] = useState({});
     const [state, setState] = useState({})
 
@@ -31,10 +31,11 @@ export default function RegisterTechnova() {
             [event.target.name]: event.target.value,
         })
     }
+    registerTechnovaData.pid1 = userData.regID
     const handleSubmit = async (e, eventName) => {
         e.preventDefault()
         try {
-            const res = await axios.post(`${process.env.REACT_APP_API_KEY}/${eventName}/${participantId}`, registerTechnovaData)
+            const res = await axios.post(`${process.env.REACT_APP_API_KEY}/eventRegistration/${eventName}/${participantId}`, registerTechnovaData)
             setState({ displayMsg: `Dear ${userData.name}. You have Successfully registered for ${eventName}.` })
             openForm()
         }
@@ -58,7 +59,7 @@ export default function RegisterTechnova() {
                                     type="text"
                                     className="form-control"
                                     placeholder="Participant 1 Id"
-                                    value={userData._id}
+                                    value={userData.regID}
                                     name="pid1"
                                     required
                                     disabled
@@ -97,8 +98,8 @@ export default function RegisterTechnova() {
             </div>
             <div className="loginPopup" id='loginPopup'>
                 <div className="formPopup" id="popupForm">
-                    <h2>{state.displayMsg}</h2>
-                    <Link to="/events" className='popupTextLink'>Register for other events.</Link>
+                    <p className='popupMsg'>{state.displayMsg}.</p>
+                    <Link to="/events" className='popupLink center'>Register for other events.</Link>
                 </div>
             </div>
         </section>

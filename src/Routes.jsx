@@ -37,7 +37,8 @@ import RegisterSchoolquiz from "./components/pages/EventRegistration/RegisterSch
 import RegisterCad from "./components/pages/EventRegistration/RegisterCad";
 import RegisterCasestudy from "./components/pages/EventRegistration/RegisterCasestudy";
 import Popup from "./components/pages/MyPopup";
-import PopupMsg from "./components/pages/Popup/PopupMsg"
+import PopupMsg from "./components/pages/Popup/PopupMsg";
+import ComingSoon1 from "./components/pages/ComingSoon/Comingsoon";
 
 // Conditionally render Navigation
 const renderNavigation = () => {
@@ -72,14 +73,15 @@ const AppRouter = () => {
                 <Route path="/register_ideathon" exact component={RegisterIdeathon} />
                 <Route path="/register_enigma" exact component={RegisterEnigma} />
                 <Route path="/register_excavate" exact component={RegisterExcavate} />
-                <Route path="/register_schoolQuiz" exact component={RegisterSchoolquiz} />
-                <Route path="/register_cad" exact component={RegisterCad} />
+                <Route path="/register_schoolquiz" exact component={RegisterSchoolquiz} />
+                <Route path="/register_Cad" exact component={RegisterCad} />
+                {/* <Route path="/register_cad" exact component={RegisterCad} /> */}
                 <Route path="/register_caseStudy" exact component={RegisterCasestudy} />
                 <Route path="/ourteam" exact component={OurTeam} />
                 <Route path="/schedule" exact component={Schedule} />
                 <Route path="/login" exact component={Login} />
                 <Route path="/signup" exact component={Signup} />
-                <Route path="/coming-soon" exact component={ComingSoon} />
+                <Route path="/comingSoon" exact component={ComingSoon1} />
                 <Route path="/faq" exact component={Faq} />
                 <Route path="/contact" exact component={Contact} />
                 <Route path="/sponsors" exact component={Sponsor} />

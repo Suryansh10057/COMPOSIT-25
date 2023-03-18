@@ -6,7 +6,7 @@ import '../Popup/PopupMsg.css'
 export default function RegisterSchoolquiz() {
     const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
     const participantId = userData._id
-    const [registerSchoolQuizData, setRegisterSchoolQuizData] = useState({});
+    const [registerEnigmaData, setRegisterEnigmaData] = useState({});
     const [state, setState] = useState({})
 
     function openForm() {
@@ -26,15 +26,16 @@ export default function RegisterSchoolquiz() {
         }
     }
     const handleChange = (event) => {
-        setRegisterSchoolQuizData({
-            ...registerSchoolQuizData,
+        setRegisterEnigmaData({
+            ...registerEnigmaData,
             [event.target.name]: event.target.value,
         })
     }
+    registerEnigmaData.pid1 = userData.regID
     const handleSubmit = async (e, eventName) => {
         e.preventDefault()
         try {
-            const res = await axios.post(`${process.env.REACT_APP_API_KEY}/eventRegistration/${eventName}/${participantId}`, registerSchoolQuizData)
+            const res = await axios.post(`${process.env.REACT_APP_API_KEY}/eventRegistration/${eventName}/${participantId}`, registerEnigmaData)
             setState({ displayMsg: `Dear ${userData.name}. You have Successfully registered for ${eventName}.` })
             openForm()
         }
@@ -58,7 +59,7 @@ export default function RegisterSchoolquiz() {
                                     type="text"
                                     className="form-control"
                                     placeholder="Participant 1 Id"
-                                    value={userData._id}
+                                    value={userData.regID}
                                     name="pid1"
                                     required
                                     disabled
@@ -78,7 +79,7 @@ export default function RegisterSchoolquiz() {
                                     onChange={handleChange}
                                 />
                             </div>
-                            <button type="submit" className="btn btn-secondary" onClick={(event) => handleSubmit(event, "schoolQuiz")}>Register</button>
+                            <button type="submit" className="btn btn-secondary" onClick={(event) => handleSubmit(event, "enigma")}>Register</button>
                             <button type="reset" className="btn-modal btn-primary">Reset</button>
                             <p>Already registered for School Quiz? <Link to="/events">Register for other events.</Link></p>
                         </form>

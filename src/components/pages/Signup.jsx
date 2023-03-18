@@ -35,26 +35,32 @@ export default function Signup() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-
+        const str = signupData.name
+        const str1 = str.toUpperCase()
+        const ph = signupData.contact
+        signupData.regID = `C23${str1.substring(0, 3)}${ph.substring(0, 2)}${Math.floor(Math.random() * 90 + 10)}`
         try {
-            await axios.post(`${process.env.REACT_APP_API_KEY}/auth/register`, signupData)
-            // const res = await axios.post("/auth/login", this.state);
-            // const compUser = signupData.name;
-            // localStorage.setItem("COMPuser", compUser);
+            const res = await axios.post(`${process.env.REACT_APP_API_KEY}/auth/register`, signupData)
+            setErrorr(res.data)
             openForm()
-            // window.location = '/login'
         }
         catch (error) {
-            
-            console.log(error)
-            if (error.response.data.message.split(" ")[0] === "E11000") {
-                setErrorr("Email or Phone already in use")
-                openForm()
-            }
-            else {
-                setErrorr(error.response.data.message)
-                openForm()
-            }
+
+            setErrorr(error.response.data)
+            openForm()
+            // if (error.response.data.message.split(" ")[0] === "E11000") {
+            //     console.log("in if")
+            //     setErrorr("Email or Phone already in use")
+            //     openForm()
+            // }
+            // else {
+            //     console.log("in else")
+            //     setErrorr(error.response.data)
+
+            //     openForm()
+            //     console.log(error.response.data,"err here")
+            // }
+            // console.log("hvhjvhjvhvhv")
         }
 
     }
@@ -157,7 +163,7 @@ export default function Signup() {
                                     name="contact"
                                     placeholder="Contact Number"
                                     // maxlength="10" max="9999999999" min="0" step="1" pattern="[0-9]{10}"
-                                   
+
                                     onChange={handleChange}
                                 />
                             </div>
@@ -209,19 +215,21 @@ export default function Signup() {
                                     onChange={handleChange}
                                 />
                             </div>
-                            {errorr && <p>{errorr}</p>}
+                            {/* {errorr && <p>{errorr}</p>} */}
                             <button type="submit" className="btn-modal btn-primary" onClick={handleSubmit}>Signup</button>
-                            <div className="loginPopup" id='loginPopup'>
-                                <div className="formPopup" id="popupForm">
-                                    {errorr ? <h2>{errorr}</h2> : <h2>Dear {signupData.name}. You have Successfully Registered for COMPOSIT 2023. Your participation id is COMP23{signupData.contact}</h2>}
-                                    <Link to="/login" className='/login'>Login!</Link>
-                                </div>
-                            </div>
                             <p>Already a registered user? <Link to="/login">Login!</Link></p>
                         </form>
                     </div>
                 </div>
+                
             </div>
+            <div className="loginPopup" id='loginPopup'>
+                    <div className="formPopup" id="popupForm">
+                    <p className='popupMsg'>{errorr}</p>
+                        {/* {errorr ? <h2>{errorr}</h2> : <h2>Dear {signupData.name}. You have Successfully Registered for COMPOSIT 2023. Your Registration id is {signupData.regID}</h2>} */}
+                        <Link to="/login" className='popupLink'>Login now to register for event</Link>
+                    </div>
+                </div>
         </section>
     )
 }

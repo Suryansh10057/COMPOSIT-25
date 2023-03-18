@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from "axios"
 import '../Popup/PopupMsg.css'
 
-export default function RegisterCAD() {
+export default function RegisterCad() {
     const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
     const participantId = userData._id
     const [registerCADData, setRegisterCADData] = useState({});
@@ -31,6 +31,7 @@ export default function RegisterCAD() {
             [event.target.name]: event.target.value,
         })
     }
+    registerCADData.pid1 = userData._id;
     const handleSubmit = async (e, eventName) => {
         e.preventDefault()
         try {
@@ -58,7 +59,7 @@ export default function RegisterCAD() {
                                     type="text"
                                     className="form-control"
                                     placeholder="Participant 1 Id"
-                                    value={userData._id}
+                                    value={userData.regID}
                                     name="pid1"
                                     required
                                     disabled

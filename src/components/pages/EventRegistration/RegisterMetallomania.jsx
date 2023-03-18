@@ -34,7 +34,7 @@ export default function RegisterMetallomania() {
     const onClickHandler = async (e, eventName) => {
         e.preventDefault()
         try {
-            await axios.post(`${process.env.REACT_APP_API_KEY}/eventRegistration/${eventName}/${participantId}`, participantId)
+            await axios.post(`${process.env.REACT_APP_API_KEY}/eventRegistration/${eventName}/${participantId}`, { participantId: userData.regID })
             setState({ displayMsg: `Dear ${userData.name}. You have Successfully registered for ${eventName}.` })
             openForm()
         }
@@ -63,7 +63,7 @@ export default function RegisterMetallomania() {
                                     type="text"
                                     className="form-control"
                                     placeholder="Participant's Id"
-                                    value={userData._id}
+                                    value={userData.regID}
                                     name="pid1"
                                     onChange={handleChange}
                                     required
@@ -79,8 +79,8 @@ export default function RegisterMetallomania() {
             </div>
             <div className="loginPopup" id='loginPopup'>
                 <div className="formPopup" id="popupForm">
-                    <h2>{state.displayMsg}</h2>
-                    <Link to="/events" className='popupTextLink'>Register for other events.</Link>
+                    <p className='popupMsg'>{state.displayMsg}.</p>
+                    <Link to="/events" className='popupLink center'>Register for other events.</Link>
                 </div>
             </div>
         </section>

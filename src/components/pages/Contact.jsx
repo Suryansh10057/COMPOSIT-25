@@ -192,7 +192,7 @@ class Contact extends React.Component {
                                 </div>
                             </div>
 
-                            <div className="col-lg-8 col-md-12">
+                            {/* <div className="col-lg-8 col-md-12">
                                 <form onSubmit={this.onSubmit} id="contactForm">
                                     <div className="row">
                                         <div className="col-lg-6 col-md-6">
@@ -276,7 +276,7 @@ class Contact extends React.Component {
                                         </div>
                                     </div>
                                 </form>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     {/* <div className="loginPopup" id='loginPopup'>

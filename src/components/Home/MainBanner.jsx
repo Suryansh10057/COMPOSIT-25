@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ModalVideo from 'react-modal-video';
+import './home.css'
  
 class MainBanner extends React.Component {
     state = {
@@ -10,7 +11,7 @@ class MainBanner extends React.Component {
         seconds: '',
         isOpen: false
     };
-
+    userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
     openModal = () => {
         this.setState({isOpen: true})
     }
@@ -53,6 +54,9 @@ class MainBanner extends React.Component {
                     <div className="d-table">
                         <div className="d-table-cell">
                             <div className="container">
+                                <div className='notifSuccess'>Registrations are open for Enigma, Techtoon, Technova, Ideathon, Metaclix, Metallomania. </div>
+                                <div className='notifRed'>Registrations for CAD, School Quiz, Excavate and Case Study will begin tomorrow.</div>
+                                
                                 <div className="main-banner-content">
                                     <p>Are you <span>ready</span> to attend?</p>
                                     <h1>COMPOSIT <b>2</b><b>0</b><b>2</b><b>3</b></h1>
@@ -61,7 +65,12 @@ class MainBanner extends React.Component {
                                         <li><i className="icofont-calendar"></i> 31 Mar - 2 Apr, 2023</li>
                                     </ul>
                                     <div className="button-box">
-                                        <Link to="/signup" className="btn btn-primary">Register</Link>
+                                    {this.userData ?
+                                    <Link to="/events" className="btn btn-primary">Register</Link>
+                                    :
+                                    <Link to="/signup" className="btn btn-primary">Sign Up</Link>
+                                }
+                                        
                                     </div>
                                 </div>
                             </div>

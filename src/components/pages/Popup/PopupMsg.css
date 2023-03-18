@@ -158,3 +158,17 @@
     font-size: 16px;
   }
 
+.popupMsg{
+  color: white;
+  font-size: 18px;
+}
+.popupLink{
+  color: #3dfd02;
+  font-size: 16px;
+}
+.error{
+  color: red;
+}
+.center {
+  text-align: center;
+}

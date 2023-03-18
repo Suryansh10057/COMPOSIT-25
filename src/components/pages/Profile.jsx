@@ -15,6 +15,7 @@ export default function Profile() {
                         <form>
                         <ul className='profile-page'>
                             <li className='form-group form-control'><strong>Name:</strong> {userData.name}</li>
+                            <li className='form-group form-control'><strong>Registration ID:</strong> {userData.regID}</li>
                             <li className='form-group form-control'><strong>Email:</strong> {userData.email}</li>
                             <li className='form-group form-control'><strong>Date of Birth:</strong> {userData.dob}</li>
                             <li className='form-group form-control'><strong>Institute ID / Roll No.:</strong> {userData.rollno}</li>
@@ -24,7 +25,7 @@ export default function Profile() {
                             <li className='form-group form-control'><strong>Address:</strong> {userData.address}</li>
                             <li className='form-group form-control'><strong>Year of Graduation:</strong> {userData.gradyear}</li>
                             <li className='form-group form-control'><strong>Gender:</strong> {userData.gender}</li>
-                            <li className='form-group form-control'><strong>Events Registered:</strong> Metaclix</li>
+                            {/* <li className='form-group form-control'><strong>Events Registered:</strong> Metaclix</li> */}
                             <Link to='/events' className="btn btn-primary">Go to our Events</Link>
                             {/* <Link to='/edit-profile' className="btn btn-primary">Edit Profile</Link> */}
                         </ul>

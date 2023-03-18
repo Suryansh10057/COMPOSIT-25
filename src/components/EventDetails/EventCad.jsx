@@ -41,7 +41,7 @@ class EventCad extends React.Component {
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
                 {userData ? (
-                  <Link to="/register_cad" className="btn btn-secondary">
+                  <Link to="#" className="btn btn-secondary">
                     Register
                   </Link>
                 ) : (

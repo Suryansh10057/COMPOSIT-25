@@ -5,7 +5,7 @@ import '../Popup/PopupMsg.css'
 
 export default function RegisterCasestudy() {
     const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
-    const participantId = userData._id
+    const participantId = userData.regID
     const [registerCasestudyData, setRegisterCasestudyData] = useState({});
     const [state, setState] = useState({})
 
@@ -31,6 +31,7 @@ export default function RegisterCasestudy() {
             [event.target.name]: event.target.value,
         })
     }
+    registerCasestudyData.pid1 = userData.regID
     const handleSubmit = async (e, eventName) => {
         e.preventDefault()
         try {
@@ -58,7 +59,7 @@ export default function RegisterCasestudy() {
                                     type="text"
                                     className="form-control"
                                     placeholder="Participant 1 Id"
-                                    value={userData._id}
+                                    value={userData.regID}
                                     name="pid1"
                                     required
                                     disabled
@@ -88,7 +89,7 @@ export default function RegisterCasestudy() {
                                     onChange={handleChange}
                                 />
                             </div>
-                            <button type="submit" className="btn btn-secondary" onClick={(event) => handleSubmit(event, "caseStudy")}>Register</button>
+                            <button type="submit" className="btn btn-secondary" onClick={(event) => handleSubmit(event, "casestudy")}>Register</button>
                             <button type="reset" className="btn-modal btn-primary">Reset</button>
                             <p>Already registered for Case Study? <Link to="/events">Register for other events.</Link></p>
                         </form>

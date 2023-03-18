@@ -8,6 +8,7 @@ class Login extends React.Component {
     this.state = {
       email: '',
       password: '',
+      success: null,
       errorr: null,
       userData: null,
   };
@@ -16,16 +17,16 @@ class Login extends React.Component {
     e.preventDefault();
     try {
       const res = await axios.post(`${process.env.REACT_APP_API_KEY}/auth/login`, this.state);
-      const compUser = res.data.details;
-      localStorage.setItem("COMPOSITuser", JSON.stringify(compUser));
+      const compUser = res.data;
+      localStorage.setItem("COMPOSITuser", JSON.stringify(res.data));
       
     //   const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
-      this.setState({ errorr: `Login Successful ${compUser.name}` })
+    this.setState({ errorr: null })
+      this.setState({ success: `Login Successful ${compUser.name}` })
     //   window.location = `/events/${compUser._id}`
     window.location = `/`
     } catch (err) {
       this.setState({ errorr: err.response.data.message })
-      console.log(err.response.data.message, "error")
     }
   };
     
@@ -74,8 +75,8 @@ class Login extends React.Component {
                                 </div>
 
                                 <button type="submit" className="btn-modal btn-primary" onClick={this.handleClick}>Login</button>
-                                
-                                {this.state.errorr && <p>{this.state.errorr}</p>}
+                                {this.state.success && <p className='popupLink center'>{this.state.success}</p>}
+                                {this.state.errorr && <p className='error center'>{this.state.errorr}</p>}
                                 {/* <p>pp</p> */}
                             
                                 {/* {this.state.userData && <p>{this.state.userData}</p>} */}

@@ -36,7 +36,7 @@ class EventCasestudy extends React.Component {
                         <div className="col-lg-13">
                     <div className="btn-box" style={{marginBottom: "20px"}}>
                     {userData ?
-                                    <Link to="/register_caseStudy" className="btn btn-secondary">Register</Link>
+                                    <Link to="#" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 }

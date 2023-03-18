@@ -31,6 +31,7 @@ export default function RegisterExcavate() {
             [event.target.name]: event.target.value,
         })
     }
+    registerExcavateData.pid1 = userData.regID
     const handleSubmit = async (e, eventName) => {
         e.preventDefault()
         try {
@@ -58,7 +59,7 @@ export default function RegisterExcavate() {
                                     type="text"
                                     className="form-control"
                                     placeholder="Participant 1 Id"
-                                    value={userData._id}
+                                    value={userData.regID}
                                     name="pid1"
                                     required
                                     disabled
