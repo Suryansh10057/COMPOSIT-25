@@ -57,7 +57,7 @@ class Partner extends React.Component {
           <div className="section-title">
             <span>Check Who Makes This Event Possible!</span>
             <h2>
-              Our<b>Sponsors</b>
+              Our Sponsors
             </h2>
 
             {/* <Link to="/sponsors" className="btn btn-primary">
@@ -68,399 +68,417 @@ class Partner extends React.Component {
           </div>
 
           <div className="row">
-            <div className="col-lg-12">
-              <div className="partner-title gold-sponsor">
-                <GoldSponsors />
-              </div>
-            </div>
+              {/* <div className="col-lg-12">
+                <div className="partner-title gold-sponsor">
+                  <GoldSponsors />
+                </div>
+              </div> */}
 
-            <OwlCarousel
-              className="gold-partner-slides owl-carousel owl-theme"
-              {...options}
-            >
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  {/* <Link to="/sponsors" target="_blank">
+              {/* <OwlCarousel
+                className="gold-partner-slides owl-carousel owl-theme"
+                {...options}
+              >
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item"> */}
+                    {/* <Link to="/sponsors" target="_blank">
                                         <img src={require("../../assets/images/gold-partner3.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/gold-partner3.png")} alt="Partner Logo" />
                                     </Link> */}
+                  {/* </div>
                 </div>
-              </div>
 
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  {/* <Link to="/sponsors" target="_blank">
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item"> */}
+                    {/* <Link to="/sponsors" target="_blank">
                                         <img src={require("../../assets/images/gold-partner2.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/gold-partner2.png")} alt="Partner Logo" />
                                     </Link> */}
+                  {/* </div>
                 </div>
-              </div>
 
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a
-                    href="https://instagram.com/greysocialpopcorns?igshid=ZDdkNTZiNTM="
-                    target="_blank"
-                  >
-                    <img
-                      src={require("../../assets/images/Grey Social Popcorn.png")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/Grey Social Popcorn.png")}
-                      alt="Partner Logo"
-                    />
-                  </a>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a
+                      href="https://instagram.com/greysocialpopcorns?igshid=ZDdkNTZiNTM="
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../../assets/images/Grey Social Popcorn.png")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/Grey Social Popcorn.png")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  {/* <Link to="/sponsors" target="_blank">
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item"> */}
+                    {/* <Link to="/sponsors" target="_blank">
                                         <img src={require("../../assets/images/gold-partner4.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/gold-partner4.png")} alt="Partner Logo" />
                                     </Link> */}
+                  {/* </div>
                 </div>
-              </div>
 
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  {/* <Link to="/sponsors" target="_blank">
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item"> */}
+                    {/* <Link to="/sponsors" target="_blank">
                                         <img src={require("../../assets/images/gold-partner5.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/gold-partner5.png")} alt="Partner Logo" />
                                     </Link> */}
+                  {/* </div>
+                </div>
+              </OwlCarousel>
+
+              <div className="col-lg-12">
+                <div className="border"></div>
+              </div> */}
+
+              <div className="col-lg-12">
+                <div className="partner-title platinum-sponsor">
+                  <PlatinumSponsors />
                 </div>
               </div>
-            </OwlCarousel>
+              <OwlCarousel
+                className="platinum-partner-slides owl-carousel owl-theme"
+                {...options}
+              >
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a
+                      href="https://instagram.com/greysocialpopcorns?igshid=ZDdkNTZiNTM="
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../../assets/images/Grey Social Popcorn.png")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/Grey Social Popcorn.png")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
 
-            <div className="col-lg-12">
-              <div className="border"></div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://couponswala.com/" target="_blank">
+                      <img
+                        src={require("../../assets/images/Couponswala.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/Couponswala.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://ninthsem.com/" target="_blank">
+                      <img
+                        src={require("../../assets/images/ninthsem.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/ninthsem.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.jsw.in/" target="_blank">
+                      <img
+                        src={require("../../assets/images/jsw.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/jsw.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.infizeal.com/" target="_blank">
+                      <img
+                        src={require("../../assets/images/infizeal.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/infizeal.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.facebook.com/festPav/" target="_blank">
+                      <img
+                        src={require("../../assets/images/festpav1.png")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/festpav1.png")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.banyan.com/" target="_blank">
+                      <img
+                        src={require("../../assets/images/banyan.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/banyan.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.mycaptain.in/" target="_blank">
+                      <img
+                        src={require("../../assets/images/mycaptain.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/mycaptain.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a
+                      href="https://in.linkedin.com/company/twenty19-com"
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../../assets/images/tweenty-19.png")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/tweenty-19.png")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.teeshood.com/" target="_blank">
+                      <img
+                        src={require("../../assets/images/teeshood.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/teeshood.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a
+                      href="https://www.facebook.com/RadioVrishti/"
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../../assets/images/radio.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/radio.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a
+                      href="https://in.linkedin.com/company/brainweaveco"
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../../assets/images/brainweave.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/brainweave.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.azureskynet.com/" target="_blank">
+                      <img
+                        src={require("../../assets/images/azure.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/azure.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.jindalstainless.com/" target="_blank">
+                      <img
+                        src={require("../../assets/images/jsl.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/jsl.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.collegebol.com/" target="_blank">
+                      <img
+                        src={require("../../assets/images/collegebol1.png")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/collegebol1.png")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.ducom.com/" target="_blank">
+                      <img
+                        src={require("../../assets/images/ducom.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/ducom.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.robospecies.com/" target="_blank">
+                      <img
+                        src={require("../../assets/images/robo.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/robo.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.aptronnoida.in/" target="_blank">
+                      <img
+                        src={require("../../assets/images/aptron.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/aptron.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a
+                      href="https://www.facebook.com/thecollegefever/"
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../../assets/images/collegefever.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/collegefever.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.brainbuxa.com/" target="_blank">
+                      <img
+                        src={require("../../assets/images/brain.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/brain.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a
+                      href="https://www.linkedin.com/company/leica-microsystems/about/"
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../../assets/images/leica.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/leica.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.hsi.org/" target="_blank">
+                      <img
+                        src={require("../../assets/images/humane.jpg")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/humane.jpg")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </OwlCarousel>
             </div>
-
-            <div className="col-lg-12">
-              <div className="partner-title platinum-sponsor">
-                <PlatinumSponsors />
-              </div>
-            </div>
-            <OwlCarousel
-              className="platinum-partner-slides owl-carousel owl-theme"
-              {...options}
-            >
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://couponswala.com/" target="_blank">
-                    <img
-                      src={require("../../assets/images/Couponswala.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/Couponswala.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://ninthsem.com/" target="_blank">
-                    <img
-                      src={require("../../assets/images/ninthsem.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/ninthsem.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.jsw.in/" target="_blank">
-                    <img
-                      src={require("../../assets/images/jsw.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/jsw.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.infizeal.com/" target="_blank">
-                    <img
-                      src={require("../../assets/images/infizeal.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/infizeal.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.facebook.com/festPav/" target="_blank">
-                    <img
-                      src={require("../../assets/images/festpav1.png")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/festpav1.png")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.banyan.com/" target="_blank">
-                    <img
-                      src={require("../../assets/images/banyan.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/banyan.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.mycaptain.in/" target="_blank">
-                    <img
-                      src={require("../../assets/images/mycaptain.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/mycaptain.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a
-                    href="https://in.linkedin.com/company/twenty19-com"
-                    target="_blank"
-                  >
-                    <img
-                      src={require("../../assets/images/tweenty-19.png")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/tweenty-19.png")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.teeshood.com/" target="_blank">
-                    <img
-                      src={require("../../assets/images/teeshood.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/teeshood.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a
-                    href="https://www.facebook.com/RadioVrishti/"
-                    target="_blank"
-                  >
-                    <img
-                      src={require("../../assets/images/radio.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/radio.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a
-                    href="https://in.linkedin.com/company/brainweaveco"
-                    target="_blank"
-                  >
-                    <img
-                      src={require("../../assets/images/brainweave.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/brainweave.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.azureskynet.com/" target="_blank">
-                    <img
-                      src={require("../../assets/images/azure.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/azure.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.jindalstainless.com/" target="_blank">
-                    <img
-                      src={require("../../assets/images/jsl.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/jsl.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.collegebol.com/" target="_blank">
-                    <img
-                      src={require("../../assets/images/collegebol1.png")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/collegebol1.png")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.ducom.com/" target="_blank">
-                    <img
-                      src={require("../../assets/images/ducom.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/ducom.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.robospecies.com/" target="_blank">
-                    <img
-                      src={require("../../assets/images/robo.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/robo.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.aptronnoida.in/" target="_blank">
-                    <img
-                      src={require("../../assets/images/aptron.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/aptron.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a
-                    href="https://www.facebook.com/thecollegefever/"
-                    target="_blank"
-                  >
-                    <img
-                      src={require("../../assets/images/collegefever.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/collegefever.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.brainbuxa.com/" target="_blank">
-                    <img
-                      src={require("../../assets/images/brain.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/brain.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a
-                    href="https://www.linkedin.com/company/leica-microsystems/about/"
-                    target="_blank"
-                  >
-                    <img
-                      src={require("../../assets/images/leica.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/leica.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="partner-item">
-                  <a href="https://www.hsi.org/" target="_blank">
-                    <img
-                      src={require("../../assets/images/humane.jpg")}
-                      alt="Partner Logo"
-                    />
-                    <img
-                      src={require("../../assets/images/humane.jpg")}
-                      alt="Partner Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-            </OwlCarousel>
-          </div>
         </div>
       </section>
     );

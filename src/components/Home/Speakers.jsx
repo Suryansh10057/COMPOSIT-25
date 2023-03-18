@@ -35,7 +35,7 @@ class Speakers extends React.Component {
         <div className="row m-0">
           <div className="section-title">
             <h2>
-              Our<b> Heads</b>
+              Our Heads
             </h2>
 
             <div className="bar"></div>
@@ -179,7 +179,7 @@ class Speakers extends React.Component {
           <div className="col-lg-3 col-md-6 p-0">
             <div className="single-speakers">
               <img
-                src={require("../../assets/images/karabi.jpeg")}
+                src={require("../../assets/images/karabi1.jpeg")}
                 alt="speakers"
               />
 
