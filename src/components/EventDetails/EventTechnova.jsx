@@ -28,13 +28,13 @@ class EventTechnova extends React.Component {
           >
             <div className="single-events">
               <img
-                src={require("../../assets/images/Technova.jpg")}
+                src={require("../../assets/images/Technova1.jpg")}
                 alt="Speaker"
               />
 
               <div className="events-content">
                 <h2>Technova</h2>
-                <h3>Cash Prize worth 22K</h3>
+                <h3>Cash Prize worth 28K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -50,7 +50,7 @@ class EventTechnova extends React.Component {
                   </Link>
                 )}
                 <a
-                  href="https://drive.google.com/file/d/1igyWimZqQLkQxfXFYYp6Qlsg8r6PSzGH/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1A7Dhc9_CdSSnoewBx6oopLqDXuD1cMjN/view?usp=drivesdk"
                   target="_blank"
                   className="btn btn-secondary"
                 >
@@ -202,7 +202,7 @@ class EventTechnova extends React.Component {
                                   <b>Abstract Submission Deadline:</b>
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>20th
+                                  <i className="icofont-wall-clock"></i>25th
                                   March 2023, 11:59 PM
                                 </li>
                                 <br></br>
@@ -211,8 +211,7 @@ class EventTechnova extends React.Component {
                                   <b>Final presentation:</b>
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>31st
-                                  March 2023, 11:59 PM
+                                  <i className="icofont-wall-clock"></i>2nd April 2023
                                 </li>
                               </ul>
                             </div>
