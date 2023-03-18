@@ -63,32 +63,32 @@ class Sponsor extends React.Component {
         <section className="partner-area ptb-120">
           <div className="container">
             <div className="row">
-              <div className="col-lg-12">
+              {/* <div className="col-lg-12">
                 <div className="partner-title gold-sponsor">
                   <GoldSponsors />
                 </div>
-              </div>
+              </div> */}
 
-              <OwlCarousel
+              {/* <OwlCarousel
                 className="gold-partner-slides owl-carousel owl-theme"
                 {...options}
               >
                 <div className="col-lg-12 col-md-12">
-                  <div className="partner-item">
+                  <div className="partner-item"> */}
                     {/* <Link to="/sponsors" target="_blank">
                                         <img src={require("../../assets/images/gold-partner3.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/gold-partner3.png")} alt="Partner Logo" />
                                     </Link> */}
-                  </div>
+                  {/* </div>
                 </div>
 
                 <div className="col-lg-12 col-md-12">
-                  <div className="partner-item">
+                  <div className="partner-item"> */}
                     {/* <Link to="/sponsors" target="_blank">
                                         <img src={require("../../assets/images/gold-partner2.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/gold-partner2.png")} alt="Partner Logo" />
                                     </Link> */}
-                  </div>
+                  {/* </div>
                 </div>
 
                 <div className="col-lg-12 col-md-12">
@@ -110,27 +110,27 @@ class Sponsor extends React.Component {
                 </div>
 
                 <div className="col-lg-12 col-md-12">
-                  <div className="partner-item">
+                  <div className="partner-item"> */}
                     {/* <Link to="/sponsors" target="_blank">
                                         <img src={require("../../assets/images/gold-partner4.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/gold-partner4.png")} alt="Partner Logo" />
                                     </Link> */}
-                  </div>
+                  {/* </div>
                 </div>
 
                 <div className="col-lg-12 col-md-12">
-                  <div className="partner-item">
+                  <div className="partner-item"> */}
                     {/* <Link to="/sponsors" target="_blank">
                                         <img src={require("../../assets/images/gold-partner5.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/gold-partner5.png")} alt="Partner Logo" />
                                     </Link> */}
-                  </div>
+                  {/* </div>
                 </div>
               </OwlCarousel>
 
               <div className="col-lg-12">
                 <div className="border"></div>
-              </div>
+              </div> */}
 
               <div className="col-lg-12">
                 <div className="partner-title platinum-sponsor">
@@ -141,6 +141,24 @@ class Sponsor extends React.Component {
                 className="platinum-partner-slides owl-carousel owl-theme"
                 {...options}
               >
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a
+                      href="https://instagram.com/greysocialpopcorns?igshid=ZDdkNTZiNTM="
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../../assets/images/Grey Social Popcorn.png")}
+                        alt="Partner Logo"
+                      />
+                      <img
+                        src={require("../../assets/images/Grey Social Popcorn.png")}
+                        alt="Partner Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <a href="https://couponswala.com/" target="_blank">

@@ -8,7 +8,7 @@ class SpeakersOne extends React.Component {
         <div className="row m-0">
           <div className="section-title">
             <h2>
-              Our<b> Faculty Advisors</b>
+              Our Faculty Advisors
             </h2>
 
             <div className="bar"></div>
@@ -101,7 +101,7 @@ class SpeakersOne extends React.Component {
           </div>
           <div className="section-title">
             <h2>
-              Our<b> Governer</b>
+              Our Governer
             </h2>
 
             <div className="bar"></div>
@@ -155,7 +155,7 @@ class SpeakersOne extends React.Component {
           </div>
           <div className="section-title">
             <h2>
-              Our<b> Heads</b>
+              Our Heads
             </h2>
 
             <div className="bar"></div>
@@ -299,7 +299,7 @@ class SpeakersOne extends React.Component {
           <div className="col-lg-3 col-md-6 p-0">
             <div className="single-speakers">
               <img
-                src={require("../../assets/images/karabi.jpeg")}
+                src={require("../../assets/images/karabi1.jpeg")}
                 alt="speakers"
               />
 
@@ -796,7 +796,7 @@ class SpeakersOne extends React.Component {
         <div className="row m-0">
           <div className="section-title">
             <h2>
-              Our<b> Sub Heads</b>
+              Our Sub Heads
             </h2>
 
             <div className="bar"></div>
