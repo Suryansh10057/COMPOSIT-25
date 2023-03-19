@@ -33,7 +33,7 @@ class EventCad extends React.Component {
               />
 
               <div className="events-content">
-                <h2>CAD</h2>
+                <h2>Meta Modelling</h2>
                 <h3>Win Goodies and Certificates</h3>
                 {/* <span>12000</span> */}
               </div>
@@ -90,7 +90,7 @@ class EventCad extends React.Component {
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="schedule-info">
-                              <h3>CAD</h3>
+                              <h3>Meta Modelling</h3>
 
                               <p>
                                 A materials based modeling event focussing on

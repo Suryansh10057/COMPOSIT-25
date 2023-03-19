@@ -1897,6 +1897,53 @@ class SpeakersOne extends React.Component {
               </ul>
             </div>
           </div>
+          <div className="col-lg-3 col-md-6 p-0">
+            <div className="single-speakers">
+              <img
+                src={require("../../assets/images/rohitb.jpg")}
+                alt="speakers"
+              />
+
+              <div className="speakers-content">
+                <h3 style={{ color: "#fec66d" }}>Rohit Bhalerao</h3>
+                {/* <span>Guest Lecture and Webinar Head</span> */}
+              </div>
+              <ul>
+                {/* <li>
+                  <a
+                    href="https://www.facebook.com/satyam.raj.17/"
+                    target="_blank"
+                    className="facebook"
+                  >
+                    <i className="icofont-facebook"></i>
+                  </a>
+                </li> */}
+                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                <li>
+                  <a
+                    href="mailto:satyamraj85@gmail.com"
+                    target="_blank"
+                    className="twitter"
+                  >
+                    <i className="icofont-envelope"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/rohit-bhalerao7"
+                    target="_blank"
+                    className="linkedin"
+                  >
+                    <i className="icofont-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     );
