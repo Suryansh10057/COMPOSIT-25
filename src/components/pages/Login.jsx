@@ -83,7 +83,7 @@ class Login extends React.Component {
                                 <p>
                                     <Link to="/signup" className="pull-left">Create a new account</Link>
                                     
-                                    <Link to="#" className="pull-right">Forgot your password?</Link>
+                                    {/* <Link to="#" className="pull-right">Forgot your password?</Link> */}
                                 </p>
                             </form>
                         </div>

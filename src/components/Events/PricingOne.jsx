@@ -132,11 +132,11 @@ class PricingOne extends React.Component {
                                     <p>Let your imagination run wild as you create hilarious and witty memes/ artwork that leave everyone in stitches.</p>
                                 </ul>
                                 <Link to="/event_techtoon" className="btn btn-primary">READ MORE</Link>
-                                {userData ?
+                                {/* {userData ?
                                     <Link to="/register_techtoon" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                }
+                                } */}
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">

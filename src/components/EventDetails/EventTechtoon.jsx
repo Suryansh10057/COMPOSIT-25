@@ -40,23 +40,24 @@ class EventTechtoon extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-                {userData ? (
-                  <Link to="/register_techtoon" className="btn btn-secondary">
-                    Register
-                  </Link>
-                ) : (
-                  <Link to="/signup" className="btn btn-secondary">
-                    Register
-                  </Link>
-                )}
-                <Link
-                  to="#"
+              {userData ? <a
+                  href="https://forms.gle/FPZ9VipAyHMaNz7AA"
                   target="_blank"
                   className="btn btn-secondary"
-                  disabled
+                >
+                  Link to Submission
+                </a> :
+                <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
+                
+                }
+              
+                <a
+                  href="https://drive.google.com/file/d/1lxVJtkcl_wpml-8wAmeIvKyjMjSEqyaB/view?usp=drivesdk"
+                  target="_blank"
+                  className="btn btn-secondary"
                 >
                   Rules & Regulations
-                </Link>
+                </a>
               </div>
             </div>
           </div>
