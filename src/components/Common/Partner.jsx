@@ -153,11 +153,11 @@ class Partner extends React.Component {
                       target="_blank"
                     >
                       <img
-                        src={require("../../assets/images/Grey Social Popcorn.png")}
+                        src={require("../../assets/images/greypopcorn.png")}
                         alt="Partner Logo"
                       />
                       <img
-                        src={require("../../assets/images/Grey Social Popcorn.png")}
+                        src={require("../../assets/images/greypopcorn.png")}
                         alt="Partner Logo"
                       />
                     </a>
