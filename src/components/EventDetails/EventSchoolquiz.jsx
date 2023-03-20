@@ -40,7 +40,7 @@ class EventSchoolquiz extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-                {userData ? (
+                {/* {userData ? (
                   <Link to="/#" className="btn btn-primary">
                     Register
                   </Link>
@@ -48,7 +48,7 @@ class EventSchoolquiz extends React.Component {
                   <Link to="/signup" className="btn btn-primary">
                     Register
                   </Link>
-                )}
+                )} */}
                 <Link
                   to="#"
                 //   target="_blank"

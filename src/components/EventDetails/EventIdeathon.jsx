@@ -34,7 +34,7 @@ class EventIdeathon extends React.Component {
 
               <div className="events-content">
                 <h2>Ideathon</h2>
-                <h3>Cash Prize worth 20K</h3>
+                <h3>Cash Prize worth 18K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -49,14 +49,14 @@ class EventIdeathon extends React.Component {
                 </a> :
                 <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
                 }
-                <Link
-                  to="#"
-                  // target="_blank"
+                <a
+                  href="https://drive.google.com/file/d/1wMSqAYo_cIQjCuHFNOVi2XcysMjBnioM/view?usp=sharing"
+                  target="_blank"
                   className="btn btn-secondary"
-                  disabled
+                  // disabled
                 >
                   Rules & Regulations
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -199,8 +199,8 @@ class EventIdeathon extends React.Component {
                                   <b>Idea Submission Deadline:</b>
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>19th
-                                  March 11;59PM
+                                  <i className="icofont-wall-clock"></i>29th
+                                  March, 2023 (11:59PM)
                                 </li>
                                 <br></br>
                                 <br></br>
@@ -208,7 +208,7 @@ class EventIdeathon extends React.Component {
                                   <b>Final presentation:</b>
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>2nd
+                                  <i className="icofont-wall-clock"></i>1st
                                   April 2023
                                 </li>
                               </ul>

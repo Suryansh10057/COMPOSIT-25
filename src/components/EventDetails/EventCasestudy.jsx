@@ -28,20 +28,21 @@ class EventCasestudy extends React.Component {
 
                             <div className="events-content">
                                 <h2>Case Study</h2>
-                                <h3>Cash Prize worth 18K</h3>
+                                <h3>Cash Prize worth 15K</h3>
                                 {/* <span>12000</span> */}
                             </div>
                             
                         </div>
                         <div className="col-lg-13">
                     <div className="btn-box" style={{marginBottom: "20px"}}>
-                    {userData ?
+                    {/* {userData ?
                                     <Link to="#" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                }
+                                } */}
                         <Link to="#" className="btn btn-primary" disabled>Problem Statement</Link>
-                        <Link to = "#" className="btn btn-secondary" disabled>Rules & Regulations</Link>
+                        <Link to = "#" className="btn btn-secondary" disabled>Submmision Link</Link>
+                        <a href = "https://drive.google.com/file/d/1EMan4nZwkR0dUEWR4wu_He5uyrIZCD8R/view?usp=sharing" className="btn btn-primary" target="_blank">Rules & Regulations</a>
                     </div>
                 </div>
                 </div>
@@ -157,7 +158,7 @@ class EventCasestudy extends React.Component {
 
                                                         <ul>
                                                             <li><b>Report Submission:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>19th March 2023, 11:59 PM</li>
+                                                            <li><i className="icofont-wall-clock"></i>29th March 2023 (11:59 PM)</li>
                                                             <br></br>
                                                             <br></br>
                                                             <li><b>Final presentation:</b></li>

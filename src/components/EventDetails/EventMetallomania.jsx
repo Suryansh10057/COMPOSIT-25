@@ -34,13 +34,13 @@ class EventMetallomania extends React.Component {
 
               <div className="events-content">
                 <h2>Metallomania</h2>
-                <h3>Cash Prize worth 15K</h3>
+                <h3>Cash Prize worth 18K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-                {userData ? (
+                {/* {userData ? (
                   <Link to="/register_metallomania" className="btn btn-primary">
                     Register
                   </Link>
@@ -48,7 +48,7 @@ class EventMetallomania extends React.Component {
                   <Link to="/signup" className="btn btn-primary">
                     Register
                   </Link>
-                )}
+                )} */}
                 <a
                   href="https://drive.google.com/file/d/1A9j27kol9Haa87mbCv2gudRP-jgqAh-e/view?usp=sharing"
                   target="_blank"
@@ -169,8 +169,8 @@ class EventMetallomania extends React.Component {
                                   <b>Poster and Abstract submission:</b>
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>22th
-                                  March 2023, 11:59 PM
+                                  <i className="icofont-wall-clock"></i>29th
+                                  March 2023 (11:59 PM)
                                 </li>
                                 {/* <br></br>
                                                             <br></br>
