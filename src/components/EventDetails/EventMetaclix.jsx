@@ -40,7 +40,7 @@ class EventMetaclix extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-                {userData ? (
+                {/* {userData ? (
                   <Link to="/register_metaclix" className="btn btn-primary">
                     Register
                   </Link>
@@ -48,7 +48,7 @@ class EventMetaclix extends React.Component {
                   <Link to="/signup" className="btn btn-primary">
                     Register
                   </Link>
-                )}
+                )} */}
                 <Link to="#" className="btn btn-secondary" disabled>
                   Rules & Regulations
                 </Link>
@@ -182,13 +182,14 @@ class EventMetaclix extends React.Component {
                               <h3>Important Dates</h3>
 
                               <ul>
-                                <li>
+                                <li><b>Coming Soon</b></li>
+                                {/* <li>
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
                                   <i className="icofont-wall-clock"></i>30th
                                   March 2023
-                                </li>
+                                </li> */}
                                 <br></br>
                                 <br></br>
                                 {/* <li><b>Final presentation:</b></li>

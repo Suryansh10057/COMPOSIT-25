@@ -148,11 +148,11 @@ class PricingOne extends React.Component {
                                     <p>Enter our online photography contest and capture everyday materials, industrial applications, or the universe beyond!</p>
                                 </ul>
                                 <Link to="/event_metaclix" className="btn btn-primary">READ MORE</Link>
-                                {userData ?
+                                {/* {userData ?
                                     <Link to="/register_metaclix" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                }
+                                } */}
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
@@ -196,11 +196,11 @@ class PricingOne extends React.Component {
                                 <p>The grand technical materials characterization competition involving the diverse areas of metallurgy and materials science.</p>
                                 </ul>
                                 <Link to="/event_metallomania" className="btn btn-primary">READ MORE</Link>
-                                {userData ?
+                                {/* {userData ?
                                     <Link to="/register_metallomania" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                }
+                                } */}
                             </div>
                         </div>
                     </div>

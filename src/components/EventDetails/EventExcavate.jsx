@@ -40,7 +40,7 @@ class EventExcavate extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-                {userData ? (
+                {/* {userData ? (
                   <Link to="#" className="btn btn-secondary">
                     Register
                   </Link>
@@ -48,10 +48,10 @@ class EventExcavate extends React.Component {
                   <Link to="/signup" className="btn btn-secondary">
                     Register
                   </Link>
-                )}
-                <Link to="#" className="btn btn-primary" disabled>
+                )} */}
+                {/* <Link to="#" className="btn btn-primary" disabled>
                   Problem Statement
-                </Link>
+                </Link> */}
                 <a
                   href="https://drive.google.com/file/d/1kqDIad3xbW4toWG911TsBtKr0UnAYXXA/view?usp=sharing"
                   target="_blank"
@@ -201,20 +201,20 @@ class EventExcavate extends React.Component {
 
                               <ul>
                                 <li>
-                                  <b>Problem Statement Release:</b>
-                                </li>
-                                <li>
-                                  <i className="icofont-wall-clock"></i>31st
-                                  March 2023 [6:00 pm]
-                                </li>
-                                <br></br>
-                                <br></br>
-                                <li>
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
                                   <i className="icofont-wall-clock"></i>1st
-                                  April 2023 [6: 00 pm]
+                                  April 2023
+                                </li>
+                                <br></br>
+                                <br></br>
+                                <li>
+                                  <b>Final Event:</b>
+                                </li>
+                                <li>
+                                  <i className="icofont-wall-clock"></i>2nd
+                                  April 2023
                                 </li>
                               </ul>
                             </div>

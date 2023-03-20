@@ -40,7 +40,7 @@ class EventEnigma extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-                {userData ? (
+                {/* {userData ? (
                   <Link to="/register_enigma" className="btn btn-primary">
                     Register
                   </Link>
@@ -48,7 +48,7 @@ class EventEnigma extends React.Component {
                   <Link to="/signup" className="btn btn-primary">
                     Register
                   </Link>
-                )}
+                )} */}
                 <Link to="#" className="btn btn-secondary" disabled>
                   Rules & Regulations
                 </Link>
@@ -209,7 +209,8 @@ class EventEnigma extends React.Component {
                               <h3>Important Dates</h3>
 
                               <ul>
-                                <li>
+                                <li><b>Coming Soon</b></li>
+                                {/* <li>
                                   <b>Online Round:</b>
                                 </li>
                                 <li>
@@ -224,7 +225,7 @@ class EventEnigma extends React.Component {
                                 <li>
                                   <i className="icofont-wall-clock"></i>31st
                                   March 2023
-                                </li>
+                                </li> */}
                               </ul>
                             </div>
                           </Link>

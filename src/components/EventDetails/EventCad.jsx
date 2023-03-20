@@ -40,7 +40,7 @@ class EventCad extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-                {userData ? (
+                {/* {userData ? (
                   <Link to="#" className="btn btn-secondary">
                     Register
                   </Link>
@@ -48,7 +48,7 @@ class EventCad extends React.Component {
                   <Link to="/signup" className="btn btn-secondary">
                     Register
                   </Link>
-                )}
+                )} */}
                 <Link to="#" className="btn btn-primary" disabled>
                   Problem Statement
                 </Link>
@@ -177,13 +177,14 @@ class EventCad extends React.Component {
                               <h3>Important Dates</h3>
 
                               <ul>
-                                <li>
+                                <li><b>Coming Soon</b></li>
+                                {/* <li>
                                   <b>Final presentation:</b>
                                 </li>
                                 <li>
                                   <i className="icofont-wall-clock"></i>1st
                                   April 2023
-                                </li>
+                                </li> */}
                               </ul>
                             </div>
                           </Link>
