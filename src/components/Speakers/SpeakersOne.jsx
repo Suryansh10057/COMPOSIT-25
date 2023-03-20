@@ -101,7 +101,7 @@ class SpeakersOne extends React.Component {
           </div>
           <div className="section-title">
             <h2>
-              Our Governer
+              Our Governor
             </h2>
 
             <div className="bar"></div>
