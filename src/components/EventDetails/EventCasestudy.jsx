@@ -41,7 +41,7 @@ class EventCasestudy extends React.Component {
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 } */}
                         <a href="https://drive.google.com/file/d/1GI__f_FmL9qIjNGgXdDjGqtqjjtE8vps/view?usp=sharing" className="btn btn-primary" target="_blank">Problem Statement</a>
-                        <Link to = "#" className="btn btn-secondary" disabled>Submmision Link</Link>
+                        <Link to = "#" className="btn btn-secondary" disabled>Submission Link</Link>
                         <a href = "https://drive.google.com/file/d/1EMan4nZwkR0dUEWR4wu_He5uyrIZCD8R/view?usp=sharing" className="btn btn-primary" target="_blank">Rules & Regulations</a>
                     </div>
                 </div>
