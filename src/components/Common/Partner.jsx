@@ -146,7 +146,7 @@ class Partner extends React.Component {
                 className="platinum-partner-slides owl-carousel owl-theme"
                 {...options}
               >
-                <div className="col-lg-12 col-md-12">
+                {/* <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <a
                       href="https://instagram.com/greysocialpopcorns?igshid=ZDdkNTZiNTM="
@@ -162,7 +162,7 @@ class Partner extends React.Component {
                       />
                     </a>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">

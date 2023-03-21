@@ -34,7 +34,7 @@ class EventMetallomania extends React.Component {
 
               <div className="events-content">
                 <h2>Metallomania</h2>
-                <h3>Cash Prize worth 18K</h3>
+                <h3>Cash Prize worth 15K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -49,6 +49,10 @@ class EventMetallomania extends React.Component {
                     Register
                   </Link>
                 )} */}
+                {/* https://forms.gle/GSTdaQ2dLMrzxj1Q9 */}
+                <Link to="#" className="btn btn-primary" disabled>
+                  Submission Link
+                </Link>
                 <a
                   href="https://drive.google.com/file/d/1A9j27kol9Haa87mbCv2gudRP-jgqAh-e/view?usp=sharing"
                   target="_blank"
@@ -94,16 +98,13 @@ class EventMetallomania extends React.Component {
                               <h3>Metallomania</h3>
 
                               <p>
-                                A technical poster presentation competition that
-                                acts as a platform to express and present
-                                original research to your peers, teachers and
-                                industry in the fields of metallurgy and
-                                materials. The goal of the poster presentation
-                                competition is to offer a venue to students to
-                                present their original research in the field of
-                                metallurgy and to provide a forum for informal
-                                discussion with interested students, teachers
-                                and industrialists.{" "}
+                              This two round event focuses on the aspect of materials characterisation.
+Participants are invited to display interesting and unique microstructures
+they have observed using specimens found from everyday objects.
+The final round of the event challenges the participants to analyse and
+characterise a given material based on experimental reports.
+Metallomania aims to bring out the analytical skills of a material scientist and
+show their technical prowess.{" "}
                               </p>
                             </div>
                           </Link>
@@ -123,13 +124,13 @@ class EventMetallomania extends React.Component {
                               <ul>
                                 <li>
                                   {" "}
-                                  It will be a team event (of max 2
-                                  participants){" "}
+                                  It will be an individual event which will be held offline.{" "}
                                 </li>
                                 <li>
                                   {" "}
-                                  Any student pursuing science or engineering in
-                                  India is eligible to participate.{" "}
+                                  Open to all students pursuing
+Bachelors/Masters/PHD in any science and
+engineering college.{" "}
                                 </li>
                               </ul>
                             </div>
@@ -142,13 +143,28 @@ class EventMetallomania extends React.Component {
 
                             <div className="schedule-info">
                               <h3>Rounds of the Event</h3>
-                              <p>
-                                It will be an offline event but The poster and
-                                abstract should be submitted online in the link
-                                provided in the website by 22nd March and at the
-                                time of event you have to present the poster in
-                                front of judges.
-                              </p>
+                              <p>The event will have two rounds as follows:</p>
+
+                              <ul>
+                                <li>
+                                  <b>Abstract submission round (Online):</b>
+                                  <ul>
+                                    <li>
+                                    For this round participants must obtain interesting samples, observe them under a microscope, and submit a micrograph, along with two captions: one explaining the scientific and technical aspect and the other highlighting the creative and unique aspect. The submission must include motivation and procedure. Submissions will be evaluated on sample preparation, caption, and creativity, and plagiarism will result in rejection.
+                                    </li>
+                                  </ul>
+                                </li>
+                                <br></br>
+                                <br />
+                                <li>
+                                  <b>Final Round:</b>
+                                  <ul>
+                                    <li>
+                                    For this round participants will receive experimental results of material characterization (OM/SEM/TEM, XRD, EDS/WDS) and complete a questionnaire. They need to prepare a report based on their analysis and present it to judges in a 10-minute presentation.
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
                             </div>
                           </Link>
                         </li>
@@ -190,7 +206,7 @@ class EventMetallomania extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              <h3>Contact Info</h3>
+                              {/* <h3>Contact Info</h3> */}
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
@@ -200,6 +216,25 @@ class EventMetallomania extends React.Component {
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
                                 <b>9737699678</b>
+                              </p>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author"></div>
+
+                            <div className="schedule-info">
+                              {/* <h3>Contact Info</h3> */}
+
+                              <p>
+                                Name: <i className="icofont-user-suited"></i>{" "}
+                                <b>Alluri Hasitha</b>
+                              </p>
+                              <p>
+                                Contact:{" "}
+                                <i className="icofont-phone-circle"></i>{" "}
+                                <b>9392703946</b>
                               </p>
                             </div>
                           </Link>

@@ -40,16 +40,13 @@ class EventTechtoon extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-              {userData ? <a
+              <a
                   href="https://forms.gle/FPZ9VipAyHMaNz7AA"
                   target="_blank"
                   className="btn btn-secondary"
                 >
                   Link to Submission
-                </a> :
-                <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
-                
-                }
+                </a>
               
                 <a
                   href="https://drive.google.com/file/d/1lxVJtkcl_wpml-8wAmeIvKyjMjSEqyaB/view?usp=drivesdk"
@@ -217,6 +214,25 @@ class EventTechtoon extends React.Component {
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
                                 <b>8969265633</b>
+                              </p>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author"></div>
+
+                            <div className="schedule-info">
+                              {/* <h3>Contact Info</h3> */}
+
+                              <p>
+                                Name: <i className="icofont-user-suited"></i>{" "}
+                                <b>Gourav Pathak</b>
+                              </p>
+                              <p>
+                                Contact:{" "}
+                                <i className="icofont-phone-circle"></i>{" "}
+                                <b>6204935889</b>
                               </p>
                             </div>
                           </Link>

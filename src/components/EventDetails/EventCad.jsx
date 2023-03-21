@@ -33,8 +33,8 @@ class EventCad extends React.Component {
               />
 
               <div className="events-content">
-                <h2>Meta Modelling</h2>
-                <h3>Win Goodies and Certificates</h3>
+                <h2>Sixth Sense</h2>
+                <h3>Cash Prize worth 15K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -199,7 +199,7 @@ class EventCad extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              <h3>Contact Info</h3>
+                              {/* <h3>Contact Info</h3> */}
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
@@ -209,6 +209,25 @@ class EventCad extends React.Component {
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
                                 <b>9737699678</b>
+                              </p>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author"></div>
+
+                            <div className="schedule-info">
+                              {/* <h3>Contact Info</h3> */}
+
+                              <p>
+                                Name: <i className="icofont-user-suited"></i>{" "}
+                                <b>Gourav Pathak</b>
+                              </p>
+                              <p>
+                                Contact:{" "}
+                                <i className="icofont-phone-circle"></i>{" "}
+                                <b>6204935889</b>
                               </p>
                             </div>
                           </Link>

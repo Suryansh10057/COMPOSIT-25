@@ -40,7 +40,7 @@ class EventIdeathon extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-              {userData ? <a
+              {/* {userData ? <a
                   href="#"
                   target="_blank"
                   className="btn btn-secondary"
@@ -48,7 +48,12 @@ class EventIdeathon extends React.Component {
                   Link to Submission
                 </a> :
                 <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
-                }
+                } */}
+                <a
+                  href="https://forms.gle/zFca1VzhLm3GozFR6"
+                  target="_blank"
+                  className="btn btn-secondary"
+                >Submission Link</a>
                 <a
                   href="https://drive.google.com/file/d/1wMSqAYo_cIQjCuHFNOVi2XcysMjBnioM/view?usp=sharing"
                   target="_blank"
@@ -225,16 +230,35 @@ class EventIdeathon extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              <h3>Contact Info</h3>
+                              {/* <h3>Contact Info</h3> */}
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Karabi Saha</b>
+                                <b>Ramona Kodkani</b>
                               </p>
                               <p>
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
-                                <b>9737699678</b>
+                                <b>9834467788</b>
+                              </p>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author"></div>
+
+                            <div className="schedule-info">
+                              {/* <h3>Contact Info</h3> */}
+
+                              <p>
+                                Name: <i className="icofont-user-suited"></i>{" "}
+                                <b>Alluri Hasitha</b>
+                              </p>
+                              <p>
+                                Contact:{" "}
+                                <i className="icofont-phone-circle"></i>{" "}
+                                <b>9392703946</b>
                               </p>
                             </div>
                           </Link>

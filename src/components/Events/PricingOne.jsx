@@ -158,7 +158,7 @@ class PricingOne extends React.Component {
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
-                                    <h3 className="title">Meta Modelling</h3>
+                                    <h3 className="title">Sixth Sense</h3>
                                 </div>
                                 <ul className="pricing-content">
                                     <p>Test your problem solving skills as you analyse real life structure failures and present solutions using modelling softwares.</p>

@@ -34,7 +34,7 @@ class EventExcavate extends React.Component {
 
               <div className="events-content">
                 <h2>Excavate</h2>
-                <h3>Cash Prize worth 22K</h3>
+                <h3>Cash Prize worth 18K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -49,9 +49,10 @@ class EventExcavate extends React.Component {
                     Register
                   </Link>
                 )} */}
-                {/* <Link to="#" className="btn btn-primary" disabled>
-                  Problem Statement
-                </Link> */}
+                {/* https://forms.gle/LevgxQcnpKahxHM4A */}
+                <Link to="#" className="btn btn-primary" disabled>
+                  Submission Link
+                </Link>
                 <a
                   href="https://drive.google.com/file/d/1kqDIad3xbW4toWG911TsBtKr0UnAYXXA/view?usp=sharing"
                   target="_blank"
@@ -230,16 +231,35 @@ class EventExcavate extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              <h3>Contact Info</h3>
+                              {/* <h3>Contact Info</h3> */}
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Ramona Kodkani</b>
+                                <b>Abhyuday Agrawal</b>
                               </p>
                               <p>
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
-                                <b>9834467788</b>
+                                <b>6204600154</b>
+                              </p>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author"></div>
+
+                            <div className="schedule-info">
+                              {/* <h3>Contact Info</h3> */}
+
+                              <p>
+                                Name: <i className="icofont-user-suited"></i>{" "}
+                                <b>Alluri Hasitha</b>
+                              </p>
+                              <p>
+                                Contact:{" "}
+                                <i className="icofont-phone-circle"></i>{" "}
+                                <b>9392703946</b>
                               </p>
                             </div>
                           </Link>
