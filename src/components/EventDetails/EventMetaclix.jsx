@@ -34,7 +34,7 @@ class EventMetaclix extends React.Component {
 
               <div className="events-content">
                 <h2>Metaclix</h2>
-                <h3>Cash Prize worth 9K</h3>
+                <h3>Cash Prize worth 5K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -49,6 +49,10 @@ class EventMetaclix extends React.Component {
                     Register
                   </Link>
                 )} */}
+                {/* https://forms.gle/nMEvdh9Z5mXs89hq8 */}
+                <Link to="#" className="btn btn-primary" disabled>
+                  Submission Link
+                </Link>
                 <Link to="#" className="btn btn-secondary" disabled>
                   Rules & Regulations
                 </Link>
@@ -208,16 +212,35 @@ class EventMetaclix extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              <h3>Contact Info</h3>
+                              {/* <h3>Contact Info</h3> */}
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Priya Kumari</b>
+                                <b>Ananay Singh</b>
                               </p>
                               <p>
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
-                                <b>8969265633</b>
+                                <b>9635333069</b>
+                              </p>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author"></div>
+
+                            <div className="schedule-info">
+                              {/* <h3>Contact Info</h3> */}
+
+                              <p>
+                                Name: <i className="icofont-user-suited"></i>{" "}
+                                <b>Gourav Pathak</b>
+                              </p>
+                              <p>
+                                Contact:{" "}
+                                <i className="icofont-phone-circle"></i>{" "}
+                                <b>6204935889</b>
                               </p>
                             </div>
                           </Link>

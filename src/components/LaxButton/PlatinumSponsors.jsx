@@ -15,7 +15,7 @@ class PlatinumSponsors extends React.Component {
 
     render(){
         return (
-            <h3 className="lax" data-lax-preset="driftRight">Our Collaborations</h3>
+            <h3 className="lax" data-lax-preset="driftRight">Our Previous Sponsors</h3>
         );
     }
 }
