@@ -115,7 +115,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Abhishek Kumar</h3>
-                <span>Governer</span>
+                <span>Governor</span>
               </div>
               <ul>
                 <li>
