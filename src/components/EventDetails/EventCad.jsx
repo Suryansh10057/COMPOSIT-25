@@ -49,7 +49,7 @@ class EventCad extends React.Component {
                     Register
                   </Link>
                 )} */}
-                <Link to="#" className="btn btn-primary" disabled>
+                {/* <Link to="#" className="btn btn-primary" disabled>
                   Problem Statement
                 </Link>
                 {userData ? <Link
@@ -64,7 +64,7 @@ class EventCad extends React.Component {
               }
                 <Link to="#" className="btn btn-secondary" disabled>
                   Rules & Regulations
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ class EventCad extends React.Component {
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="schedule-info">
-                              <h3>Meta Modelling</h3>
+                              <h3>Sixth Sense</h3>
 
                               <p>
                                 A materials based modeling event focussing on

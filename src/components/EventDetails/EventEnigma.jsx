@@ -50,7 +50,7 @@ class EventEnigma extends React.Component {
                   </Link>
                 )} */}
                 {/* https://forms.gle/Z6PPQgwzC9rbZRCM6 */}
-                {userData ? <Link
+                {/* {userData ? <Link
                   href="#"
                   // target="_blank"
                   className="btn btn-secondary"
@@ -62,7 +62,7 @@ class EventEnigma extends React.Component {
                 }
                 <Link to="#" className="btn btn-secondary" disabled>
                   Rules & Regulations
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

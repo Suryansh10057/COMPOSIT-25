@@ -50,7 +50,7 @@ class EventMetaclix extends React.Component {
                   </Link>
                 )} */}
                 {/* https://forms.gle/nMEvdh9Z5mXs89hq8 */}
-                {userData ? <Link
+                {/* {userData ? <Link
                   href="#"
                   // target="_blank"
                   className="btn btn-primary"
@@ -62,7 +62,7 @@ class EventMetaclix extends React.Component {
                 }
                 <Link to="#" className="btn btn-secondary" disabled>
                   Rules & Regulations
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

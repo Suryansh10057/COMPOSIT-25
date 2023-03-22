@@ -49,7 +49,7 @@ class EventSchoolquiz extends React.Component {
                     Register
                   </Link>
                 )} */}
-                {userData ? <a
+                {/* {userData ? <a
                   href="https://forms.gle/ti7htqPaNeGvoKXC9"
                   target="_blank"
                   className="btn btn-primary"
@@ -66,7 +66,7 @@ class EventSchoolquiz extends React.Component {
                   disabled
                 >
                   Rules & Regulations
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

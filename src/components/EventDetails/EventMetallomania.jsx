@@ -50,7 +50,7 @@ class EventMetallomania extends React.Component {
                   </Link>
                 )} */}
                 {/* https://forms.gle/GSTdaQ2dLMrzxj1Q9 */}
-                {userData ? <Link
+                {/* {userData ? <Link
                   href="#"
                   // target="_blank"
                   className="btn btn-primary"
@@ -59,7 +59,7 @@ class EventMetallomania extends React.Component {
                   Submission Link
                 </Link> :
                 <Link to="/login" className="btn btn-primary">Login to Submit</Link>
-                }
+                } */}
                 <a
                   href="https://drive.google.com/file/d/1A9j27kol9Haa87mbCv2gudRP-jgqAh-e/view?usp=sharing"
                   target="_blank"
