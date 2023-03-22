@@ -52,9 +52,15 @@ class EventCasestudy extends React.Component {
                 >
                   Problem Statement
                 </a>
-                <a to="https://forms.gle/yZ5zTEcdxQz6rV2F9" className="btn btn-secondary" target="_blank">
+                {userData ? <a
+                  href="https://forms.gle/yZ5zTEcdxQz6rV2F9"
+                  target="_blank"
+                  className="btn btn-secondary"
+                >
                   Submission Link
-                </a>
+                </a> :
+                <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
+                }
                 <a
                   href="https://drive.google.com/file/d/1EMan4nZwkR0dUEWR4wu_He5uyrIZCD8R/view?usp=sharing"
                   className="btn btn-primary"

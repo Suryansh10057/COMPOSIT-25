@@ -52,6 +52,16 @@ class EventCad extends React.Component {
                 <Link to="#" className="btn btn-primary" disabled>
                   Problem Statement
                 </Link>
+                {userData ? <Link
+                  href="#"
+                  // target="_blank"
+                  className="btn btn-secondary"
+                  disabled
+                >
+                  Submission Link
+                </Link> :
+                <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
+              }
                 <Link to="#" className="btn btn-secondary" disabled>
                   Rules & Regulations
                 </Link>

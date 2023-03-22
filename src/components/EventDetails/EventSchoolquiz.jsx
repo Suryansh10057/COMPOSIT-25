@@ -49,14 +49,16 @@ class EventSchoolquiz extends React.Component {
                     Register
                   </Link>
                 )} */}
-                <a
-                  to="https://forms.gle/ti7htqPaNeGvoKXC9"
+                {userData ? <a
+                  href="https://forms.gle/ti7htqPaNeGvoKXC9"
                   target="_blank"
-                  className="btn btn-secondary"
+                  className="btn btn-primary"
                   disabled
                 >
                   Registration Link
-                </a>
+                </a> :
+                <Link to="/login" className="btn btn-primary">Login to Register</Link>
+                }
                 <Link
                   to="#"
                 //   target="_blank"
@@ -202,16 +204,35 @@ class EventSchoolquiz extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              <h3>Contact Info</h3>
+                              {/* <h3>Contact Info</h3> */}
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Priya Kumari</b>
+                                <b>Sudarshana Jaiswal</b>
                               </p>
                               <p>
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
-                                <b>8969265633</b>
+                                <b>6265197814</b>
+                              </p>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author"></div>
+
+                            <div className="schedule-info">
+                              {/* <h3>Contact Info</h3> */}
+
+                              <p>
+                                Name: <i className="icofont-user-suited"></i>{" "}
+                                <b>Alluri Hasitha</b>
+                              </p>
+                              <p>
+                                Contact:{" "}
+                                <i className="icofont-phone-circle"></i>{" "}
+                                <b>9392703946</b>
                               </p>
                             </div>
                           </Link>
