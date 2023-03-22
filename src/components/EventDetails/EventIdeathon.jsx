@@ -40,20 +40,15 @@ class EventIdeathon extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-              {/* {userData ? <a
-                  href="#"
-                  target="_blank"
-                  className="btn btn-secondary"
-                >
-                  Link to Submission
-                </a> :
-                <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
-                } */}
-                <a
+              {userData ? <a
                   href="https://forms.gle/zFca1VzhLm3GozFR6"
                   target="_blank"
-                  className="btn btn-secondary"
-                >Submission Link</a>
+                  className="btn btn-primary"
+                >
+                  Submission Link
+                </a> :
+                <Link to="/login" className="btn btn-primary">Login to Submit</Link>
+                }
                 <a
                   href="https://drive.google.com/file/d/1wMSqAYo_cIQjCuHFNOVi2XcysMjBnioM/view?usp=sharing"
                   target="_blank"

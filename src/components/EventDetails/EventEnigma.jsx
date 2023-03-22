@@ -50,9 +50,16 @@ class EventEnigma extends React.Component {
                   </Link>
                 )} */}
                 {/* https://forms.gle/Z6PPQgwzC9rbZRCM6 */}
-                <Link to="#" className="btn btn-primary" disabled>
+                {userData ? <Link
+                  href="#"
+                  // target="_blank"
+                  className="btn btn-secondary"
+                  disabled
+                >
                   Submission Link
-                </Link>
+                </Link> :
+                <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
+                }
                 <Link to="#" className="btn btn-secondary" disabled>
                   Rules & Regulations
                 </Link>

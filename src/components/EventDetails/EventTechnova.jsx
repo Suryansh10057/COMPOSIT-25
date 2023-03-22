@@ -40,13 +40,15 @@ class EventTechnova extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-                <a
+              {userData ? <a
                   href="https://forms.gle/sqA1B7Gw3gKnePAc8"
                   target="_blank"
-                  className="btn btn-secondary"
+                  className="btn btn-primary"
                 >
                   Submission Link
-                </a>
+                </a> :
+                <Link to="/login" className="btn btn-primary">Login to Submit</Link>
+              }
               
                 <a
                   href="https://drive.google.com/file/d/1A7Dhc9_CdSSnoewBx6oopLqDXuD1cMjN/view?usp=drivesdk"

@@ -40,13 +40,15 @@ class EventTechtoon extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-              <a
+              {userData ? <a
                   href="https://forms.gle/FPZ9VipAyHMaNz7AA"
                   target="_blank"
-                  className="btn btn-secondary"
+                  className="btn btn-primary"
                 >
-                  Link to Submission
-                </a>
+                  Submission Link
+                </a> :
+                <Link to="/login" className="btn btn-primary">Login to Submit</Link>
+              }
               
                 <a
                   href="https://drive.google.com/file/d/1lxVJtkcl_wpml-8wAmeIvKyjMjSEqyaB/view?usp=drivesdk"

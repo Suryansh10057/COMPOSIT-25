@@ -50,9 +50,16 @@ class EventExcavate extends React.Component {
                   </Link>
                 )} */}
                 {/* https://forms.gle/LevgxQcnpKahxHM4A */}
-                <Link to="#" className="btn btn-primary" disabled>
+                {userData ? <Link
+                  href="#"
+                  // target="_blank"
+                  className="btn btn-secondary"
+                  disabled
+                >
                   Submission Link
-                </Link>
+                </Link> :
+                <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
+                }
                 <a
                   href="https://drive.google.com/file/d/1kqDIad3xbW4toWG911TsBtKr0UnAYXXA/view?usp=sharing"
                   target="_blank"
