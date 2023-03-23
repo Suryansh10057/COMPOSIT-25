@@ -203,7 +203,7 @@ class EventCasestudy extends React.Component {
                                   <b>Report Submission:</b>
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>29th
+                                  <i className="icofont-wall-clock"></i>31st
                                   March 2023 (11:59 PM)
                                 </li>
                                 <br></br>
