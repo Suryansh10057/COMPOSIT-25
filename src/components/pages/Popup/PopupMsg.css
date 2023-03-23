@@ -172,3 +172,10 @@
 .center {
   text-align: center;
 }
+/* #myTable{
+  padding: 20px;
+} */
+.getAllUsers{
+  margin-top: 150px;
+  align-items: center;
+}

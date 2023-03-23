@@ -221,15 +221,15 @@ export default function Signup() {
                         </form>
                     </div>
                 </div>
-                
+
             </div>
             <div className="loginPopup" id='loginPopup'>
-                    <div className="formPopup" id="popupForm">
+                <div className="formPopup" id="popupForm">
                     <p className='popupMsg'>{errorr}</p>
-                        {/* {errorr ? <h2>{errorr}</h2> : <h2>Dear {signupData.name}. You have Successfully Registered for COMPOSIT 2023. Your Registration id is {signupData.regID}</h2>} */}
-                        <Link to="/login" className='popupLink'>Login now to register for event</Link>
-                    </div>
+                    {/* {errorr ? <h2>{errorr}</h2> : <h2>Dear {signupData.name}. You have Successfully Registered for COMPOSIT 2023. Your Registration id is {signupData.regID}</h2>} */}
+                    <Link to="/login" className='popupLink'>Login now to register for event</Link>
                 </div>
+            </div>
         </section>
     )
 }

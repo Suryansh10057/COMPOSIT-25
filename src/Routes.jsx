@@ -36,6 +36,7 @@ import RegisterExcavate from "./components/pages/EventRegistration/RegisterExcav
 import RegisterSchoolquiz from "./components/pages/EventRegistration/RegisterSchoolquiz";
 import RegisterCad from "./components/pages/EventRegistration/RegisterCad";
 import RegisterCasestudy from "./components/pages/EventRegistration/RegisterCasestudy";
+import GetAllUsers from "./components/pages/GetAllUsers";
 import Popup from "./components/pages/MyPopup";
 import PopupMsg from "./components/pages/Popup/PopupMsg";
 import ComingSoon1 from "./components/pages/ComingSoon/Comingsoon";
@@ -89,6 +90,7 @@ const AppRouter = () => {
                 <Route path="/edit-profile" exact component={EditProfile} />
                 <Route path="/popup" exact component={Popup} />
                 <Route path="/popupMsg" exact component={PopupMsg} />
+                <Route path="/admin/getAllRegistrations" exact component={GetAllUsers} />
                 <Route path="/error-404" exact component={NotFound} />
                 <Route component={NotFound} />
             </Switch>
