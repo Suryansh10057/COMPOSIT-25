@@ -14,7 +14,7 @@ class WhyUs extends React.Component {
                                         <div className="icon" style={{textAlign:"center"}}>
                                             <i className="icofont-headphone-alt-1"></i>
                                         </div>
-                                        <h3>Competitions</h3>
+                                        <h3><Link to="/events">Competitions</Link></h3>
                                         <p>A multitude of events ranging from mesmerizing data analytics, stunning photography, compelling case studies and engaging research competitions, unleashing your full potential and developing a spirit of healthy competitiveness.</p>
             
                                         {/* <Link to="#" className="btn btn-primary">Read More</Link> */}
@@ -32,7 +32,7 @@ class WhyUs extends React.Component {
                                         <div className="icon" style={{textAlign:"center"}}>
                                             <i className="icofont-network-tower"></i>
                                         </div>
-                                        <h3>Guest Lectures</h3>
+                                        <h3><Link to="/guestlecture">Guest Lectures</Link></h3>
                                         <p>Deliverance of guest lectures by eminent professionals in the field of Materials Science, enriching your learning experience and broadening your horizons.</p>
             
                                         {/* <Link to="#" className="btn btn-primary">Read More</Link> */}
@@ -50,7 +50,7 @@ class WhyUs extends React.Component {
                                         <div className="icon" style={{textAlign:"center"}}>
                                             <i className="icofont-users-social"></i>
                                         </div>
-                                        <h3>Workshops</h3>
+                                        <h3><Link to="/guestlecture">Workshops</Link></h3>
                                         <p>Conductance of informative workshops on captivating concepts, providing you with hands-on experience and practical knowledge about cutting-edge research and innovations in the field of materials and beyond.</p>
             
                                         {/* <Link to="#" className="btn btn-primary">Read More</Link> */}
@@ -68,7 +68,7 @@ class WhyUs extends React.Component {
                                         <div className="icon" style={{textAlign:"center"}}> 
                                             <i className="icofont-wink-smile"></i>
                                         </div>
-                                        <h3>Webinars</h3>
+                                        <h3><Link to="/guestlecture">Webinars</Link></h3>
                                         <p>A plethora of engrossing webinars, providing a platform to interact with prominent persnoalities including Material Scientists and Professionals from all across the globe and to gain valuable insights about the field of Materials Science and beyond.</p>
             
                                         {/* <Link to="#" className="btn btn-primary">Read More</Link> */}
