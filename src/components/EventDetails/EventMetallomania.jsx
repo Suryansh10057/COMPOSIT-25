@@ -31,6 +31,10 @@ class EventMetallomania extends React.Component {
                 src={require("../../assets/images/Metallomania.jpg")}
                 alt="Speaker"
               />
+              <img
+                src={require("../../assets/images/joel.jpg")}
+                alt="Speaker"
+              />
 
               <div className="events-content">
                 <h2>Metallomania</h2>

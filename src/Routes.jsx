@@ -40,6 +40,7 @@ import GetAllUsers from "./components/pages/GetAllUsers";
 import Popup from "./components/pages/MyPopup";
 import PopupMsg from "./components/pages/Popup/PopupMsg";
 import ComingSoon1 from "./components/pages/ComingSoon/Comingsoon";
+import GuestLecturePage from "./components/pages/GuestLectures";
 
 // Conditionally render Navigation
 const renderNavigation = () => {
@@ -67,6 +68,7 @@ const AppRouter = () => {
                 <Route path="/event_schoolquiz" exact component={EventSchoolquizPage} />
                 <Route path="/event_technova" exact component={EventTechnovaPage} />
                 <Route path="/event_techtoon" exact component={EventTechtoonPage} />
+                <Route path="/guestlecture" exact component={GuestLecturePage} />
                 <Route path="/register_metaclix" exact component={RegisterMetaclix} />
                 <Route path="/register_techtoon" exact component={RegisterTechtoon} />
                 <Route path="/register_metallomania" exact component={RegisterMetallomania} />

@@ -150,6 +150,16 @@ class Navigation extends React.Component {
 
                   <li className="nav-item">
                     <NavLink
+                      to="/guestlecture"
+                      className="nav-link"
+                      onClick={this.toggleNavbar}
+                    >
+                      Our Speakers
+                    </NavLink>
+                  </li>
+
+                  <li className="nav-item">
+                    <NavLink
                       to="/sponsors"
                       className="nav-link"
                       onClick={this.toggleNavbar}

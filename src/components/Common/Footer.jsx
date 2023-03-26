@@ -66,9 +66,9 @@ class Footer extends React.Component {
                                 </div>
                                 <ul>
                                     <li><Link to="/ourteam">Team</Link></li>
-                                    <li><Link to="/contact">Contact</Link></li>
+                                    {/* <li><Link to="/contact">Contact</Link></li> */}
                                     <li><a href="https://goo.gl/maps/DUpGj7rLicHZgPBy6" target="_blank">Venue</a></li>
-                                    <li><Link to="#">Terms & Conditions</Link></li>
+                                    {/* <li><Link to="#">Terms & Conditions</Link></li> */}
                                 </ul>
                                 <p>
                                     Copyright <i className="icofont-copyright"></i> 2023 COMPOSIT. All rights reserved

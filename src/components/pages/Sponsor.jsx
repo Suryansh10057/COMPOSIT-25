@@ -84,15 +84,6 @@ class Sponsor extends React.Component {
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                    {/* <Link to="/sponsors" target="_blank">
-                                        <img src={require("../../assets/images/gold-partner2.png")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/gold-partner2.png")} alt="Partner Logo" />
-                                    </Link> */}
-                  </div>
-                </div>
-
-                <div className="col-lg-12 col-md-12">
-                  <div className="partner-item">
                     <a
                       href="https://instagram.com/greysocialpopcorns?igshid=ZDdkNTZiNTM="
                       target="_blank"
@@ -112,9 +103,18 @@ class Sponsor extends React.Component {
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     {/* <Link to="/sponsors" target="_blank">
-                                        <img src={require("../../assets/images/gold-partner4.png")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/gold-partner4.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/images/gold-partner2.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/images/gold-partner2.png")} alt="Partner Logo" />
                                     </Link> */}
+                  </div>
+                </div>
+
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <Link to="/sponsors" target="_blank">
+                                        <img src={require("../../assets/images/joel.jpg")} alt="Partner Logo" />
+                                        <img src={require("../../assets/images/joel.jpg")} alt="Partner Logo" />
+                                    </Link>
                   </div>
                 </div>
 
