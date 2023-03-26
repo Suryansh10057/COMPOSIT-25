@@ -360,7 +360,7 @@ class Speakers extends React.Component {
               />
 
               <div className="speakers-content">
-                <h3 style={{ color: "#fec66d" }}>Hari Prasad Lallam</h3>
+                <h3 style={{ color: "#fec66d" }}>Hari Prasad Lalam</h3>
                 <span>Guest Lecture and Webinar Head</span>
               </div>
               <ul>
