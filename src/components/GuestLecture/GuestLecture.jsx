@@ -94,8 +94,10 @@ class GuestLectures extends React.Component {
                               <h4>Webinar: <b>31st March: 7:00 pm to 8:30 am</b></h4>
                               <h3>Guest: <b> Kavia Anand</b></h3>
                               <h4>Topic of Discussion: <b>From Discovery to Deployment: The Environmental Impact of Lithium-Based Technologies</b></h4>
+                              <div className="btn-box" style={{ marginBottom: "20px",display:"flex",flexDirection:"row", justifyContent:"center" }}>
                               <a href="https://forms.gle/KK4aA8uLC8syYwzA9" className="btn btn-secondary" target="_blank" replace>Register Here</a><br/>
                               <a href="https://teams.microsoft.com/l/meetup-join/19%3acb4c41689bc64af7959ebc97c76b8287%40thread.tacv2/1679772292834?context=%7b%22Tid%22%3a%2271dbb522-5704-4537-9f25-6ad2dcd4278d%22%2c%22Oid%22%3a%22249460fa-33f6-4b27-9d03-e73afb4f8a2b%22%7d" className="btn btn-primary" target="_blank">Meet Link</a>
+                              </div>
                               <h4>Microsoft Team Code: <b>4auj2s0</b></h4>
                               <img src={require("../../assets/images/kaviaanand.png")} alt="Speaker" style={{height:"325px", width:"325px", textAlign: "center"}} />
                               <br />
