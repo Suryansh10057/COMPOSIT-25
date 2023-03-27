@@ -49,20 +49,18 @@ class EventMetaclix extends React.Component {
                     Register
                   </Link>
                 )} */}
-                {/* https://forms.gle/nMEvdh9Z5mXs89hq8 */}
-                {/* {userData ? <Link
-                  href="#"
-                  // target="_blank"
+                {userData ? <a
+                  href="https://forms.gle/9LC2aroKHDCa3nEdA"
+                  target="_blank"
                   className="btn btn-primary"
-                  disabled
                 >
                   Submission Link
-                </Link> :
+                </a> :
                 <Link to="/login" className="btn btn-primary">Login to Submit</Link>
                 }
-                <Link to="#" className="btn btn-secondary" disabled>
+                <a href="https://drive.google.com/file/d/1yNALvqJkc0ioCggPHkyzR61Id4OdzO6g/view?usp=sharing" className="btn btn-secondary" target="_blank">
                   Rules & Regulations
-                </Link> */}
+                </a>
               </div>
             </div>
           </div>
