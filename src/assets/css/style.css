@@ -5138,5 +5138,47 @@ Back To Top CSS
   margin-right: 0;
 }
 
+.guest-flex {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: row;
+}
+
+.guest-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.guest-left-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 7px;
+  line-height: 20px;
+}
+
+.guest-left-pane img {
+  min-height: 325px;
+  min-width: 325px;
+  margin-bottom: 10px;
+}
+
+.guest-title {
+  margin-bottom: 20px;
+}
+
+.accordion-item .schedule-info .guest-title h4 {
+  color: #150070;
+  padding: 8px;
+}
+
+.accordion-item .schedule-info span {
+  /* font-size: 14px; */
+  font-weight: 500;
+  color: #150050;
+}
 
 /*# sourceMappingURL=style.css.map */
