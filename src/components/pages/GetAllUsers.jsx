@@ -56,10 +56,11 @@ const GetAllUsers = () => {
                         {/* <td>EMAIL</td> */}
                         <td>DEPARTMENT</td>
                         <td>INSTITUTION</td>
-                        {/* <td>REF ID</td> */}
+                        <td>REF ID</td>
                         <td>CONTACT</td>
                         {/* <td>ADDRESS</td> */}
-                        <td>GENDER</td>
+                        {/* <td>GENDER</td> */}
+                        {/* <td>Reg Date</td> */}
                     </tr>
             {registrations?.map((element, i) => (
                     <tr key={i}>
@@ -69,10 +70,11 @@ const GetAllUsers = () => {
                         {/* <td>{element.email}</td> */}
                         <td>{element.department}</td>
                         <td>{element.institution}</td>
-                        {/* <td>{element.refID}</td> */}
+                        <td>{element.refId}</td>
                         <td>{element.contact}</td>
                         {/* <td>{element.address}</td> */}
                         {/* <td>{element.gender}</td> */}
+                        {/* <td>{element.createdAt}</td> */}
                     </tr>
                 ))}
             </table>
