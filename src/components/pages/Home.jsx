@@ -62,7 +62,7 @@ class Home extends React.Component {
                 <div className="loginPopup" id='loginPopup'>
                     <div className="formPopup2" id="popupForm">
                         <p className='popupMsg2'>Accommodation facility is available for people attending the fest offline at IIT KHARAGPUR.</p>
-                        <p className='popupMsg2'>Participation in any event is free of cost, however if you need accommodation, you need to pay Rs.300 in Cash, for dormitory room.</p>
+                        <p className='popupMsg2'>Participation in any event is free of cost, however if you need accommodation, you need to pay Rs.300 in Cash, for accommodation in dormitory room.</p>
                         {/* <Link to="/login" className='popupLink2'>Login now to register for event</Link> */}
                     </div>
                 </div>
