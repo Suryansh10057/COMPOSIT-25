@@ -102,7 +102,7 @@ class GuestLectures extends React.Component {
                         <li className="accordion-item">
                             <div className="schedule-info">
                             <div className="guest-title">
-                              <h4>Webinar: <span>31st March: 7:00 pm to 8:30 am</span></h4>
+                              <h4>Webinar: <span>31st March: 7:00 pm to 8:30 pm</span></h4>
                               <h4>Guest: <span> Kavia Anand</span></h4>
                               <h4>Topic of Discussion: <span>From Discovery to Deployment: The Environmental Impact of Lithium-Based Technologies</span></h4>
                             </div>
@@ -368,9 +368,11 @@ class GuestLectures extends React.Component {
                       <ul className="accordion">
                         <li className="accordion-item">
                             <div className="schedule-info">
-                              <h4>Workshop: <b>2nd April: 3:30 pm to 5:00 pm</b></h4>
-                              <h3>Guest: <b>MS Sharma</b></h3>
-                              <h4>Topic of Discussion: <b> Making & Shaping of effective leaders in organization and entrepreneurship through inner engineering</b></h4>
+                            <div className="guest-title">
+                              <h4>Workshop: <span>2nd April: 3:30 pm to 5:00 pm</span></h4>
+                              <h4>Guest: <span>MS Sharma</span></h4>
+                              <h4>Topic of Discussion: <span> Making & Shaping of effective leaders in organization and entrepreneurship through inner engineering</span></h4>
+                            </div>
                               <img src={require("../../assets/images/mssharma.png")} alt="Speaker" style={{height:"325px", width:"325px", textAlign: "center"}} />
                               {/* <br />
                               <h4>Educational Background</h4>
