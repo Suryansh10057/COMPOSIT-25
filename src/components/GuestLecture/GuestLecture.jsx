@@ -32,6 +32,7 @@ class GuestLectures extends React.Component {
                             <div className="schedule-info">
                               <div className="guest-title">
                               <h4>Guest Lecture: <span>1st April: 10:00 am to 11:30 am</span></h4>
+                              <h4>Venue: <span>IIT Kharagpur(Offline)</span></h4>
                               <h4>Guest: <span>Professor Aloke Paul</span></h4>
                               <h4>Topic of Discussion: <span>Multicomponent Diffusion</span></h4>
                               </div>
@@ -51,12 +52,6 @@ class GuestLectures extends React.Component {
                               <p>Prof. Paul's research interests lie in the areas of different aspects of diffusion-controlled growth of the phases and microstructural evolution in complex multicomponent materials.</p>
                               <h4>Awards and Honors</h4>
                               <p>Prof. Paul has received several prestigious awards and honors for his outstanding contributions to the field of control systems. Notably, he was awarded the Shanti Swarup Bhatnagar Prize in 2017, Metallurgist of the year award in 2014 by the Government of India. He also received Outstanding Young Faculty Award of the Indian chapter of Microsoft Research. And Many more.</p>
-                              <h4>Publications</h4>
-                              <p>Prof. Paul has published over 120+ Journal articles and more than 167 Publications over the wide range of topics related to Diffusion in Materials.</p>
-                              <h4>Professional affiliations</h4>
-                              <p>Prof. Paul elected as Fellow of Indian National Science Academy, 2023. And Fellow of Indian Academy of sciences, 2020. Prof. Paul was a International Panel Advisory Member, Diffusion in Materials (DIMAT). Project Advisory Committee (PAC) member, Science and Engineering Research Board (SERB).</p>
-                              <h4>Teaching and Mentorship</h4>
-                              <p> Prof. Paul is a highly regarded teacher and mentor, and has supervised numerous doctoral and master's students who have gone on to pursue successful careers in academia and industry. He is also actively involved in developing and teaching courses on control systems at IISc Bangalore. Aloke Paul is known to have made notable contribution in the field of solid state diffusion. While at Eindhoven University of Technology, he was among the group of scientists who made pathbreaking discovery showing previously unknown phenomena related to the Kirkendall effect leading to finer understanding based on new models, which are included in the textbooks.</p>
                               </div>
                               </div>
                           </div>
@@ -103,10 +98,11 @@ class GuestLectures extends React.Component {
                             <div className="schedule-info">
                             <div className="guest-title">
                               <h4>Webinar: <span>31st March: 7:00 pm to 8:30 pm</span></h4>
+                              <h4>Venue: <span>Microsoft Teams(Online)</span></h4>
                               <h4>Guest: <span> Kavia Anand</span></h4>
                               <h4>Topic of Discussion: <span>From Discovery to Deployment: The Environmental Impact of Lithium-Based Technologies</span></h4>
                             </div>
-                            <h5 style={{textAlign: "center"}}>Register to get a Certificate</h5>
+                            <h5 style={{textAlign: "center",color:"red"}}>Note: You will get the certificate only if you register and attend the webinar</h5>
                               <div className="btn-box" style={{ marginBottom: "20px",display:"flex",flexDirection:"row", justifyContent:"center" }}>
                               <a href="https://forms.gle/KK4aA8uLC8syYwzA9" className="btn btn-secondary" target="_blank" replace>Register Here</a><br/>
                               <a href="https://teams.microsoft.com/l/meetup-join/19%3acb4c41689bc64af7959ebc97c76b8287%40thread.tacv2/1679772292834?context=%7b%22Tid%22%3a%2271dbb522-5704-4537-9f25-6ad2dcd4278d%22%2c%22Oid%22%3a%22249460fa-33f6-4b27-9d03-e73afb4f8a2b%22%7d" className="btn btn-primary" target="_blank">Meet Link</a>
@@ -175,6 +171,7 @@ class GuestLectures extends React.Component {
                             <div className="schedule-info">
                             <div className="guest-title">
                               <h4>Webinar: <span>1st April: 9:00 am to 10:00 am</span></h4>
+                              <h4>Venue: <span>Microsoft Teams(Online)</span></h4>
                               <h4>Guest: <span>Ram Seshadri</span></h4>
                               <h4>Topic of Discussion: <span>Preparing figures for publications and presentations</span> </h4>
                             </div>
@@ -243,6 +240,7 @@ class GuestLectures extends React.Component {
                             <div className="schedule-info">
                             <div className="guest-title">
                               <h4>Webinar: <span>2nd April: 9:00 am to 10:00 am</span></h4>
+                              <h4>Venue: <span>Microsoft Teams(Online)</span></h4>
                               <h4>Guest: <span>Anusheela Das</span></h4>
                               <h4>Topic of Discussion: <span>Roadmap to pursue a research career</span></h4>
                             </div>
@@ -312,6 +310,7 @@ class GuestLectures extends React.Component {
                             <div className="schedule-info">
                             <div className="guest-title">
                               <h4>Workshop: <span>1st April: 2:00 pm to 4:00 pm</span></h4>
+                              <h4>Venue: <span>IIT Kharagpur(Offline)</span></h4>
                               <h4>Guest: <span>Akash Verma, Dr. Chaitra K</span></h4>
                               <h4>Organizers:  <span>COMPOSIT in association with Log9 Materials</span></h4>
                               <h4>Topic of Discussion: <span> Energy Storage Technologies</span></h4>
@@ -370,25 +369,28 @@ class GuestLectures extends React.Component {
                             <div className="schedule-info">
                             <div className="guest-title">
                               <h4>Workshop: <span>2nd April: 3:30 pm to 5:00 pm</span></h4>
-                              <h4>Guest: <span>MS Sharma</span></h4>
-                              <h4>Topic of Discussion: <span> Making & Shaping of effective leaders in organization and entrepreneurship through inner engineering</span></h4>
+                              <h4>Venue: <span>IIT Kharagpur(Offline)</span></h4>
+                              <h4>Guest: <span>Sant Swaroop Sharma</span></h4>
+                              <h4>Topic of Discussion: <span> Making & Shaping of effective leaders in organization and entrepreneurship through inner engineering </span></h4>
                             </div>
+                              <div className="guest-flex">
+                              <div className="guest-left-pane">
                               <img src={require("../../assets/images/mssharma.png")} alt="Speaker" style={{height:"325px", width:"325px", textAlign: "center"}} />
-                              {/* <br />
+                              <h5>Sant Swaroop Sharma</h5>
+                              <h6>Materials Engineer, Consultant to McKenzie and DuPont</h6>
+                              <br />
+                              </div>
+                              <div className="guest-info">
                               <h4>Educational Background</h4>
                               <p>
-                              He completed his BTech in Metallurgy in 1983{" "}
+                              Mr. Sharma completed his B. Tech  in Metallurgical Engineering from NIT Rourkela (1983),   M. Tech in Production management from NIT Jamshedpur (1990) and MBA from XLRI-Jamshedpur(1999).{" "}
                               </p>
                               <h4>Area of Expertise</h4>
-                              <p>Prof. Paul's research interests lie in the areas of different aspects of diffusion-controlled growth of the phases and microstructural evolution in complex multicomponent materials.</p>
-                              <h4>Awards and Honors</h4>
-                              <p>Prof. Paul has received several prestigious awards and honors for his outstanding contributions to the field of control systems. Notably, he was awarded the Shanti Swarup Bhatnagar Prize in 2017, Metallurgist of the year award in 2014 by the Government of India. He also received Outstanding Young Faculty Award of the Indian chapter of Microsoft Research. And Many more.</p>
-                              <h4>Publications</h4>
-                              <p>Prof. Paul has published over 120+ Journal articles and more than 167 Publications over the wide range of topics related to Diffusion in Materials.</p>
-                              <h4>Professional affiliations</h4>
-                              <p>Prof. Paul elected as Fellow of Indian National Science Academy, 2023. And Fellow of Indian Academy of sciences, 2020. Prof. Paul was a International Panel Advisory Member, Diffusion in Materials (DIMAT). Project Advisory Committee (PAC) member, Science and Engineering Research Board (SERB).</p>
-                              <h4>Teaching and Mentorship</h4>
-                              <p> Prof. Paul is a highly regarded teacher and mentor, and has supervised numerous doctoral and master's students who have gone on to pursue successful careers in academia and industry. He is also actively involved in developing and teaching courses on control systems at IISc Bangalore. Aloke Paul is known to have made notable contribution in the field of solid state diffusion. While at Eindhoven University of Technology, he was among the group of scientists who made pathbreaking discovery showing previously unknown phenomena related to the Kirkendall effect leading to finer understanding based on new models, which are included in the textbooks.</p> */}
+                              <p>Mr. Sharma is a materials engineer with expertise in improvements in the areas of Safety and Business Excellence.</p>
+                              <h4>Experience</h4>
+                              <p> Mr. Sharma joined as a Graduate Trainee in 1983 in Tata Steel and worked in various departments under various capacities for 26 years and superannuated from JSW Steel as Sr.Vice President. Presently working as a consultant to McKenzie and DuPont for improvements in the areas of Safety and Business Excellence</p>
+                            </div>
+                            </div>
                             </div>
                         </li>
                       </ul>
