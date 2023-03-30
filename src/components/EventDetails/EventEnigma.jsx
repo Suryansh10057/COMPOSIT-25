@@ -101,15 +101,7 @@ class EventEnigma extends React.Component {
                               <h3>Enigma</h3>
 
                               <p>
-                                This is a quizzing event to race the astute
-                                minds and test them on numerous topics with a
-                                unique variety of questions from crosswords to
-                                rapid fires. Solve the case questions on the FB
-                                page and get a chance to have a go against
-                                bright minds in the quiz round. A true test for
-                                enthusiasts in technology, science and engineering
-                                with fun puzzles — There won’t be a moment of
-                                apathy with abundance of learning!
+                              This is a quizzing event to race astute minds and test them on numerous topics with a unique variety of questions covering science, engineering and cutting-edge tech. Solve the questions and get the chance to have a go against bright minds in a full-fledged online quiz. A true test for nerds in technology, science and engineering and fun puzzles. There won’t be a moment of apathy with an abundance of learning!
                               </p>
 
                               {/* <ul>
@@ -136,7 +128,7 @@ class EventEnigma extends React.Component {
                                 <li>
                                   {" "}
                                   Participation can be individual or in a team
-                                  of a maximum of two participants.{" "}
+                                  of a maximum of three participants.{" "}
                                 </li>
                                 <li>
                                   {" "}
@@ -154,13 +146,12 @@ class EventEnigma extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              <h3>Qualification Criteria for Final Round</h3>
+                              <h3>Winning Criteria</h3>
 
                               <ul>
                                 <li>
                                   {" "}
-                                  Top ‘6’ teams who score the highest in the
-                                  online round after 2 weeks{" "}
+                                  The final leaderboard will be made by combining the overall marks and time score of both rounds.{" "}
                                 </li>
                               </ul>
                             </div>
@@ -173,20 +164,14 @@ class EventEnigma extends React.Component {
 
                             <div className="schedule-info">
                               <h3>Rounds of the Event</h3>
-                              <p>The event will have two rounds as follows:</p>
+                              <p>The event will have two rounds as follows, both of which will be conducted on UnStop:</p>
 
                               <ul>
                                 <li>
-                                  <b>Qualifying round (Online):</b>
+                                  <b>Prelims round (Online):</b>
                                   <ul>
                                     <li>
-                                      Questions will be released on the social
-                                      media handles of COMPOSIT where the
-                                      participants have to submit their answers
-                                      in the google form link provided and on
-                                      the basis of scores and consistency the
-                                      top 6 teams will be selected for the final
-                                      round of the quiz.
+                                    This round will be held in the form of an online quiz on UnStop. All participants must be registered on the website in order to be eligible for the prizes. Questions will cover general science, mathematics and engineering, including logic puzzles and test basic college-level knowledge. There will be 11 questions that must be solved within 20 minutes in the window provided.
                                     </li>
                                   </ul>
                                 </li>
@@ -196,10 +181,7 @@ class EventEnigma extends React.Component {
                                   <b>Final Round:</b>
                                   <ul>
                                     <li>
-                                      The final round will be held in offline
-                                      mode where the participants will be
-                                      competing against each other in various
-                                      exciting rounds.
+                                    The final round will be held in online mode covering the same scope as the prelims round although the questions will be harder.
                                     </li>
                                   </ul>
                                 </li>
