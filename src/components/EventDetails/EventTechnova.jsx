@@ -203,8 +203,8 @@ class EventTechnova extends React.Component {
                                   <b>Abstract Submission Deadline:</b>
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>25th
-                                  March 2023, 11:59 PM
+                                  <i className="icofont-wall-clock"></i>1st
+                                  April 2023, 11:59 PM
                                 </li>
                                 <br></br>
                                 <br></br>

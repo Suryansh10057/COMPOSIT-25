@@ -49,17 +49,16 @@ class EventSchoolquiz extends React.Component {
                     Register
                   </Link>
                 )} */}
-                {/* {userData ? <a
-                  href="https://forms.gle/ti7htqPaNeGvoKXC9"
+                {userData ? <a
+                  href="https://forms.gle/55yRrTe4MHQ7eKSi7"
                   target="_blank"
                   className="btn btn-primary"
-                  disabled
                 >
                   Registration Link
                 </a> :
                 <Link to="/login" className="btn btn-primary">Login to Register</Link>
                 }
-                <Link
+                {/* <Link
                   to="#"
                 //   target="_blank"
                   className="btn btn-secondary"
