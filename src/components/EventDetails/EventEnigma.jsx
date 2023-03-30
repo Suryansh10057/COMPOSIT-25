@@ -107,7 +107,7 @@ class EventEnigma extends React.Component {
                                 rapid fires. Solve the case questions on the FB
                                 page and get a chance to have a go against
                                 bright minds in the quiz round. A true test for
-                                nerds in technology, science and engineering
+                                enthusiasts in technology, science and engineering
                                 with fun puzzles — There won’t be a moment of
                                 apathy with abundance of learning!
                               </p>
