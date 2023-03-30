@@ -40,26 +40,15 @@ class EventExcavate extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-                {/* {userData ? (
-                  <Link to="#" className="btn btn-secondary">
-                    Register
-                  </Link>
-                ) : (
-                  <Link to="/signup" className="btn btn-secondary">
-                    Register
-                  </Link>
-                )} */}
-                {/* https://forms.gle/LevgxQcnpKahxHM4A */}
-                {/* {userData ? <Link
-                  href="#"
-                  // target="_blank"
-                  className="btn btn-secondary"
-                  disabled
+                {userData ? <a
+                  href="https://forms.gle/pDivTcxotFdThgYy7"
+                  target="_blank"
+                  className="btn btn-primary"
                 >
                   Submission Link
-                </Link> :
-                <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
-                } */}
+                </a> :
+                  <Link to="/login" className="btn btn-primary">Login to Submit</Link>
+                }
                 <a
                   href="https://drive.google.com/file/d/1kqDIad3xbW4toWG911TsBtKr0UnAYXXA/view?usp=sharing"
                   target="_blank"
