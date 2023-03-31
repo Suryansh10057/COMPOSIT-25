@@ -122,10 +122,10 @@ class Sponsor extends React.Component {
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                    <Link to="/sponsors" target="_blank">
+                  <a href="http://metatechind.com/" target="_blank">
                                         <img src={require("../../assets/images/metatech.PNG")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/metatech.PNG")} alt="Partner Logo" />
-                                    </Link>
+                                        </a>
                   </div>
                 </div>
 
