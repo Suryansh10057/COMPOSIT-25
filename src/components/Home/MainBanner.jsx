@@ -77,14 +77,14 @@ class MainBanner extends React.Component {
                         </div>
                     </div>
     
-                    <div className="event-countdown">
+                    {/* <div className="event-countdown">
                         <div id="timer">
                             <div id="days">{this.state.days} <span>Days</span></div>
                             <div id="hours">{this.state.hours - 12} <span>Hours</span></div>
                             <div id="minutes">{this.state.minutes} <span>Minutes</span></div>
                             <div id="seconds">{this.state.seconds} <span>Seconds</span></div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="shape1">
                         <img src={require("../../assets/images/shapes/1.png")} alt="shape1" />

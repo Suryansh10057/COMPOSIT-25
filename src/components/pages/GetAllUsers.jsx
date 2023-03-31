@@ -53,12 +53,12 @@ const GetAllUsers = () => {
                         <td>S.No</td>
                         <td>Name</td>
                         <td>REG ID</td>
-                        {/* <td>EMAIL</td> */}
+                        <td>EMAIL</td>
                         <td>DEPARTMENT</td>
                         <td>INSTITUTION</td>
                         <td>REF ID</td>
                         <td>CONTACT</td>
-                        {/* <td>ADDRESS</td> */}
+                        <td>ADDRESS</td>
                         {/* <td>GENDER</td> */}
                         {/* <td>Reg Date</td> */}
                     </tr>
@@ -67,12 +67,12 @@ const GetAllUsers = () => {
                         <td>{i+1}</td>
                         <td>{element.name}</td>
                         <td>{element.regID}</td>
-                        {/* <td>{element.email}</td> */}
+                        <td>{element.email}</td>
                         <td>{element.department}</td>
                         <td>{element.institution}</td>
                         <td>{element.refId}</td>
                         <td>{element.contact}</td>
-                        {/* <td>{element.address}</td> */}
+                        <td>{element.address}</td>
                         {/* <td>{element.gender}</td> */}
                         {/* <td>{element.createdAt}</td> */}
                     </tr>
