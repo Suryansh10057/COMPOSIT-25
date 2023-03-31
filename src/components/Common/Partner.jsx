@@ -68,11 +68,11 @@ class Partner extends React.Component {
           </div>
 
           <div className="row">
-              <div className="col-lg-12">
+              {/* <div className="col-lg-12">
                 <div className="partner-title gold-sponsor">
                   <GoldSponsors />
                 </div>
-              </div>
+              </div> */}
 
               <OwlCarousel
                 className="gold-partner-slides owl-carousel owl-theme"
@@ -163,7 +163,7 @@ class Partner extends React.Component {
                 </div>
               </OwlCarousel>
 
-              <div className="col-lg-12">
+              {/* <div className="col-lg-12">
                 <div className="border"></div>
               </div>
 
@@ -175,7 +175,7 @@ class Partner extends React.Component {
               <OwlCarousel
                 className="platinum-partner-slides owl-carousel owl-theme"
                 {...options}
-              >
+              > */}
                 {/* <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <a
@@ -194,7 +194,7 @@ class Partner extends React.Component {
                   </div>
                 </div> */}
 
-                <div className="col-lg-12 col-md-12">
+                {/* <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <a href="https://couponswala.com/" target="_blank">
                       <img
@@ -507,7 +507,7 @@ class Partner extends React.Component {
                     </a>
                   </div>
                 </div>
-              </OwlCarousel>
+              </OwlCarousel> */}
             </div>
         </div>
       </section>

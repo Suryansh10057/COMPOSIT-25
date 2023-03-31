@@ -55,7 +55,7 @@ class Sponsor extends React.Component {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>Sponsors</li>
+              {/* <li>Sponsors</li> */}
             </ul>
           </div>
         </div>
@@ -79,6 +79,7 @@ class Sponsor extends React.Component {
                                         <img src={require("../../assets/images/tatametaliks.jpg")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/tatametaliks.jpg")} alt="Partner Logo" />
                                     </a>
+                                    <h5 className="py-5">Title Sponsors</h5>
                   </div>
                 </div>
 
@@ -88,6 +89,7 @@ class Sponsor extends React.Component {
                                         <img src={require("../../assets/images/incredible.JPG")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/incredible.JPG")} alt="Partner Logo" />
                                     </a>
+                                    <h5 className="py-5">Major Sponsors</h5>
                   </div>
                 </div>
 
@@ -138,6 +140,15 @@ class Sponsor extends React.Component {
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
+                    <a href="https://iconanalytical.com/" target="_blank">
+                                        <img src={require("../../assets/images/iconAnalytical.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/images/iconAnalytical.png")} alt="Partner Logo" />
+                                    </a>
+                  </div>
+                </div>
+
+                <div className="col-lg-12 col-md-12 p-5">
+                  <div className="partner-item">
                     <a
                       href="https://instagram.com/greysocialpopcorns?igshid=ZDdkNTZiNTM="
                       target="_blank"
@@ -155,11 +166,11 @@ class Sponsor extends React.Component {
                 </div>
               </OwlCarousel>
 
-              <div className="col-lg-12">
+              {/* <div className="col-lg-12">
                 <div className="border"></div>
-              </div>
+              </div> */}
 
-              <div className="col-lg-12">
+              {/* <div className="col-lg-12">
                 <div className="partner-title platinum-sponsor">
                   <PlatinumSponsors />
                 </div>
@@ -167,7 +178,7 @@ class Sponsor extends React.Component {
               <OwlCarousel
                 className="platinum-partner-slides owl-carousel owl-theme"
                 {...options}
-              >
+              > */}
                 {/* <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <a
@@ -186,7 +197,7 @@ class Sponsor extends React.Component {
                   </div>
                 </div> */}
 
-                <div className="col-lg-12 col-md-12">
+                {/* <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <a href="https://couponswala.com/" target="_blank">
                       <img
@@ -499,7 +510,7 @@ class Sponsor extends React.Component {
                     </a>
                   </div>
                 </div>
-              </OwlCarousel>
+              </OwlCarousel> */}
             </div>
           </div>
         </section>
