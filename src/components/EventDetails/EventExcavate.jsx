@@ -40,6 +40,13 @@ class EventExcavate extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
+              <a
+                  href="https://drive.google.com/file/d/1opbqzg9JpcxYx2pEAJQ8TOYF8-GrkURK/view?usp=sharing"
+                  className="btn btn-secondary"
+                  target="_blank"
+                >
+                  Problem Statement
+                </a>
                 {userData ? <a
                   href="https://forms.gle/pDivTcxotFdThgYy7"
                   target="_blank"
