@@ -153,30 +153,20 @@ class EventExcavate extends React.Component {
 
                               <ul>
                                 <li>
-                                  <b>Knockout round (Online):</b>
+                                  <b>Round 1 (Online):</b>
                                   <ul>
                                     <li>
-                                      The problem statement and data set will be
-                                      released on Day 0 of COMPOSIT. This round
-                                      will be conducted in the form of a 24 hour
-                                      data science hackathon. Teams will be
-                                      ranked according to the accuracy of the
-                                      model predictions on the test set. Top
-                                      teams will be invited for a final
-                                      presentation round of the final report.
+                                    The problem statement will be released after the opening ceremony of COMPOSIT. A time period of 24 hours will be given within which the report should be submitted. Shortlisted reports will be admitted to the next round.
                                     </li>
                                   </ul>
                                 </li>
                                 <br></br>
                                 <br />
                                 <li>
-                                  <b>Final Presentation Round:</b>
+                                  <b>Final Presentation (Online):</b>
                                   <ul>
                                     <li>
-                                      Presentation of the solution and the
-                                      results before a panel of judges who will
-                                      evaluate the models presented by the
-                                      teams.
+                                    Shortlisted teams will be given further questionnaire for the final presentation round. This will judged by a panel and scored based on the model and interpretation. Top teams will be awarded.
                                     </li>
                                   </ul>
                                 </li>
