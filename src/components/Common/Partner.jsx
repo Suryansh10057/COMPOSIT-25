@@ -84,7 +84,9 @@ class Partner extends React.Component {
                                         <img src={require("../../assets/images/tatametaliks.jpg")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/tatametaliks.jpg")} alt="Partner Logo" />
                                     </a>
+                                    <h5 className="py-5">Title Sponsors</h5>
                   </div>
+                 
                 </div>
 
                 <div className="col-lg-12 col-md-12">
@@ -93,6 +95,7 @@ class Partner extends React.Component {
                                         <img src={require("../../assets/images/incredible.JPG")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/incredible.JPG")} alt="Partner Logo" />
                                     </a>
+                                    <h5 className="py-5">Major Sponsors</h5>
                   </div>
                 </div>
 
@@ -142,7 +145,7 @@ class Partner extends React.Component {
                 </div>
 
                 <div className="col-lg-12 col-md-12">
-                  <div className="partner-item">
+                  <div className="partner-item m-5">
                     <a
                       href="https://instagram.com/greysocialpopcorns?igshid=ZDdkNTZiNTM="
                       target="_blank"
