@@ -80,7 +80,7 @@ class MainBanner extends React.Component {
                     <div className="event-countdown">
                         <div id="timer">
                             <div id="days">{this.state.days} <span>Days</span></div>
-                            <div id="hours">{this.state.hours} <span>Hours</span></div>
+                            <div id="hours">{this.state.hours - 12} <span>Hours</span></div>
                             <div id="minutes">{this.state.minutes} <span>Minutes</span></div>
                             <div id="seconds">{this.state.seconds} <span>Seconds</span></div>
                         </div>
