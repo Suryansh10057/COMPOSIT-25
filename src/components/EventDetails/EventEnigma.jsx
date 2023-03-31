@@ -39,30 +39,25 @@ class EventEnigma extends React.Component {
               </div>
             </div>
             <div className="col-lg-13">
-              <div className="btn-box" style={{ marginBottom: "20px" }}>
-                {/* {userData ? (
-                  <Link to="/register_enigma" className="btn btn-primary">
-                    Register
-                  </Link>
-                ) : (
-                  <Link to="/signup" className="btn btn-primary">
-                    Register
-                  </Link>
-                )} */}
-                {/* https://forms.gle/Z6PPQgwzC9rbZRCM6 */}
-                {/* {userData ? <Link
-                  href="#"
-                  // target="_blank"
-                  className="btn btn-secondary"
-                  disabled
+            <div className="btn-box" style={{ marginBottom: "20px" }}>
+              {userData ? <a
+                  href="https://unstop.com/p/enigma-prelims-1-iit-kharagpur-657450"
+                  target="_blank"
+                  className="btn btn-primary"
                 >
-                  Submission Link
-                </Link> :
-                <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
+                   Prelims Round
+                </a> :
+                <Link to="/login" className="btn btn-primary">Login to Participate</Link>
                 }
-                <Link to="#" className="btn btn-secondary" disabled>
-                  Rules & Regulations
-                </Link> */}
+                {userData ? <a
+                  href="https://unstop.com/m/opportunity/657933/step3"
+                  target="_blank"
+                  className="btn btn-primary"
+                >
+                  Final Round
+                </a> :
+                <Link to="/login" className="btn btn-primary">Login to Participate</Link>
+                }
               </div>
             </div>
           </div>
@@ -202,23 +197,23 @@ class EventEnigma extends React.Component {
                               <h3>Important Dates</h3>
 
                               <ul>
-                                <li><b>Coming Soon</b></li>
-                                {/* <li>
-                                  <b>Online Round:</b>
+                                {/* <li><b>31 Mar 23, 07:00 PM IST</b></li>
+                                <li><b>01 Apr 23, 10:00 AM IST</b></li> */}
+                                <li>
+                                  <b>Prelims Round:</b>
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>15th
-                                  March 2023 - 22nd March 2023
+                                  <i className="icofont-wall-clock"></i>
+                                  31 Mar 23, 07:00 PM IST
                                 </li>
                                 <br></br>
                                 <br></br>
                                 <li>
-                                  <b>Final round:</b>
+                                  <b>Final Round:</b>
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>31st
-                                  March 2023
-                                </li> */}
+                                  <i className="icofont-wall-clock"></i>01 Apr 23, 10:00 AM IST
+                                </li>
                               </ul>
                             </div>
                           </Link>
