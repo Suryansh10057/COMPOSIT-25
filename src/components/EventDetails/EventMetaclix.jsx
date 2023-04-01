@@ -50,7 +50,7 @@ class EventMetaclix extends React.Component {
                   </Link>
                 )} */}
                 {userData ? <a
-                  href="https://forms.gle/9LC2aroKHDCa3nEdA"
+                  href="https://forms.gle/JcGpUT9rkMkksVdQ7"
                   target="_blank"
                   className="btn btn-primary"
                 >
