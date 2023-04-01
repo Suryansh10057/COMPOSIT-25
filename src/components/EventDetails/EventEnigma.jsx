@@ -40,12 +40,21 @@ class EventEnigma extends React.Component {
             </div>
             <div className="col-lg-13">
             <div className="btn-box" style={{ marginBottom: "20px" }}>
-              {userData ? <a
+              {/* {userData ? <a
                   href="https://unstop.com/p/enigma-prelims-1-iit-kharagpur-657450"
                   target="_blank"
                   className="btn btn-primary"
                 >
-                   Prelims Round
+                   Prelims Round 1
+                </a> :
+                <Link to="/login" className="btn btn-primary">Login to Participate</Link>
+                } */}
+                {userData ? <a
+                  href="https://unstop.com/p/enigma-prelims-2-iit-kharagpur-657933"
+                  target="_blank"
+                  className="btn btn-secondary"
+                >
+                   Prelims Round 2
                 </a> :
                 <Link to="/login" className="btn btn-primary">Login to Participate</Link>
                 }
