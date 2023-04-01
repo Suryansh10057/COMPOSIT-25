@@ -174,7 +174,7 @@ class EventCasestudy extends React.Component {
                                 <br></br>
                                 <br />
                                 <li>
-                                  <b>Final Presentation Round:</b>
+                                  <b>Final Presentation Round (online):</b>
                                   <ul>
                                     <li>
                                       Presentation will be done before a panel
@@ -203,8 +203,8 @@ class EventCasestudy extends React.Component {
                                   <b>Report Submission:</b>
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>31st
-                                  March 2023 (11:59 PM)
+                                  <i className="icofont-wall-clock"></i>1st
+                                  April 2023
                                 </li>
                                 <br></br>
                                 <br></br>
@@ -212,8 +212,8 @@ class EventCasestudy extends React.Component {
                                   <b>Final presentation:</b>
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>1st
-                                  April 2023
+                                  <i className="icofont-wall-clock"></i>2nd
+                                  April 2023 (till 4pm)
                                 </li>
                               </ul>
                             </div>
