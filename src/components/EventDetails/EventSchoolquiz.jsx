@@ -49,15 +49,13 @@ class EventSchoolquiz extends React.Component {
                     Register
                   </Link>
                 )} */}
-                {userData ? <a
+                <a
                   href="https://unstop.com/quiz/school-quiz-iit-kharagpur-659942"
                   target="_blank"
                   className="btn btn-secondary"
                 >
                   Link to School Quiz
-                </a> :
-                <Link to="/login" className="btn btn-primary">Login to Participate</Link>
-                }
+                </a>
                 {userData ? <a
                   href="https://forms.gle/55yRrTe4MHQ7eKSi7"
                   target="_blank"
