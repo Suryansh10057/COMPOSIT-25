@@ -155,7 +155,7 @@ class PricingOne extends React.Component {
                                 } */}
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                        {/* <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
                                     <h3 className="title">Sixth Sense</h3>
@@ -164,13 +164,13 @@ class PricingOne extends React.Component {
                                     <p>Test your problem solving skills as you analyse real life structure failures and present solutions using modelling softwares.</p>
                                 </ul>
                                 <Link to="/event_cad" className="btn btn-primary">READ MORE</Link>
-                                {/* {userData ?
+                                {userData ?
                                     <Link to="/register_cad" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                } */}
+                                }
                             </div>
-                        </div>
+                        </div> */}
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
