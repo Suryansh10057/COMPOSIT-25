@@ -84,7 +84,7 @@ class Partner extends React.Component {
                                         <img src={require("../../assets/images/tatametaliks.jpg")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/tatametaliks.jpg")} alt="Partner Logo" />
                                     </a>
-                                    <h5 className="py-5">Title Sponsors</h5>
+                                    <h5 className="py-1">Title Sponsors</h5>
                   </div>
                  
                 </div>
@@ -95,7 +95,7 @@ class Partner extends React.Component {
                                         <img src={require("../../assets/images/incredible.JPG")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/incredible.JPG")} alt="Partner Logo" />
                                     </a>
-                                    <h5 className="py-5">Major Sponsors</h5>
+                                    <h5 className="py-1">Major Sponsors</h5>
                   </div>
                 </div>
 
@@ -145,7 +145,16 @@ class Partner extends React.Component {
                 </div>
 
                 <div className="col-lg-12 col-md-12">
-                  <div className="partner-item m-5">
+                  <div className="partner-item">
+                    <a href="https://iconanalytical.com/" target="_blank">
+                                        <img src={require("../../assets/images/iconAnalytical.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/images/iconAnalytical.png")} alt="Partner Logo" />
+                                    </a>
+                  </div>
+                </div>
+
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item p-5">
                     <a
                       href="https://instagram.com/greysocialpopcorns?igshid=ZDdkNTZiNTM="
                       target="_blank"

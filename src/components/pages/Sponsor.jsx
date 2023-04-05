@@ -79,7 +79,7 @@ class Sponsor extends React.Component {
                                         <img src={require("../../assets/images/tatametaliks.jpg")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/tatametaliks.jpg")} alt="Partner Logo" />
                                     </a>
-                                    <h5 className="py-5">Title Sponsors</h5>
+                                    <h5 className="py-1">Title Sponsors</h5>
                   </div>
                 </div>
 
@@ -89,7 +89,7 @@ class Sponsor extends React.Component {
                                         <img src={require("../../assets/images/incredible.JPG")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/incredible.JPG")} alt="Partner Logo" />
                                     </a>
-                                    <h5 className="py-5">Major Sponsors</h5>
+                                    <h5 className="py-1">Major Sponsors</h5>
                   </div>
                 </div>
 
@@ -148,7 +148,7 @@ class Sponsor extends React.Component {
                 </div>
 
                 <div className="col-lg-12 col-md-12 p-5">
-                  <div className="partner-item">
+                  <div className="partner-item p-5">
                     <a
                       href="https://instagram.com/greysocialpopcorns?igshid=ZDdkNTZiNTM="
                       target="_blank"

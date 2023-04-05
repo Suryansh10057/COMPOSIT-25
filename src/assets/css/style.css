@@ -369,6 +369,15 @@ label {
 }
 
 /*owl-carousel-btn*/
+
+.owl-stage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 0;
   line-height: .01;
@@ -3095,9 +3104,9 @@ Pricing CSS
   background: #610094;
 }
 
-.col-lg-4:nth-child(3) .pricing-plan .btn-primary::before, .col-lg-4:nth-child(3) .pricing-plan .btn-primary::after {
-  /*background: #8dc63f;*/
-}
+/* .col-lg-4:nth-child(3) .pricing-plan .btn-primary::before, .col-lg-4:nth-child(3) .pricing-plan .btn-primary::after {
+  background: #8dc63f;
+} */
 
 /*================================================
 Partner CSS
