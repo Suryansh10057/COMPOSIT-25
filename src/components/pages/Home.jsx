@@ -64,7 +64,7 @@ class Home extends React.Component {
                         <p className='popupMsg2'>Certificates and awards shall be distributed to the participants via mail within 1 working month.</p>
                         <p className='popupMsg2'>We look forward for the similar enthusiastic performance in our next edition of COMPOSIT!</p>
                         <p className='popupMsg2'>Thank you for participating.</p>
-                        {/* <Link to="/login" className='popupLink2'>Login now to register for event</Link> */}
+                        <Link className='popupLink3' onClick={this.closeForm} >Close</Link>
                     </div>
                 </div>
                 <Footer />
