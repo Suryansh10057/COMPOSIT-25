@@ -153,7 +153,7 @@ class Partner extends React.Component {
                   </div>
                 </div>
 
-                <div className="col-lg-12 col-md-12">
+                {/* <div className="col-lg-12 col-md-12">
                   <div className="partner-item p-5">
                     <a
                       href="https://instagram.com/greysocialpopcorns?igshid=ZDdkNTZiNTM="
@@ -169,7 +169,7 @@ class Partner extends React.Component {
                       />
                     </a>
                   </div>
-                </div>
+                </div> */}
               </OwlCarousel>
 
               {/* <div className="col-lg-12">
