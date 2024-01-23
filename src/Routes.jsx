@@ -68,7 +68,8 @@ const AppRouter = () => {
                 <Route path="/event_schoolquiz" exact component={EventSchoolquizPage} />
                 <Route path="/event_technova" exact component={EventTechnovaPage} />
                 <Route path="/event_techtoon" exact component={EventTechtoonPage} />
-                <Route path="/guestlecture" exact component={GuestLecturePage} />
+                {/* <Route path="/guestlecture" exact component={GuestLecturePage} /> */}
+                <Route path="/guestlecture" exact component={ComingSoon1} />
                 <Route path="/register_metaclix" exact component={RegisterMetaclix} />
                 <Route path="/register_techtoon" exact component={RegisterTechtoon} />
                 <Route path="/register_metallomania" exact component={RegisterMetallomania} />
@@ -87,7 +88,8 @@ const AppRouter = () => {
                 <Route path="/comingSoon" exact component={ComingSoon1} />
                 <Route path="/faq" exact component={Faq} />
                 <Route path="/contact" exact component={Contact} />
-                <Route path="/sponsors" exact component={Sponsor} />
+                {/* <Route path="/sponsors" exact component={Sponsor} /> */}
+                <Route path="/sponsors" exact component={ComingSoon1} />
                 <Route path="/profile" exact component={Profile} />
                 <Route path="/edit-profile" exact component={EditProfile} />
                 <Route path="/popup" exact component={Popup} />

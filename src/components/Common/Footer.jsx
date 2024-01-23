@@ -11,7 +11,7 @@ class Footer extends React.Component {
                             <div className="single-footer-widget">
                                 <h3>Venue Location</h3>
                                 <span>
-                                    <i className="icofont-calendar"></i> 31 March-2 April, 2023
+                                    <i className="icofont-calendar"></i> 15 March-17 March, 2024
                                 </span>
 
                                 <p className="location">
@@ -19,10 +19,10 @@ class Footer extends React.Component {
                                 </p>
 
                                 <p>
-                                    <i className="icofont-phone"></i> Gouri Vignesh Jawalkar( General Secretary ) : 6302468417
+                                    <i className="icofont-phone"></i> Manisha Sahoo( Coordinator ) : 9337220572
                                 </p>
                                 <p>
-                                    <i className="icofont-phone"></i> Riyan Biswas( Student Coordinator ) : 6291079485
+                                    <i className="icofont-phone"></i> Subhrojyoti Mukherjee( Events Head ) : 9112230084
                                 </p>
                             </div>
                         </div>

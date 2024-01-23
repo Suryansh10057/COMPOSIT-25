@@ -59,14 +59,14 @@ class Home extends React.Component {
                 <Partner />
                 {/* Speakers Area */}
                 <Speakers />
-                <div className="loginPopup" id='loginPopup'>
+                {/* <div className="loginPopup" id='loginPopup'>
                     <div className="formPopup2" id="popupForm">
                         <p className='popupMsg2'>Certificates and awards shall be distributed to the participants via mail within 1 working month.</p>
                         <p className='popupMsg2'>We look forward for the similar enthusiastic performance in our next edition of COMPOSIT!</p>
                         <p className='popupMsg2'>Thank you for participating.</p>
                         <Link className='popupLink3' onClick={this.closeForm} >Close</Link>
                     </div>
-                </div>
+                </div> */}
                 <Footer />
 
                 {/* Back Top top */}

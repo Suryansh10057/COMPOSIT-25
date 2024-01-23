@@ -25,16 +25,6 @@ class SpeakersOne extends React.Component {
                 <span>Faculty Advisor</span>
               </div>
               <ul>
-                {/* <li>
-                                    <a href="https://www.facebook.com/gourivignesh.sjawalkar" target="_blank" className="facebook">
-                                        <i className="icofont-facebook"></i>
-                                    </a>
-                                </li> */}
-                {/* <li>
-                                    <Link to="#" target="_blank" className="twitter">
-                                        <i className="icofont-twitter"></i>
-                                    </Link>
-                                </li> */}
                 <li>
                   <a
                     href="mailto:siddhartha@metal.iitkgp.ac.in"
@@ -68,16 +58,6 @@ class SpeakersOne extends React.Component {
                 <span>Faculty Advisor</span>
               </div>
               <ul>
-                {/* <li>
-                                    <a href="https://www.facebook.com/gourivignesh.sjawalkar" target="_blank" className="facebook">
-                                        <i className="icofont-facebook"></i>
-                                    </a>
-                                </li> */}
-                {/* <li>
-                                    <Link to="#" target="_blank" className="twitter">
-                                        <i className="icofont-twitter"></i>
-                                    </Link>
-                                </li> */}
                 <li>
                   <a
                     href="mailto:manas.paliwal@metal.iitkgp.ac.in"
@@ -101,65 +81,12 @@ class SpeakersOne extends React.Component {
           </div>
           <div className="section-title">
             <h2>
-              Our Governor
+              Our Advisors
             </h2>
 
             <div className="bar"></div>
           </div>
-          <div className="col-lg-3 col-md-6 p-0">
-            <div className="single-speakers">
-              <img
-                src={require("../../assets/images/abhishek.jpg")}
-                alt="speakers"
-              />
 
-              <div className="speakers-content">
-                <h3 style={{ color: "#fec66d" }}>Abhishek Kumar</h3>
-                <span>Governor</span>
-              </div>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/Abhishekbhattacharyy"
-                    target="_blank"
-                    className="facebook"
-                  >
-                    <i className="icofont-facebook"></i>
-                  </a>
-                </li>
-                {/* <li>
-                                    <Link to="#" target="_blank" className="twitter">
-                                        <i className="icofont-twitter"></i>
-                                    </Link>
-                                </li> */}
-                <li>
-                  <a
-                    href="mailto:cvkumar.abhishek@gmail.com"
-                    target="_blank"
-                    className="twitter"
-                  >
-                    <i className="icofont-envelope"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/abhishek-kumar-788413203/"
-                    target="_blank"
-                    className="linkedin"
-                  >
-                    <i className="icofont-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="section-title">
-            <h2>
-              Our Heads
-            </h2>
-
-            <div className="bar"></div>
-          </div>
           <div className="col-lg-3 col-md-6 p-0">
             <div className="single-speakers">
               <img
@@ -169,7 +96,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Gouri Vignesh Jawalkar</h3>
-                <span>General Secretary</span>
+                {/* <span>General Secretary</span> */}
               </div>
               <ul>
                 <li>
@@ -217,7 +144,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Riyan Biswas</h3>
-                <span>Student Coordinator & Finance Head</span>
+                {/* <span>Student Coordinator & Finance Head</span> */}
               </div>
               <ul>
                 {/* <li>
@@ -261,7 +188,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Ishan Gupta</h3>
-                <span>Design Head</span>
+                {/* <span>Design Head</span> */}
               </div>
               <ul>
                 {/* <li>
@@ -305,7 +232,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Karabi Saha</h3>
-                <span>Events Head</span>
+                {/* <span>Events Head</span> */}
               </div>
               <ul>
                 <li>
@@ -353,7 +280,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Ramona Kodkani</h3>
-                <span>Events Head</span>
+                {/* <span>Events Head</span> */}
               </div>
               <ul>
                 {/* <li>
@@ -394,7 +321,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Priya Kumari</h3>
-                <span>Events Head</span>
+                {/* <span>Events Head</span> */}
               </div>
               <ul>
                 {/* <li>
@@ -438,7 +365,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Nitish Kumar</h3>
-                <span>Guest Lecture and Webinar Head</span>
+                {/* <span>Guest Lecture and Webinar Head</span> */}
               </div>
               <ul>
                 <li>
@@ -482,7 +409,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Hari Prasad Lalam</h3>
-                <span>Guest Lecture and Webinar Head</span>
+                {/* <span>Guest Lecture and Webinar Head</span> */}
               </div>
               <ul>
                 <li>
@@ -530,7 +457,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Gourav Pathak</h3>
-                <span>Publicity and Hospitality Head</span>
+                {/* <span>Publicity and Hospitality Head</span> */}
               </div>
               <ul>
                 <li>
@@ -578,7 +505,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Alluri Hasitha</h3>
-                <span>Publicity and Hospitality Head</span>
+                {/* <span>Publicity and Hospitality Head</span> */}
               </div>
               <ul>
                 {/* <li>
@@ -622,7 +549,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Prabodh Kumar Singh</h3>
-                <span>Sponsorship Head</span>
+                {/* <span>Sponsorship Head</span> */}
               </div>
               <ul>
                 <li>
@@ -666,7 +593,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Sudarshana Jaiswal</h3>
-                <span>Sponsorship Head</span>
+                {/* <span>Sponsorship Head</span> */}
               </div>
               <ul>
                 {/* <li>
@@ -710,7 +637,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Abyuday Agarwal</h3>
-                <span>Web Development Head</span>
+                {/* <span>Web Development Head</span> */}
               </div>
               <ul>
                 {/* <li>
@@ -754,7 +681,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Ananay Singh</h3>
-                <span>Web Development Head</span>
+                {/* <span>Web Development Head</span> */}
               </div>
               <ul>
                 <li>
@@ -792,6 +719,271 @@ class SpeakersOne extends React.Component {
               </ul>
             </div>
           </div>
+          
+          <div className="section-title">
+            <h2>
+              Our Heads
+            </h2>
+
+            <div className="bar"></div>
+          </div>
+          
+          {/* Current Heads */}
+
+          <div className="col-lg-3 col-md-6 p-0">
+            <div className="single-speakers">
+              <img
+                src={require("../../assets/images/manisha1.jpg")}
+                alt="speakers"
+              />
+
+              <div className="speakers-content">
+                <h3 style={{ color: "#fec66d" }}>Manisha Sahoo</h3>
+                <span>Coordinator</span>
+              </div>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100075561559224&mibextid=ZbWKwL"
+                    target="_blank"
+                    className="facebook"
+                  >
+                    <i className="icofont-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:manishasahoo995@gmail.com"
+                    target="_blank"
+                    className="twitter"
+                  >
+                    <i className="icofont-envelope"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/manisha-sahoo-33186022b"
+                    target="_blank"
+                    className="linkedin"
+                  >
+                    <i className="icofont-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 p-0">
+            <div className="single-speakers">
+              <img
+                src={require("../../assets/images/manisha1.jpg")}
+                alt="speakers"
+              />
+
+              <div className="speakers-content">
+                <h3 style={{ color: "#fec66d" }}>Bhandhavya Bodapati</h3>
+                <span>Content Creation Head</span>
+              </div>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100075561559224&mibextid=ZbWKwL"
+                    target="_blank"
+                    className="facebook"
+                  >
+                    <i className="icofont-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:manishasahoo995@gmail.com"
+                    target="_blank"
+                    className="twitter"
+                  >
+                    <i className="icofont-envelope"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/manisha-sahoo-33186022b"
+                    target="_blank"
+                    className="linkedin"
+                  >
+                    <i className="icofont-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 p-0">
+            <div className="single-speakers">
+              <img
+                src={require("../../assets/images/harsh.jpg")}
+                alt="speakers"
+              />
+
+              <div className="speakers-content">
+                <h3 style={{ color: "#fec66d" }}>Harshvardhan</h3>
+                <span>Sponsorship Head</span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" className="facebook">
+                    <i className="icofont-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:neerajsharmasony@gmail.com"
+                    target="_blank"
+                    className="twitter"
+                  >
+                    <i className="icofont-envelope"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="Www.linkedin.com/in/harshvardhan-4a76"
+                    target="_blank"
+                    className="linkedin"
+                  >
+                    <i className="icofont-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 p-0">
+            <div className="single-speakers">
+              <img
+                src={require("../../assets/images/mayuresh1.jpg")}
+                alt="speakers"
+              />
+
+              <div className="speakers-content">
+                <h3 style={{ color: "#fec66d" }}>Mayuresh Lohani</h3>
+                <span>Web Development Head</span>
+              </div>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100075318804727&mibextid=ZbWKwL"
+                    target="_blank"
+                    className="facebook"
+                  >
+                    <i className="icofont-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:lohanimayuresh2551@gmail.com"
+                    target="_blank"
+                    className="twitter"
+                  >
+                    <i className="icofont-envelope"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/mayuresh-lohani-87b28922a"
+                    target="_blank"
+                    className="linkedin"
+                  >
+                    <i className="icofont-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 p-0">
+            <div className="single-speakers">
+              <img
+                src={require("../../assets/images/satyam.jpg")}
+                alt="speakers"
+              />
+
+              <div className="speakers-content">
+                <h3 style={{ color: "#fec66d" }}>Satyam Raj</h3>
+                <span>Design Head</span>
+              </div>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/satyam.raj.17/"
+                    target="_blank"
+                    className="facebook"
+                  >
+                    <i className="icofont-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:satyamraj85@gmail.com"
+                    target="_blank"
+                    className="twitter"
+                  >
+                    <i className="icofont-envelope"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/satyam-raj-24437a226/"
+                    target="_blank"
+                    className="linkedin"
+                  >
+                    <i className="icofont-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 p-0">
+            <div className="single-speakers">
+              <img
+                src={require("../../assets/images/subhro.jpg")}
+                alt="speakers"
+              />
+
+              <div className="speakers-content">
+                <h3 style={{ color: "#fec66d" }}>Subhrojyoti Mukherjee</h3>
+                <span>Events Head</span>
+              </div>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100073392733438"
+                    target="_blank"
+                    className="facebook"
+                  >
+                    <i className="icofont-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:subhrojm@gmail.com"
+                    target="_blank"
+                    className="twitter"
+                  >
+                    <i className="icofont-envelope"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/subhrojyoti-mukherjee-0b59b3226"
+                    target="_blank"
+                    className="linkedin"
+                  >
+                    <i className="icofont-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
         </div>
 
         <div className="row m-0">

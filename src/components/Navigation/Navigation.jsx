@@ -187,7 +187,7 @@ class Navigation extends React.Component {
                                             Login
                                         </NavLink>
                                     </li>} */}
-                                    {<li className="nav-item">
+                                    {/* {<li className="nav-item">
                                         {
                                             this.userData ? <NavLink 
                                             to="/events" 
@@ -204,7 +204,7 @@ class Navigation extends React.Component {
                                     >
                                         Login
                                     </NavLink> }
-                                </li>}
+                                </li>} */}
                                     
 
                                     {/* <li className="nav-item">
@@ -227,7 +227,7 @@ class Navigation extends React.Component {
                                         </NavLink>
                                     </li> */}
 
-                  {
+                  {/* {
                     <li className="nav-item">
                       {this.userData ? (
                         <NavLink
@@ -247,7 +247,7 @@ class Navigation extends React.Component {
                         </NavLink>
                       )}
                     </li>
-                  }
+                  } */}
 
                   {/* <li className="nav-item">
                     <NavLink

@@ -6,7 +6,7 @@ class MainBanner extends React.Component {
         return (
             <div className="page-title-area item-bg1">
                 <div className="container">
-                    <h1>Comming Soon</h1>
+                    <h1>Coming Soon</h1>
                     {/* <span>Are you excited?</span> */}
                     <ul>
                         <li><Link to="/">Home</Link></li>
