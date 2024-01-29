@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, withRouter, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 import axios from 'axios';
+import { IoIosNotifications } from "react-icons/io";
  
 class Navigation extends React.Component {
     userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
@@ -165,6 +166,16 @@ class Navigation extends React.Component {
                       onClick={this.toggleNavbar}
                     >
                       Sponsors
+                    </NavLink>
+                  </li>
+
+                  <li className="nav-item">
+                    <NavLink
+                      to="/announcement"
+                      className="nav-link"
+                      onClick={this.toggleNavbar}
+                    >
+                      <IoIosNotifications size={27}/>
                     </NavLink>
                   </li>
 

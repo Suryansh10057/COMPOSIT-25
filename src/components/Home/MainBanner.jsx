@@ -62,7 +62,7 @@ class MainBanner extends React.Component {
                                     <h1>COMPOSIT <b>2</b><b>0</b><b>2</b><b>4</b></h1>
                                     <ul>
                                         <li><i className="icofont-compass"></i> IIT Kharagpur</li>
-                                        <li><i className="icofont-calendar"></i> 15 Mar - 17 Mar, 2024</li>
+                                        <li><i className="icofont-calendar"></i> Coming Soon</li>
                                     </ul>
                                     {/* <div className="button-box">
                                     {this.userData ?
@@ -77,14 +77,14 @@ class MainBanner extends React.Component {
                         </div>
                     </div>
     
-                    <div className="event-countdown">
+                    {/* <div className="event-countdown">
                         <div id="timer">
                             <div id="days">{this.state.days} <span>Days</span></div>
                             <div id="hours">{this.state.hours-12} <span>Hours</span></div>
                             <div id="minutes">{this.state.minutes} <span>Minutes</span></div>
                             <div id="seconds">{this.state.seconds} <span>Seconds</span></div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="shape1">
                         <img src={require("../../assets/images/shapes/1.png")} alt="shape1" />

@@ -86,7 +86,7 @@ class Speakers extends React.Component {
           <div className="col-lg-3 col-md-6 p-0">
             <div className="single-speakers">
               <img
-                src={require("../../assets/images/manisha1.jpg")}
+                src={require("../../assets/images/bhandhavya.jpg")}
                 alt="speakers"
               />
 
@@ -97,7 +97,7 @@ class Speakers extends React.Component {
               <ul>
                 <li>
                   <a
-                    href="https://www.facebook.com/profile.php?id=100075561559224&mibextid=ZbWKwL"
+                    href="https://www.facebook.com/profile.php?id=100074845737951&mibextid=ZbWKwL"
                     target="_blank"
                     className="facebook"
                   >
@@ -106,7 +106,7 @@ class Speakers extends React.Component {
                 </li>
                 <li>
                   <a
-                    href="mailto:manishasahoo995@gmail.com"
+                    href="mailto:Bhandhavyabodapati2003@gmail.com"
                     target="_blank"
                     className="twitter"
                   >
@@ -115,7 +115,7 @@ class Speakers extends React.Component {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/manisha-sahoo-33186022b"
+                    href="https://www.linkedin.com/in/bhandhavya-bodapati-481556253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     target="_blank"
                     className="linkedin"
                   >
