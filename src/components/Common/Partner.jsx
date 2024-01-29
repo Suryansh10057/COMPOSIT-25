@@ -57,7 +57,7 @@ class Partner extends React.Component {
           <div className="section-title">
             <span>Check Who Makes This Event Possible!</span>
             <h2>
-              Our Sponsors
+              Our Previous Sponsors
             </h2>
 
             {/* <Link to="/sponsors" className="btn btn-primary">

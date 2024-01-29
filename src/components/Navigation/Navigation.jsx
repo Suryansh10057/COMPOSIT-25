@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, withRouter, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 import axios from 'axios';
+import { IoIosNotifications } from "react-icons/io";
  
 class Navigation extends React.Component {
     userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
@@ -168,6 +169,16 @@ class Navigation extends React.Component {
                     </NavLink>
                   </li>
 
+                  <li className="nav-item">
+                    <NavLink
+                      to="/announcement"
+                      className="nav-link"
+                      onClick={this.toggleNavbar}
+                    >
+                      <IoIosNotifications size={27}/>
+                    </NavLink>
+                  </li>
+
                   {/* <li className="nav-item">
                     <NavLink
                       to="/contact"
@@ -187,7 +198,7 @@ class Navigation extends React.Component {
                                             Login
                                         </NavLink>
                                     </li>} */}
-                                    {<li className="nav-item">
+                                    {/* {<li className="nav-item">
                                         {
                                             this.userData ? <NavLink 
                                             to="/events" 
@@ -204,7 +215,7 @@ class Navigation extends React.Component {
                                     >
                                         Login
                                     </NavLink> }
-                                </li>}
+                                </li>} */}
                                     
 
                                     {/* <li className="nav-item">
@@ -227,7 +238,7 @@ class Navigation extends React.Component {
                                         </NavLink>
                                     </li> */}
 
-                  {
+                  {/* {
                     <li className="nav-item">
                       {this.userData ? (
                         <NavLink
@@ -247,7 +258,7 @@ class Navigation extends React.Component {
                         </NavLink>
                       )}
                     </li>
-                  }
+                  } */}
 
                   {/* <li className="nav-item">
                     <NavLink

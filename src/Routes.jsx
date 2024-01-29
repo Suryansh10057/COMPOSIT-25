@@ -41,6 +41,7 @@ import Popup from "./components/pages/MyPopup";
 import PopupMsg from "./components/pages/Popup/PopupMsg";
 import ComingSoon1 from "./components/pages/ComingSoon/Comingsoon";
 import GuestLecturePage from "./components/pages/GuestLectures";
+import AnnouncementPage from "./components/pages/Announcement";
 
 // Conditionally render Navigation
 const renderNavigation = () => {
@@ -56,7 +57,8 @@ const AppRouter = () => {
             <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/about" exact component={About} />
-                <Route path="/events" exact component={Events} />
+                {/* <Route path="/events" exact component={Events} /> */}
+                <Route path="/events" exact component={ComingSoon1} />
                 <Route path="/events/:id" exact component={Events} />
                 <Route path="/event_cad" exact component={EventCadPage} />
                 <Route path="/event_casestudy" exact component={EventCasestudyPage} />
@@ -68,7 +70,9 @@ const AppRouter = () => {
                 <Route path="/event_schoolquiz" exact component={EventSchoolquizPage} />
                 <Route path="/event_technova" exact component={EventTechnovaPage} />
                 <Route path="/event_techtoon" exact component={EventTechtoonPage} />
-                <Route path="/guestlecture" exact component={GuestLecturePage} />
+                <Route path="/announcement" exact component={AnnouncementPage} />
+                {/* <Route path="/guestlecture" exact component={GuestLecturePage} /> */}
+                <Route path="/guestlecture" exact component={ComingSoon1} />
                 <Route path="/register_metaclix" exact component={RegisterMetaclix} />
                 <Route path="/register_techtoon" exact component={RegisterTechtoon} />
                 <Route path="/register_metallomania" exact component={RegisterMetallomania} />
@@ -87,7 +91,8 @@ const AppRouter = () => {
                 <Route path="/comingSoon" exact component={ComingSoon1} />
                 <Route path="/faq" exact component={Faq} />
                 <Route path="/contact" exact component={Contact} />
-                <Route path="/sponsors" exact component={Sponsor} />
+                {/* <Route path="/sponsors" exact component={Sponsor} /> */}
+                <Route path="/sponsors" exact component={ComingSoon1} />
                 <Route path="/profile" exact component={Profile} />
                 <Route path="/edit-profile" exact component={EditProfile} />
                 <Route path="/popup" exact component={Popup} />

@@ -6,11 +6,11 @@ class MainBanner extends React.Component {
         return (
             <div className="page-title-area item-bg1">
                 <div className="container">
-                    <h1>Coming Soon</h1>
-                    {/* <span>Are you excited?</span> */}
+                    <h1>Announcements</h1>
+                    <span>Get important updates here!</span>
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li>Coming Soon</li>
+                        <li>Announcement</li>
                     </ul>
                 </div>
             </div>
