@@ -534,7 +534,7 @@ class SpeakersOne extends React.Component {
 
         </div>
 
-        <div className="row m-0">
+        {/* <div className="row m-0">
           <div className="section-title">
             <h2>
               Our Sub Heads
@@ -551,7 +551,6 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Ujjawal Kumar</h3>
-                {/* <span>General Secretary</span> */}
               </div>
               <ul>
                 <li>
@@ -563,11 +562,6 @@ class SpeakersOne extends React.Component {
                     <i className="icofont-facebook"></i>
                   </a>
                 </li>
-                {/* <li>
-                                    <Link to="#" target="_blank" className="twitter">
-                                        <i className="icofont-twitter"></i>
-                                    </Link>
-                                </li> */}
                 <li>
                   <a
                     href="mailto:ujjawalrr@gmail.com"
@@ -589,7 +583,8 @@ class SpeakersOne extends React.Component {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
+        
       </section>
     );
   }
