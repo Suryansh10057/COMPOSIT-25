@@ -96,7 +96,7 @@ class SpeakersOne extends React.Component {
 
               <div className="speakers-content">
                 <h3 style={{ color: "#fec66d" }}>Karabi Saha</h3>
-                <span>Department Representative</span>
+                <span>UG Department Representative</span>
               </div>
               <ul>
                 <li>
@@ -584,7 +584,7 @@ class SpeakersOne extends React.Component {
             </div>
           </div>
         </div> */}
-        
+
       </section>
     );
   }
