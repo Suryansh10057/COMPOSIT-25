@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 class EventTechnova extends React.Component {
   openTabSection = (evt, tabNmae) => {
     let i, tabcontent, tablinks;
+    
     tabcontent = document.getElementsByClassName("tabs_item");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
@@ -47,7 +48,7 @@ class EventTechnova extends React.Component {
                 >
                   Submission Link
                 </a> :
-                <Link to="/login" className="btn btn-primary">Login to Submit</Link>
+                <Link to="/login" className="btn btn-primary">Register Here</Link>
               }
               
                 <a
@@ -124,7 +125,9 @@ class EventTechnova extends React.Component {
                     </div>
 
                     <div id="tab2" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -186,11 +189,13 @@ class EventTechnova extends React.Component {
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
 
                     <div id="tab3" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -218,17 +223,18 @@ class EventTechnova extends React.Component {
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              {/* <h3>Contact Info</h3> */}
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
@@ -247,7 +253,6 @@ class EventTechnova extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              {/* <h3>Contact Info</h3> */}
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
@@ -261,7 +266,7 @@ class EventTechnova extends React.Component {
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
                   </div>
                 </div>

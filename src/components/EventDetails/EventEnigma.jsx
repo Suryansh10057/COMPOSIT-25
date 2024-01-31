@@ -56,9 +56,9 @@ class EventEnigma extends React.Component {
                 >
                    Prelims Round 2
                 </a> :
-                <Link to="/login" className="btn btn-primary">Login to Participate</Link>
+                <Link to="/login" className="btn btn-primary">Register Here</Link>
                 }
-                {userData ? <a
+                {/* {userData ? <a
                   href="https://unstop.com/m/opportunity/657933/step3"
                   target="_blank"
                   className="btn btn-primary"
@@ -66,7 +66,7 @@ class EventEnigma extends React.Component {
                   Final Round
                 </a> :
                 <Link to="/login" className="btn btn-primary">Login to Participate</Link>
-                }
+                } */}
               </div>
             </div>
           </div>
@@ -120,7 +120,9 @@ class EventEnigma extends React.Component {
                     </div>
 
                     <div id="tab2" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -193,8 +195,10 @@ class EventEnigma extends React.Component {
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
+
+
 
                     <div id="tab3" className="tabs_item">
                       <ul className="accordion">
@@ -203,11 +207,12 @@ class EventEnigma extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              <h3>Important Dates</h3>
+                            <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+
+                              {/* <h3>Important Dates</h3>
 
                               <ul>
-                                {/* <li><b>31 Mar 23, 07:00 PM IST</b></li>
-                                <li><b>01 Apr 23, 10:00 AM IST</b></li> */}
+                              
                                 <li>
                                   <b>Prelims Round:</b>
                                 </li>
@@ -223,7 +228,7 @@ class EventEnigma extends React.Component {
                                 <li>
                                   <i className="icofont-wall-clock"></i>01 Apr 23, 10:00 AM IST
                                 </li>
-                              </ul>
+                              </ul> */}
                             </div>
                           </Link>
                         </li>
@@ -231,13 +236,14 @@ class EventEnigma extends React.Component {
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              {/* <h3>Contact Info</h3> */}
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
@@ -256,8 +262,6 @@ class EventEnigma extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              {/* <h3>Contact Info</h3> */}
-
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
                                 <b>Gourav Pathak</b>
@@ -270,7 +274,7 @@ class EventEnigma extends React.Component {
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
                   </div>
                 </div>
