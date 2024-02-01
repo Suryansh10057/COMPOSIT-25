@@ -78,8 +78,8 @@ const GetAllUsers = () => {
                     </tr>
                 ))}
             </table>
-            <button class="btn-modal btn-primary" onClick={exportTableToExcel('myTable', 'ALL REGISTRATIONS')}>Download as Excel
-                File</button>
+            {/* <button class="btn-modal btn-primary" onClick={exportTableToExcel('myTable', 'ALL REGISTRATIONS')}>Download as Excel
+                File</button> */}
         </div>
     )
 }

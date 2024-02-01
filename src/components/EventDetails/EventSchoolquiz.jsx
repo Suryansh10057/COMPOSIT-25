@@ -63,7 +63,7 @@ class EventSchoolquiz extends React.Component {
                 >
                   Registration Link
                 </a> :
-                <Link to="/login" className="btn btn-primary">Login to Register</Link>
+                <Link to="/login" className="btn btn-primary">Register Here</Link>
                 }
                 {/* <Link
                   to="#"

@@ -9,21 +9,24 @@ import OurTeam from "./components/pages/Ourteam";
 import Schedule from "./components/pages/Schedule";
 import Login from "./components/pages/Login";
 import Signup from "./components/pages/Signup";
-import ComingSoon from "./components/pages/ComingSoon";
+// import ComingSoon from "./components/pages/ComingSoon";
 import NotFound from "./components/pages/NotFound";
 import Faq from "./components/pages/Faq";
 import Contact from "./components/pages/Contact";
-import Sponsor from "./components/pages/Sponsor";
+// import Sponsor from "./components/pages/Sponsor";
 import Profile from "./components/pages/Profile";
 import EditProfile from "./components/pages/EditProfile";
 import EventCadPage from "./components/pages/EventDetails/EventCad";
 import EventCasestudyPage from "./components/pages/EventDetails/EventCasestudy";
 import EventMetallomaniaPage from "./components/pages/EventDetails/EventMetallomania";
+import EventRecycledArtPage from "./components/pages/EventDetails/EventRecycledArt";
 import EventEnigmaPage from "./components/pages/EventDetails/EventEnigma";
 import EventExcavatePage from "./components/pages/EventDetails/EventExcavate";
 import EventIdeathonPage from "./components/pages/EventDetails/EventIdeathon";
+import EventTresureHuntPage from "./components/pages/EventDetails/EventTreasureHunt";
+import EventMetaCasestudyPage from "./components/pages/EventDetails/EventMetaCasestudy";
 import EventMetaclixPage from "./components/pages/EventDetails/EventMetaclix";
-import EventSchoolquizPage from "./components/pages/EventDetails/EventSchoolquiz";
+// import EventSchoolquizPage from "./components/pages/EventDetails/EventSchoolquiz";
 import EventTechnovaPage from "./components/pages/EventDetails/EventTechnova";
 import EventTechtoonPage from "./components/pages/EventDetails/EventTechtoon";
 import RegisterMetaclix from "./components/pages/EventRegistration/RegisterMetaclix";
@@ -57,8 +60,8 @@ const AppRouter = () => {
             <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/about" exact component={About} />
-                {/* <Route path="/events" exact component={Events} /> */}
-                <Route path="/events" exact component={ComingSoon1} />
+                <Route path="/events" exact component={Events} />
+                {/* <Route path="/events" exact component={ComingSoon1} /> */}
                 <Route path="/events/:id" exact component={Events} />
                 <Route path="/event_cad" exact component={EventCadPage} />
                 <Route path="/event_casestudy" exact component={EventCasestudyPage} />
@@ -67,11 +70,14 @@ const AppRouter = () => {
                 <Route path="/event_ideathon" exact component={EventIdeathonPage} />
                 <Route path="/event_metaclix" exact component={EventMetaclixPage} />
                 <Route path="/event_metallomania" exact component={EventMetallomaniaPage} />
-                <Route path="/event_schoolquiz" exact component={EventSchoolquizPage} />
+                
+                <Route path="/event_recycledart" exact component={EventRecycledArtPage} />
+                <Route path="/event_treasurehunt" exact component={EventTresureHuntPage} />
+                <Route path="/event_metacasestudy" exact component={EventMetaCasestudyPage} />
+
                 <Route path="/event_technova" exact component={EventTechnovaPage} />
                 <Route path="/event_techtoon" exact component={EventTechtoonPage} />
                 <Route path="/announcement" exact component={AnnouncementPage} />
-                {/* <Route path="/guestlecture" exact component={GuestLecturePage} /> */}
                 <Route path="/guestlecture" exact component={ComingSoon1} />
                 <Route path="/register_metaclix" exact component={RegisterMetaclix} />
                 <Route path="/register_techtoon" exact component={RegisterTechtoon} />

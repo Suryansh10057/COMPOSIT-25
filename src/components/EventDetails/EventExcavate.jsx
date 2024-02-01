@@ -54,7 +54,7 @@ class EventExcavate extends React.Component {
                 >
                   Submission Link
                 </a> :
-                  <Link to="/login" className="btn btn-primary">Login to Submit</Link>
+                  <Link to="/login" className="btn btn-primary">Register Here</Link>
                 }
                 <a
                   href="https://drive.google.com/file/d/1kqDIad3xbW4toWG911TsBtKr0UnAYXXA/view?usp=sharing"
@@ -156,7 +156,9 @@ class EventExcavate extends React.Component {
 
                             <div className="schedule-info">
                               <h3>Rounds of the Event</h3>
-                              <p>The event will have two rounds as follows:</p>
+                              <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+
+                              {/* <p>The event will have two rounds as follows:</p>
 
                               <ul>
                                 <li>
@@ -177,7 +179,7 @@ class EventExcavate extends React.Component {
                                     </li>
                                   </ul>
                                 </li>
-                              </ul>
+                              </ul> */}
                             </div>
                           </Link>
                         </li>
@@ -185,7 +187,9 @@ class EventExcavate extends React.Component {
                     </div>
 
                     <div id="tab3" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -214,17 +218,18 @@ class EventExcavate extends React.Component {
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              {/* <h3>Contact Info</h3> */}
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
@@ -243,7 +248,6 @@ class EventExcavate extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              {/* <h3>Contact Info</h3> */}
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
@@ -257,7 +261,7 @@ class EventExcavate extends React.Component {
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
                   </div>
                 </div>

@@ -41,6 +41,8 @@ class PricingOne extends React.Component {
             <section className="pricing-area ptb-120 bg-image">
                 <div className="container">
                     <div className="row">
+
+
                         <div className="col-lg-4 col-md-6">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
@@ -58,7 +60,8 @@ class PricingOne extends React.Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-4 col-md-6">
+
+                        {/* <div className="col-lg-4 col-md-6">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
                                     <h3 className="title">Ideathon</h3>
@@ -67,13 +70,14 @@ class PricingOne extends React.Component {
                                     <p>Pitch your next amazing business idea and get valuable feedback!</p>
                                 </ul>
                                 <Link to="/event_ideathon" className="btn btn-primary">READ MORE</Link>
-                                {/* {userData ?
+                                {userData ?
                                     <Link to="/register_ideathon" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                } */}
+                                }
                             </div>
-                        </div>
+                        </div> */}
+
 
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
@@ -91,7 +95,8 @@ class PricingOne extends React.Component {
                                 } */}
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+
+                        {/* <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
                                     <h3 className="title">School Quiz</h3>
@@ -100,13 +105,15 @@ class PricingOne extends React.Component {
                                     <p>An intriguing quiz event for school students to test their knowledge from various topics ranging from Science to Language. Get ready to think!</p>
                                 </ul>
                                 <Link to="/event_schoolQuiz" className="btn btn-primary">READ MORE</Link>
-                                {/* {userData ?
+                                {userData ?
                                     <Link to="/register_schoolQuiz" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                } */}
+                                }
                             </div>
-                        </div>
+                        </div> */}
+
+
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
@@ -123,7 +130,9 @@ class PricingOne extends React.Component {
                                 } */}
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+
+
+                        {/* <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
                                     <h3 className="title">Techtoon</h3>
@@ -132,13 +141,15 @@ class PricingOne extends React.Component {
                                     <p>Let your imagination run wild as you create hilarious and witty memes/ artwork that leave everyone in stitches.</p>
                                 </ul>
                                 <Link to="/event_techtoon" className="btn btn-primary">READ MORE</Link>
-                                {/* {userData ?
+                                {userData ?
                                     <Link to="/register_techtoon" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                } */}
+                                }
                             </div>
-                        </div>
+                        </div> */}
+
+
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
@@ -155,6 +166,8 @@ class PricingOne extends React.Component {
                                 } */}
                             </div>
                         </div>
+
+
                         {/* <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
@@ -171,10 +184,12 @@ class PricingOne extends React.Component {
                                 }
                             </div>
                         </div> */}
+
+
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
-                                    <h3 className="title">Case Study</h3>
+                                    <h3 className="title">General Case Study</h3>
                                 </div>
                                 <ul className="pricing-content">
                                     <p>Challenge your critical thinking ability and grab this opportunity to do in depth research about a problem statement!</p>
@@ -187,15 +202,49 @@ class PricingOne extends React.Component {
                                 } */}
                             </div>
                         </div>
+
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
-                                    <h3 className="title">Metallomania</h3>
+                                    <h3 className="title">Metallurgy Case Study</h3>
+                                </div>
+                                <ul className="pricing-content">
+                                    <p>Challenge your critical thinking ability and grab this opportunity to do in depth research about a problem statement!</p>
+                                </ul>
+                                <Link to="/event_metacasestudy" className="btn btn-primary">READ MORE</Link>
+                                {/* {this.userData ?
+                                    <Link to="/coming-soon" className="btn btn-secondary">Register</Link>
+                                    :
+                                    <Link to="/signup" className="btn btn-secondary">Register</Link>
+                                } */}
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                            <div className="pricing-table-box">
+                                <div className="pricingTable-header">
+                                    <h3 className="title">Treasure Hunt</h3>
+                                </div>
+                                <ul className="pricing-content">
+                                    <p>Challenge your critical thinking ability and grab this opportunity to do in depth research about a problem statement!</p>
+                                </ul>
+                                <Link to="/event_treasurehunt" className="btn btn-primary">READ MORE</Link>
+                                {/* {this.userData ?
+                                    <Link to="/coming-soon" className="btn btn-secondary">Register</Link>
+                                    :
+                                    <Link to="/signup" className="btn btn-secondary">Register</Link>
+                                } */}
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                            <div className="pricing-table-box">
+                                <div className="pricingTable-header">
+                                    <h3 className="title">Recycled Art</h3>
                                 </div>
                                 <ul className="pricing-content">
                                 <p>The grand technical materials characterization competition involving the diverse areas of metallurgy and materials science.</p>
                                 </ul>
-                                <Link to="/event_metallomania" className="btn btn-primary">READ MORE</Link>
+                                <Link to="/event_recycledart" className="btn btn-primary">READ MORE</Link>
                                 {/* {userData ?
                                     <Link to="/register_metallomania" className="btn btn-secondary">Register</Link>
                                     :

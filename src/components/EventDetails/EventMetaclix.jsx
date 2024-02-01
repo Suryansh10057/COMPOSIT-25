@@ -56,7 +56,7 @@ class EventMetaclix extends React.Component {
                 >
                   Submission Link
                 </a> :
-                <Link to="/login" className="btn btn-primary">Login to Submit</Link>
+                <Link to="/login" className="btn btn-primary">Register Here</Link>
                 }
                 <a href="https://drive.google.com/file/d/1yNALvqJkc0ioCggPHkyzR61Id4OdzO6g/view?usp=sharing" className="btn btn-secondary" target="_blank">
                   Rules & Regulations
@@ -154,7 +154,7 @@ class EventMetaclix extends React.Component {
                           </Link>
                         </li>
 
-                        <li className="accordion-item">
+                        {/* <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author author-multi"></div>
 
@@ -177,7 +177,7 @@ class EventMetaclix extends React.Component {
                               </ul>
                             </div>
                           </Link>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
 
@@ -211,13 +211,14 @@ class EventMetaclix extends React.Component {
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              {/* <h3>Contact Info</h3> */}
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
@@ -236,7 +237,6 @@ class EventMetaclix extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              {/* <h3>Contact Info</h3> */}
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
@@ -250,7 +250,7 @@ class EventMetaclix extends React.Component {
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
                   </div>
                 </div>

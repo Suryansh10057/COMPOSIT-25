@@ -31,15 +31,17 @@ class About extends React.Component {
                                 <p>Starting in 1994, It is a national congregation of bright and ambitious minds to invoke their innovation and bridge their ingenious thoughts and ideas into exorbitant assets for humanity. It also gives the young enthusiasts a chance to explore and showcase their talents and also interact with the stalwarts in the field who share their expertise. Compelled by the thirst for knowledge and adventure the exuberant minds, IIT Kharagpur is all set to conduct yet another edition of COMPOSIT, which promises an exciting odyssey embracing a plethora of events and all its trademark features.</p>
 
                                 
-                                <h2>Theme Description</h2>
+                                <h1 style={{textDecorationLine:'underline'}}>Theme Description</h1>
+                                <h3 style={{color:'black', textDecorationLine:'underline'}}>Molten Ideas, sustainable realities </h3>
                                 <p>
-                                    January 28, 1986, the Space Shuttle Challenger broke apart 73 seconds into its flight, killing all seven crew members aboard and causing a whooping $3.7 Billion loss due to the mere failure of the two O-ring seals in a joint in the shuttle's right solid rocket booster. Year after year, the realisation that material science is the dorsum of the augmenting space endeavours is coagulating in the scintillating brains.
+                                Sir Pete Seeger said, “If it can’t be reduced, reused, repaired, rebuilt, refurbished, refinished, resold, recycled, or composted, then it should be restricted, designed or removed from production”. As the global population is growing, so does the use of various materials. 
+
                                 </p>
                                 <p>
-                                    Comprehending the need of the times, India being a part of the top five nations in the world leading space agencies all across the globe, motivates extensive research in the field of space science, of which material science is an integral part. The 28th edition of COMPOSIT aims to celebrate the glory of materials science with the theme of <b>Spurring the ingot of Void to seize the infinity...</b>
+                                India's close relationship with UNEP, increases recognition of the need to move towards more sustainable materials to address environmental challenges such as climate change, resource depletion, and pollution. The 29th edition of COMPOSIT aims to celebrate the glory of materials science with the theme of Sustainability.
                                 </p>
                                 <p>
-                                    To untangle your latent ideas and make you apprised of the astounding saga of the blend of things and nothing, COMPOSIT is back with a bang welcoming you to one of the most insightful scientific conferences and 3-day long fun and engrossing experience with immense knowledge showcasing and the trade-off between the brilliant minds in presence.
+                                To untangle your latest ideas and and weave the tapestry of a sustainable tomorrow, COMPOSIT is back with a bang, welcoming you to one of the most insightful scientific conferences and a 3-day long fun and engrossing experience with immense knowledge showcasing and the trade-off between the brilliant minds in presence .
                                 </p>
                                 {/* <div className="signature">
                                     <img src={require("../../assets/images/signature.png")} alt="signature" />
