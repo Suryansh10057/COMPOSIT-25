@@ -69,12 +69,13 @@ class Login extends React.Component {
                                         type="password" 
                                         className="form-control" 
                                         placeholder="Password" 
+                                        id='password'
                                         value={this.state.password}
                                         onChange={ e => this.setState({ password: e.target.value }) }
                                     />
                                 </div>
 
-                                <button type="submit" className="btn-modal btn-primary" onClick={this.handleClick}>Login</button>
+                                <button type="submit" id='loginBtn' className="btn-modal btn-primary" onClick={this.handleClick}>Login</button>
                                 {this.state.success && <p className='popupLink center'>{this.state.success}</p>}
                                 {this.state.errorr && <p className='error center'>{this.state.errorr}</p>}
                                 {/* <p>pp</p> */}
