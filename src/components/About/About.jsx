@@ -31,8 +31,8 @@ class About extends React.Component {
                                 <p>Starting in 1994, It is a national congregation of bright and ambitious minds to invoke their innovation and bridge their ingenious thoughts and ideas into exorbitant assets for humanity. It also gives the young enthusiasts a chance to explore and showcase their talents and also interact with the stalwarts in the field who share their expertise. Compelled by the thirst for knowledge and adventure the exuberant minds, IIT Kharagpur is all set to conduct yet another edition of COMPOSIT, which promises an exciting odyssey embracing a plethora of events and all its trademark features.</p>
 
                                 
-                                <h1 style={{textDecorationLine:'underline'}}>Theme Description</h1>
-                                <h3 style={{color:'black', textDecorationLine:'underline'}}>Molten Ideas, sustainable realities </h3>
+                                <h5>Theme Description</h5>
+                                <h3 style={{color:'#00DF75'}}>Molten Ideas, sustainable realities </h3>
                                 <p>
                                 Sir Pete Seeger said, “If it can’t be reduced, reused, repaired, rebuilt, refurbished, refinished, resold, recycled, or composted, then it should be restricted, designed or removed from production”. As the global population is growing, so does the use of various materials. 
 

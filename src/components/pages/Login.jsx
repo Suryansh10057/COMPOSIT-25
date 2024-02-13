@@ -16,7 +16,7 @@ class Login extends React.Component {
   handleClick = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`${process.env.REACT_APP_API_KEY}/auth/login`, this.state);
+      const res = await axios.post(`https://composit2024backend.onrender.com/auth/login`, this.state);
       const compUser = res.data;
       localStorage.setItem("COMPOSITuser", JSON.stringify(res.data));
       

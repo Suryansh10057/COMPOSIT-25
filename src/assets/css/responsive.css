@@ -186,6 +186,35 @@
     -webkit-transform: unset !important;
             transform: unset !important;
   }
+
+  .about-image2 {
+    margin-top: 40px;
+  }
+  .about-image2 .about-img1 {
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  .about-image2 .about-img2 {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .about-image2 .shape-img {
+    top: 27%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .about-image2 .btn {
+    bottom: 0;
+    right: 15px;
+    -webkit-transform: unset !important;
+            transform: unset !important;
+  }
+
   .about-area-two .about-content .signature {
     margin-bottom: 0;
   }
@@ -204,6 +233,20 @@
     bottom: 30px;
     right: 15px;
   }
+
+  .about-area-three .about-image2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .about-area-three .about-image2 .about-img1 {
+    margin-top: 0;
+  }
+  .about-area-three .about-image2 .btn {
+    left: auto;
+    bottom: 30px;
+    right: 15px;
+  }
+
   .countdown-area .event-countdown {
     margin: 0;
   }
@@ -1015,6 +1058,32 @@
   .about-area-three .about-image .btn {
     bottom: 30px;
   }
+  .about-image2 {
+    margin-top: 50px;
+  }
+  .about-image2 .about-img1 {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .about-image2 .about-img2 {
+    display: none;
+  }
+  .about-image2 .btn {
+    bottom: 0;
+    right: 25px;
+    -webkit-transform: unset !important;
+            transform: unset !important;
+  }
+  .about-area-three .about-image2 {
+    margin-bottom: 30px;
+  }
+  .about-area-three .about-image2 .about-img1 {
+    width: 100%;
+  }
+  .about-area-three .about-image2 .btn {
+    bottom: 30px;
+  }
   .why-choose-us {
     padding-top: 80px;
     padding-bottom: 50px;
@@ -1427,6 +1496,23 @@
             transform: unset !important;
   }
   .about-area-three .about-image img {
+    width: 100%;
+  }
+  .about-image2 .about-img1 {
+    width: 85%;
+    top: -145px;
+    right: -40px;
+  }
+  .about-image2 .about-img2 {
+    left: 0;
+    bottom: -142px;
+  }
+  .about-image2 .btn {
+    bottom: 0;
+    -webkit-transform: unset !important;
+            transform: unset !important;
+  }
+  .about-area-three .about-image2 img {
     width: 100%;
   }
   .why-choose-content {

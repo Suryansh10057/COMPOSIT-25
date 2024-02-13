@@ -38,11 +38,12 @@ export default function Signup() {
         const str = signupData.name
         const str1 = str.toUpperCase()
         const ph = signupData.contact
-        signupData.regID = `C23${str1.substring(0, 3)}${ph.substring(0, 2)}${Math.floor(Math.random() * 90 + 10)}`
+        signupData.regID = `C24${str1.substring(0, 3)}${ph.substring(0, 2)}${Math.floor(Math.random() * 90 + 10)}`
         try {
-            const res = await axios.post(`${process.env.REACT_APP_API_KEY}/auth/register`, signupData)
+            const res = await axios.post(`https://composit2024backend.onrender.com/auth/register`, signupData)
             setErrorr(res.data)
             openForm()
+            console.log(res)
         }
         catch (error) {
 
@@ -60,7 +61,7 @@ export default function Signup() {
             //     openForm()
             //     console.log(error.response.data,"err here")
             // }
-            // console.log("hvhjvhjvhvhv")
+            console.log(error)
         }
 
     }
