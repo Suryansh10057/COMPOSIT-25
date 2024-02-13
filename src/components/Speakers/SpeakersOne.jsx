@@ -810,7 +810,7 @@ class SpeakersOne extends React.Component {
       <div className="col-lg-3 col-md-6 p-0">
                   <div className="single-speakers">
                     <img
-                      src={require("../../assets/images/SubHeads/sharwari.jpg")}
+                      src={require("../../assets/images/SubHeads/sharwari.jpeg")}
                       alt="speakers"
                     />
 
@@ -1150,22 +1150,23 @@ class SpeakersOne extends React.Component {
                     </ul>
                   </div>
       </div>
+    
       {/* Team member */}
 
       <div className="col-lg-3 col-md-6 p-0">
                   <div className="single-speakers">
                     <img
-                      src={require("../../assets/images/SubHeads/manash_m.jpg")}
+                      src={require("../../assets/images/SubHeads/manash.jpg")}
                       alt="speakers"
                     />
 
                     <div className="speakers-content">
-                      <h3 style={{ color: "#fec66d" }}>Manas Mehta</h3>
+                      <h3 style={{ color: "#fec66d" }}>Manash shit</h3>
                     </div>
                     <ul>
                       <li>
                         <a
-                          href="https://www.facebook.com/manas.m.794?mibextid=ZbWKwL"
+                          href="https://www.facebook.com/manas.shetty.100"
                           target="_blank"
                           className="facebook"
                         >
@@ -1174,7 +1175,7 @@ class SpeakersOne extends React.Component {
                       </li>
                       <li>
                         <a
-                          href="mailto:manasmehta1803@gmail.com"
+                          href="mailto:shitmanash78@gmail.com"
                           target="_blank"
                           className="twitter"
                         >
@@ -1183,7 +1184,93 @@ class SpeakersOne extends React.Component {
                       </li>
                       <li>
                         <a
-                          href="https://www.linkedin.com/in/manas-mehta-92a97b192?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                          href="https://www.linkedin.com/in/manash-shit-03a178252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                          target="_blank"
+                          className="linkedin"
+                        >
+                          <i className="icofont-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+      </div>
+      {/* Team member */}
+
+      <div className="col-lg-3 col-md-6 p-0">
+                  <div className="single-speakers">
+                    <img
+                      src={require("../../assets/images/SubHeads/vani.jpg")}
+                      alt="speakers"
+                    />
+
+                    <div className="speakers-content">
+                      <h3 style={{ color: "#fec66d" }}>Vani Priya</h3>
+                    </div>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/profile.php?id=100087762815915&mibextid=ZbWKwL"
+                          target="_blank"
+                          className="facebook"
+                        >
+                          <i className="icofont-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:vanipriya173@gmail.com "
+                          target="_blank"
+                          className="twitter"
+                        >
+                          <i className="icofont-envelope"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/vani-priya-5a81ba258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                          target="_blank"
+                          className="linkedin"
+                        >
+                          <i className="icofont-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+      </div>
+      {/* Team member */}
+
+      <div className="col-lg-3 col-md-6 p-0">
+                  <div className="single-speakers">
+                    <img
+                      src={require("../../assets/images/SubHeads/chandu.JPG")}
+                      alt="speakers"
+                    />
+
+                    <div className="speakers-content">
+                      <h3 style={{ color: "#fec66d" }}>P V V SAI CHANDU LAKKIMSETTI </h3>
+                    </div>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/chandu.lakkimsetti.1?mibextid=ZbWKwL"
+                          target="_blank"
+                          className="facebook"
+                        >
+                          <i className="icofont-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:chandulakkimsettis@gmail.com"
+                          target="_blank"
+                          className="twitter"
+                        >
+                          <i className="icofont-envelope"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/chandu-lakkimsetti-9b5811262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                           target="_blank"
                           className="linkedin"
                         >
