@@ -818,7 +818,7 @@ Main Banner CSS
   width: 100%;
   max-width: 380px;
   text-align: center;
-  height: 350px;
+  height: 430px;
   left: 18%;
   margin-left: -190px;
   z-index: -1;
@@ -2372,7 +2372,7 @@ Schedule CSS
 }
 
 .btn-box .btn {
-  margin: 0 15px;
+  margin: 10px 15px;
 }
 
 /*schedule-style-two*/

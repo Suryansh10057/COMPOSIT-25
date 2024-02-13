@@ -203,55 +203,23 @@ class PricingOne extends React.Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                        <div className="col-lg-4 col-md-6">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
-                                    <h3 className="title">Metallurgy Case Study</h3>
+                                    <h3 className="title">Ideathon</h3>
                                 </div>
                                 <ul className="pricing-content">
-                                    <p>Challenge your critical thinking ability and grab this opportunity to do in depth research about a problem statement!</p>
+                                    <p>Pitch your next amazing business idea and get valuable feedback!</p>
                                 </ul>
-                                <Link to="/event_metacasestudy" className="btn btn-primary">READ MORE</Link>
-                                {/* {this.userData ?
-                                    <Link to="/coming-soon" className="btn btn-secondary">Register</Link>
-                                    :
-                                    <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                } */}
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                            <div className="pricing-table-box">
-                                <div className="pricingTable-header">
-                                    <h3 className="title">Treasure Hunt</h3>
-                                </div>
-                                <ul className="pricing-content">
-                                    <p>Challenge your critical thinking ability and grab this opportunity to do in depth research about a problem statement!</p>
-                                </ul>
-                                <Link to="/event_treasurehunt" className="btn btn-primary">READ MORE</Link>
-                                {/* {this.userData ?
-                                    <Link to="/coming-soon" className="btn btn-secondary">Register</Link>
+                                <Link to="/event_ideathon" className="btn btn-primary">READ MORE</Link>
+                                {/* {userData ?
+                                    <Link to="/register_ideathon" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 } */}
                             </div>
                         </div>
 
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                            <div className="pricing-table-box">
-                                <div className="pricingTable-header">
-                                    <h3 className="title">Recycled Art</h3>
-                                </div>
-                                <ul className="pricing-content">
-                                <p>The grand technical materials characterization competition involving the diverse areas of metallurgy and materials science.</p>
-                                </ul>
-                                <Link to="/event_recycledart" className="btn btn-primary">READ MORE</Link>
-                                {/* {userData ?
-                                    <Link to="/register_metallomania" className="btn btn-secondary">Register</Link>
-                                    :
-                                    <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                } */}
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>

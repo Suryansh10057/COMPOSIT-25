@@ -15,7 +15,7 @@ class LaxDiv extends React.Component {
 
     render(){
         return (
-            <div className="bg-title lax" data-lax-preset={this.props.dataPreset} >
+            <div style={{ opacity: 0.3 }} className="bg-title lax" data-lax-preset={this.props.dataPreset} >
                 {this.props.text}
             </div>
         );
