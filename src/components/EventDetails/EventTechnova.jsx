@@ -35,24 +35,25 @@ class EventTechnova extends React.Component {
 
               <div className="events-content">
                 <h2>Technova</h2>
-                <h3>Cash Prize worth 28K</h3>
+                {/* <h3>Cash Prize worth 28K</h3> */}
                 {/* <span>12000</span> */}
               </div>
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
               {userData ? <a
-                  href="https://forms.gle/sqA1B7Gw3gKnePAc8"
+                  // href="https://forms.gle/sqA1B7Gw3gKnePAc8"
                   target="_blank"
                   className="btn btn-primary"
                 >
-                  Submission Link
+                  {/* Submission Link */}
+                  Register Here
                 </a> :
                 <Link to="/login" className="btn btn-primary">Register Here</Link>
               }
               
                 <a
-                  href="https://drive.google.com/file/d/1A7Dhc9_CdSSnoewBx6oopLqDXuD1cMjN/view?usp=drivesdk"
+                  // href="https://drive.google.com/file/d/1A7Dhc9_CdSSnoewBx6oopLqDXuD1cMjN/view?usp=drivesdk"
                   target="_blank"
                   className="btn btn-secondary"
                 >
@@ -89,10 +90,12 @@ class EventTechnova extends React.Component {
 
                   <div className="tab_content">
                     <div id="tab1" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="schedule-info">
+                              <h3>Coming Soon</h3>
                               <h3>Technova</h3>
 
                               <p>
@@ -121,7 +124,7 @@ class EventTechnova extends React.Component {
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
 
                     <div id="tab2" className="tabs_item">

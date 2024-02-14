@@ -34,23 +34,23 @@ class EventIdeathon extends React.Component {
 
               <div className="events-content">
                 <h2>Ideathon</h2>
-                <h3>Cash Prize worth 18K</h3>
+                {/* <h3>Cash Prize worth 18K</h3> */}
                 {/* <span>12000</span> */}
               </div>
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
               {userData ? <a
-                  href="https://forms.gle/zFca1VzhLm3GozFR6"
+                  // href="https://forms.gle/zFca1VzhLm3GozFR6"
                   target="_blank"
                   className="btn btn-primary"
                 >
-                  Submission Link
+                  Register Here
                 </a> :
-                <Link to="/login" className="btn btn-primary">Login to Submit</Link>
+                <Link to="/login" className="btn btn-primary">Register Here</Link>
                 }
                 <a
-                  href="https://drive.google.com/file/d/1wMSqAYo_cIQjCuHFNOVi2XcysMjBnioM/view?usp=sharing"
+                  // href="https://drive.google.com/file/d/1wMSqAYo_cIQjCuHFNOVi2XcysMjBnioM/view?usp=sharing"
                   target="_blank"
                   className="btn btn-secondary"
                   // disabled
@@ -117,7 +117,8 @@ class EventIdeathon extends React.Component {
                     </div>
 
                     <div id="tab2" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -182,20 +183,20 @@ class EventIdeathon extends React.Component {
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
 
                     <div id="tab3" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              {/* <h3>Important Dates</h3> */}
-                              <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                              <h3>Important Dates</h3>
 
-                              {/* <ul>
+                              <ul>
                                 <li>
                                   <b>Idea Submission Deadline:</b>
                                 </li>
@@ -212,24 +213,23 @@ class EventIdeathon extends React.Component {
                                   <i className="icofont-wall-clock"></i>1st
                                   April 2023
                                 </li>
-                              </ul> */}
+                              </ul>
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              {/* <h3>Contact Info</h3> */}
-                              <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
-
-                              {/* <p>
+                              <h3>Contact Info</h3>
+                              <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
                                 <b>Ramona Kodkani</b>
                               </p>
@@ -237,11 +237,11 @@ class EventIdeathon extends React.Component {
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
                                 <b>9834467788</b>
-                              </p> */}
+                              </p>
                             </div>
                           </Link>
                         </li>
-                        {/* <li className="accordion-item">
+                        <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
 
@@ -259,8 +259,8 @@ class EventIdeathon extends React.Component {
                               </p>
                             </div>
                           </Link>
-                        </li> */}
-                      </ul>
+                        </li>
+                      </ul> */}
                     </div>
                   </div>
                 </div>

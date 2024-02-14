@@ -34,7 +34,7 @@ class EventEnigma extends React.Component {
 
               <div className="events-content">
                 <h2>Enigma</h2>
-                <h3>Cash Prize worth 12K</h3>
+                {/* <h3>Cash Prize worth 12K</h3> */}
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -50,11 +50,11 @@ class EventEnigma extends React.Component {
                 <Link to="/login" className="btn btn-primary">Login to Participate</Link>
                 } */}
                 {userData ? <a
-                  href="https://unstop.com/p/enigma-prelims-2-iit-kharagpur-657933"
+                  // href="https://unstop.com/p/enigma-prelims-2-iit-kharagpur-657933"
                   target="_blank"
                   className="btn btn-secondary"
                 >
-                   Prelims Round 2
+                   Register Here
                 </a> :
                 <Link to="/login" className="btn btn-primary">Register Here</Link>
                 }
@@ -201,7 +201,8 @@ class EventEnigma extends React.Component {
 
 
                     <div id="tab3" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -209,7 +210,7 @@ class EventEnigma extends React.Component {
                             <div className="schedule-info">
                             <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
 
-                              {/* <h3>Important Dates</h3>
+                              <h3>Important Dates</h3>
 
                               <ul>
                               
@@ -228,11 +229,11 @@ class EventEnigma extends React.Component {
                                 <li>
                                   <i className="icofont-wall-clock"></i>01 Apr 23, 10:00 AM IST
                                 </li>
-                              </ul> */}
+                              </ul>
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
 
                     <div id="tab4" className="tabs_item">

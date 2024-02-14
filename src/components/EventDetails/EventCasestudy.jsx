@@ -34,7 +34,7 @@ class EventCasestudy extends React.Component {
 
               <div className="events-content">
                 <h2>Case Study</h2>
-                <h3>Cash Prize worth 15K</h3>
+                {/* <h3>Cash Prize worth 15K</h3> */}
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -45,24 +45,24 @@ class EventCasestudy extends React.Component {
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 } */}
-                <a
+                {/* <a
                   href="https://drive.google.com/file/d/1GI__f_FmL9qIjNGgXdDjGqtqjjtE8vps/view?usp=sharing"
                   className="btn btn-primary"
                   target="_blank"
                 >
                   Problem Statement
-                </a>
+                </a> */}
                 {userData ? <a
-                  href="https://forms.gle/yZ5zTEcdxQz6rV2F9"
+                  // href="https://forms.gle/yZ5zTEcdxQz6rV2F9"
                   target="_blank"
                   className="btn btn-secondary"
                 >
-                  Submission Link
+                  Register Here
                 </a> :
                 <Link to="/login" className="btn btn-secondary">Register Here</Link>
                 }
                 <a
-                  href="https://drive.google.com/file/d/1EMan4nZwkR0dUEWR4wu_He5uyrIZCD8R/view?usp=sharing"
+                  // href="https://drive.google.com/file/d/1EMan4nZwkR0dUEWR4wu_He5uyrIZCD8R/view?usp=sharing"
                   className="btn btn-primary"
                   target="_blank"
                 >
@@ -126,7 +126,8 @@ class EventCasestudy extends React.Component {
                     </div>
 
                     <div id="tab2" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -159,7 +160,7 @@ class EventCasestudy extends React.Component {
                               <h3>Rounds of the Event</h3>
                               <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
 
-                              {/* <p>The event will have two rounds as follows:</p>
+                              <p>The event will have two rounds as follows:</p>
 
                               <ul>
                                 <li>
@@ -184,15 +185,16 @@ class EventCasestudy extends React.Component {
                                     </li>
                                   </ul>
                                 </li>
-                              </ul> */}
+                              </ul>
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
 
                     <div id="tab3" className="tabs_item">
-                      <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -200,7 +202,7 @@ class EventCasestudy extends React.Component {
                             <div className="schedule-info">
                             <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
 
-                              {/* <h3>Important Dates</h3>
+                              <h3>Important Dates</h3>
 
                               <ul>
                                 <li>
@@ -219,11 +221,11 @@ class EventCasestudy extends React.Component {
                                   <i className="icofont-wall-clock"></i>2nd
                                   April 2023 (till 4pm)
                                 </li>
-                              </ul> */}
+                              </ul>
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
 
                     <div id="tab4" className="tabs_item">
