@@ -34,7 +34,7 @@ class EventIdeathon extends React.Component {
 
               <div className="events-content">
                 <h2>Ideathon</h2>
-                {/* <h3>Cash Prize worth 18K</h3> */}
+                <h3>Cash Prize worth 20K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -78,7 +78,7 @@ class EventIdeathon extends React.Component {
                     </li>
 
                     <li onClick={(e) => this.openTabSection(e, "tab3")}>
-                      <Link to="#">Timeline</Link>
+                      <Link to="#">FAQ`s</Link>
                     </li>
 
                     <li onClick={(e) => this.openTabSection(e, "tab4")}>
@@ -95,14 +95,8 @@ class EventIdeathon extends React.Component {
                               <h3>Ideathon</h3>
 
                               <p>
-                                This is an entrepreneurship event that provides
-                                participating teams an open platform to pitch
-                                their ideas for a business venture or
-                                improvements in existing technology in any
-                                field. These will be evaluated by a panel of
-                                judges based on innovation, feasibility, impact
-                                as well as the quality of the pitch. So,
-                                register and test your power to convince!
+                              Ideathon is an event that encourages budding entrepreneurs and recognises the fast-growing start-up ecosystem in India. It provides participating teams an open platform to pitch their ideas for a business venture or improvements in existing technology in any field. These will be evaluated by a panel of judges based on innovation, feasibility, impact as well as the quality of the pitch. Participants are encouraged to register and refine their next big idea and their skill to convince!
+
                               </p>
 
                               {/* <ul>
@@ -117,8 +111,7 @@ class EventIdeathon extends React.Component {
                     </div>
 
                     <div id="tab2" className="tabs_item">
-                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
-                      {/* <ul className="accordion">
+                      <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -129,15 +122,16 @@ class EventIdeathon extends React.Component {
                               <ul>
                                 <li>
                                   {" "}
-                                  Team participation of a maximum of three is
-                                  expected.{" "}
+                                  Max 3 (Team Participation event){" "}
                                 </li>
                                 <li>
                                   {" "}
-                                  All members should be students pursuing a
-                                  B.Tech/ BSc./ Dual/ MTech/ MSc degree in any
-                                  college in India.{" "}
+                                  Open to all students pursuing
+Bachelors/Masters/PHD in any science and engineering college 
+{" "}
                                 </li>
+                               
+
                               </ul>
                             </div>
                           </Link>
@@ -148,119 +142,192 @@ class EventIdeathon extends React.Component {
                             <div className="author author-multi"></div>
 
                             <div className="schedule-info">
-                              <h3>Rounds of the Event</h3>
-                              <p>The event will have two rounds as follows:</p>
-
-                              <ul>
-                                <li>
-                                  <b>Idea Submission (Online):</b>
-                                  <ul>
-                                    <li>
-                                      Participants are to submit a PowerPoint
-                                      presentation of a pitch deck describing
-                                      their idea that should not exceed 15
-                                      slides. Based on the quality of the
-                                      presentation, idea proposed, and its
-                                      impact, selected teams will be invited for
-                                      the final presentation round at IIT
-                                      Kharagpur.
-                                    </li>
-                                  </ul>
-                                </li>
-                                <br></br>
-                                <br />
-                                <li>
-                                  <b>Final Presentation Round:</b>
-                                  <ul>
-                                    <li>
-                                      Shortlisted teams will present their ideas
-                                      before a panel of judges who will decide
-                                      the winning pitch.
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                          </Link>
-                        </li>
-                      </ul> */}
-                    </div>
-
-                    <div id="tab3" className="tabs_item">
-                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
-                      {/* <ul className="accordion">
-                        <li className="accordion-item">
-                          <Link className="accordion-title" to="#">
-                            <div className="author"></div>
-
-                            <div className="schedule-info">
+                              {/* <h2>Rounds of the Event</h2> */}
+                              {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                              <div className="schedule-info">
                               <h3>Important Dates</h3>
 
                               <ul>
                                 <li>
-                                  <b>Idea Submission Deadline:</b>
+                                  <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>29th
-                                  March, 2023 (11:59PM)
+                                12th March 2024
                                 </li>
                                 <br></br>
                                 <br></br>
                                 <li>
-                                  <b>Final presentation:</b>
+                                  <b>Final Event:</b>
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>1st
-                                  April 2023
-                                </li>
+                                30th April 2024                                </li>
+                              </ul>
+                            </div>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author author-multi"></div>
+
+                            <div className="schedule-info">
+                              <h2>Rules of the Event</h2>
+                              {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                              <div className="schedule-info">
+                                <br />
+                              <h3>General Rules:-</h3>
+
+                              <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
+                                <li>{""}The maximum number of participants in a Team is 3. Individual participation is also permitted.
+  {" "} </li>
+                                <li>{""}The best presenting team will be awarded.
+  {" "} </li>
+                                <li>{""}The teams are expected to present innovative and well-researched ideas in any field, not necessarily restricted to material science and metallurgy. {" "} </li>                                
+                                <li>{""}Everything is allowed in the presentation, including sound effects, video clips, and graphics.{" "} </li>                                
+                                <li>{""}Any action that violates the stated rules will result in immediate disqualification of the team from the competition. {" "} </li>                                
+                              </ul>
+                            </div>
+                              <div className="schedule-info">
+                                <br />
+                              <h3>Rules for round 1:-</h3>
+
+                              <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
+                                <li>{" "}Participants are to submit a PowerPoint presentation of a pitch deck describing their idea that should not exceed 10 slides including the team introduction and thank you page. {" "}</li>     
+
+
+                                <li>{" "}The teams have to submit their presentation that must describe the idea proposed, its impact and implementation as required. {" "}</li>             
+
+                                <li>{" "}Submissions that are incomplete or ambiguous, with presentations that are not up to the     mark will not be given the permission to present in the second round.  {" "}</li>                                
+                                                                                         
+                              </ul>
+                            </div>
+                              <div className="schedule-info">
+                                <br />
+                              <h3>Rules for round 2:-</h3>
+
+                              <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
+                                <li>{" "} This round will be conducted in the form of a presentation at the IIT Kharagpur campus in front of a panel of judges.{" "} <br /> </li>  
+
+
+                                <li>{" "} Participants are required to prepare a presentation within the time limit of 10 minutes, followed by a 5-minute Q&A session. Teams that exceed the given time limit will be penalized.{" "} </li>  
+
+                                <li> {""}There would be penalties if the time exceeds the time limit as follows - <br />
+&nbsp;1. &nbsp; 0-1 min: 10% of the presentation marks of the team<br />
+&nbsp;2. &nbsp; 1-2 mins: 20% of the presentation marks of the team <br />
+&nbsp;3. &nbsp; Greater than 2 mins : 100% of the presentation marks of the team <br />
+{""} </li>                        
+
+
+
+                                <li>{" "}Top 3 teams will receive cash prizes. Decisions made by the judges are final and binding. {" "} </li>    
+
+
+                                <li>{" "}  The presentation has to be completed in 7 to 10 minutes.{" "} </li>                                                       
+                                <li>{" "}  There would be penalties if the time exceeds the time limit as follows— <br />min: 10% of the presentation marks of the team <br />
+                 1-2 mins: 20% of the presentation marks of the team <br />
+                Greater than 2 mins: 100% of the presentation marks of the team
+{" "} </li>                                                       
+
+                              </ul>
+                            </div>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author author-multi"></div>
+
+                            <div className="schedule-info">
+                              <h2>Judging Criteria</h2>
+                              {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                              <div className="schedule-info">
+                              <ul className="rules-list">
+                                <li> {""}Top 3 teams will be awarded based on the score by the judges.{""} </li>
+                                <li> {""} The teams will be judged on the following parameters:  <br />
+&nbsp;1. &nbsp; Idea<br />
+&nbsp;2. &nbsp; Issue addressed and its proposed solution<br />
+&nbsp;3. &nbsp; Quality of the pitch <br />
+&nbsp;4. &nbsp; Impact
+
+{""} </li> <br />
+<li>{""}		The judges’ decision is final on all matters.{""} </li>
+                              </ul>
+                            </div>
+                            </div>
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                    <div id="tab3" className="tabs_item">
+                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+
+                      <ul className="accordion">
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author"></div>
+
+                            <div className="schedule-info">
+                              <h3>Frequently Asked Questions</h3>
+
+                              <ul>
+                                <li>{" "}1 : &nbsp; What is the procedure of registration for the event?  {" "}</li>
+                                <li>{" "}-&nbsp;  As with all events, all the participants must first be registered through the COMPOSIT website, after which they will be provided with a participant ID. The final team registration for the event should be done by the team leader only where the participant IDs of the members must be entered.
+ {" "}</li><br /> <br />
+
+
+                                <li>{" "} 2 : &nbsp; What will happen if the participating team will not submit their PowerPoint presentation before the deadline?
+{" "}</li>
+                                <li>{" "}-&nbsp; The team will be disqualified and will not be allowed to continue further in the event.
+{" "}</li> <br /> <br />
+
+
+                                <li>{" "}3 : &nbsp; Is there any specific field that the idea proposed should be on? Does it have to be a complete business model?
+{" "}</li> <br />
+
+                                <li>{" "}-&nbsp;  There is no restriction on the field of the idea or that it should be a business model. It could address an issue in any field, and range from a small improvement in existing technology to a full-fledged model for a business venture. The judging panel and COMPOSIT will fairly take all factors into account during evaluation. {" "}</li> <br /> <br /> <br />
+
+
+                                <li>{" "}4 : &nbsp; What is the format of the PowerPoint presentation to be submitted in the first round?
+ {" "}</li><br />
+                                <li>{" "}-&nbsp;  Participants are to submit a PowerPoint presentation of a pitch deck describing their idea that should not exceed 15 slides. Everything is allowed in the presentation, including sound effects, video clips, and graphics
+ {" "}</li> <br /> <br />
+
+
+                                <li>{" "}5 : &nbsp; Is there a slide limit for the presentation?
+ {" "}</li> <br />
+                                <li>{" "}-&nbsp;  Yes. The number of slides should not exceed 10, including the Introduction and Thank you slides.
+ {" "}</li><br /> <br />
+                               
                               </ul>
                             </div>
                           </Link>
                         </li>
-                      </ul> */}
+                      </ul>
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
-                      {/* <ul className="accordion">
+                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+
+                      <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              <h3>Contact Info</h3>
+
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Ramona Kodkani</b>
+                                <b>Subhrojyoti Mukherjee</b>
                               </p>
                               <p>
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
-                                <b>9834467788</b>
+                                <b>9112230084</b>
                               </p>
                             </div>
                           </Link>
                         </li>
-                        <li className="accordion-item">
-                          <Link className="accordion-title" to="#">
-                            <div className="author"></div>
-
-                            <div className="schedule-info">
-                              <h3>Contact Info</h3>
-
-                              <p>
-                                Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Alluri Hasitha</b>
-                              </p>
-                              <p>
-                                Contact:{" "}
-                                <i className="icofont-phone-circle"></i>{" "}
-                                <b>9392703946</b>
-                              </p>
-                            </div>
-                          </Link>
-                        </li>
-                      </ul> */}
+                      </ul>
                     </div>
                   </div>
                 </div>

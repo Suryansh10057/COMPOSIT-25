@@ -5190,5 +5190,17 @@ Back To Top CSS
   font-weight: 500;
   color: #150050;
 }
+.rules-list{
+  list-style-type: circle !important;
+  text-align: left;
+  & li{
+    margin-bottom: 1rem;
+  }
+}
+.rules-list li::before {
+  content: "•"; /* Unicode character for bullet point */
+  margin-right: 0.5em; /* Adjust spacing */
+  color: black;
+}
 
 /*# sourceMappingURL=style.css.map */

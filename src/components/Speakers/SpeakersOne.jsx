@@ -1021,49 +1021,7 @@ class SpeakersOne extends React.Component {
                     </ul>
                   </div>
       </div>
-      {/* Team member */}
-
-      <div className="col-lg-3 col-md-6 p-0">
-                  <div className="single-speakers">
-                    <img
-                      src={require("../../assets/images/SubHeads/sambhav.jpg")}
-                      alt="speakers"
-                    />
-
-                    <div className="speakers-content">
-                      <h3 style={{ color: "#fec66d" }}>Shambhav Kothari</h3>
-                    </div>
-                    <ul>
-                      <li>
-                        <a
-                          href="https://www.facebook.com/me.SambhavKothari"
-                          target="_blank"
-                          className="facebook"
-                        >
-                          <i className="icofont-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="mailto:sambhavkothari25@gmail.com"
-                          target="_blank"
-                          className="twitter"
-                        >
-                          <i className="icofont-envelope"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.linkedin.com/in/sambhav-kothari-b23b59247/"
-                          target="_blank"
-                          className="linkedin"
-                        >
-                          <i className="icofont-linkedin"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-      </div>
+    
       {/* Team member */}
 
       <div className="col-lg-3 col-md-6 p-0">
