@@ -36,7 +36,7 @@ const GetAllUsers = () => {
         let buttons = document.getElementById('buttons');
         e.preventDefault();
         try {
-            const res = await axios.get(`${process.env.REACT_APP_API_KEY}/admin/getAllUsers`)
+            const res = await axios.get(`https://composit2024backend.onrender.com/admin/getAllUsers`)
             const regUsers = res.data
             setRegistrations(regUsers)
         } catch (err) {

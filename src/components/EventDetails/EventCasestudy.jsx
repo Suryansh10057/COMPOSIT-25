@@ -34,25 +34,32 @@ class EventCasestudy extends React.Component {
 
               <div className="events-content">
                 <h2>Case Study</h2>
-                <h3>Cash Prize worth 20K</h3>
+                <h3>Cash Prize worth 25K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
+              <a
+                  // href="https://drive.google.com/file/d/1GI__f_FmL9qIjNGgXdDjGqtqjjtE8vps/view?usp=sharing"
+                  className="btn btn-primary"
+                  target="_blank"
+                >
+                  Register Here
+                </a>
                 {/* {userData ?
                                     <Link to="#" className="btn btn-secondary">Register</Link>
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 } */}
                 <a
-                  href="https://drive.google.com/file/d/1GI__f_FmL9qIjNGgXdDjGqtqjjtE8vps/view?usp=sharing"
+                  // href="https://drive.google.com/file/d/1GI__f_FmL9qIjNGgXdDjGqtqjjtE8vps/view?usp=sharing"
                   className="btn btn-primary"
                   target="_blank"
                 >
                   Problem Statement
                 </a>
-                {userData ? <a
+                {/* {userData ? <a
                   href="https://forms.gle/yZ5zTEcdxQz6rV2F9"
                   target="_blank"
                   className="btn btn-secondary"
@@ -60,9 +67,9 @@ class EventCasestudy extends React.Component {
                   Submission Link
                 </a> :
                 <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
-                }
+                } */}
                 <a
-                  href="https://drive.google.com/file/d/1EMan4nZwkR0dUEWR4wu_He5uyrIZCD8R/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1AGIDPAJLJud8e5EqD-gUzhJhIwZovJTq/view?usp=sharing"
                   className="btn btn-primary"
                   target="_blank"
                 >
@@ -300,7 +307,7 @@ COMPOSIT website, after which they will be provided with a participant ID. The f
                     <div id="tab4" className="tabs_item">
                     {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
 
-                      <ul className="accordion">
+                    <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -315,6 +322,24 @@ COMPOSIT website, after which they will be provided with a participant ID. The f
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
                                 <b>9112230084</b>
+                              </p>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author"></div>
+
+                            <div className="schedule-info">
+
+                              <p>
+                                Name: <i className="icofont-user-suited"></i>{" "}
+                                <b>Mayuresh Lohani</b>
+                              </p>
+                              <p>
+                                Contact:{" "}
+                                <i className="icofont-phone-circle"></i>{" "}
+                                <b>8709471451</b>
                               </p>
                             </div>
                           </Link>

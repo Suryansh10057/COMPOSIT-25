@@ -35,20 +35,27 @@ class EventExcavate extends React.Component {
 
               <div className="events-content">
                 <h2>Excavate</h2>
-                <h3>Cash Prize worth 20K</h3>
+                <h3>Cash Prize worth 30K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
               <a
-                  href="https://drive.google.com/file/d/1opbqzg9JpcxYx2pEAJQ8TOYF8-GrkURK/view?usp=sharing"
+                  // href="https://drive.google.com/file/d/1kqDIad3xbW4toWG911TsBtKr0UnAYXXA/view?usp=sharing"
+                  target="_blank"
+                  className="btn btn-secondary"
+                >
+                  Register Here
+                </a>
+              <a
+                  // href="https://drive.google.com/file/d/1opbqzg9JpcxYx2pEAJQ8TOYF8-GrkURK/view?usp=sharing"
                   className="btn btn-secondary"
                   target="_blank"
                 >
                   Problem Statement
                 </a>
-                {userData ? <a
+                {/* {userData ? <a
                   href="https://forms.gle/pDivTcxotFdThgYy7"
                   target="_blank"
                   className="btn btn-primary"
@@ -56,9 +63,9 @@ class EventExcavate extends React.Component {
                   Submission Link
                 </a> :
                   <Link to="/login" className="btn btn-primary">Login to Submit</Link>
-                }
+                } */}
                 <a
-                  href="https://drive.google.com/file/d/1kqDIad3xbW4toWG911TsBtKr0UnAYXXA/view?usp=sharing"
+                  href="https://drive.google.com/file/d/100Kp7akKnRQ3EQPClk8GiRlF1THvqtNr/view?usp=sharing"
                   target="_blank"
                   className="btn btn-secondary"
                 >
@@ -217,10 +224,11 @@ COMPOSIT.
                                 <li>{" "} The top teams from the first round will be selected as finalists. The selected teams will be notified via email. {" "} <br /> </li>                                                       
                                 <li>{" "} For this round, the teams must prepare a presentation that will be judged by a panel of judges. {" "} </li>                                                       
                                 <li>{" "} During the presentation, finalist teams must briefly describe their approach and follow a list of pointers that will be provided in the selection email. {" "} </li>                                                       
-                                <li>{" "}  The presentation has to be completed in 7 to 10 minutes.{" "} </li>                                                       
-                                <li>{" "}  There would be penalties if the time exceeds the time limit as follows— <br />min: 10% of the presentation marks of the team <br />
-                 1-2 mins: 20% of the presentation marks of the team <br />
-                Greater than 2 mins: 100% of the presentation marks of the team
+                                <li>{" "} The presentation has to be completed in 7 to 10 minutes.{" "} </li>                                                       
+                                <li>{" "} There would be penalties if the time exceeds the time limit as follows— 
+                                          <b>1. </b> 0-1 min: 10% of the presentation marks of the team 
+                                          <b>2. </b> 1-2 mins: 20% of the presentation marks of the team
+                                          <b>3. </b> Greater than 2 mins: 100% of the presentation marks of the team
 {" "} </li>                                                       
                                 <li>{" "} The presentation will also be followed by a Q&A session with the judging panel for 5 minutes, which will also be considered for final evaluation.  {" "} </li>                                                       
                                 <li>{" "}The top 3 teams will receive cash prizes. Decisions made by the judges are final and binding.  {" "} </li>                                                       

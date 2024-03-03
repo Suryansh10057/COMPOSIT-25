@@ -321,7 +321,7 @@
   }
   .single-speakers .speakers-content {
     bottom: 20px;
-    left: 20px;
+    left: 0px;
     text-align: center;
     width: 100%;
   }
@@ -1736,6 +1736,13 @@
   .elkevent-nav nav .others-option {
     margin-left: 0;
     margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  /*Event Details*/
+  .event-area{
+    flex-direction: column;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

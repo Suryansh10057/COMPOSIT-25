@@ -35,25 +35,23 @@ class EventTechnova extends React.Component {
 
               <div className="events-content">
                 <h2>Technova</h2>
-                {/* <h3>Cash Prize worth 28K</h3> */}
+                <h3>Cash Prize worth 20K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-              {userData ? <a
+              <a
                   // href="https://forms.gle/sqA1B7Gw3gKnePAc8"
                   target="_blank"
                   className="btn btn-primary"
                 >
                   {/* Submission Link */}
                   Register Here
-                </a> :
-                <Link to="/login" className="btn btn-primary">Register Here</Link>
-              }
+                </a>
               
                 <a
-                  // href="https://drive.google.com/file/d/1A7Dhc9_CdSSnoewBx6oopLqDXuD1cMjN/view?usp=drivesdk"
+                  href="https://drive.google.com/file/d/1Y-btkp0RwULGrsj8vB_W5il5QOmmzXUe/view?usp=sharing"
                   target="_blank"
                   className="btn btn-secondary"
                 >

@@ -34,7 +34,7 @@ class EventMetaclix extends React.Component {
 
               <div className="events-content">
                 <h2>Metaclix</h2>
-                <h3>Cash Prize worth 25K</h3>
+                <h3>Cash Prize worth 10K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -49,17 +49,15 @@ class EventMetaclix extends React.Component {
                     Register
                   </Link>
                 )} */}
-                {userData ? <a
+                <a
                   // href="https://forms.gle/JcGpUT9rkMkksVdQ7"
                   target="_blank"
                   className="btn btn-primary"
                 >
                   Register Here
-                </a> :
-                <Link to="/login" className="btn btn-primary">Register Here</Link>
-                }
+                </a>
                 <a 
-                // href="https://drive.google.com/file/d/1yNALvqJkc0ioCggPHkyzR61Id4OdzO6g/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1Y0DXrm0sdtMAecBJ2b_WllbrmNtRNIYZ/view?usp=sharing" 
                 className="btn btn-secondary" 
                 target="_blank">
                   Rules & Regulations
@@ -246,7 +244,7 @@ COMPOSIT.
 &nbsp;3. &nbsp; Creativity and originality<br />
 &nbsp;4. &nbsp; Technical Quality ‣ Caption
 
-{""} </li>
+{""} </li><br/>
 <li>{""}		Evaluation will be done by COMPOSIT team. Teams decision will be final on all matters.{""} </li>
                               </ul>
                             </div>
@@ -333,12 +331,12 @@ COMPOSIT.
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Manisha Sahoo</b>
+                                <b>Mayuresh Lohani</b>
                               </p>
                               <p>
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
-                                <b>9337220572</b>
+                                <b>8709471451</b>
                               </p>
                             </div>
                           </Link>

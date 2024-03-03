@@ -34,23 +34,22 @@ class EventIdeathon extends React.Component {
 
               <div className="events-content">
                 <h2>Ideathon</h2>
-                <h3>Cash Prize worth 20K</h3>
+                <h3>Cash Prize worth 15K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-              {userData ? <a
-                  // href="https://forms.gle/zFca1VzhLm3GozFR6"
+              <a
+                  // href="https://drive.google.com/file/d/1wMSqAYo_cIQjCuHFNOVi2XcysMjBnioM/view?usp=sharing"
                   target="_blank"
-                  className="btn btn-primary"
+                  className="btn btn-secondary"
+                  // disabled
                 >
                   Register Here
-                </a> :
-                <Link to="/login" className="btn btn-primary">Register Here</Link>
-                }
+                </a>
                 <a
-                  // href="https://drive.google.com/file/d/1wMSqAYo_cIQjCuHFNOVi2XcysMjBnioM/view?usp=sharing"
+                  href="https://drive.google.com/file/d/10DTDbLLWTYhtX9Md5eHDpGvc_beqVmzX/view?usp=sharing"
                   target="_blank"
                   className="btn btn-secondary"
                   // disabled
@@ -309,7 +308,7 @@ Bachelors/Masters/PHD in any science and engineering college
                     <div id="tab4" className="tabs_item">
                     {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
 
-                      <ul className="accordion">
+                    <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -324,6 +323,24 @@ Bachelors/Masters/PHD in any science and engineering college
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
                                 <b>9112230084</b>
+                              </p>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author"></div>
+
+                            <div className="schedule-info">
+
+                              <p>
+                                Name: <i className="icofont-user-suited"></i>{" "}
+                                <b>Mayuresh Lohani</b>
+                              </p>
+                              <p>
+                                Contact:{" "}
+                                <i className="icofont-phone-circle"></i>{" "}
+                                <b>8709471451</b>
                               </p>
                             </div>
                           </Link>
