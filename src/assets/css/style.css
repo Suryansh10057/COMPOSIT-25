@@ -5202,5 +5202,19 @@ Back To Top CSS
   margin-right: 0.5em; /* Adjust spacing */
   color: black;
 }
+.faqs{
+  border: .3px solid black !important;
+  margin: 1rem 0 !important;
+  border-radius: 10px !important;
+  background-color: #eaeaea !important;
+  padding: 1rem !important;
+  text-align: left;
+  & > :first-child {
+    color: blue !important;
+  }
+}
+.faqs-head{
+  background-color: #F9F9FF !important ;
+}
 
 /*# sourceMappingURL=style.css.map */

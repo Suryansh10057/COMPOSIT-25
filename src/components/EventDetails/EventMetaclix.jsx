@@ -267,27 +267,36 @@ COMPOSIT.
                             <div className="schedule-info">
                               <h3>Frequently Asked Questions</h3>
 
-                              <ul>
-                                <li>{" "}1 : &nbsp;  What is the procedure of registration for the event?  {" "}</li>
+                              <ul className="accordion faqs">
+                              <li>{" "}1 : &nbsp;  What is the procedure of registration for the event?  {" "}</li>
                                 <li>{" "}-&nbsp; As with all events, all the participants must first be registered through the COMPOSIT website, after which they will be provided with a participant ID. After registration, the final submission must be done through google forms.
  {" "}</li><br /> <br />
-                                <li>{" "} 2 : &nbsp; What can be the format of submissions?{" "}</li>
+        </ul>
+                              <ul className="accordion faqs">
+                              <li>{" "} 2 : &nbsp; What can be the format of submissions?{" "}</li>
                                 <li>{" "}-&nbsp; As stated above , the pictures should be in JPEG format and the caption in the the Google form submission on the website.
 
 {" "}</li> <br /> <br />
-                                <li>{" "}3 : &nbsp;  What is the total number of submissions that can be made?  {" "}</li> <br />
+        </ul>
+                              <ul className="accordion faqs">
+                              <li>{" "}3 : &nbsp;  What is the total number of submissions that can be made?  {" "}</li> <br />
 
-                                <li>{" "}-&nbsp;  Participants may submit entries for multiple themes, but only one entry can be submitted per theme. {" "}</li> <br /> <br /> <br />
-                                <li>{" "}4 : &nbsp;  What can be the caption for the entry that should be submitted?{" "}</li><br />
+<li>{" "}-&nbsp;  Participants may submit entries for multiple themes, but only one entry can be submitted per theme. {" "}</li> <br /> <br /> <br />
+        </ul>
+                              <ul className="accordion faqs">
+                              <li>{" "}4 : &nbsp;  What can be the caption for the entry that should be submitted?{" "}</li><br />
                                 <li>{" "}-&nbsp;  Caption can be any creative title of the image that best describes the photography and can relate to the theme in a better way. It could be a artistic or even humorous perspective of the same image.
 
  {" "}</li> <br /> <br />
-                                <li>{" "}5 : &nbsp; What do I need to cover in the final presentation? {" "}</li> <br />
+        </ul>
+                              <ul className="accordion faqs">
+        
+                              <li>{" "}5 : &nbsp; What do I need to cover in the final presentation? {" "}</li> <br />
                                 <li>{" "}-&nbsp;   Only Global editing is permitted. Submissions with Modifications or alterations in image will be disqualified.
 
  {" "}</li><br /> <br />
-                                
-                              </ul>
+        </ul>
+        
                             </div>
                           </Link>
                         </li>

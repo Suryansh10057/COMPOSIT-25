@@ -18,6 +18,7 @@ class EventExcavate extends React.Component {
     evt.currentTarget.className += "current";
   };
   render() {
+    
     const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
     return (
       <div className="event-details-area ptb-120">
@@ -257,37 +258,73 @@ COMPOSIT.
                     <div id="tab3" className="tabs_item">
                     {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
 
-                      <ul className="accordion">
-                        <li className="accordion-item">
+                      <ul className="accordion ">
+                        <li className="accordion-item faqs-head">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
 
                             <div className="schedule-info">
                               <h3>Frequently Asked Questions</h3>
 
-                              <ul>
-                                <li>{" "}1 : &nbsp; What technical knowledge do I need to have to participate in this event?  {" "}</li>
-                                <li>{" "}-&nbsp; Basic knowledge of Data Science, programming in Python and machine learning libraries would be needed for the event.
- {" "}</li><br /> <br />
-                                <li>{" "} 2 : &nbsp; What is the procedure for registration for the event? Do all the members have to be registered?{" "}</li>
-                                <li>{" "}-&nbsp;  Yes, as with all events, all the participants must first be registered through the
-COMPOSIT website, after which they will be provided with a participant ID. The final team registration for the event should be done by the team leader only when the participant IDs of the members must be entered.
-{" "}</li> <br /> <br />
-                                <li>{" "}3 : &nbsp;  Are personal laptops required in the final round? {" "}</li> <br />
+                              <ul className="accordion faqs">
+                                          <li style={{color:'blue'}}>{" "}1 : &nbsp; What technical knowledge do I need to have to participate in this event?  {" "}</li>
+                                          <li>{" "}-&nbsp; Basic knowledge of Data Science, programming in Python and machine learning libraries would be needed for the event.
+          {" "}</li><br /> <br />
+          </ul>
+                                            
 
-                                <li>{" "}-&nbsp; Yes {" "}</li> <br /> <br /> <br />
-                                <li>{" "}4 : &nbsp; Is there a slide limit for the presentation? {" "}</li><br />
-                                <li>{" "}-&nbsp; No. Any number of slides may be used as long as the overall presentation is kept within the time limit.
- {" "}</li> <br /> <br />
-                                <li>{" "}5 : &nbsp; What do I need to cover in the final presentation? {" "}</li> <br />
-                                <li>{" "}-&nbsp;  A brief description of the code, basic analysis and interpretation is expected based on the pointers in the questionnaire. Additional analysis will also be rewarded accordingly.
- {" "}</li><br /> <br />
-                                <li>{" "}6 : &nbsp;  Will the first-round results have weightage in the final results?
- {" "}</li>
-                                <li>{" "}-&nbsp; Yes. Since model accuracy is a factor in the final evaluation {" "}</li> <br /> <br />
-                                <li>{" "}7 : &nbsp;  Are more than one submission allowed for the first round? {" "}</li> <br />
-                                <li>{" "}-&nbsp; No  {" "}</li>
-                              </ul>
+<ul className="accordion faqs">
+                                          <li style={{color:'blue'}}>{" "} 2 : &nbsp; What is the procedure for registration for the event? Do all the members have to be registered?{" "}</li>
+                                          <li>{" "}-&nbsp;  Yes, as with all events, all the participants must first be registered through the
+          COMPOSIT website, after which they will be provided with a participant ID. The final team registration for the event should be done by the team leader only when the participant IDs of the members must be entered.
+          {" "}</li> <br /> <br />
+                                
+          </ul>
+          <ul className="accordion faqs">
+          <li style={{color:'blue'}}>{" "}3 : &nbsp;  Are personal laptops required in the final round? {" "}</li> <br />
+
+<li>{" "}-&nbsp; Yes {" "}</li> <br /> <br /> 
+
+
+</ul>
+          <ul className="accordion faqs">
+          <li style={{color:'blue'}}>{" "}4 : &nbsp; Is there a slide limit for the presentation? {" "}</li><br />
+                                          <li>{" "}-&nbsp; No. Any number of slides may be used as long as the overall presentation is kept within the time limit.
+          {" "}</li> <br /> <br />
+</ul>
+          <ul className="accordion faqs">
+          <li style={{color:'blue'}}>{" "}5 : &nbsp; What do I need to cover in the final presentation? {" "}</li> <br />
+                                          <li>{" "}-&nbsp;  A brief description of the code, basic analysis and interpretation is expected based on the pointers in the questionnaire. Additional analysis will also be rewarded accordingly.
+          {" "}</li><br /> <br />
+</ul>
+          <ul className="accordion faqs">
+
+          <li style={{color:'blue'}}>{" "}6 : &nbsp;  Will the first-round results have weightage in the final results?
+          {" "}</li>
+                                          <li >{" "}-&nbsp; Yes. Since model accuracy is a factor in the final evaluation {" "}</li> <br /> <br />
+
+</ul>
+          <ul className="accordion faqs">
+          <li style={{color:'blue'}}>{" "}7 : &nbsp;  Are more than one submission allowed for the first round? {" "}</li> <br />
+                                          <li>{" "}-&nbsp; No  {" "}</li>
+</ul>
+       
+
+
+
+
+                                          
+
+                                          
+
+
+
+                                         
+
+
+
+                                          
+                                          
                             </div>
                           </Link>
                         </li>

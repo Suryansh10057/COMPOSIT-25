@@ -255,31 +255,42 @@ and presentation submitted by the team
 
                             <div className="schedule-info">
                               <h3>Frequently Asked Questions</h3>
-
-                              <ul>
-                                <li>{" "}1 : &nbsp; What is the procedure of registration for the event? Do all the members have to be registered?{" "}</li>
+                              <ul className="accordion faqs">
+                              <li>{" "}1 : &nbsp; What is the procedure of registration for the event? Do all the members have to be registered?{" "}</li>
                                 <li>{" "}-&nbsp; Yes, as with all events, all the participants must first be registered through the
 COMPOSIT website, after which they will be provided with a participant ID. The final team registration for the event should be done by the team leader only where the participant IDs of the members must be entered.
 
  {" "}</li><br /> <br />
-                                <li>{" "} 2 : &nbsp; What will happen if the participating team will not submit their abstract idea before the deadline?{" "}</li>
+        </ul>
+                              <ul className="accordion faqs">
+                              <li>{" "} 2 : &nbsp; What will happen if the participating team will not submit their abstract idea before the deadline?{" "}</li>
                                 <li>{" "}-&nbsp; The team will be disqualified and will not be allowed to continue further in the event.
 {" "}</li> <br /> <br />
-                                <li>{" "}3 : &nbsp;   What is the format of the abstract to be submitted in the first round? 
+        </ul>
+                              <ul className="accordion faqs">
+                              <li>{" "}3 : &nbsp;   What is the format of the abstract to be submitted in the first round? 
  {" "}</li> <br />
 
                                 <li>{" "}-&nbsp; The abstract should be a report of not less than 7 pages which should include the background, objectives, methods used for analyzing and collecting the data, results and conclusion of the given problem statement. This report must have the font style Arial and font size 12.
  {" "}</li> <br /> <br /> <br />
-                                <li>{" "}4 : &nbsp; How will we get to know if we are qualified for the second round? 
+        </ul>
+                              <ul className="accordion faqs">
+                              <li>{" "}4 : &nbsp; How will we get to know if we are qualified for the second round? 
  {" "}</li><br />
                                 <li>{" "}-&nbsp; All teams submitting the abstract following all the rules and theme of the problem statement automatically qualify for the offline round. There will be no elimination after the first round.
 
  {" "}</li> <br /> <br />
-                                <li>{" "}5 : &nbsp; Is there a slide limit for the presentation? {" "}</li> <br />
+        </ul>
+                              <ul className="accordion faqs">
+                              <li>{" "}5 : &nbsp; Is there a slide limit for the presentation? {" "}</li> <br />
                                 <li>{" "}-&nbsp;  No. Any number of slides may be used as long as the overall presentation is kept within the time limit.
  {" "}</li><br /> <br />
                                
-                              </ul>
+        </ul>
+                            
+           
+
+                              
                             </div>
                           </Link>
                         </li>

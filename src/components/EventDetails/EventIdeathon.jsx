@@ -268,37 +268,38 @@ Bachelors/Masters/PHD in any science and engineering college
 
                             <div className="schedule-info">
                               <h3>Frequently Asked Questions</h3>
-
-                              <ul>
-                                <li>{" "}1 : &nbsp; What is the procedure of registration for the event?  {" "}</li>
+                              <ul className="accordion faqs">
+                              <li>{" "}1 : &nbsp; What is the procedure of registration for the event?  {" "}</li>
                                 <li>{" "}-&nbsp;  As with all events, all the participants must first be registered through the COMPOSIT website, after which they will be provided with a participant ID. The final team registration for the event should be done by the team leader only where the participant IDs of the members must be entered.
  {" "}</li><br /> <br />
-
-
-                                <li>{" "} 2 : &nbsp; What will happen if the participating team will not submit their PowerPoint presentation before the deadline?
+        </ul>
+                              <ul className="accordion faqs">
+                              <li>{" "} 2 : &nbsp; What will happen if the participating team will not submit their PowerPoint presentation before the deadline?
 {" "}</li>
                                 <li>{" "}-&nbsp; The team will be disqualified and will not be allowed to continue further in the event.
 {" "}</li> <br /> <br />
-
-
-                                <li>{" "}3 : &nbsp; Is there any specific field that the idea proposed should be on? Does it have to be a complete business model?
+        </ul>
+                              <ul className="accordion faqs">
+                              <li>{" "}3 : &nbsp; Is there any specific field that the idea proposed should be on? Does it have to be a complete business model?
 {" "}</li> <br />
 
                                 <li>{" "}-&nbsp;  There is no restriction on the field of the idea or that it should be a business model. It could address an issue in any field, and range from a small improvement in existing technology to a full-fledged model for a business venture. The judging panel and COMPOSIT will fairly take all factors into account during evaluation. {" "}</li> <br /> <br /> <br />
 
-
-                                <li>{" "}4 : &nbsp; What is the format of the PowerPoint presentation to be submitted in the first round?
+        </ul>
+                              <ul className="accordion faqs">
+                              <li>{" "}4 : &nbsp; What is the format of the PowerPoint presentation to be submitted in the first round?
  {" "}</li><br />
                                 <li>{" "}-&nbsp;  Participants are to submit a PowerPoint presentation of a pitch deck describing their idea that should not exceed 15 slides. Everything is allowed in the presentation, including sound effects, video clips, and graphics
  {" "}</li> <br /> <br />
-
-
-                                <li>{" "}5 : &nbsp; Is there a slide limit for the presentation?
+        </ul>
+                              <ul className="accordion faqs">
+                              <li>{" "}5 : &nbsp; Is there a slide limit for the presentation?
  {" "}</li> <br />
                                 <li>{" "}-&nbsp;  Yes. The number of slides should not exceed 10, including the Introduction and Thank you slides.
  {" "}</li><br /> <br />
-                               
-                              </ul>
+        </ul>
+                             
+                              
                             </div>
                           </Link>
                         </li>
