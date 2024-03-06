@@ -25,13 +25,16 @@ export default function Signup() {
         if (event.target === popupBtn) {
             openForm();
         }
-    }
+    } 
+    
     const handleChange = (event) => {
         setSignupData({
             ...signupData,
             [event.target.name]: event.target.value,
         })
+        console.log('something changed')
     }
+    const submit = document.getElementById('submitbtn')
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -39,11 +42,17 @@ export default function Signup() {
         const str1 = str.toUpperCase()
         const ph = signupData.contact
         signupData.regID = `C24${str1.substring(0, 3)}${ph.substring(0, 2)}${Math.floor(Math.random() * 90 + 10)}`
+        console.log('wait...')
+        submit.innerText = 'signing in wait....'
+        submit.disabled=true;
         try {
             const res = await axios.post(`https://composit2024backend.onrender.com/auth/register`, signupData)
             setErrorr(res.data)
             openForm()
             console.log(res)
+            console.log('submitted')
+            submit.innerText='Signup'
+            submit.disabled = false
         }
         catch (error) {
 
@@ -217,7 +226,7 @@ export default function Signup() {
                                 />
                             </div>
                             {/* {errorr && <p>{errorr}</p>} */}
-                            <button type="submit" className="btn-modal btn-primary" onClick={handleSubmit}>Signup</button>
+                            <button type="submit"id='submitbtn' className="btn-modal btn-primary" onClick={handleSubmit}>Signup</button>
                             <p>Already a registered user? <Link to="/login">Login!</Link></p>
                         </form>
                     </div>
