@@ -132,16 +132,6 @@ class Navigation extends React.Component {
                     </NavLink>
                   </li>
 
-                  {/* <li className="nav-item">
-                                        <NavLink 
-                                            to="/schedule" 
-                                            className="nav-link"
-                                            onClick={this.toggleNavbar}
-                                        >
-                                            Schedule
-                                        </NavLink>
-                                    </li> */}
-
                   <li className="nav-item">
                     <NavLink
                       to="/events"
@@ -172,25 +162,6 @@ class Navigation extends React.Component {
                     </NavLink>
                   </li>
 
-                  {/* <li className="nav-item">
-                    <NavLink
-                      to="/contact"
-                      className="nav-link"
-                      onClick={this.toggleNavbar}
-                    >
-                      Contact
-                    </NavLink>
-                  </li> */}
-
-                  {/* {<li className="nav-item">
-                                        <NavLink 
-                                            to="/login" 
-                                            className="nav-link" 
-                                            onClick={this.toggleNavbar}
-                                        >
-                                            Login
-                                        </NavLink>
-                                    </li>} */}
                   {
                     <li className="nav-item">
                       {this.userData ? (
@@ -212,26 +183,6 @@ class Navigation extends React.Component {
                       )}
                     </li>
                   }
-
-                  {/* <li className="nav-item">
-                                        <NavLink 
-                                            to="/profile" 
-                                            className="nav-link" 
-                                            onClick={this.toggleNavbar}
-                                        >
-                                            Profile
-                                        </NavLink>
-                                    </li> */}
-
-                  {/* <li className="nav-item">
-                                        <NavLink 
-                                            to="/signup" 
-                                            className="nav-link" 
-                                            onClick={this.toggleNavbar}
-                                        >
-                                            {jwtToken}
-                                        </NavLink>
-                                    </li> */}
 
                   {
                     <li className="nav-item">
@@ -255,25 +206,40 @@ class Navigation extends React.Component {
                     </li>
                   }
 
-                  <li className="nav-item">
-                    <NavLink
-                      to="/announcement"
-                      className="nav-link"
-                      onClick={this.toggleNavbar}
-                    >
-                      <IoIosNotifications size={27} />
-                    </NavLink>
-                  </li>
+{/* {
+                    <li className="nav-item">
+                      {this.userData ? (
+                        <NavLink
+                          to="/accomodation"
+                          className="nav-link"
+                          onClick={this.toggleNavbar}
+                        >
+                          Accomodation
+                        </NavLink>
+                      ) : (
+                        <NavLink
+                          to="/announcement"
+                          className="nav-link"
+                          onClick={this.toggleNavbar}
+                        >
+                          <IoIosNotifications size={27} />
+                        </NavLink>
+                      )}
+                    </li>
+                  } */}
 
-                  {/* <li className="nav-item">
-                    <NavLink
-                      to="/signup"
-                      className="nav-link"
-                      onClick={this.toggleNavbar}
-                    >
-                      Signup
-                    </NavLink>
-                  </li> */}
+{
+                    <li className="nav-item">
+                        <NavLink
+                          to="/announcement"
+                          className="nav-link"
+                          onClick={this.toggleNavbar}
+                        >
+                          <IoIosNotifications size={27} />
+                        </NavLink>
+                    </li>
+                  }
+
                 </ul>
               </div>
             </div>

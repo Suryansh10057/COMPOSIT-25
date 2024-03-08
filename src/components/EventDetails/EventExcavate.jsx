@@ -35,7 +35,7 @@ class EventExcavate extends React.Component {
 
               <div className="events-content">
                 <h2>Excavate</h2>
-                <h3>Cash Prize worth 30K</h3>
+                <h3>Prize worth 30K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -65,7 +65,7 @@ class EventExcavate extends React.Component {
                   <Link to="/login" className="btn btn-primary">Login to Submit</Link>
                 } */}
                 <a
-                  href="https://drive.google.com/file/d/100Kp7akKnRQ3EQPClk8GiRlF1THvqtNr/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1rWJihDnNFAehHEjSaB6HpYphzc6OXXjO/view?usp=sharing"
                   target="_blank"
                   className="btn btn-secondary"
                 >
@@ -109,9 +109,10 @@ class EventExcavate extends React.Component {
                               <h3>Excavate</h3>
 
                               <p>
-                              In the world today where sustainability holds great importance, mastering data usage has become crucial. The aim of ‘Excavate’ is to showcase the power of data analysis through its use in the field of metallurgical and materials engineering. It also promotes critical thinking, and presentation skills apart from analytical skills.
-The event will be conducted in two rounds – a qualifying round in the form of a data science hackathon and a final presentation round where teams will present a more in-depth analysis of the results.
-With Excavate, both the novice and the more experienced data scientist will get a chance to improve their skills and appreciation of the field of data science.
+                              In the world today where sustainability holds excellent importance, mastering data usage has become crucial. 'Excavate' aims to showcase the power of data analysis through its use in metallurgical and materials engineering. It also promotes critical thinking and presentation skills apart from analytical skills.
+The event will be conducted in the following rounds – a qualifying cum bonus round in the form of an aptitude quiz, a submission round, and a final presentation round where teams will present an in-depth analysis of the results offline at IIT Kharagpur.
+With Excavate, both the novice and the more experienced data enthusiasts will get a chance to improve their skills and appreciate the field of data science.
+
 
                               </p>
 
@@ -164,11 +165,19 @@ Bachelors/Masters/PHD in any science and engineering college
                               <h3>Important Dates</h3>
 
                               <ul>
+                              <li>
+                                  <b>Quiz Date:</b>
+                                </li>
+                                <li>
+                                12th March 2024
+                                </li>
+                                <br></br>
+                                <br></br>
                                 <li>
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                11th March 2024
+                                22nd March 2024
                                 </li>
                                 <br></br>
                                 <br></br>
@@ -176,7 +185,7 @@ Bachelors/Masters/PHD in any science and engineering college
                                   <b>Final Event:</b>
                                 </li>
                                 <li>
-                                31th March 2024                                </li>
+                                30th March 2024                                </li>
                               </ul>
                             </div>
                             </div>
@@ -194,26 +203,35 @@ Bachelors/Masters/PHD in any science and engineering college
                               <h3>General Rules:-</h3>
 
                               <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
-                                <li>{""}This is a team participation event where team size should not exceed 3.
+                                <li>{""}This is a team participation event where team size should be at most 3.
   {" "} </li>
-                                <li>{""}This event will have two rounds: Hackathon round + Final presentation round
+                                <li>{""}The event will have the following rounds: Aptitude Quiz + Submission Round, + Final Presentation Round.
+
   {" "} </li>
-                                <li>{""}The Round 1 will be held in the form of a hackathon at IIT Kharagpur. This round will be held online with on-spot registration   allowed up to the submission deadline. Round 1 results will be mailed to the participants selected for the final round.  {" "} </li>                                
+                                <li>{""}Round 1 will be held online on Unstop as an Aptitude Quiz.
+  {" "} </li>                    
+                                <li>{""}The on-spot registration at Unstop is allowed up to the PS submission round.
+
+  {" "} </li>                     
+                                <li>{""}Round 1 results will be mailed to the participants selected for the final round.
+  {" "} </li>                               
                               </ul>
                             </div>
-                              <div className="schedule-info">
+                            <div className="schedule-info">
                                 <br />
                               <h3>Rules for round 1:-</h3>
 
                               <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
-                                <li>{" "}A dataset and relevant problem statement will be released after the official          start of the fest. {" "}</li>                                
-                                <li>{" "}Participant teams will be given a time limit of 24 hours for preparing a solution. {" "}</li>                                
-                                <li>{" "}Teams must submit the model parameters and complete the code as a .pynb or .ipynb file online before the submission deadline. {" "}</li>                                
-                                <li>{" "} Advancement to the final round will be done on a comparative basis and collectively based on the report's accuracy and quality.{" "}</li>                                
-                                <li>{" "}Any malpractice during the event and submissions will be penalised as judged by
-COMPOSIT.
- {" "}</li>                                
-                                <li>{" "}The presentation should be of 3 slides (excluding the Title Slide). {" "}</li>                                                             
+                                <li>{" "}	This will be an aptitude test round held online on Unstop (12th March 2024). <br />{" "}</li>                                
+                                <li>{" "} This will be a bonus round. {" "}</li>                                
+                                <li>{" "} The top scorers from this round will be invited to come offline for the final round at the IIT Kharagpur campus. {" "}</li> 
+                                <li>{" "} Although this will not be an elimination round, the participants willing to attempt the Problem Statement can do so. Still, those who try the Quiz round will get an edge over others by securing bonus points. {" "}</li>                                 
+                                <li>{" "} There will be no elimination in this round. However, the event organisers reserve the right to disqualify any abstract submission found irrelevant to the theme or violating any event rules.{" "}</li> 
+                                <p>Scheme for Bonus Points:</p>
+                                <li>{" "} The Total Marks allotted for the Quiz Round will be 5. {" "}</li> 
+                                <li>{" "} The marks scored in the Quiz Round held at Unstop will be scaled to 5, and those who miss this round will get 0 for the same. {" "}</li> 
+                                <p><b>Those who miss this round can directly make the PS submission at Unstop.</b></p>
+                                                                                     
                               </ul>
                             </div>
                               <div className="schedule-info">
@@ -221,17 +239,27 @@ COMPOSIT.
                               <h3>Rules for round 2:-</h3>
 
                               <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
-                                <li>{" "} The top teams from the first round will be selected as finalists. The selected teams will be notified via email. {" "} <br /> </li>                                                       
-                                <li>{" "} For this round, the teams must prepare a presentation that will be judged by a panel of judges. {" "} </li>                                                       
-                                <li>{" "} During the presentation, finalist teams must briefly describe their approach and follow a list of pointers that will be provided in the selection email. {" "} </li>                                                       
-                                <li>{" "} The presentation has to be completed in 7 to 10 minutes.{" "} </li>                                                       
-                                <li>{" "} There would be penalties if the time exceeds the time limit as follows— 
-                                          <b>1. </b> 0-1 min: 10% of the presentation marks of the team 
-                                          <b>2. </b> 1-2 mins: 20% of the presentation marks of the team
-                                          <b>3. </b> Greater than 2 mins: 100% of the presentation marks of the team
-{" "} </li>                                                       
-                                <li>{" "} The presentation will also be followed by a Q&A session with the judging panel for 5 minutes, which will also be considered for final evaluation.  {" "} </li>                                                       
-                                <li>{" "}The top 3 teams will receive cash prizes. Decisions made by the judges are final and binding.  {" "} </li>                                                       
+                                <li>{" "} The top teams from the first round will be invited for the final round. The selected teams will be notified via email.  {" "} <br /> </li>                                                       
+                                <li>{" "} The on-spot registration at Unstop is allowed up to the PS submission round.  {" "} </li>                                                       
+                                <li>{" "} For this round, the Problem Statement will be released on Unstop and the official website of COMPOSIT on 15th March 2024.  {" "} </li>                                                       
+                                <li>{" "} Participants who miss the bonus round can also attempt this round and submit it on Unstop. {" "} </li>                                                       
+                                <li>{" "} The teams that complete the submission by the deadline will be called for an offline presentation round at the IIT Kharagpur campus. {" "} </li>                                                                                                           
+                              </ul>
+                            </div>
+                            <div className="schedule-info">
+                                <br />
+                              <h3>Rules for round 3:-</h3>
+
+                              <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
+                                <li>{" "} This offline round will be held on 30th March 2024, from 12 PM to 4 PM.  {" "} <br /> </li>                                                       
+                                <li>{" "} For this round, the teams must prepare a presentation that a panel of judges will judge. {" "} </li>                                                       
+                                <li>{" "} During the presentation, finalist teams must briefly describe their approach and follow a list of pointers that will be provided in the selection email.  {" "} </li>                                                       
+                                <li>{" "} There would be penalties if the time exceeds the time limit as follows:- <br />
+                                            &nbsp; 0-1 min: 10% of the presentation marks of the team <br />
+                                            &nbsp; 1-2 mins: 20% of the presentation marks of the team <br /> 
+                                            &nbsp; Greater than 2 mins : 100% of the presentation marks of the team{" "} </li>                                                       
+                                <li>{" "} The presentation will also be followed by a Q&A session with the judging panel for 5 minutes, which will also be considered for final evaluation. {" "} </li>
+                                <li>{" "} The top 3 teams will receive cash prizes. Decisions made by the judges are final and binding. {" "} </li>                                                                                                                                                                                                    
                               </ul>
                             </div>
                             </div>
@@ -246,15 +274,16 @@ COMPOSIT.
                               {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                               <div className="schedule-info">
                               <ul className="rules-list">
-                                <li> {""}  Round 1 will be evaluated based on the accuracy and quality of the report.{""} </li>
-                                <li> {""} Round 2 will be held offline as a final presentation round. Evaluation will be done based on the following four factors - <br />
-&nbsp;1. &nbsp; Model accuracy: 20 <br />
-&nbsp;2. &nbsp; Questionnaire solutions: 30 <br />
-&nbsp;3. &nbsp; Quality of presentation: 20 <br />
-&nbsp;4. &nbsp; Q&A session: 30
-
-{""} </li>
-<li>{""}		The decision of the judges shall be final and conclusive.{""} </li>
+                                <li> {" "} Round 2 will be evaluated based on the idea and approach and towards the problem statement. {" "} <br /> </li>
+                                <li> {" "} Round 3 will be held offline as a final presentation round. <br /> {" "} </li>
+                                <li> {" "} Evaluation will be done based on the following four factors:<br />
+                                            &nbsp; Quiz Round Score: 5 <br />
+                                            &nbsp; Model Accuracy: 20 <br /> 
+                                            &nbsp; Questionnaire solutions: 30 <br /> 
+                                            &nbsp; Quality of presentation: 20 <br /> 
+                                            &nbsp; Q&A session: 25 {" "} <br />
+                                            </li>
+                                <li>{" "} The decision of the judges shall be final and conclusive. {" "}</li>
                               </ul>
                             </div>
                             </div>
@@ -283,8 +312,8 @@ COMPOSIT.
 
 <ul className="accordion faqs">
                                           <li style={{color:'blue'}}>{" "} 2 : &nbsp; What is the procedure for registration for the event? Do all the members have to be registered?{" "}</li>
-                                          <li>{" "}-&nbsp;  Yes, as with all events, all the participants must first be registered through the
-          COMPOSIT website, after which they will be provided with a participant ID. The final team registration for the event should be done by the team leader only when the participant IDs of the members must be entered.
+                                          <li>{" "}-&nbsp;  Yes, as with all events, all the participants must first be registered through the COMPOSIT website, after which they will be provided with a participant ID. 
+
           {" "}</li> <br /> <br />
                                 
           </ul>
@@ -309,11 +338,17 @@ COMPOSIT.
 
           <li style={{color:'blue'}}>{" "}6 : &nbsp;  Will the first-round results have weightage in the final results?
           {" "}</li>
-                                          <li >{" "}-&nbsp; Yes. Since model accuracy is a factor in the final evaluation {" "}</li> <br /> <br />
+                                          <li >{" "}-&nbsp; Yes. 5 points are devoted for the first round. {" "}</li> <br /> <br />
 
 </ul>
           <ul className="accordion faqs">
-          <li style={{color:'blue'}}>{" "}7 : &nbsp;  Are more than one submission allowed for the first round? {" "}</li> <br />
+          <li style={{color:'blue'}}>{" "}7 : &nbsp;   Will the second-round results have weightage in the final results?
+ {" "}</li> <br />
+                                          <li>{" "}-&nbsp; Yes. Since model accuracy is a factor in the final evaluation  {" "}</li>
+</ul>
+          <ul className="accordion faqs">
+          <li style={{color:'blue'}}>{" "}8 : &nbsp;   Are more than one submission allowed for the second round? 
+ {" "}</li> <br />
                                           <li>{" "}-&nbsp; No  {" "}</li>
 </ul>
        

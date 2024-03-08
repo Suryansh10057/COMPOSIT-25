@@ -35,14 +35,14 @@ class EventTechnova extends React.Component {
 
               <div className="events-content">
                 <h2>Technova</h2>
-                <h3>Cash Prize worth 20K</h3>
+                <h3>Prize worth 20K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
               <a
-                  // href="https://forms.gle/sqA1B7Gw3gKnePAc8"
+                  href="https://unstop.com/competitions/technova-composit-iit-kharagpur-composit-society-of-metallurgical-engineers-iit-kharagpur-920386"
                   target="_blank"
                   className="btn btn-primary"
                 >
@@ -51,7 +51,7 @@ class EventTechnova extends React.Component {
                 </a>
               
                 <a
-                  href="https://drive.google.com/file/d/1Y-btkp0RwULGrsj8vB_W5il5QOmmzXUe/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1sT-yjr8HX6IuKY19iIdUOhzQjde-H36G/view?usp=sharing"
                   target="_blank"
                   className="btn btn-secondary"
                 >
@@ -165,7 +165,7 @@ Bachelors/Masters/PHD in any science and engineering college
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                13th March 2024
+                                28th March 2024
                                 </li>
                                 <br></br>
                                 <br></br>
@@ -194,10 +194,10 @@ Bachelors/Masters/PHD in any science and engineering college
                               <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
                                 <li>{""}The maximum number of participants in a Team is 3. Individual participation is also permitted.
   {" "} </li>
-                                <li>{""}Teams have to present their submission only in one of the mentioned categories
+                                <li>{""}Teams must submit only in one of the mentioned categories
   {" "} </li>
                                 <li>{""}The best presenter from each category will be awarded.{" "} </li>                                
-                                <li>{""}Participants have to present either their original paper OR a technical paper on any topic of their choice (within the given themes) referring to existing work.{" "} </li>                                
+                                <li>{""}Participants must present either their original paper OR a technical paper on any topic they choose (within the given themes) referring to existing work.{" "} </li>                                
                                                                 
                               </ul>
                             </div>
@@ -255,7 +255,7 @@ Authors are requested to kindly restrict plagiarism in any form. Authors should 
                               {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                               <div className="schedule-info">
                               <ul className="rules-list">
-                                <li> {""}All categories will be judged by a common panel on the basis of presentation skills, innovative ideas, difficulty and understanding of the presented work.{""} </li>
+                                <li> {""} A standard panel will judge all categories based on presentation skills, innovative ideas, difficulty and understanding of the presented work.{""} </li>
                                 <li> {""} Best two original works will be awarded for Category A
 
 {""} </li> 
@@ -281,7 +281,7 @@ Authors are requested to kindly restrict plagiarism in any form. Authors should 
                               <h3>Frequently Asked Questions</h3>
                               <ul className="accordion faqs">
                               <li>{" "}1 : &nbsp; What is the procedure of registration for the event? Do all the members have to be registered?  {" "}</li>
-                                <li>{" "}-&nbsp;   Yes, as with all events, all the participants must first be registered through the COMPOSIT website, after which they will be provided with a participant ID. The final team registration for the event should be done by the team leader only where the participant IDs of the members must be entered.
+                                <li>{" "}-&nbsp;   Yes, as with all events, all the participants must first be registered through the COMPOSIT website, after which they will be provided with a participant ID.
  {" "}</li><br /> <br />
         </ul>
                               <ul className="accordion faqs">

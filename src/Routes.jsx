@@ -45,6 +45,9 @@ import PopupMsg from "./components/pages/Popup/PopupMsg";
 import ComingSoon1 from "./components/pages/ComingSoon/Comingsoon";
 import GuestLecturePage from "./components/pages/GuestLectures";
 import AnnouncementPage from "./components/pages/Announcement";
+import AccomodationPage from "./components/pages/Accomodation";
+import Success from "./components/pages/Success/Success";
+import Cancel from "./components/pages/Cancel/Cancel";
 
 // Conditionally render Navigation
 const renderNavigation = () => {
@@ -78,6 +81,7 @@ const AppRouter = () => {
                 <Route path="/event_technova" exact component={EventTechnovaPage} />
                 <Route path="/event_techtoon" exact component={EventTechtoonPage} />
                 <Route path="/announcement" exact component={AnnouncementPage} />
+                <Route path="/accomodation" exact component={AccomodationPage} />
                 <Route path="/guestlecture" exact component={ComingSoon1} />
                 <Route path="/register_metaclix" exact component={RegisterMetaclix} />
                 <Route path="/register_techtoon" exact component={RegisterTechtoon} />
@@ -95,6 +99,8 @@ const AppRouter = () => {
                 <Route path="/login" exact component={Login} />
                 <Route path="/signup" exact component={Signup} />
                 <Route path="/comingSoon" exact component={ComingSoon1} />
+                <Route path="/success" exact component={Success} />
+                <Route path="/cancel" exact component={Cancel} />
                 <Route path="/faq" exact component={Faq} />
                 <Route path="/contact" exact component={Contact} />
                 {/* <Route path="/sponsors" exact component={Sponsor} /> */}

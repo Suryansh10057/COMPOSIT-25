@@ -34,14 +34,14 @@ class EventIdeathon extends React.Component {
 
               <div className="events-content">
                 <h2>Ideathon</h2>
-                <h3>Cash Prize worth 15K</h3>
+                <h3>Prize worth 20K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
               <a
-                  // href="https://drive.google.com/file/d/1wMSqAYo_cIQjCuHFNOVi2XcysMjBnioM/view?usp=sharing"
+                  href="https://unstop.com/competitions/composit-2024-iit-kharagpur-923039"
                   target="_blank"
                   className="btn btn-secondary"
                   // disabled
@@ -49,7 +49,7 @@ class EventIdeathon extends React.Component {
                   Register Here
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/10DTDbLLWTYhtX9Md5eHDpGvc_beqVmzX/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1T3V8LIzvTiJYery8ze52bs03y2Dql6YJ/view?usp=sharing"
                   target="_blank"
                   className="btn btn-secondary"
                   // disabled
@@ -94,7 +94,7 @@ class EventIdeathon extends React.Component {
                               <h3>Ideathon</h3>
 
                               <p>
-                              Ideathon is an event that encourages budding entrepreneurs and recognises the fast-growing start-up ecosystem in India. It provides participating teams an open platform to pitch their ideas for a business venture or improvements in existing technology in any field. These will be evaluated by a panel of judges based on innovation, feasibility, impact as well as the quality of the pitch. Participants are encouraged to register and refine their next big idea and their skill to convince!
+                              Ideathon is an event that encourages budding entrepreneurs and recognises the fast-growing start-up ecosystem in India. It provides participating teams with an open platform to pitch their ideas for a business venture or improvements in existing technology in any field. These will be evaluated by a panel of judges based on innovation, feasibility, impact, and pitch quality. Participants are encouraged to register and refine their next big idea and convincing skills!
 
                               </p>
 
@@ -125,8 +125,7 @@ class EventIdeathon extends React.Component {
                                 </li>
                                 <li>
                                   {" "}
-                                  Open to all students pursuing
-Bachelors/Masters/PHD in any science and engineering college 
+                                  Open to all 
 {" "}
                                 </li>
                                
@@ -151,7 +150,7 @@ Bachelors/Masters/PHD in any science and engineering college
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                12th March 2024
+                                22nd March 2024
                                 </li>
                                 <br></br>
                                 <br></br>
@@ -159,7 +158,7 @@ Bachelors/Masters/PHD in any science and engineering college
                                   <b>Final Event:</b>
                                 </li>
                                 <li>
-                                30th April 2024                                </li>
+                                30th March 2024                                </li>
                               </ul>
                             </div>
                             </div>
@@ -269,7 +268,7 @@ Bachelors/Masters/PHD in any science and engineering college
                               <h3>Frequently Asked Questions</h3>
                               <ul className="accordion faqs">
                               <li>{" "}1 : &nbsp; What is the procedure of registration for the event?  {" "}</li>
-                                <li>{" "}-&nbsp;  As with all events, all the participants must first be registered through the COMPOSIT website, after which they will be provided with a participant ID. The final team registration for the event should be done by the team leader only where the participant IDs of the members must be entered.
+                                <li>{" "}-&nbsp;  Yes, as with all events, all the participants must first be registered through the COMPOSIT website, after which they will be provided with a participant ID.
  {" "}</li><br /> <br />
         </ul>
                               <ul className="accordion faqs">

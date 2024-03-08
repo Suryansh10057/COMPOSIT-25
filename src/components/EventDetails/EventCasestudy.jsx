@@ -34,14 +34,14 @@ class EventCasestudy extends React.Component {
 
               <div className="events-content">
                 <h2>Case Study</h2>
-                <h3>Cash Prize worth 25K</h3>
+                <h3>Prize worth 20K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
               <a
-                  // href="https://drive.google.com/file/d/1GI__f_FmL9qIjNGgXdDjGqtqjjtE8vps/view?usp=sharing"
+                  href="https://unstop.com/competitions/general-case-study-iit-kharagpur-892695"
                   className="btn btn-primary"
                   target="_blank"
                 >
@@ -69,7 +69,7 @@ class EventCasestudy extends React.Component {
                 <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
                 } */}
                 <a
-                  href="https://drive.google.com/file/d/1AGIDPAJLJud8e5EqD-gUzhJhIwZovJTq/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1UlXJ641-o1APQ8KAWj0Rh9VTchA2LFsU/view?usp=sharing"
                   className="btn btn-primary"
                   target="_blank"
                 >
@@ -113,7 +113,7 @@ class EventCasestudy extends React.Component {
                               <h3>General Case Study</h3>
 
                               <p>
-                              The case study competition is designed to challenge teams to analyze real world business problems and develop innovative solutions. The participating teams are required to use their analytical and creative skills to develop a strategic plan that analyzes and addresses the problem statement. An accomplished panel of judges will evaluate the solutions presented by the teams and determine the winning team. Prospective teams are encouraged to register and showcase their problem-solving skills in tackling real-world challenges.{" "}
+                              The case study competition challenges teams to analyze real-world business problems and develop innovative solutions. The participating teams must use their analytical and creative skills to develop a strategic plan that analyses and addresses the problem statement. An accomplished panel of judges will evaluate the solutions presented by the teams and determine the winning team. Prospective teams are encouraged to register and showcase their problem-solving skills in tackling real-world challenges.{" "}
                               </p>
                             </div>
                           </Link>
@@ -135,11 +135,10 @@ class EventCasestudy extends React.Component {
                                   {" "}
                                  Team size : Upto 3 (Individual participation allowed)){" "}
                                 </li>
+                                <br />
                                 <li>
                                   {" "}
-                                  Open to all students pursuing
-Bachelors/Masters/PHD in any science and engineering college 
-{" "}
+                                  Open to all students pursuing Bachelor/Masters/PhD in any science, engineering and management colleges {" "}
                                 </li>
 
                               </ul>
@@ -158,11 +157,19 @@ Bachelors/Masters/PHD in any science and engineering college
                               <h3>Important Dates</h3>
 
                               <ul>
+                              <li>
+                                  <b>Quiz Date:</b>
+                                </li>
+                                <li>
+                                12th March 2024
+                                </li>
+                                <br></br>
+                                <br></br>
                                 <li>
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                10th March 2024
+                                22nd March 2024
                                 </li>
                                 <br></br>
                                 <br></br>
@@ -188,14 +195,12 @@ Bachelors/Masters/PHD in any science and engineering college
                               <h3>General Rules:-</h3>
 
                               <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
-                                <li>{""}The maximum number of participants in a Team is 3. Individual participation is also permitted. 
-  {" "} </li>
-                                <li>{""}The best presenting team will be awarded. 
-  {" "} </li>
-                                <li>{""}The teams are expected to conduct all necessary research using publicly available resources.   They are welcome to use all library resources, class textbooks, and websites. If any data is picked up from the internet, the teams should mention the references. 
-  {" "} </li>                                
-                                <li>{""}Everything is allowed in the presentation, including sound effects, video clips, and graphics. Any action that violates the stated rules will result in immediate disqualification of the team from the competition.
-  {" "} </li>                                
+                                <li>{""}The maximum number of participants in a Team is 3. Individual participation is also permitted. {" "} </li>
+                                <li>{""}The event will have the following rounds: Aptitude Quiz + Submission Round + Final Presentation Round. {" "} </li>
+                                <li>{""}Round 1 will be held online on Unstop as an Aptitude Quiz.  {" "} </li>                                
+                                <li>{""}The on-spot registration at Unstop is allowed up to the round deadline.{" "} </li>   
+                                <li>{""}Round 1 results will be mailed to the participants selected for the final round.{" "} </li>
+                                <li>{""}Everything is allowed in the presentation, including sound effects, video clips, and graphics. Any action that violates the stated rules will immediately disqualify the team from the competition.{" "} </li>                             
                               </ul>
                             </div>
                               <div className="schedule-info">
@@ -203,9 +208,15 @@ Bachelors/Masters/PHD in any science and engineering college
                               <h3>Rules for round 1:-</h3>
 
                               <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
-                                <li>{" "}	For this round, participants must submit the abstract of their idea in the form of a report not more than 7 pages (The font style :Arial and font size: 12) through the submission form before deadline. {" "}</li>                                
-                                <li>{" "}All the teams submitting their abstract will have the second and final presentation round on IIT Kharagpur campus.{" "}</li>                                
-                                <li>{" "}There will be no elimination in this round, however the event organisers reserve the right to  disqualify any abstract submission found irrevelant to the theme or violating any rules of the event.  {" "}</li>                                
+                                <li>{" "}	This will be an aptitude test round held online on Unstop (11th March 2024). <br />{" "}</li>                                
+                                <li>{" "} This will be a bonus round. {" "}</li>                                
+                                <li>{" "} The top scorers from this round will be invited to come offline for the final round at the IIT Kharagpur campus. {" "}</li> 
+                                <li>{" "} Although this will not be an elimination round, the participants willing to attempt the Problem Statement can do so. Still, those who try the Quiz round will get an edge over others by securing bonus points. {" "}</li>                                 
+                                <li>{" "} There will be no elimination in this round. However, the event organisers reserve the right to disqualify any abstract submission found irrelevant to the theme or violating any event rules.{" "}</li> 
+                                <p>Scheme for Bonus Points:</p>
+                                <li>{" "} The Total Marks allotted for the Quiz Round will be 5. {" "}</li> 
+                                <li>{" "} The marks scored in the Quiz Round held at Unstop will be scaled to 5, and those who miss this round will get 0 for the same. {" "}</li> 
+                                <p><b>Those who miss this round can directly make the PS submission at Unstop.</b></p>
                                                                                      
                               </ul>
                             </div>
@@ -214,17 +225,27 @@ Bachelors/Masters/PHD in any science and engineering college
                               <h3>Rules for round 2:-</h3>
 
                               <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
-                                <li>{" "}This round will be conducted in the form of a presentation at the IIT Kharagpur campus in front of a panel of judges.  {" "} <br /> </li>                                                       
-                                <li>{" "}The teams have to present their case analysis using presentation explaining their approach and analysis of the problem statement.  {" "} </li>                                                       
-                                <li>{" "} During the presentation, finalist teams must briefly describe their approach and follow a list of pointers that will be pEach team will be allotted 10 minutes to pitch their ideas which will have a reminder at the last 3 and 1 minute followed by a final buzzer.  {" "} </li>                                                       
-                                <li>{" "}  After the presentation there will be a Q&A session by the judges for 5-10 minutes. There 
-    would be penalties if the time exceeds the time limit as follows— <br />
-   &nbsp; 0-1 min: 10% of the presentation marks of the team <br />
-&nbsp; 1-2 mins: 20% of the presentation marks of the team <br /> 
-&nbsp; Greater than 2 mins : 100% of the presentation marks of the team
-{" "} </li>                                                       
-                                <li>{" "}        Top 3 teams will receive cash prizes. Decisions made by the judges are final and binding.
-{" "} </li>                                                                                                           
+                                <li>{" "} The top teams from the first round will be invited for the final round. The selected teams will be notified via email.  {" "} <br /> </li>                                                       
+                                <li>{" "} The on-spot registration at Unstop is allowed up to the PS submission round.  {" "} </li>                                                       
+                                <li>{" "} For this round, the Problem Statement will be released on Unstop and the official website of COMPOSIT on 13th March 2024.  {" "} </li>                                                       
+                                <li>{" "} Participants who miss the bonus round can also attempt this round and submit it on Unstop. {" "} </li>                                                       
+                                <li>{" "} The teams that complete the submission by the deadline will be called for an offline presentation round at the IIT Kharagpur campus. {" "} </li>                                                                                                           
+                              </ul>
+                            </div>
+                            <div className="schedule-info">
+                                <br />
+                              <h3>Rules for round 3:-</h3>
+
+                              <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
+                                <li>{" "} This offline round will be held on 30th March 2024, from 12 PM to 4 PM.  {" "} <br /> </li>                                                       
+                                <li>{" "} For this round, the teams must prepare a presentation that a panel of judges will judge. {" "} </li>                                                       
+                                <li>{" "} During the presentation, finalist teams must briefly describe their approach and follow a list of pointers that will be provided in the selection email.  {" "} </li>                                                       
+                                <li>{" "} There would be penalties if the time exceeds the time limit as follows:- <br />
+                                            &nbsp; 0-1 min: 10% of the presentation marks of the team <br />
+                                            &nbsp; 1-2 mins: 20% of the presentation marks of the team <br /> 
+                                            &nbsp; Greater than 2 mins : 100% of the presentation marks of the team{" "} </li>                                                       
+                                <li>{" "} The presentation will also be followed by a Q&A session with the judging panel for 5 minutes, which will also be considered for final evaluation. {" "} </li>
+                                <li>{" "} The top 3 teams will receive cash prizes. Decisions made by the judges are final and binding. {" "} </li>                                                                                                                                                                                                    
                               </ul>
                             </div>
                             </div>
@@ -239,11 +260,16 @@ Bachelors/Masters/PHD in any science and engineering college
                               {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                               <div className="schedule-info">
                               <ul className="rules-list">
-                                <li> {""}  Round 1 abstract submission will be evaluated on the basis of the idea and approach and towards the problem statement. {""} </li>
-                                <li> {""}The judging panel will declare the top 3 teams as winners based on both abstract
-and presentation submitted by the team
-{""} </li>
-<li>{""}		The decision of the judges shall be final and conclusive.{""} </li>
+                                <li> {" "} Round 2 will be evaluated based on the idea and approach and towards the problem statement. {" "} <br /> </li>
+                                <li> {" "} Round 3 will be held offline as a final presentation round. <br /> {" "} </li>
+                                <li> {" "} Evaluation will be done based on the following four factors:<br />
+                                            &nbsp; Quiz Round Score: 5 <br />
+                                            &nbsp; Idea and Approach: 20 <br /> 
+                                            &nbsp; Problem Statement Solutions: 30 <br /> 
+                                            &nbsp; Quality of presentation: 20 <br /> 
+                                            &nbsp; Q&A session: 25 {" "} <br />
+                                            </li>
+                                <li>{" "} The decision of the judges shall be final and conclusive. {" "}</li>
                               </ul>
                             </div>
                             </div>
@@ -263,9 +289,8 @@ and presentation submitted by the team
                             <div className="schedule-info">
                               <h3>Frequently Asked Questions</h3>
                               <ul className="accordion faqs">
-                              <li>{" "}1 : &nbsp; What is the procedure of registration for the event? Do all the members have to be registered?{" "}</li>
-                                <li>{" "}-&nbsp; Yes, as with all events, all the participants must first be registered through the
-COMPOSIT website, after which they will be provided with a participant ID. The final team registration for the event should be done by the team leader only where the participant IDs of the members must be entered.
+                              <li>{" "}1 : &nbsp; What is the procedure for registration for the event? Do all the members have to be registered?{" "}</li>
+                                <li>{" "}-&nbsp; Yes, as with all events, all the participants must first be registered through the COMPOSIT website, after which they will be provided with a participant ID. 
 
  {" "}</li><br /> <br />
         </ul>
@@ -275,21 +300,35 @@ COMPOSIT website, after which they will be provided with a participant ID. The f
 {" "}</li> <br /> <br />
         </ul>
                               <ul className="accordion faqs">
-                              <li>{" "}3 : &nbsp;   What is the format of the abstract to be submitted in the first round? 
+                              <li>{" "}3 : &nbsp;   Q: Will the first-round results weigh the final results?  
  {" "}</li> <br />
 
-                                <li>{" "}-&nbsp; The abstract should be a report of not less than 7 pages which should include the background, objectives, methods used for analyzing and collecting the data, results and conclusion of the given problem statement. This report must have the font style Arial and font size 12.
+                                <li>{" "}-&nbsp; Yes, 5 points are devoted to the final round.
+
  {" "}</li> <br /> <br /> <br />
         </ul>
                               <ul className="accordion faqs">
-                              <li>{" "}4 : &nbsp; How will we get to know if we are qualified for the second round? 
+                              <li>{" "}4 : &nbsp; What abstract format will be submitted in the second round?
+ 
  {" "}</li><br />
-                                <li>{" "}-&nbsp; All teams submitting the abstract following all the rules and theme of the problem statement automatically qualify for the offline round. There will be no elimination after the first round.
+                                <li>{" "}-&nbsp; The abstract should be a report of at least five pages, including the background, objectives, methods used for analyzing and collecting the data, results and conclusion of the given problem statement. This report must have the font style Arial and font size 12.
+
+
+ {" "}</li> <br /> <br />
+        </ul>
+        <ul className="accordion faqs">
+                              <li>{" "}5 : &nbsp; How will we know if we are qualified for the final round? 
+
+ 
+ {" "}</li><br />
+                                <li>{" "}-&nbsp; All teams submitting the abstract following all the rules and themes of the problem statement will be sent a confirmation mail regarding further details about the final round. There will be no elimination after the first round.
+
+
 
  {" "}</li> <br /> <br />
         </ul>
                               <ul className="accordion faqs">
-                              <li>{" "}5 : &nbsp; Is there a slide limit for the presentation? {" "}</li> <br />
+                              <li>{" "}6 : &nbsp; Is there a slide limit for the presentation? {" "}</li> <br />
                                 <li>{" "}-&nbsp;  No. Any number of slides may be used as long as the overall presentation is kept within the time limit.
  {" "}</li><br /> <br />
                                

@@ -34,39 +34,28 @@ class EventEnigma extends React.Component {
 
               <div className="events-content">
                 <h2>Enigma</h2>
-                {/* <h3>Cash Prize worth 12K</h3> */}
+                <h3>Cash Prize worth 10K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
             <div className="col-lg-13">
             <div className="btn-box" style={{ marginBottom: "20px" }}>
-              {/* {userData ? <a
-                  href="https://unstop.com/p/enigma-prelims-1-iit-kharagpur-657450"
+            <a
+                  href="https://unstop.com/quiz/composit-2024-iit-kharagpur-918548"
                   target="_blank"
                   className="btn btn-primary"
                 >
-                   Prelims Round 1
-                </a> :
-                <Link to="/login" className="btn btn-primary">Login to Participate</Link>
-                } */}
-                {userData ? <a
-                  // href="https://unstop.com/p/enigma-prelims-2-iit-kharagpur-657933"
+                  {/* Submission Link */}
+                  Register Here
+                </a>
+              
+                <a
+                  href="https://drive.google.com/file/d/15Ttlahfcg_DskgQ-_zAYHWfToHKw1ZYA/view?usp=sharing"
                   target="_blank"
                   className="btn btn-secondary"
                 >
-                   Register Here
-                </a> :
-                <Link to="/login" className="btn btn-primary">Register Here</Link>
-                }
-                {/* {userData ? <a
-                  href="https://unstop.com/m/opportunity/657933/step3"
-                  target="_blank"
-                  className="btn btn-primary"
-                >
-                  Final Round
-                </a> :
-                <Link to="/login" className="btn btn-primary">Login to Participate</Link>
-                } */}
+                  Rules & Regulations
+                </a>
               </div>
             </div>
           </div>
@@ -88,7 +77,7 @@ class EventEnigma extends React.Component {
                     </li>
 
                     <li onClick={(e) => this.openTabSection(e, "tab3")}>
-                      <Link to="#">Timeline</Link>
+                      <Link to="#">FAQ`s</Link>
                     </li>
 
                     <li onClick={(e) => this.openTabSection(e, "tab4")}>
@@ -105,7 +94,18 @@ class EventEnigma extends React.Component {
                               <h3>Enigma</h3>
 
                               <p>
-                              This is a quizzing event to race astute minds and test them on numerous topics with a unique variety of questions covering science, engineering and cutting-edge tech. Solve the questions and get the chance to have a go against bright minds in a full-fledged online quiz. A true test for nerds in technology, science and engineering and fun puzzles. There won’t be a moment of apathy with an abundance of learning!
+                              Quizzing Event which will involve questions from all areas, general science as well as core-specific. Questions format is stated as follows: <br />
+  
+                              <ul className="rules-list">
+                                <li>Logical Reasoning / Puzzles. </li> <br />
+                                <li>{""} Metallurgy and Materials Science {""}</li> <br />
+                                <li> GK / History </li><br />
+                                <li>Sports related (Olympics 2024)</li><br />
+                                <li>Science and Engineering</li><br />
+                                
+                              </ul> 
+                             
+
                               </p>
 
                               {/* <ul>
@@ -239,7 +239,7 @@ class EventEnigma extends React.Component {
                     <div id="tab4" className="tabs_item">
                     <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
 
-                      {/* <ul className="accordion">
+                    <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -248,12 +248,12 @@ class EventEnigma extends React.Component {
 
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Priya Kumari</b>
+                                <b>Subhrojyoti Mukherjee</b>
                               </p>
                               <p>
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
-                                <b>8969265633</b>
+                                <b>9112230084</b>
                               </p>
                             </div>
                           </Link>
@@ -263,19 +263,20 @@ class EventEnigma extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
+
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Gourav Pathak</b>
+                                <b>Mayuresh Lohani</b>
                               </p>
                               <p>
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
-                                <b>6204935889</b>
+                                <b>8709471451</b>
                               </p>
                             </div>
                           </Link>
                         </li>
-                      </ul> */}
+                      </ul>
                     </div>
                   </div>
                 </div>
