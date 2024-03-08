@@ -69,7 +69,7 @@ class EventCasestudy extends React.Component {
                 <Link to="/login" className="btn btn-secondary">Login to Submit</Link>
                 } */}
                 <a
-                  href="https://drive.google.com/file/d/1UlXJ641-o1APQ8KAWj0Rh9VTchA2LFsU/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1TdHZSvvH0uCJothY7TNaTUpw1g1v1nvv/view?usp=sharing"
                   className="btn btn-primary"
                   target="_blank"
                 >
@@ -161,7 +161,7 @@ class EventCasestudy extends React.Component {
                                   <b>Quiz Date:</b>
                                 </li>
                                 <li>
-                                12th March 2024
+                                11th March 2024
                                 </li>
                                 <br></br>
                                 <br></br>

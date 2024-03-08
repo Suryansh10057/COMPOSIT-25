@@ -50,7 +50,7 @@ class EventMetaclix extends React.Component {
                   </Link>
                 )} */}
                 <a
-                  // href="https://forms.gle/JcGpUT9rkMkksVdQ7"
+                  href="https://unstop.com/competitions/metaclix-composit-2024-composit-society-of-metallurgical-engineers-iit-kharagpur-920085"
                   target="_blank"
                   className="btn btn-primary"
                 >

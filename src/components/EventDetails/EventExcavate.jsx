@@ -42,7 +42,7 @@ class EventExcavate extends React.Component {
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
               <a
-                  // href="https://drive.google.com/file/d/1kqDIad3xbW4toWG911TsBtKr0UnAYXXA/view?usp=sharing"
+                  href="https://unstop.com/hackathons/excavate-iit-kharagpur-901455"
                   target="_blank"
                   className="btn btn-secondary"
                 >
