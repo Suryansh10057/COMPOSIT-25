@@ -34,7 +34,7 @@ class EventMetaclix extends React.Component {
 
               <div className="events-content">
                 <h2>Metaclix</h2>
-                <h3>Cash Prize worth 10K</h3>
+                <h3>Prize worth 6K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -56,10 +56,11 @@ class EventMetaclix extends React.Component {
                 >
                   Register Here
                 </a>
-                <a 
-                href="https://drive.google.com/file/d/1Y0DXrm0sdtMAecBJ2b_WllbrmNtRNIYZ/view?usp=sharing" 
-                className="btn btn-secondary" 
-                target="_blank">
+                <a
+                  href="https://drive.google.com/file/d/1k5oe8KblKND9twCk0Tum-yTJMel5GQus/view?usp=sharing"
+                  className="btn btn-secondary"
+                  target="_blank"
+                >
                   Rules & Regulations
                 </a>
               </div>
@@ -93,7 +94,7 @@ class EventMetaclix extends React.Component {
 
                   <div className="tab_content">
                     <div id="tab1" className="tabs_item">
-                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                      {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                       <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
@@ -101,29 +102,41 @@ class EventMetaclix extends React.Component {
                               <h3>Metaclix</h3>
 
                               <p>
-                              A photography contest that challenges participants to capture stunning images based on theme at the intersection of materials and sustainabilty. In this individual event, participants will be required to click and upload pictures that fall under the following categories:{" "}
+                                A photography contest that challenges
+                                participants to capture stunning images based on
+                                theme at the intersection of materials and
+                                sustainabilty. In this individual event,
+                                participants will be required to click and
+                                upload pictures that fall under the following
+                                categories:{" "}
                               </p>
 
                               <ul>
                                 <li>
-                                  1.&nbsp;<b> METALS AND MATERIALS IN EVERYDAY LIFE AND NATURE </b>
-
+                                  1.&nbsp;
+                                  <b>
+                                    {" "}
+                                    METALS AND MATERIALS IN EVERYDAY LIFE AND
+                                    NATURE{" "}
+                                  </b>
                                 </li>
                                 <br /> <br />
                                 <li>
-                                2.&nbsp; <b> SNAPS TAKEN IN INDUSTRIES (COULD BE
-ELECTRONIC INDUSTRY,
-CONSTRUCTION , AEROSPACE AND MORE) </b>
-
+                                  2.&nbsp;{" "}
+                                  <b>
+                                    {" "}
+                                    SNAPS TAKEN IN INDUSTRIES (COULD BE
+                                    ELECTRONIC INDUSTRY, CONSTRUCTION ,
+                                    AEROSPACE AND MORE){" "}
+                                  </b>
                                 </li>
-                                <br /><br />
+                                <br />
+                                <br />
                                 <li>
-                                3.&nbsp; {" "}
-                                <b> SUSTAINABILITY </b>
+                                  3.&nbsp; <b> SUSTAINABILITY </b>
                                 </li>
                               </ul>
                               <br />
-                              
                             </div>
                           </Link>
                         </li>
@@ -140,18 +153,8 @@ CONSTRUCTION , AEROSPACE AND MORE) </b>
                               <h3>Participation Criteria</h3>
 
                               <ul>
-                                <li>
-                                  {" "}
-                                  Upto 3 (Individual participation allowed){" "}
-                                </li>
-                                <li>
-                                  {" "}
-                                  Open to all students pursuing
-Bachelors/Masters/PHD in any science and engineering college 
-{" "}
-                                </li>
-                                
-
+                                <li> Individual Participation </li> <br />
+                                <li> Open to all </li>
                               </ul>
                             </div>
                           </Link>
@@ -165,24 +168,21 @@ Bachelors/Masters/PHD in any science and engineering college
                               {/* <h2>Rounds of the Event</h2> */}
                               {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                               <div className="schedule-info">
-                              <h3>Important Dates</h3>
+                                <h3>Important Dates</h3>
 
-                              <ul>
-                                <li>
-                                  <b>Submission Deadline:</b>
-                                </li>
-                                <li>
-                                18th March 2024
-                                </li>
-                                <br></br>
-                                <br></br>
-                                <li>
-                                  <b>Final Event:</b>
-                                </li>
-                                <li>
-                                Result Declaration Online Mode                               </li>
-                              </ul>
-                            </div>
+                                <ul>
+                                  <li>
+                                    <b>Submission Deadline:</b>
+                                  </li>
+                                  <li>30th March 2024</li>
+                                  <br></br>
+                                  <br></br>
+                                  <li>
+                                    <b>Final Event:</b>
+                                  </li>
+                                  <li>Result Declaration Online Mode </li>
+                                </ul>
+                              </div>
                             </div>
                           </Link>
                         </li>
@@ -195,36 +195,92 @@ Bachelors/Masters/PHD in any science and engineering college
                               {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                               <div className="schedule-info">
                                 <br />
-                              <h3>General Rules:-</h3>
+                                <h3>General Rules:-</h3>
 
-                              <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
-                                <li>{""}This event is for individual participation. No group participation is allowed.
-  {" "} </li>
-                                <li>{""}Although entries may be submitted for multiple themes, only one entry can be
-  {" "} </li>
-                                <li>{""}Participants are required to submit only one photo and caption per theme        through the google form {" "} </li>                                
-                                <li>{""} The best submission from each category will be rewarded.{" "} </li>                                
-                              </ul>
-                            </div>
+                                <ul
+                                  className="rules-list"
+                                  style={{
+                                    listStyleType: "circle !important",
+                                    color: "red",
+                                  }}
+                                >
+                                  <li>
+                                    {""}This event is for individual
+                                    participation. No group participation is
+                                    allowed.{" "}
+                                  </li>
+                                  <li>
+                                    {""}Although entries may be submitted for
+                                    multiple themes, only one entry can be for
+                                    each theme.{" "}
+                                  </li>
+                                  <li>
+                                    {""}Participants are required to submit only
+                                    one photo and caption per theme through
+                                    Unstop.{" "}
+                                  </li>
+                                  <li>
+                                    {""} The best submission from each category
+                                    will be rewarded.{" "}
+                                  </li>
+                                </ul>
+                              </div>
                               <div className="schedule-info">
                                 <br />
-                              <h3>Rules for Submission:-</h3>
+                                <h3>Rules for Submission:-</h3>
 
-                              <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
-                                <li>{" "} Submission should be done through the google form and should include    <br />&nbsp;     - Image of the photograph in JPEG format.   <br /> &nbsp;      - A relevant caption for the same {" "}</li>          
+                                <ul
+                                  className="rules-list"
+                                  style={{
+                                    listStyleType: "circle !important",
+                                    color: "red",
+                                  }}
+                                >
+                                  <li>
+                                    {" "}
+                                    Submission should be done through Unstop and
+                                    should include <br />
+                                    &nbsp; - Image of the photograph in JPEG
+                                    format. <br /> &nbsp; - A relevant caption
+                                    for the same{" "}
+                                  </li>
 
-                                <li>{" "} The snaps submitted in the form must contain the EXIF details. Entries without EXIF data will be penalized. {" "}</li>                                
-                                <li>{" "} The caption for the image should be short. It should be relevant to the theme        and must describe the participants' perspective in the photograph. The        participants may also submit describe the reason behind choosing the                       caption for the image in case of more clarity.{" "}</li>  
+                                  <li>
+                                    {" "}
+                                    The snaps submitted in the form must contain
+                                    the EXIF details. Entries without EXIF data
+                                    will be penalized.{" "}
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    The caption for the image should be short.
+                                    It should be relevant to the theme and must
+                                    describe the participants' perspective in
+                                    the photograph. The participants may also
+                                    submit describe the reason behind choosing
+                                    the caption for the image in case of more
+                                    clarity.{" "}
+                                  </li>
 
-
-                                <li>{" "}  Only Global editing is permitted. Submissions with Modifications or alterations in image will be disqualified.{" "}</li>                                
-                                <li>{" "}Any malpractice during the event and submissions will be penalised as judged by
-COMPOSIT.
- {" "}</li>                                
-                                <li>{" "} Any instances of plagiarism may result in disqualification.{" "}</li>                                                             
-                              </ul>
-                            </div>
-                             
+                                  <li>
+                                    {" "}
+                                    Only Global editing is permitted.
+                                    Submissions with Modifications or
+                                    alterations in image will be disqualified.{" "}
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    Any malpractice during the event and
+                                    submissions will be penalised as judged by
+                                    COMPOSIT.{" "}
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    Any instances of plagiarism may result in
+                                    disqualification.{" "}
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
                           </Link>
                         </li>
@@ -236,18 +292,29 @@ COMPOSIT.
                               <h2>Judging Criteria</h2>
                               {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                               <div className="schedule-info">
-                              <ul className="rules-list">
-
-                                <li> {""}  The evaluation will be done on the basis of: <br />
-&nbsp;1. &nbsp; Technical Quality <br />
-&nbsp;2. &nbsp; Idea and relevance to theme<br />
-&nbsp;3. &nbsp; Creativity and originality<br />
-&nbsp;4. &nbsp; Technical Quality ‣ Caption
-
-{""} </li><br/>
-<li>{""}		Evaluation will be done by COMPOSIT team. Teams decision will be final on all matters.{""} </li>
-                              </ul>
-                            </div>
+                                <ul className="rules-list">
+                                  <li>
+                                    {" "}
+                                    {""} The evaluation will be done on the
+                                    basis of: <br />
+                                    &nbsp;1. &nbsp; Technical Quality <br />
+                                    &nbsp;2. &nbsp; Idea and relevance to theme
+                                    <br />
+                                    &nbsp;3. &nbsp; Creativity and originality
+                                    <br />
+                                    &nbsp;4. &nbsp; Technical Quality <br />
+                                    &nbsp;5. &nbsp; Technical Quality
+                                    {""}{" "}
+                                  </li>
+                                  <br />
+                                  <li>
+                                    {""} The COMPOSIT team will do the review.
+                                    The team's decision on all matters will be
+                                    final.
+                                    {""}{" "}
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
                           </Link>
                         </li>
@@ -255,7 +322,7 @@ COMPOSIT.
                     </div>
 
                     <div id="tab3" className="tabs_item">
-                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                      {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
 
                       <ul className="accordion">
                         <li className="accordion-item">
@@ -266,35 +333,83 @@ COMPOSIT.
                               <h3>Frequently Asked Questions</h3>
 
                               <ul className="accordion faqs">
-                              <li>{" "}1 : &nbsp;  What is the procedure of registration for the event?  {" "}</li>
-                                <li>{" "}-&nbsp; As with all events, all the participants must first be registered through the COMPOSIT website, after which they will be provided with a participant ID. After registration, the final submission must be done through google forms.
- {" "}</li><br /> <br />
-        </ul>
+                                <li>
+                                  {" "}
+                                  1 : &nbsp; What is the procedure of
+                                  registration for the event?{" "}
+                                </li>
+                                <li>
+                                  {" "}
+                                  -&nbsp; As with all events, all the
+                                  participants must first be registered through
+                                  the COMPOSIT website, after which they will be
+                                  provided with a participant ID. After
+                                  registration, the final submission must be
+                                  done through Unstop.{" "}
+                                </li>
+                                <br /> <br />
+                              </ul>
                               <ul className="accordion faqs">
-                              <li>{" "} 2 : &nbsp; What can be the format of submissions?{" "}</li>
-                                <li>{" "}-&nbsp; As stated above , the pictures should be in JPEG format and the caption in the the Google form submission on the website.
-
-{" "}</li> <br /> <br />
-        </ul>
+                                <li>
+                                  {" "}
+                                  2 : &nbsp; What can be the format of
+                                  submissions?{" "}
+                                </li>
+                                <li>
+                                  {" "}
+                                  -&nbsp; As stated above, the pictures should
+                                  be in JPEG format, and the caption should be
+                                  submitted through Unstop.{" "}
+                                </li>{" "}
+                                <br /> <br />
+                              </ul>
                               <ul className="accordion faqs">
-                              <li>{" "}3 : &nbsp;  What is the total number of submissions that can be made?  {" "}</li> <br />
-
-<li>{" "}-&nbsp;  Participants may submit entries for multiple themes, but only one entry can be submitted per theme. {" "}</li> <br /> <br /> <br />
-        </ul>
+                                <li>
+                                  {" "}
+                                  3 : &nbsp; What is the total number of
+                                  submissions that can be made?{" "}
+                                </li>{" "}
+                                <br />
+                                <li>
+                                  {" "}
+                                  -&nbsp; Participants may submit entries for
+                                  multiple themes, but only one entry can be
+                                  submitted per theme.{" "}
+                                </li>{" "}
+                                <br /> <br /> <br />
+                              </ul>
                               <ul className="accordion faqs">
-                              <li>{" "}4 : &nbsp;  What can be the caption for the entry that should be submitted?{" "}</li><br />
-                                <li>{" "}-&nbsp;  Caption can be any creative title of the image that best describes the photography and can relate to the theme in a better way. It could be a artistic or even humorous perspective of the same image.
-
- {" "}</li> <br /> <br />
-        </ul>
+                                <li>
+                                  {" "}
+                                  4 : &nbsp; What can be the caption for the
+                                  entry that should be submitted?{" "}
+                                </li>
+                                <br />
+                                <li>
+                                  {" "}
+                                  -&nbsp; Caption can be any creative title of
+                                  the image that best describes the photography
+                                  and can relate to the theme in a better way.
+                                  It could be a artistic or even humorous
+                                  perspective of the same image.{" "}
+                                </li>{" "}
+                                <br /> <br />
+                              </ul>
                               <ul className="accordion faqs">
-        
-                              <li>{" "}5 : &nbsp; What do I need to cover in the final presentation? {" "}</li> <br />
-                                <li>{" "}-&nbsp;   Only Global editing is permitted. Submissions with Modifications or alterations in image will be disqualified.
-
- {" "}</li><br /> <br />
-        </ul>
-        
+                                <li>
+                                  {" "}
+                                  5 : &nbsp; What do I need to cover in the
+                                  final presentation?{" "}
+                                </li>{" "}
+                                <br />
+                                <li>
+                                  {" "}
+                                  -&nbsp; Only Global editing is permitted.
+                                  Submissions with Modifications or alterations
+                                  in image will be disqualified.{" "}
+                                </li>
+                                <br /> <br />
+                              </ul>
                             </div>
                           </Link>
                         </li>
@@ -302,7 +417,7 @@ COMPOSIT.
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                      {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
 
                       <ul className="accordion">
                         <li className="accordion-item">
@@ -310,7 +425,6 @@ COMPOSIT.
                             <div className="author"></div>
 
                             <div className="schedule-info">
-
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
                                 <b>Subhrojyoti Mukherjee</b>
@@ -328,7 +442,6 @@ COMPOSIT.
                             <div className="author"></div>
 
                             <div className="schedule-info">
-
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
                                 <b>Mayuresh Lohani</b>

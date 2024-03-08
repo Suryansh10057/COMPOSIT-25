@@ -34,13 +34,13 @@ class EventEnigma extends React.Component {
 
               <div className="events-content">
                 <h2>Enigma</h2>
-                <h3>Cash Prize worth 10K</h3>
+                <h3>Prize worth 10K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
             <div className="col-lg-13">
-            <div className="btn-box" style={{ marginBottom: "20px" }}>
-            <a
+              <div className="btn-box" style={{ marginBottom: "20px" }}>
+                <a
                   href="https://unstop.com/quiz/composit-2024-iit-kharagpur-918548"
                   target="_blank"
                   className="btn btn-primary"
@@ -48,9 +48,9 @@ class EventEnigma extends React.Component {
                   {/* Submission Link */}
                   Register Here
                 </a>
-              
+
                 <a
-                  href="https://drive.google.com/file/d/15Ttlahfcg_DskgQ-_zAYHWfToHKw1ZYA/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1azn1d0qknPTXObOCS0XQqi3wIphAN-Hd/view?usp=sharing"
                   target="_blank"
                   className="btn btn-secondary"
                 >
@@ -94,25 +94,24 @@ class EventEnigma extends React.Component {
                               <h3>Enigma</h3>
 
                               <p>
-                              Quizzing Event which will involve questions from all areas, general science as well as core-specific. Questions format is stated as follows: <br />
-  
-                              <ul className="rules-list">
-                                <li>Logical Reasoning / Puzzles. </li> <br />
-                                <li>{""} Metallurgy and Materials Science {""}</li> <br />
-                                <li> GK / History </li><br />
-                                <li>Sports related (Olympics 2024)</li><br />
-                                <li>Science and Engineering</li><br />
-                                
-                              </ul> 
-                             
-
+                                Quizzing Event which will involve questions from
+                                all areas, general science as well as
+                                core-specific. Questions format is stated as
+                                follows: <br />
+                                <ul className="rules-list">
+                                  <li>Logical Reasoning / Puzzles. </li> <br />
+                                  <li>
+                                    {""} Metallurgy and Materials Science {""}
+                                  </li>{" "}
+                                  <br />
+                                  <li> GK / History </li>
+                                  <br />
+                                  <li>Sports related (Olympics 2024)</li>
+                                  <br />
+                                  <li>Science and Engineering</li>
+                                  <br />
+                                </ul>
                               </p>
-
-                              {/* <ul>
-                                                            <li><i className="icofont-wall-clock"></i> Electronic Materials and Nanotechnology, Computational Material Science</li>
-                                                            <li><i className="icofont-wall-clock"></i> Advanced Materials and Functional Materials Biomaterials</li>
-                                                            <li><i className="icofont-wall-clock"></i> Material Processes Physical, Extractive and Mechanical Metallurgy</li>
-                                                        </ul> */}
                             </div>
                           </Link>
                         </li>
@@ -120,9 +119,7 @@ class EventEnigma extends React.Component {
                     </div>
 
                     <div id="tab2" className="tabs_item">
-                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
-
-                      {/* <ul className="accordion">
+                      <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -133,31 +130,13 @@ class EventEnigma extends React.Component {
                               <ul>
                                 <li>
                                   {" "}
-                                  Participation can be individual or in a team
-                                  of a maximum of three participants.{" "}
+                                  Upto 2 (Individual participation allowed){" "}
                                 </li>
                                 <li>
                                   {" "}
-                                  All members should be students pursuing a
-                                  B.Tech/ BSc./ Dual/ MTech/ MSc degree in any
-                                  college in India.{" "}
-                                </li>
-                              </ul>
-                            </div>
-                          </Link>
-                        </li>
-
-                        <li className="accordion-item">
-                          <Link className="accordion-title" to="#">
-                            <div className="author"></div>
-
-                            <div className="schedule-info">
-                              <h3>Winning Criteria</h3>
-
-                              <ul>
-                                <li>
-                                  {" "}
-                                  The final leaderboard will be made by combining the overall marks and time score of both rounds.{" "}
+                                  Open to all students pursuing
+                                  Bachelors/Masters/PHD in any science and
+                                  engineering college{" "}
                                 </li>
                               </ul>
                             </div>
@@ -169,83 +148,216 @@ class EventEnigma extends React.Component {
                             <div className="author author-multi"></div>
 
                             <div className="schedule-info">
-                              <h3>Rounds of the Event</h3>
-                              <p>The event will have two rounds as follows, both of which will be conducted on UnStop:</p>
+                              {/* <h2>Rounds of the Event</h2> */}
+                              {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                              <div className="schedule-info">
+                                <h3>Important Dates</h3>
 
-                              <ul>
-                                <li>
-                                  <b>Prelims round (Online):</b>
-                                  <ul>
-                                    <li>
-                                    This round will be held in the form of an online quiz on UnStop. All participants must be registered on the website in order to be eligible for the prizes. Questions will cover general science, mathematics and engineering, including logic puzzles and test basic college-level knowledge. There will be 11 questions that must be solved within 20 minutes in the window provided.
-                                    </li>
-                                  </ul>
-                                </li>
-                                <br></br>
-                                <br />
-                                <li>
-                                  <b>Final Round:</b>
-                                  <ul>
-                                    <li>
-                                    The final round will be held in online mode covering the same scope as the prelims round although the questions will be harder.
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
+                                <ul>
+                                  <li>
+                                    <b>Prelims Round:</b>
+                                  </li>
+                                  <li> 15th March 2024 12:00 PM IST</li>
+                                  <br></br>
+                                  <br></br>
+                                  <li>
+                                    <b>Final Event:</b>
+                                  </li>
+                                  <li>30th March 2024</li>
+                                </ul>
+                              </div>
                             </div>
                           </Link>
                         </li>
-                      </ul> */}
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author author-multi"></div>
+
+                            <div className="schedule-info">
+                              <h2>Rules of the Event</h2>
+                              {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                              <div className="schedule-info">
+                                <br />
+                                <h3>Rules for round 1:-</h3>
+
+                                <ul
+                                  className="rules-list"
+                                  style={{
+                                    listStyleType: "circle !important",
+                                    color: "red",
+                                  }}
+                                >
+                                  <li>
+                                    {" "}
+                                    This round will be conducted in online mode
+                                    on Unstop platform. <br />{" "}
+                                  </li>
+
+                                  <li>
+                                    {" "}
+                                    The time limit to attempt the quiz is 1
+                                    hour. The quiz window will be open for four
+                                    hours.{" "}
+                                  </li>
+
+                                  <li>
+                                    {" "}
+                                    The top 20 scorers will qualify for the
+                                    final round.{" "}
+                                  </li>
+                                  <br />
+
+                                  <li>
+                                    {" "}
+                                    In the case of team participation, only the
+                                    team leader can give the online quiz.{" "}
+                                  </li>
+                                </ul>
+                              </div>
+                              <div className="schedule-info">
+                                <br />
+                                <h3>Rules for round 2:-</h3>
+
+                                <ul
+                                  className="rules-list"
+                                  style={{
+                                    listStyleType: "circle !important",
+                                    color: "red",
+                                  }}
+                                >
+                                  <li>
+                                    {" "}
+                                    The final round will also be held online on
+                                    the Unstop platform. <br />{" "}
+                                  </li>
+
+                                  <li>
+                                    {" "}
+                                    Questions will be based on the topics of
+                                    General trivia, Material Sciences, Basic
+                                    Engineering, Puzzles, etc.{" "}
+                                  </li>
+
+                                  <li>
+                                    {" "}
+                                    Rules and format will be the same as that of
+                                    the previous round.{" "}
+                                  </li>
+                                  <br />
+
+                                  <li>
+                                    {" "}
+                                    The top 3 teams with the highest scores will
+                                    be declared winners.{" "}
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="accordion-item">
+                          <Link className="accordion-title" to="#">
+                            <div className="author author-multi"></div>
+
+                            <div className="schedule-info">
+                              <h2>Prizes</h2>
+                              {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                              <div className="schedule-info">
+                                <ul className="rules-list">
+                                  <li>
+                                    {" "}
+                                    {""} Participation certificates for all the
+                                    teams attending the quiz.{""}{" "}
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    {""} Cash Prizes worth 10k for winners and
+                                    runner-ups.{""}{" "}
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </Link>
+                        </li>
+                      </ul>
                     </div>
 
-
-
                     <div id="tab3" className="tabs_item">
-                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
-                      {/* <ul className="accordion">
+                      {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+
+                      <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                            <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
-
-                              <h3>Important Dates</h3>
-
-                              <ul>
-                              
+                              <h3>Frequently Asked Questions</h3>
+                              <ul className="accordion faqs">
                                 <li>
-                                  <b>Prelims Round:</b>
+                                  {" "}
+                                  1 : &nbsp; What is the procedure of
+                                  registration for the event? Do all the members
+                                  have to be registered?{" "}
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>
-                                  31 Mar 23, 07:00 PM IST
+                                  {" "}
+                                  -&nbsp; Yes, as with all events, all the
+                                  participants must first be registered through
+                                  the COMPOSIT website, after which they will be
+                                  provided with a participant ID. For the final
+                                  round of registration, the team leader has to
+                                  enter the participant IDs in the Unstop portal{" "}
                                 </li>
-                                <br></br>
-                                <br></br>
+                                <br /> <br />
+                              </ul>
+                              <ul className="accordion faqs">
                                 <li>
-                                  <b>Final Round:</b>
+                                  {" "}
+                                  2 : &nbsp; What type of questions may be
+                                  asked?{" "}
                                 </li>
                                 <li>
-                                  <i className="icofont-wall-clock"></i>01 Apr 23, 10:00 AM IST
-                                </li>
+                                  {" "}
+                                  -&nbsp; The questions will be of MCQ’s type,
+                                  and it will be related to concepts of high
+                                  school and intermediate-level.{" "}
+                                </li>{" "}
+                                <br /> <br />
+                              </ul>
+                              <ul className="accordion faqs">
+                                <li>
+                                  {" "}
+                                  3 : &nbsp; From where can the questionsbe
+                                  asked?{" "}
+                                </li>{" "}
+                                <br />
+                                <li>
+                                  {" "}
+                                  -&nbsp; Questions would be based on
+                                  sustainability, general knowledge, and
+                                  materials science.It will be a 30-minute quiz
+                                  to be attempted within a window of 4 hr. The
+                                  quiz can contain certain 1 word answers as
+                                  well. .{" "}
+                                </li>{" "}
                               </ul>
                             </div>
                           </Link>
                         </li>
-                      </ul> */}
+                      </ul>
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                      {/* <h3>
+                        <i className="icofont-wall-clock"></i> Coming Soon ....
+                      </h3> */}
 
-                    <ul className="accordion">
+                      <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
 
                             <div className="schedule-info">
-
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
                                 <b>Subhrojyoti Mukherjee</b>
@@ -263,7 +375,6 @@ class EventEnigma extends React.Component {
                             <div className="author"></div>
 
                             <div className="schedule-info">
-
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
                                 <b>Mayuresh Lohani</b>
