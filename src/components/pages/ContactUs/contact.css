@@ -1,0 +1,154 @@
+.container {
+    width: 75%;
+    margin: 20px auto;
+}
+
+#contact h2{
+    color: #fff;
+    font-size: 25px;
+}
+
+.container.contact__container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+}
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.map {
+    line-height: 0
+}
+
+.map.map-gray {
+    filter: grayscale(100%)
+}
+
+.map.map-gray iframe {
+    height: 100vh
+}
+
+.map iframe {
+    width: 100%;
+    height: 500px
+}
+
+.map.map-100vh iframe {
+    height: 100vh
+}
+
+.contact__option {
+    /* background: #000; */
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    /* transition: var(--transition); */
+}
+
+/* .contact__option h4,
+.contact__option h5 {
+    color: #398E89;
+} */
+
+.contact__option:hover {
+    background: transparent;
+    border-color: #00DF75;
+}
+
+.contact__option:hover h4 {
+    color: #00DF75;
+}
+
+.contact__option:hover h5 {
+    color: #00DF75;
+}
+
+.contact-option-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.contact__option:hover .contact-option-icon {
+    color: #fff;
+}
+
+.contact__option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #efa506;
+}
+
+.contact__option:hover a {
+    color: #00DF75;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid #efa506;
+    resize: none;
+    color: #000;
+}
+
+form .btn {
+    background-color: #00DF75;
+    border-color: #fff;
+    color: #fff;
+}
+
+form .btn:hover {
+    background-color: #fff;
+    color: #00DF75;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #00DF75;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #00DF75;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #00DF75;
+}
+
+/* Media Quries(Medium Devices) */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 86%;
+    }
+}
+
+/* Media Quries(Small Devices) */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    
+    .container.contact__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        width: 90%;
+    }
+    form{
+        margin-top: 100px;
+    }
+}

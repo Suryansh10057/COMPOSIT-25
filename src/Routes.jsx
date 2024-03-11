@@ -48,6 +48,11 @@ import AnnouncementPage from "./components/pages/Announcement";
 import AccomodationPage from "./components/pages/Accomodation";
 import Success from "./components/pages/Success/Success";
 import Cancel from "./components/pages/Cancel/Cancel";
+import ContactUs from "./components/pages/ContactUs/ContactUs";
+import PrivacyPolicy from "./components/pages/PrivacyPolicy/PrivacyPolicy";
+import TermsCondition from "./components/pages/TermsCondition/TermsCondition";
+import CancellationRefund from "./components/pages/CancellationRefund/CancellationRefund";
+import ShippingDelivery from "./components/pages/ShippingDelivery/ShippingDelivery";
 
 // Conditionally render Navigation
 const renderNavigation = () => {
@@ -101,6 +106,11 @@ const AppRouter = () => {
                 <Route path="/comingSoon" exact component={ComingSoon1} />
                 <Route path="/success" exact component={Success} />
                 <Route path="/cancel" exact component={Cancel} />
+                <Route path="/privacypolicy" exact component={PrivacyPolicy} />
+                <Route path="/termscondition" exact component={TermsCondition} />
+                <Route path="/cancellationrefund" exact component={CancellationRefund} />
+                <Route path="/shippingdelivery" exact component={ShippingDelivery} />
+                <Route path="/contactus" exact component={ContactUs} />
                 <Route path="/faq" exact component={Faq} />
                 <Route path="/contact" exact component={Contact} />
                 {/* <Route path="/sponsors" exact component={Sponsor} /> */}

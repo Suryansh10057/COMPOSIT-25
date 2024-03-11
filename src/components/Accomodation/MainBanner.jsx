@@ -12,6 +12,12 @@ class MainBanner extends React.Component {
                         <li><Link to="/">Home</Link></li>
                         <li>Accomodation</li>
                     </ul>
+                    <ul>
+                        <li><Link to="/privacypolicy">Privacy Policy</Link></li>
+                        <li><Link to="/termscondition">Terms & Condition</Link></li>
+                        <li><Link to="/cancellationrefund">Cancellation & Refund</Link></li>
+                        <li><Link to="/shippingdelivery">Shiping & Delivery</Link></li>
+                    </ul>
                 </div>
             </div>
         );
