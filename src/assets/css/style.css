@@ -288,6 +288,7 @@ label {
   z-index: 1;
 }
 
+
 .section-title span {
   /* color: #3F0071; */
   color: #00CA79;
@@ -5218,3 +5219,24 @@ Back To Top CSS
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.navbar .container{
+  margin: 5px;
+  max-width: 100% !important;
+  width: 100%;
+}
+.navbar .collapse{
+  background-color: #000000d1 !important;
+}
+
+@media (width > 767px){
+  .navbar .collapse{
+    background-color: transparent !important;
+   & ul{
+    width: 100%;
+    margin: 0 !important;
+    justify-content: space-around;
+   }
+  }
+}
