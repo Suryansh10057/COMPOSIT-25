@@ -53,7 +53,7 @@ class EventCasestudy extends React.Component {
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 } */}
                 <a
-                  // href="https://drive.google.com/file/d/1GI__f_FmL9qIjNGgXdDjGqtqjjtE8vps/view?usp=sharing"
+                  href="https://drive.google.com/file/d/13gqs-yMWD2MVoqZ9pJpVmIaRreCMPml6/view?usp=sharing"
                   className="btn btn-primary"
                   target="_blank"
                 >
