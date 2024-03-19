@@ -216,7 +216,7 @@ class Navigation extends React.Component {
                     </li>
                   }
 
-{/* {
+{
                     <li className="nav-item">
                       {this.userData ? (
                         <NavLink
@@ -236,9 +236,9 @@ class Navigation extends React.Component {
                         </NavLink>
                       )}
                     </li>
-                  } */}
+                  }
 
-{
+{/* {
                     <li className="nav-item">
                         <NavLink
                           to="/announcement"
@@ -248,7 +248,7 @@ class Navigation extends React.Component {
                           <IoIosNotifications size={27} />
                         </NavLink>
                     </li>
-                  }
+                  } */}
 
                 </ul>
               </div>
