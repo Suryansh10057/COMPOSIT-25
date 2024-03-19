@@ -234,6 +234,9 @@ class Accomodation extends React.Component {
                 {this.state.error && (
                   <p className="error center">{this.state.error}</p>
                 )}
+                {this.state.success && (
+                  <p className="popupLink center">{this.state.success}</p>
+                )}
                 <button
                   type="submit"
                   className="btn-modal btn-primary"
@@ -242,18 +245,6 @@ class Accomodation extends React.Component {
                 >
                   Submit
                 </button>
-                {this.state.success && (
-                  <p className="popupLink center">{this.state.success}</p>
-                )}
-                {/* {this.state.success && (
-                  <p className="popupLink center">{this.state.success}</p>
-                )}
-                {this.state.errorr && (
-                  <p className="error center">{this.state.errorr}</p>
-                )} */}
-                {/* <p>pp</p> */}
-
-                {/* {this.state.userData && <p>{this.state.userData}</p>} */}
               </form>
             </div>
           </div>
