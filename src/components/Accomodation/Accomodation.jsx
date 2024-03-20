@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import LaxButton from "../Shared/LaxButton";
 import { loadStripe } from "@stripe/stripe-js";
 import PaymentForm from "./PaymentForm";
+import './accomodation.css'
 
 class Accomodation extends React.Component {
   constructor(props) {
@@ -162,6 +163,7 @@ class Accomodation extends React.Component {
                               :
                               <h3>Welcome Back!</h3>
                             } */}
+                            
 
               <form>
                 <div className="form-group">

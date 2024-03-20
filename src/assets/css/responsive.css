@@ -904,6 +904,11 @@
     width: 100%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .footer-area {
+    padding-top: 80px;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .elkevent-nav {
@@ -1408,9 +1413,7 @@
   #contactForm {
     margin-top: 30px;
   }
-  .footer-area {
-    padding-top: 80px;
-  }
+
   .single-footer-widget h3 {
     font-size: 22px;
   }

@@ -24,7 +24,7 @@ class AccomodationPage extends React.Component {
                 <MainBanner />
                 {/* Announcement Area */}
                 <Accomodation />
-
+                
                 <Footer />
 
                 {/* Back Top top */}

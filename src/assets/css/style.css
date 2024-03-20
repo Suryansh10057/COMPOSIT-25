@@ -3598,9 +3598,11 @@ Page Title CSS
 Login CSS
 =================================================*/
 .login-area {
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 100px;
+  padding-top: 100px;
   position: relative;
-  z-index: 100000;
+  z-index: 998;
   background-image: url("../images/main-bg.jpg");
   background-position: center center;
   background-size: cover;
@@ -3612,7 +3614,7 @@ Login CSS
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
+  z-index: -4;
   width: 100%;
   height: 100%;
   background: #009F7D;
