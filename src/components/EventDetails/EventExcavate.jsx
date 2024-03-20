@@ -49,7 +49,7 @@ class EventExcavate extends React.Component {
                   Register Here
                 </a>
               <a
-                  // href="https://drive.google.com/file/d/1opbqzg9JpcxYx2pEAJQ8TOYF8-GrkURK/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1h0Oqq4aEW829mEtZW-SvAlLiNloDg3jT/view?usp=sharing"
                   className="btn btn-secondary"
                   target="_blank"
                 >

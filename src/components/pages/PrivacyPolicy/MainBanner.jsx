@@ -129,7 +129,7 @@ class MainBanner extends React.Component {
               if you have previously agreed to us using your personal
               information for direct marketing purposes, you may change your
               mind at any time by writing to or emailing us at
-              lohanimayuresh2551@gmail.com
+              composit2024.iitkgp@gmail.com
             </li>
           </ul>
           <span style={{textAlign: "left"}}>
@@ -143,7 +143,7 @@ class MainBanner extends React.Component {
             If you believe that any information we are holding on you is
             incorrect or incomplete, please write to Metallurgical and Materials
             Engineering Department, IIT Kharagpur West Midnapore WEST BENGAL
-            721302. or contact us at <b>8709471451</b> or <b>lohanimayuresh2551@gmail.com</b>
+            721302. or contact us at <b>8171783377</b> or <b>composit2024.iitkgp@gmail.com</b>
             as soon as possible. We will promptly correct any information found
             to be incorrect.
           </span>
