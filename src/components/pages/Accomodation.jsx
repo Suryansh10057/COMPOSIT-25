@@ -20,6 +20,7 @@ class AccomodationPage extends React.Component {
         return (
             <React.Fragment>
                 {/* Main Banner */}
+                
                 <MainBanner />
                 {/* Announcement Area */}
                 <Accomodation />
