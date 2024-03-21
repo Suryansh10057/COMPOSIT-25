@@ -167,7 +167,7 @@ class Accomodation extends React.Component {
 
               <form>
                 <div className="form-group">
-                  <label>Important Instructions</label>
+                  <label>Self-Declaration</label>
                   <ul>
                     <li>
                       We accept the dormitory-style accommodation provided at Rs
