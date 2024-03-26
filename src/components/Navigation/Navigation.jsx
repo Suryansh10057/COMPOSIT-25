@@ -224,7 +224,7 @@ class Navigation extends React.Component {
                           className="nav-link"
                           onClick={this.toggleNavbar}
                         >
-                          Accomodation
+                          Accommodation
                         </NavLink>
                       ) : (
                         <NavLink

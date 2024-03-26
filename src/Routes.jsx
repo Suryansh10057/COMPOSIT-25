@@ -87,8 +87,8 @@ const AppRouter = () => {
                 <Route path="/event_techtoon" exact component={EventTechtoonPage} />
                 <Route path="/announcement" exact component={AnnouncementPage} />
                 <Route path="/accomodation" exact component={AccomodationPage} />
-                {/* <Route path="/guestlecture" exact component={ComingSoon1} /> */}
-                <Route path="/guestlecture" exact component={GuestLecturePage} />
+                <Route path="/accommodation" exact component={AccomodationPage} />
+                <Route path="/guestlecture" exact component={ComingSoon1} />
                 <Route path="/register_metaclix" exact component={RegisterMetaclix} />
                 <Route path="/register_techtoon" exact component={RegisterTechtoon} />
                 <Route path="/register_metallomania" exact component={RegisterMetallomania} />
