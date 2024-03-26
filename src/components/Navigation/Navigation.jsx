@@ -142,7 +142,7 @@ class Navigation extends React.Component {
                     </NavLink>
                   </li>
 
-                  {/* <li className="nav-item">
+                  <li className="nav-item">
                     <NavLink
                       to="/guestlecture"
                       className="nav-link"
@@ -150,7 +150,7 @@ class Navigation extends React.Component {
                     >
                       Our Speakers
                     </NavLink>
-                  </li> */}
+                  </li>
 
                   <li className="nav-item">
                     <NavLink
