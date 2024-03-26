@@ -76,8 +76,8 @@ class Sponsor extends React.Component {
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <a href="https://www.tatametaliks.com/" target="_blank">
-                                        <img src={require("../../assets/images/tatametaliks.jpg")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/tatametaliks.jpg")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/title.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/title.png")} alt="Partner Logo" />
                                     </a>
                                     <h5 className="py-1">Title Sponsors</h5>
                   </div>
@@ -86,18 +86,17 @@ class Sponsor extends React.Component {
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <a href="https://www.incrediblemachines.in/" target="_blank">
-                                        <img src={require("../../assets/images/incredible.JPG")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/incredible.JPG")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Media1.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Media1.png")} alt="Partner Logo" />
                                     </a>
-                                    <h5 className="py-1">Major Sponsors</h5>
+                                    {/* <h5 className="py-1">Major Sponsors</h5> */}
                   </div>
                 </div>
-
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <a href="https://www.aimil.com/" target="_blank">
-                                        <img src={require("../../assets/images/aimil.PNG")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/aimil.PNG")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Media2.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Media2.png")} alt="Partner Logo" />
                                     </a>
                   </div>
                 </div>
@@ -105,8 +104,8 @@ class Sponsor extends React.Component {
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <Link to="/sponsors" target="_blank">
-                                        <img src={require("../../assets/images/edenwenz.JPG")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/edenwenz.JPG")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Media3.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Media3.png")} alt="Partner Logo" />
                                     </Link>
                   </div>
                 </div>
@@ -114,8 +113,8 @@ class Sponsor extends React.Component {
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <a href="https://www.jeol.com/in/" target="_blank">
-                                        <img src={require("../../assets/images/joel.PNG")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/joel.PNG")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Media4.jpg")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Media4.jpg")} alt="Partner Logo" />
                                     </a>
                   </div>
                 </div>
@@ -123,8 +122,8 @@ class Sponsor extends React.Component {
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                   <a href="http://metatechind.com/" target="_blank">
-                                        <img src={require("../../assets/images/metatech.PNG")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/metatech.PNG")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/event1.jpg")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/event1.jpg")} alt="Partner Logo" />
                                         </a>
                   </div>
                 </div>
@@ -132,8 +131,8 @@ class Sponsor extends React.Component {
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <a href="https://www.zwickroell.com/" target="_blank">
-                                        <img src={require("../../assets/images/zwickroell.PNG")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/zwickroell.PNG")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Event3.jpeg")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Event3.jpeg")} alt="Partner Logo" />
                                     </a>
                   </div>
                 </div>
@@ -141,8 +140,16 @@ class Sponsor extends React.Component {
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <a href="https://iconanalytical.com/" target="_blank">
-                                        <img src={require("../../assets/images/iconAnalytical.png")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/iconAnalytical.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/events2.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/events2.png")} alt="Partner Logo" />
+                                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://iconanalytical.com/" target="_blank">
+                                        <img src={require("../../assets/sponsors/merchandise.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/merchandise.png")} alt="Partner Logo" />
                                     </a>
                   </div>
                 </div>

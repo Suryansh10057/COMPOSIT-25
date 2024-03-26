@@ -13,7 +13,7 @@ import Signup from "./components/pages/Signup";
 import NotFound from "./components/pages/NotFound";
 import Faq from "./components/pages/Faq";
 import Contact from "./components/pages/Contact";
-// import Sponsor from "./components/pages/Sponsor";
+import Sponsor from "./components/pages/Sponsor";
 import Profile from "./components/pages/Profile";
 import EditProfile from "./components/pages/EditProfile";
 import EventCadPage from "./components/pages/EventDetails/EventCad";
@@ -114,8 +114,8 @@ const AppRouter = () => {
                 <Route path="/contactus" exact component={ContactUs} />
                 <Route path="/faq" exact component={Faq} />
                 <Route path="/contact" exact component={Contact} />
-                {/* <Route path="/sponsors" exact component={Sponsor} /> */}
-                <Route path="/sponsors" exact component={ComingSoon1} />
+                <Route path="/sponsors" exact component={Sponsor} />
+                {/* <Route path="/sponsors" exact component={ComingSoon1} /> */}
                 <Route path="/profile" exact component={Profile} />
                 <Route path="/edit-profile" exact component={EditProfile} />
                 <Route path="/popup" exact component={Popup} />

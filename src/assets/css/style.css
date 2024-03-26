@@ -5242,3 +5242,7 @@ Back To Top CSS
    }
   }
 }
+
+.nav-link{
+  font-size: 14px !important;
+}
