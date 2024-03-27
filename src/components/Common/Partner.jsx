@@ -57,7 +57,7 @@ class Partner extends React.Component {
           <div className="section-title">
             <span>Check Who Makes This Event Possible!</span>
             <h2>
-              Our Previous Sponsors
+              Our Sponsors
             </h2>
 
             {/* <Link to="/sponsors" className="btn btn-primary">
@@ -80,57 +80,55 @@ class Partner extends React.Component {
               >
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                    <a href="https://www.tatametaliks.com/" target="_blank">
-                                        <img src={require("../../assets/images/tatametaliks.jpg")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/tatametaliks.jpg")} alt="Partner Logo" />
+                    <a href="https://jindalshadeed.com/" target="_blank">
+                                        <img src={require("../../assets/sponsors/title.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/title.png")} alt="Partner Logo" />
                                     </a>
                                     <h5 className="py-1">Title Sponsors</h5>
                   </div>
-                 
                 </div>
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                    <a href="https://www.incrediblemachines.in/" target="_blank">
-                                        <img src={require("../../assets/images/incredible.JPG")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/incredible.JPG")} alt="Partner Logo" />
+                    <a href="https://youthincmag.com/" target="_blank">
+                                        <img src={require("../../assets/sponsors/Media1.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Media1.png")} alt="Partner Logo" />
                                     </a>
-                                    <h5 className="py-1">Major Sponsors</h5>
+                                    {/* <h5 className="py-1">Major Sponsors</h5> */}
                   </div>
                 </div>
-
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                    <a href="https://www.aimil.com/" target="_blank">
-                                        <img src={require("../../assets/images/aimil.PNG")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/aimil.PNG")} alt="Partner Logo" />
+                    <a href="https://edtimes.in/" target="_blank">
+                                        <img src={require("../../assets/sponsors/Media2.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Media2.png")} alt="Partner Logo" />
                                     </a>
                   </div>
                 </div>
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                    <Link to="/sponsors" target="_blank">
-                                        <img src={require("../../assets/images/edenwenz.JPG")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/edenwenz.JPG")} alt="Partner Logo" />
-                                    </Link>
-                  </div>
-                </div>
-
-                <div className="col-lg-12 col-md-12">
-                  <div className="partner-item">
-                    <a href="https://www.jeol.com/in/" target="_blank">
-                                        <img src={require("../../assets/images/joel.PNG")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/joel.PNG")} alt="Partner Logo" />
+                    <a href="https://epaper.sachkahoon.com/" target="_blank">
+                                        <img src={require("../../assets/sponsors/Media3.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Media3.png")} alt="Partner Logo" />
                                     </a>
                   </div>
                 </div>
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                  <a href="http://metatechind.com/" target="_blank">
-                                        <img src={require("../../assets/images/metatech.PNG")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/metatech.PNG")} alt="Partner Logo" />
+                    <a href="https://www.telegraphindia.com/edugraph/news/" target="_blank">
+                                        <img src={require("../../assets/sponsors/Media4.jpg")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Media4.jpg")} alt="Partner Logo" />
+                                    </a>
+                  </div>
+                </div>
+
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                  <a href="https://www.anutechconsultant.com/" target="_blank">
+                                        <img src={require("../../assets/sponsors/event1.jpg")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/event1.jpg")} alt="Partner Logo" />
                                         </a>
                   </div>
                 </div>
@@ -138,17 +136,25 @@ class Partner extends React.Component {
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
                     <a href="https://www.zwickroell.com/" target="_blank">
-                                        <img src={require("../../assets/images/zwickroell.PNG")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/zwickroell.PNG")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Event3.jpeg")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/Event3.jpeg")} alt="Partner Logo" />
                                     </a>
                   </div>
                 </div>
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
+                    <a href="https://www.titagarh.in/" target="_blank">
+                                        <img src={require("../../assets/sponsors/events2.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/events2.png")} alt="Partner Logo" />
+                                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
                     <a href="https://iconanalytical.com/" target="_blank">
-                                        <img src={require("../../assets/images/iconAnalytical.png")} alt="Partner Logo" />
-                                        <img src={require("../../assets/images/iconAnalytical.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/merchandise.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/merchandise.png")} alt="Partner Logo" />
                                     </a>
                   </div>
                 </div>

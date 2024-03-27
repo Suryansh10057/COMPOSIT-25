@@ -678,47 +678,6 @@ class SpeakersOne extends React.Component {
       </div>
       {/* Team member */}
 
-      <div className="col-lg-3 col-md-6 p-0">
-                  <div className="single-speakers">
-                    <img
-                      src={require("../../assets/images/SubHeads/shivee.jpg")}
-                      alt="speakers"
-                    />
-
-                    <div className="speakers-content">
-                      <h3 style={{ color: "#fec66d" }}>Shivee Gupta</h3>
-                    </div>
-                    <ul>
-                      <li>
-                        <a
-                          href="https://www.facebook.com/profile.php?id=100086993780456&mibextid=ZbWKwL"
-                          target="_blank"
-                          className="facebook"
-                        >
-                          <i className="icofont-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="mailto:shiveegupta.composit@gmail.com"
-                          target="_blank"
-                          className="twitter"
-                        >
-                          <i className="icofont-envelope"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.linkedin.com/in/shivee-gupta-544429255"
-                          target="_blank"
-                          className="linkedin"
-                        >
-                          <i className="icofont-linkedin"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-      </div>
       {/* Team member */}
 
       <div className="col-lg-3 col-md-6 p-0">
@@ -807,47 +766,7 @@ class SpeakersOne extends React.Component {
       </div>
       {/* Team member */}
 
-      <div className="col-lg-3 col-md-6 p-0">
-                  <div className="single-speakers">
-                    <img
-                      src={require("../../assets/images/SubHeads/sharwari.jpeg")}
-                      alt="speakers"
-                    />
-
-                    <div className="speakers-content">
-                      <h3 style={{ color: "#fec66d" }}>Sharwari Muley</h3>
-                    </div>
-                    <ul>
-                      <li>
-                        <a
-                          href="https://www.facebook.com/profile.php?id=100087380539244"
-                          target="_blank"
-                          className="facebook"
-                        >
-                          <i className="icofont-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="mailto:sharwarimuley02@gmail.com"
-                          target="_blank"
-                          className="twitter"
-                        >
-                          <i className="icofont-envelope"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.linkedin.com/in/sharwari-muley-1a3304261/"
-                          target="_blank"
-                          className="linkedin"
-                        >
-                          <i className="icofont-linkedin"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-      </div>
+      
       {/* Team member */}
 
       <div className="col-lg-3 col-md-6 p-0">
@@ -1024,47 +943,7 @@ class SpeakersOne extends React.Component {
     
       {/* Team member */}
 
-      <div className="col-lg-3 col-md-6 p-0">
-                  <div className="single-speakers">
-                    <img
-                      src={require("../../assets/images/SubHeads/soham.jpg")}
-                      alt="speakers"
-                    />
-
-                    <div className="speakers-content">
-                      <h3 style={{ color: "#fec66d" }}>Soham Jagtap</h3>
-                    </div>
-                    <ul>
-                      <li>
-                        <a
-                          href="https://www.facebook.com/profile.php?id=100087821345166&mibextid=ZbWKwL"
-                          target="_blank"
-                          className="facebook"
-                        >
-                          <i className="icofont-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="sohamjagtap2511@gmail.com"
-                          target="_blank"
-                          className="twitter"
-                        >
-                          <i className="icofont-envelope"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.linkedin.com/in/soham-jagtap-8a9977256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                          target="_blank"
-                          className="linkedin"
-                        >
-                          <i className="icofont-linkedin"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-      </div>
+      
          {/* Team member */}
 
          <div className="col-lg-3 col-md-6 p-0">

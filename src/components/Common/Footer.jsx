@@ -71,7 +71,7 @@ class Footer extends React.Component {
                                     {/* <li><Link to="#">Terms & Conditions</Link></li> */}
                                 </ul>
                                 <p>
-                                    Copyright <i className="icofont-copyright"></i> 2023 COMPOSIT. All rights reserved
+                                    Copyright <i className="icofont-copyright"></i> 2024 COMPOSIT. All rights reserved
                                 </p>
                             </div>
                         </div>

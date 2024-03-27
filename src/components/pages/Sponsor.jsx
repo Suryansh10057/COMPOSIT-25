@@ -75,7 +75,7 @@ class Sponsor extends React.Component {
               >
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                    <a href="https://www.tatametaliks.com/" target="_blank">
+                    <a href="https://jindalshadeed.com/" target="_blank">
                                         <img src={require("../../assets/sponsors/title.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/sponsors/title.png")} alt="Partner Logo" />
                                     </a>
@@ -85,7 +85,7 @@ class Sponsor extends React.Component {
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                    <a href="https://www.incrediblemachines.in/" target="_blank">
+                    <a href="https://youthincmag.com/" target="_blank">
                                         <img src={require("../../assets/sponsors/Media1.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/sponsors/Media1.png")} alt="Partner Logo" />
                                     </a>
@@ -94,7 +94,7 @@ class Sponsor extends React.Component {
                 </div>
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                    <a href="https://www.aimil.com/" target="_blank">
+                    <a href="https://edtimes.in/" target="_blank">
                                         <img src={require("../../assets/sponsors/Media2.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/sponsors/Media2.png")} alt="Partner Logo" />
                                     </a>
@@ -103,16 +103,16 @@ class Sponsor extends React.Component {
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                    <Link to="/sponsors" target="_blank">
+                    <a href="https://epaper.sachkahoon.com/" target="_blank">
                                         <img src={require("../../assets/sponsors/Media3.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/sponsors/Media3.png")} alt="Partner Logo" />
-                                    </Link>
+                                    </a>
                   </div>
                 </div>
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                    <a href="https://www.jeol.com/in/" target="_blank">
+                    <a href="https://www.telegraphindia.com/edugraph/news/" target="_blank">
                                         <img src={require("../../assets/sponsors/Media4.jpg")} alt="Partner Logo" />
                                         <img src={require("../../assets/sponsors/Media4.jpg")} alt="Partner Logo" />
                                     </a>
@@ -121,7 +121,7 @@ class Sponsor extends React.Component {
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                  <a href="http://metatechind.com/" target="_blank">
+                  <a href="https://www.anutechconsultant.com/" target="_blank">
                                         <img src={require("../../assets/sponsors/event1.jpg")} alt="Partner Logo" />
                                         <img src={require("../../assets/sponsors/event1.jpg")} alt="Partner Logo" />
                                         </a>
@@ -139,7 +139,7 @@ class Sponsor extends React.Component {
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
-                    <a href="https://iconanalytical.com/" target="_blank">
+                    <a href="https://www.titagarh.in/" target="_blank">
                                         <img src={require("../../assets/sponsors/events2.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/sponsors/events2.png")} alt="Partner Logo" />
                                     </a>
