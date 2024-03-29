@@ -82,6 +82,24 @@ class Sponsor extends React.Component {
                                     <h5 className="py-1">Title Sponsors</h5>
                   </div>
                 </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.rashmigroup.com/" target="_blank">
+                                        <img src={require("../../assets/sponsors/rashmi.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/rashmi.png")} alt="Partner Logo" />
+                                    </a>
+                                    <h5 className="py-1">Title Sponsors</h5>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12">
+                  <div className="partner-item">
+                    <a href="https://www.jindalstainless.com/" target="_blank">
+                                        <img src={require("../../assets/sponsors/jsl.png")} alt="Partner Logo" />
+                                        <img src={require("../../assets/sponsors/jsl.png")} alt="Partner Logo" />
+                                    </a>
+                                    <h5 className="py-1">Title Sponsors</h5>
+                  </div>
+                </div>
 
                 <div className="col-lg-12 col-md-12">
                   <div className="partner-item">
