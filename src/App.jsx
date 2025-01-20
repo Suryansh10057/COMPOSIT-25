@@ -1,37 +1,86 @@
 import './assets/css/bootstrap.min.css';
 import './assets/css/icofont.min.css';
 import './assets/css/animate.min.css';
-import '../node_modules/react-modal-video/css/modal-video.min.css'
+import '../node_modules/react-modal-video/css/modal-video.min.css';
 import './assets/css/style.css';
 import './assets/css/responsive.css';
 
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import AppRouter from './Routes';
 import Preloader from './components/Shared/Preloader';
-import Home from './components/pages/Home';
 
-class App extends React.Component {
-    state = {
-        loading: true
-    };
+const App = () => {
+    const [phase, setPhase] = useState("enter"); // "enter", "video", "content"
+    const videoRef = useRef(null);
+    const [loading, setLoading] = useState(true);
 
-    componentDidMount(){
-        this.demoAsyncCall().then(() => this.setState({ loading: false }));
-    }
+    const handleEnterClick = () => {
+        setPhase("video"); // Switch to video phase
+        // setPhase("content"); // Switch to video phase
+        if (videoRef.current) {
+          videoRef.current.play(); // Play video
+        }
+      };
+    
+      const handleVideoEnd = () => {
+        setPhase("content"); // Switch to main app content after video ends
+      };
+    
 
-    demoAsyncCall = () => {
-        return new Promise((resolve) => setTimeout(() => resolve(), 2000));
-    }
+    useEffect(() => {
+        const demoAsyncCall = () => {
+            return new Promise((resolve) => setTimeout(() => resolve(), 2000));
+        };
 
-    render(){
-        return (
-            <React.Fragment>
-                {/* <h1>This is oposit</h1> */}
-                <AppRouter />
-                {this.state.loading ? <Preloader /> : ''}
-            </React.Fragment>
-        );
-    }
-}
+        demoAsyncCall().then(() => setLoading(false));
+    }, []); // Empty dependency array ensures the effect runs only once when the component mounts.
+
+    return (
+<>
+{phase === "enter" && (
+        <button
+          onClick={handleEnterClick}
+          style={{
+            padding: "10px 20px",
+            fontSize: "18px",
+            cursor: "pointer",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        >
+          Enter
+        </button>
+      )}
+
+      {phase === "video" && (
+        <video
+          ref={videoRef}
+          src="/composit.mp4" // Replace with your video file path
+          onEnded={handleVideoEnd}
+          style={{
+            width: "100%",
+            height: "100vh",
+            objectFit: "cover",
+            position: "absolute",
+            top: "0",
+            left: "0",
+          }}
+          autoPlay
+        />
+      )}
+
+
+        {phase === "content" &&
+        (<React.Fragment>
+            {/* <h1>This is oposit</h1> */}
+            <AppRouter />
+            {loading && <Preloader />}
+        </React.Fragment>
+    )}
+</>
+    );
+};
 
 export default App;
