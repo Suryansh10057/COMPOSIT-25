@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 class Footer extends React.Component {
     render(){
         return (
-            <footer className="footer-area">
-                <div className="container">
+            <footer className="footer-area pt-4">
+                <div className="container w-full">
                     <div className="row">
                         <div className="col-lg-6 col-md-6">
                             <div className="single-footer-widget">
@@ -58,20 +58,18 @@ class Footer extends React.Component {
                         </div>
 
                         <div className="col-lg-12">
-                            <div className="copyright-area">
-                                <div className="logo">
+                            <div className="copyright-area mt-0 pt-2 pb-0">
+                                {/* <div className="logo">
                                     <Link to="/">
                                         <img src={require("../../assets/images/logo.png")} alt="logo" />
                                     </Link>
-                                </div>
-                                <ul>
+                                </div> */}
+                                {/* <ul>
                                     <li><Link to="/ourteam">Team</Link></li>
-                                    {/* <li><Link to="/contact">Contact</Link></li> */}
                                     <li><a href="https://goo.gl/maps/DUpGj7rLicHZgPBy6" target="_blank">Venue</a></li>
-                                    {/* <li><Link to="#">Terms & Conditions</Link></li> */}
-                                </ul>
+                                </ul> */}
                                 <p>
-                                    Copyright <i className="icofont-copyright"></i> 2024 COMPOSIT. All rights reserved
+                                    Copyright <i className="icofont-copyright p-0"></i> 2024 COMPOSIT. All rights reserved
                                 </p>
                             </div>
                         </div>

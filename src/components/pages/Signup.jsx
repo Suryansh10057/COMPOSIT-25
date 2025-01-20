@@ -1,86 +1,79 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import axios from "axios"
-import './Popup/PopupMsg.css'
-// import PopupMsg from '../Popup/PopupMsg'
+import './Popup/PopupMsg.css';
+import BaseUrl from '../../const';
 
-export default function Signup() {
-
+const Signup = () => {
     const [signupData, setSignupData] = useState({});
-    const [errorr, setErrorr] = useState(null);
-    const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
-    function openForm() {
+    const [error, setError] = useState(null);
+
+    const openForm = () => {
         document.getElementById("popupForm").style.display = "block";
-    }
-    function closeForm() {
+    };
+
+    const closeForm = () => {
         document.getElementById("popupForm").style.display = "none";
-        setErrorr(null)
-    }
-    window.onclick = function (event) {
-        let modal = document.getElementById('loginPopup');
-        let popupBtn = document.getElementById('popupBtn');
-        if (event.target !== modal) {
-            closeForm();
-        }
-        if (event.target === popupBtn) {
-            openForm();
-        }
-    } 
-    
+        setError(null);
+    };
+
     const handleChange = (event) => {
         setSignupData({
             ...signupData,
             [event.target.name]: event.target.value,
-        })
-        console.log('something changed')
-    }
-    const submit = document.getElementById('submitbtn')
+        });
+    };
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
-        const str = signupData.name
-        const str1 = str.toUpperCase()
-        const ph = signupData.contact
-        signupData.regID = `C24${str1.substring(0, 3)}${ph.substring(0, 2)}${Math.floor(Math.random() * 90 + 10)}`
-        console.log('wait...')
-        submit.innerText = 'signing in wait....'
-        submit.disabled=true;
+        e.preventDefault();
+        // const str = signupData.name;
+        // const str1 = str.toUpperCase();
+        // const ph = signupData.contact;
+        // signupData.regID = `C24${str1.substring(0, 3)}${ph.substring(0, 2)}${Math.floor(Math.random() * 90 + 10)}`;
+
+        const submit = document.getElementById('submitbtn');
+        submit.innerText = 'Signing up, please wait...';
+        submit.disabled = true;
+console.log(signupData)
+
         try {
-            const res = await axios.post(`https://composit2024backend.onrender.com/auth/register`, signupData)
-            setErrorr(res.data)
-            openForm()
-            console.log(res)
-            console.log('submitted')
-            submit.innerText='Signup'
-            submit.disabled = false
+            const response = await fetch(`${BaseUrl}/api/user/register`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(signupData),
+            });
+
+            const result = await response.json();
+          
+
+            if (!response.ok) {
+                throw new Error(result.message || 'Signup failed');
+            }
+
+            setError(result.message);
+            openForm();
+            submit.innerText = 'Signup';
+            submit.disabled = false;
+            console.log(result);
+            localStorage.setItem('COMPOSITuser', JSON.stringify(result));
+      
+            window.location = `/`;
+
+        } catch (err) {
+            setError(err.message);
+            openForm();
+            submit.innerText = 'Signup';
+            submit.disabled = false;
         }
-        catch (error) {
-
-            setErrorr(error.response.data)
-            openForm()
-            // if (error.response.data.message.split(" ")[0] === "E11000") {
-            //     console.log("in if")
-            //     setErrorr("Email or Phone already in use")
-            //     openForm()
-            // }
-            // else {
-            //     console.log("in else")
-            //     setErrorr(error.response.data)
-
-            //     openForm()
-            //     console.log(error.response.data,"err here")
-            // }
-            console.log(error)
-        }
-
-    }
-
+    };
 
     return (
+        <>
         <section className="signup-area">
-            <div className="d-table">
+            <div className="d-table mt-9">
                 <div className="d-table-cell">
-                    <div className="signup-form">
+                    <div className="signup-form" >
                         <Link to="/" className="btn-modal btn-primary">&#xab; Back to Home</Link>
                         <h3>Create your Account</h3>
 
@@ -113,22 +106,11 @@ export default function Signup() {
                                     type="password"
                                     className="form-control"
                                     placeholder="Password"
-                                    name='password'
+                                    name="password"
                                     onChange={handleChange}
                                 />
                             </div>
 
-                            <div className="form-group">
-
-                                <label>Date of Birth</label>
-                                <input
-                                    type="date"
-                                    className="form-control"
-                                    placeholder="dd/mm/yyyy"
-                                    name="dob"
-                                    onChange={handleChange}
-                                />
-                            </div>
 
                             <div className="form-group">
                                 <label>Institute ID / Roll No.</label>
@@ -136,7 +118,7 @@ export default function Signup() {
                                     type="text"
                                     className="form-control"
                                     placeholder="Institute ID"
-                                    name="rollno"
+                                    name="collegeId"
                                     onChange={handleChange}
                                 />
                             </div>
@@ -148,7 +130,6 @@ export default function Signup() {
                                     className="form-control"
                                     placeholder="Department"
                                     name="department"
-
                                     onChange={handleChange}
                                 />
                             </div>
@@ -159,38 +140,44 @@ export default function Signup() {
                                     type="text"
                                     className="form-control"
                                     placeholder="Institution"
-                                    name="institution"
+                                    name="collegeName"
                                     onChange={handleChange}
                                 />
                             </div>
 
                             <div className="form-group">
-
                                 <label>Contact</label>
                                 <input
                                     type="number"
                                     className="form-control"
-                                    name="contact"
+                                    name="phone"
                                     placeholder="Contact Number"
-                                    // maxlength="10" max="9999999999" min="0" step="1" pattern="[0-9]{10}"
-
                                     onChange={handleChange}
                                 />
                             </div>
 
-
                             <div className="form-group">
-                                <label>Address</label>
+                                <label>City</label>
                                 <input
                                     type="text"
                                     className="form-control"
-                                    placeholder="Address"
-                                    name="address"
+                                    placeholder="city"
+                                    name="city"
+                                    onChange={handleChange}
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>State</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    placeholder="State"
+                                    name="state"
                                     onChange={handleChange}
                                 />
                             </div>
 
-                            <div className="form-group">
+                            {/* <div className="form-group">
                                 <label>Year of Graduation</label>
                                 <input
                                     type="number"
@@ -199,20 +186,19 @@ export default function Signup() {
                                     name="gradyear"
                                     onChange={handleChange}
                                 />
-                            </div>
+                            </div> */}
 
                             <div className="form-group">
                                 <label>Gender</label>
                                 <select
                                     name="gender"
                                     className="form-control"
-                                    type='text'
                                     onChange={handleChange}
                                 >
                                     <option value="default">Please Select</option>
-                                    <option value="M">Male</option>
-                                    <option value="F">Female</option>
-                                    <option value="O">Others</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Others">Others</option>
                                 </select>
                             </div>
                             <div className="form-group">
@@ -221,25 +207,27 @@ export default function Signup() {
                                     type="text"
                                     className="form-control"
                                     placeholder="Leave blank if no Student Ambassador has referred"
-                                    name="refId"
+                                    name="referal"
                                     onChange={handleChange}
                                 />
                             </div>
-                            {/* {errorr && <p>{errorr}</p>} */}
-                            <button type="submit"id='submitbtn' className="btn-modal btn-primary" onClick={handleSubmit}>Signup</button>
+                            <button type="submit" id='submitbtn' className="btn-modal btn-primary" onClick={handleSubmit}>Signup</button>
                             <p>Already a registered user? <Link to="/login">Login!</Link></p>
                         </form>
                     </div>
                 </div>
-
             </div>
+
             <div className="loginPopup" id='loginPopup'>
                 <div className="formPopup" id="popupForm">
-                    <p className='popupMsg'>{errorr}</p>
-                    {/* {errorr ? <h2>{errorr}</h2> : <h2>Dear {signupData.name}. You have Successfully Registered for COMPOSIT 2023. Your Registration id is {signupData.regID}</h2>} */}
+                    <p className='popupMsg'>{error}</p>
                     <Link to="/login" className='popupLink'>Login now to register for event</Link>
                 </div>
             </div>
         </section>
-    )
-}
+        </>
+
+    );
+};
+
+export default Signup;

@@ -1,7 +1,7 @@
 import React from 'react';
 import lax from 'lax.js';
-import { Link } from 'react-router-dom';
-import LaxButton from '../Shared/LaxButton';
+// import { Link } from 'react-router-dom';
+// import LaxButton from '../Shared/LaxButton';
 
 class About extends React.Component {
 
@@ -23,7 +23,7 @@ class About extends React.Component {
                     <div className="row h-100 align-items-center">
                         <div className="col-lg-6">
                             <div className="about-content">
-                                <span>Join The Event</span>
+                                {/* <span>Join The Event</span> */}
                                 <h2>About Us</h2>
 
                                 <p>With Science and Technology running in the veins of today’s generation determined to push their talents to the edge only to take flight, COMPOSIT provides the perfect platform to knit those aspirations into a skyful of opportunities. Being one of the largest fests in the genre all over India, COMPOSIT, an abbreviation of Congress of Metallurgical Professionals involving Students, Industry, and Teachers, is one of India’s largest Materials Science Fest conducted by the Society of Metallurgical Engineers (SME), Indian Institute of Technology Kharagpur. It is a unique congregation of students, professionals, academicians, and eminent personalities sharing the belief that materials will define the next revolution, a path-breaking concept to compile and share knowledge and enthusiasm for the development of ‘The Science of Materials.</p>

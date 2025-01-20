@@ -20,7 +20,7 @@ class AboutPage extends React.Component {
         return (
             <React.Fragment>
                 {/* Main Banner */}
-                <MainBanner />
+                {/* <MainBanner /> */}
                 {/* About Area */}
                 <About />
 

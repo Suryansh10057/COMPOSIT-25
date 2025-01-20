@@ -1,7 +1,7 @@
 import React from 'react';
 import lax from 'lax.js';
 import { Link } from 'react-router-dom';
-import LaxButton from '../Shared/LaxButton';
+// import LaxButton from '../Shared/LaxButton';
  
 class About extends React.Component {
     
@@ -23,7 +23,7 @@ class About extends React.Component {
                     <div className="row h-100 align-items-center">
                         <div className="col-lg-6">
                             <div className="about-content">
-                                <span>Join The Event</span>
+                                {/* <span>Join The Event</span> */}
                                 <h2>Motto and Vision</h2>
                                 <p>Materials science has shaped the development of civilizations since the dawn of mankind. From the atomic level to high engineering structures or the greatest space endeavors, material science is intrinsically diffused in every aspect of human advancement. </p>
                                 

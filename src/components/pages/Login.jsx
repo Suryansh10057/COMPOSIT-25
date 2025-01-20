@@ -1,97 +1,91 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios'
- 
-class Login extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: '',
-      password: '',
-      success: null,
-      errorr: null,
-      userData: null,
-  };
-  }
-  handleClick = async (e) => {
+import BaseUrl from '../../const';
+
+const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [success, setSuccess] = useState(null);
+  const [errorr, setErrorr] = useState(null);
+
+  const handleClick = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`https://composit2024backend.onrender.com/auth/login`, this.state);
-      const compUser = res.data;
-      localStorage.setItem("COMPOSITuser", JSON.stringify(res.data));
-      
-    //   const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
-    this.setState({ errorr: null })
-      this.setState({ success: `Login Successful ${compUser.name}` })
-    //   window.location = `/events/${compUser._id}`
-    window.location = `/`
+      const response = await fetch(`${BaseUrl}/api/user/login`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: email, password: password }),
+      });
+
+      if (!response.ok) {
+        const errorResponse = await response.json();
+        throw new Error(errorResponse.message || 'Something went wrong');
+      }
+
+      const compUser = await response.json();
+      console.log(compUser);
+      localStorage.setItem('COMPOSITuser', JSON.stringify(compUser));
+
+      setErrorr(null);
+      setSuccess(`Login Successful ${compUser.name}`);
+      window.location = `/`;
     } catch (err) {
-      this.setState({ errorr: err.response.data.message })
+      setErrorr(err.message);
     }
   };
-    
 
-    // onSubmit = (e) => {
-    //     e.preventDefault();
-    // }
+  return (
+    <section className="login-area">
+      <div className="d-table">
+        <div className="d-table-cell">
+          <div className="login-form">
+            <Link to="/" className="btn-modal btn-primary">
+              &#xab; Back to Home
+            </Link>
+            <h3>Welcome Back!</h3>
 
-    render(){
-        return (
-            <section className="login-area">
-                <div className="d-table">
-                    <div className="d-table-cell">
-                        <div className="login-form">
-                            <Link to="/" className="btn-modal btn-primary">&#xab; Back to Home</Link>
-                            <h3>Welcome Back!{this.registeredData}</h3>
-                              {/* {
-                              this.registeredData ? <h3>Welcome {this.registeredData}</h3>
-                              :
-                              <h3>Welcome Back!</h3>
-                            } */}
-                            
-                            
+            <form onSubmit={handleClick}>
+              <div className="form-group">
+                <label>Email</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Email Address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
 
-                            <form onSubmit={this.onSubmit}>
-                                <div className="form-group">
-                                    <label>Email</label>
-                                    <input 
-                                        type="email" 
-                                        className="form-control" 
-                                        placeholder="Email Address" 
-                                        value={this.state.email}
-                                        onChange={ e => this.setState({ email: e.target.value }) }
-                                    />
-                                </div>
+              <div className="form-group">
+                <label>Password</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
 
-                                <div className="form-group">
-                                    <label>Password</label>
-                                    <input 
-                                        type="password" 
-                                        className="form-control" 
-                                        placeholder="Password" 
-                                        value={this.state.password}
-                                        onChange={ e => this.setState({ password: e.target.value }) }
-                                    />
-                                </div>
+              <button type="submit" className="btn-modal btn-primary">
+                Login
+              </button>
+              {success && <p className="popupLink center">{success}</p>}
+              {errorr && <p className="error center">{errorr}</p>}
 
-                                <button type="submit" className="btn-modal btn-primary" onClick={this.handleClick}>Login</button>
-                                {this.state.success && <p className='popupLink center'>{this.state.success}</p>}
-                                {this.state.errorr && <p className='error center'>{this.state.errorr}</p>}
-                                {/* <p>pp</p> */}
-                            
-                                {/* {this.state.userData && <p>{this.state.userData}</p>} */}
-                                <p>
-                                    <Link to="/signup" className="pull-left">Create a new account</Link>
-                                    
-                                    {/* <Link to="#" className="pull-right">Forgot your password?</Link> */}
-                                </p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        );
-    }
-}
- 
+              <p>
+                <Link to="/signup" className="pull-left">
+                  Create a new account
+                </Link>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default Login;

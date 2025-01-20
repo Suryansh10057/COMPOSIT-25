@@ -8,6 +8,7 @@ import './assets/css/responsive.css';
 import React from 'react';
 import AppRouter from './Routes';
 import Preloader from './components/Shared/Preloader';
+import Home from './components/pages/Home';
 
 class App extends React.Component {
     state = {
@@ -25,8 +26,9 @@ class App extends React.Component {
     render(){
         return (
             <React.Fragment>
-                {this.state.loading ? <Preloader /> : ''}
+                {/* <h1>This is oposit</h1> */}
                 <AppRouter />
+                {this.state.loading ? <Preloader /> : ''}
             </React.Fragment>
         );
     }

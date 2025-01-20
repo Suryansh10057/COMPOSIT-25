@@ -1,263 +1,175 @@
-import React from "react";
-import { Link, withRouter, NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
-import axios from "axios";
 import { IoIosNotifications } from "react-icons/io";
 
-class Navigation extends React.Component {
-  userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
-  state = {
-    collapsed: true,
-    isOpen: false,
+const Navigation = () => {
+  const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
+  const [collapsed, setCollapsed] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const toggleNavbar = () => {
+    setCollapsed(!collapsed);
   };
 
-  toggleNavbar = () => {
-    this.setState({
-      collapsed: !this.state.collapsed,
-    });
-  };
-
-  logout = async (e) => {
-    this.setState({
-      collapsed: !this.state.collapsed,
-    });
+  const logout = async (e) => {
     e.preventDefault();
+    setCollapsed(true);
     try {
-      await axios.post(`https://composit2024backend.onrender.com/auth/logout`);
+      await fetch("/api/user/logout", {
+        method: "POST",
+        credentials: "include",
+      });
       localStorage.clear();
-      window.location = `/`;
+      navigate("/");
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
-  login = () => {
-    this.setState({
-      collapsed: !this.state.collapsed,
-    });
+
+  const login = () => {
+    setCollapsed(true);
+    navigate("/login");
   };
 
-  componentDidMount() {
-    let elementId = document.getElementById("navbar");
-    document.addEventListener("scroll", () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.getElementById("navbar");
       if (window.scrollY > 170) {
-        elementId.classList.add("is-sticky");
+        navbar.classList.add("is-sticky");
         window.history.pushState("", document.title, window.location.pathname);
       } else {
-        elementId.classList.remove("is-sticky");
+        navbar.classList.remove("is-sticky");
       }
-    });
+    };
+
+    document.addEventListener("scroll", handleScroll);
     window.scrollTo(0, 0);
-  }
 
-  toggleOpen = () => this.setState({ isOpen: !this.state.isOpen });
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-  componentDidUpdate(nextProps) {
-    if (this.props.match.path !== nextProps.match.path) {
-      // this.onRouteChanged();
-      console.log("OK");
-    }
-  }
+  const toggleOpen = () => setIsOpen(!isOpen);
 
-  onRouteChanged = () => {
-    this.setState({ isOpen: !this.state.isOpen });
-  };
-  // logout = async (e) => {
-  //     e.preventDefault();
-  //     await axios.post("/auth/logout");
-  //     localStorage.clear();
-  // };
+  const classOne = collapsed
+    ? "collapse navbar-collapse"
+    : "collapse navbar-collapse show";
+  const classTwo = collapsed
+    ? "navbar-toggler navbar-toggler-right collapsed"
+    : "navbar-toggler navbar-toggler-right";
+  const menuClass = `dropdown-menu${isOpen ? " show" : ""}`;
 
-  render() {
-    const { collapsed } = this.state;
-    const classOne = collapsed
-      ? "collapse navbar-collapse"
-      : "collapse navbar-collapse show";
-    const classTwo = collapsed
-      ? "navbar-toggler navbar-toggler-right collapsed"
-      : "navbar-toggler navbar-toggler-right";
-    const menuClass = `dropdown-menu${this.state.isOpen ? " show" : ""}`;
-    const jwtToken = document.cookie;
-    return (
-      <header id="header" className="header-area">
-        <div id="navbar" className="elkevent-nav">
-          <nav className="navbar navbar-expand-md navbar-light">
-            <div className="container">
-              <Link className="navbar-brand" to="/">
-                <img src={logo} alt="logo" />
-              </Link>
+  return (
+    <header id="header" className="header-area">
+      <div id="navbar" className="elkevent-nav" style={{ background: "#1b1a1a87" }}>
+        <nav className="navbar navbar-expand-md navbar-light">
+          <div className="container">
+            <Link className="navbar-brand" to="/">
+              <img src={logo} alt="logo" />
+            </Link>
 
-              <button
-                onClick={this.toggleNavbar}
-                className={classTwo}
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
+            <button
+              onClick={toggleNavbar}
+              className={classTwo}
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
 
-              <div className={classOne} id="navbarSupportedContent">
-                <ul className="navbar-nav ms-auto">
-                  <li className="nav-item">
-                    <NavLink
-                      exact="true"
-                      to="/"
-                      onClick={this.toggleNavbar}
-                      className="nav-link"
-                    >
-                      Home
+            <div className={classOne} id="navbarSupportedContent">
+              <ul className="navbar-nav ms-auto">
+                <li className="nav-item">
+                  <Link exact="true" to="/" onClick={toggleNavbar} className="nav-link">
+                    Home
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link to="/about" onClick={toggleNavbar} className="nav-link">
+                    About
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link to="/ourteam" className="nav-link" onClick={toggleNavbar}>
+                    Our Team
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <NavLink to="/events" className="nav-link" onClick={toggleNavbar}>
+                    Events
+                  </NavLink>
+                </li>
+
+                <li className="nav-item">
+                  <NavLink to="/guestlecture" className="nav-link" onClick={toggleNavbar}>
+                    Our Speakers
+                  </NavLink>
+                </li>
+
+                <li className="nav-item">
+                  <NavLink to="/sponsors" className="nav-link" onClick={toggleNavbar}>
+                    Sponsors
+                  </NavLink>
+                </li>
+
+                <li className="nav-item">
+                  <NavLink to="/contactus" className="nav-link" onClick={toggleNavbar}>
+                    Contact Us
+                  </NavLink>
+                </li>
+
+                <li className="nav-item">
+                  {userData ? (
+                    <NavLink to="/events" className="nav-link" onClick={logout}>
+                      Logout
                     </NavLink>
-                  </li>
-
-                  <li className="nav-item">
-                    <NavLink
-                      to="/about"
-                      onClick={this.toggleNavbar}
-                      className="nav-link"
-                    >
-                      About
+                  ) : (
+                    <NavLink to="/login" className="nav-link" onClick={login}>
+                      Login
                     </NavLink>
-                  </li>
+                  )}
+                </li>
 
-                  <li className="nav-item">
-                    <NavLink
-                      to="/ourteam"
-                      className="nav-link"
-                      onClick={this.toggleNavbar}
-                    >
-                      Our Team
+                <li className="nav-item">
+                  {userData ? (
+                    <NavLink to="/profile" className="nav-link" onClick={toggleNavbar}>
+                      Profile
                     </NavLink>
-                  </li>
-
-                  <li className="nav-item">
-                    <NavLink
-                      to="/events"
-                      className="nav-link"
-                      onClick={this.toggleNavbar}
-                    >
-                      Events
+                  ) : (
+                    <NavLink to="/signup" className="nav-link" onClick={toggleNavbar}>
+                      SignUp
                     </NavLink>
-                  </li>
+                  )}
+                </li>
 
-                  <li className="nav-item">
-                    <NavLink
-                      to="/guestlecture"
-                      className="nav-link"
-                      onClick={this.toggleNavbar}
-                    >
-                      Our Speakers
+                <li className="nav-item">
+                  {userData ? (
+                    <NavLink to="/accommodation" className="nav-link" onClick={toggleNavbar}>
+                      Accommodation
                     </NavLink>
-                  </li>
-
-                  <li className="nav-item">
-                    <NavLink
-                      to="/sponsors"
-                      className="nav-link"
-                      onClick={this.toggleNavbar}
-                    >
-                      Sponsors
+                  ) : (
+                    <NavLink to="/announcement" className="nav-link" onClick={toggleNavbar}>
+                      <IoIosNotifications size={27} />
                     </NavLink>
-                  </li>
-
-                  <li className="nav-item">
-                    <NavLink
-                      to="/contactus"
-                      className="nav-link"
-                      onClick={this.toggleNavbar}
-                    >
-                      Contact Us
-                    </NavLink>
-                  </li>
-
-                  {
-                    <li className="nav-item">
-                      {this.userData ? (
-                        <NavLink
-                          to="/events"
-                          className="nav-link"
-                          onClick={this.logout}
-                        >
-                          Logout
-                        </NavLink>
-                      ) : (
-                        <NavLink
-                          to="/login"
-                          className="nav-link"
-                          onClick={this.login}
-                        >
-                          Login
-                        </NavLink>
-                      )}
-                    </li>
-                  }
-
-                  {
-                    <li className="nav-item">
-                      {this.userData ? (
-                        <NavLink
-                          to="/profile"
-                          className="nav-link"
-                          onClick={this.toggleNavbar}
-                        >
-                          Profile
-                        </NavLink>
-                      ) : (
-                        <NavLink
-                          to="/signup"
-                          className="nav-link"
-                          onClick={this.toggleNavbar}
-                        >
-                          SignUp
-                        </NavLink>
-                      )}
-                    </li>
-                  }
-
-{
-                    <li className="nav-item">
-                      {this.userData ? (
-                        <NavLink
-                          to="/accomodation"
-                          className="nav-link"
-                          onClick={this.toggleNavbar}
-                        >
-                          Accommodation
-                        </NavLink>
-                      ) : (
-                        <NavLink
-                          to="/announcement"
-                          className="nav-link"
-                          onClick={this.toggleNavbar}
-                        >
-                          <IoIosNotifications size={27} />
-                        </NavLink>
-                      )}
-                    </li>
-                  }
-
-{/* {
-                    <li className="nav-item">
-                        <NavLink
-                          to="/announcement"
-                          className="nav-link"
-                          onClick={this.toggleNavbar}
-                        >
-                          <IoIosNotifications size={27} />
-                        </NavLink>
-                    </li>
-                  } */}
-
-                </ul>
-              </div>
+                  )}
+                </li>
+              </ul>
             </div>
-          </nav>
-        </div>
-      </header>
-    );
-  }
-}
+          </div>
+        </nav>
+      </div>
+    </header>
+  );
+};
 
-export default withRouter(Navigation);
+export default Navigation;
