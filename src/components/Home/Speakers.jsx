@@ -24,7 +24,7 @@ class Speakers extends React.Component {
       <section className="speakers-area ptb-120 pb-0">
         <div className="container">
           <div className="section-title">
-            <span>People Behind The Fest</span>
+            {/* <span>People Behind The Fest</span> */}
             <h2>Meet Our Team</h2>
             <div className="bar"></div>
             <LaxDiv text="OURTEAM" dataPreset="driftRight" />
@@ -43,229 +43,318 @@ class Speakers extends React.Component {
           <div className="col-lg-3 col-md-6 p-0">
             <div className="single-speakers">
               <img
-                src={require("../../assets/images/manisha1.jpg")}
+                src={require("../../assets/images/SubHeads/krishna.jpeg")}
                 alt="speakers"
               />
 
               <div className="speakers-content">
-                <h3 style={{ color: "#fec66d" }}>Manisha Sahoo</h3>
-                <span>Coordinator</span>
+                <h3 style={{ color: "#fec66d" }}>Krishna Chaudhari</h3>
+                <span>General Secretary</span>
               </div>
               <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/profile.php?id=100075561559224&mibextid=ZbWKwL"
-                    target="_blank"
-                    className="facebook"
-                  >
-                    <i className="icofont-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:manishasahoo995@gmail.com"
-                    target="_blank"
-                    className="twitter"
-                  >
-                    <i className="icofont-envelope"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/manisha-sahoo-33186022b"
-                    target="_blank"
-                    className="linkedin"
-                  >
-                    <i className="icofont-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
+                      <li>
+                        <a
+                          href="https://facebook.com/krishna.caudhari.5/"
+                          target="_blank"
+                          className="facebook"
+                        >
+                          <i className="icofont-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:krishnachaudhari2309@gmail.com"
+                          target="_blank"
+                          className="twitter"
+                        >
+                          <i className="icofont-envelope"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/krishachaudhari/"
+                          target="_blank"
+                          className="linkedin"
+                        >
+                          <i className="icofont-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
             </div>
           </div>
 
           <div className="col-lg-3 col-md-6 p-0">
             <div className="single-speakers">
               <img
-                src={require("../../assets/images/bhandhavya.jpg")}
+                src={require("../../assets/images/SubHeads/deven.JPG")}
                 alt="speakers"
               />
 
               <div className="speakers-content">
-                <h3 style={{ color: "#fec66d" }}>Bhandhavya Bodapati</h3>
-                <span>Content Creation Head</span>
+                <h3 style={{ color: "#fec66d" }}>Deven Shinde</h3>
+                <span>General Secretary</span>
               </div>
               <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/profile.php?id=100074845737951&mibextid=ZbWKwL"
-                    target="_blank"
-                    className="facebook"
-                  >
-                    <i className="icofont-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:Bhandhavyabodapati2003@gmail.com"
-                    target="_blank"
-                    className="twitter"
-                  >
-                    <i className="icofont-envelope"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/bhandhavya-bodapati-481556253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                    target="_blank"
-                    className="linkedin"
-                  >
-                    <i className="icofont-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/profile.php?id=61550668167415&mibextid=ZbWKwL"
+                          target="_blank"
+                          className="facebook"
+                        >
+                          <i className="icofont-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:d2378630@gmail.com"
+                          target="_blank"
+                          className="twitter"
+                        >
+                          <i className="icofont-envelope"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/deven-shinde-6b3687259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                          target="_blank"
+                          className="linkedin"
+                        >
+                          <i className="icofont-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
             </div>
           </div>
 
           <div className="col-lg-3 col-md-6 p-0">
             <div className="single-speakers">
               <img
-                src={require("../../assets/images/harsh.jpg")}
+                src={require("../../assets/images/SubHeads/kamal.jpeg")}
                 alt="speakers"
               />
 
               <div className="speakers-content">
-                <h3 style={{ color: "#fec66d" }}>Harshvardhan</h3>
+                <h3 style={{ color: "#fec66d" }}>Kamal Bajoriya</h3>
+                <span>Sponsorship Head</span>
+              </div>
+              <ul>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/profile.php?id=100008943253817&mibextid=ZbWKwL"
+                          target="_blank"
+                          className="facebook"
+                        >
+                          <i className="icofont-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:bajoria30kamal@gmail.com"
+                          target="_blank"
+                          className="twitter"
+                        >
+                          <i className="icofont-envelope"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/kamal-bajoria-7b47a7262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                          target="_blank"
+                          className="linkedin"
+                        >
+                          <i className="icofont-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 p-0">
+          <div className="single-speakers">
+                    <img
+                      src={require("../../assets/images/SubHeads/anshuman.jpg")}
+                      alt="speakers"
+                    />
+
+                    <div className="speakers-content">
+                      <h3 style={{ color: "#fec66d" }}>Anshuman Sahoo</h3>
+                      <span>Design Head</span>
+
+                    </div>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://m.facebook.com/profile.php/?id=100087411437503&name=xhp_nt__fb__action__open_user"
+                          target="_blank"
+                          className="facebook"
+                        >
+                          <i className="icofont-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:anshumanrkl05@gmail.com"
+                          target="_blank"
+                          className="twitter"
+                        >
+                          <i className="icofont-envelope"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/anshuman-sahoo-b9627a256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                          target="_blank"
+                          className="linkedin"
+                        >
+                          <i className="icofont-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 p-0">
+          <div className="single-speakers">
+                    <img
+                      src={require("../../assets/images/SubHeads/aarya.jpg")}
+                      alt="speakers"
+                    />
+
+                    <div className="speakers-content">
+                      <h3 style={{ color: "#fec66d" }}>Aarya Joshi</h3>
+                      <span>Events Head</span>
+                    </div>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/profile.php?id=100087199279973"
+                          target="_blank"
+                          className="facebook"
+                        >
+                          <i className="icofont-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:aaryaj24504@gmail.com"
+                          target="_blank"
+                          className="twitter"
+                        >
+                          <i className="icofont-envelope"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/aarya-joshi-717695254/"
+                          target="_blank"
+                          className="linkedin"
+                        >
+                          <i className="icofont-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 p-0">
+          <div className="single-speakers">
+                    <img
+                      src={require("../../assets/images/SubHeads/suryansh1.jpeg")}
+                      alt="speakers"
+                    />
+
+                    <div className="speakers-content">
+                      <h3 style={{ color: "#fec66d" }}>Suryansh Singh</h3>
+                      <span>Events Head</span>
+                    </div>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/profile.php?id=100035611026597"
+                          target="_blank"
+                          className="facebook"
+                        >
+                          <i className="icofont-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:aswinroshan123@gmail.com"
+                          target="_blank"
+                          className="twitter"
+                        >
+                          <i className="icofont-envelope"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/suryansh-singh-131685263/"
+                          target="_blank"
+                          className="linkedin"
+                        >
+                          <i className="icofont-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+          </div>
+          <div className="col-lg-3 col-md-6 p-0">
+          <div className="single-speakers">
+                    <img
+                      src={require("../../assets/images/SubHeads/manash.jpg")}
+                      alt="speakers"
+                    />
+
+                    <div className="speakers-content">
+                      <h3 style={{ color: "#fec66d" }}>Manash shit</h3>
+                      <span>Sponsorship Head</span>
+                    </div>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/manas.shetty.100"
+                          target="_blank"
+                          className="facebook"
+                        >
+                          <i className="icofont-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:shitmanash78@gmail.com"
+                          target="_blank"
+                          className="twitter"
+                        >
+                          <i className="icofont-envelope"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/manash-shit-03a178252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                          target="_blank"
+                          className="linkedin"
+                        >
+                          <i className="icofont-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+          </div>
+          <div className="col-lg-3 col-md-6 p-0">
+            <div className="single-speakers">
+              <img
+                src={require("../../assets/images/SubHeads/soham.jpg")}
+                alt="speakers"
+              />
+
+              <div className="speakers-content">
+                <h3 style={{ color: "#fec66d" }}>Soham Jagtap</h3>
                 <span>Sponsorship Head</span>
               </div>
               <ul>
                 <li>
-                  <a href="#" target="_blank" className="facebook">
-                    <i className="icofont-facebook"></i>
-                  </a>
-                </li>
-                <li>
                   <a
-                    href="mailto:neerajsharmasony@gmail.com"
-                    target="_blank"
-                    className="twitter"
-                  >
-                    <i className="icofont-envelope"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="Www.linkedin.com/in/harshvardhan-4a76"
-                    target="_blank"
-                    className="linkedin"
-                  >
-                    <i className="icofont-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 p-0">
-            <div className="single-speakers">
-              <img
-                src={require("../../assets/images/mayuresh1.jpg")}
-                alt="speakers"
-              />
-
-              <div className="speakers-content">
-                <h3 style={{ color: "#fec66d" }}>Mayuresh Lohani</h3>
-                <span>Web Development Head</span>
-              </div>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/profile.php?id=100075318804727&mibextid=ZbWKwL"
-                    target="_blank"
-                    className="facebook"
-                  >
-                    <i className="icofont-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:lohanimayuresh2551@gmail.com"
-                    target="_blank"
-                    className="twitter"
-                  >
-                    <i className="icofont-envelope"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/mayuresh-lohani-87b28922a"
-                    target="_blank"
-                    className="linkedin"
-                  >
-                    <i className="icofont-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 p-0">
-            <div className="single-speakers">
-              <img
-                src={require("../../assets/images/satyam.jpg")}
-                alt="speakers"
-              />
-
-              <div className="speakers-content">
-                <h3 style={{ color: "#fec66d" }}>Satyam Raj</h3>
-                <span>Design Head</span>
-              </div>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/satyam.raj.17/"
-                    target="_blank"
-                    className="facebook"
-                  >
-                    <i className="icofont-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:satyamraj85@gmail.com"
-                    target="_blank"
-                    className="twitter"
-                  >
-                    <i className="icofont-envelope"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/satyam-raj-24437a226/"
-                    target="_blank"
-                    className="linkedin"
-                  >
-                    <i className="icofont-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 p-0">
-            <div className="single-speakers">
-              <img
-                src={require("../../assets/images/subhro.jpg")}
-                alt="speakers"
-              />
-
-              <div className="speakers-content">
-                <h3 style={{ color: "#fec66d" }}>Subhrojyoti Mukherjee</h3>
-                <span>Events Head</span>
-              </div>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/profile.php?id=100073392733438"
+                    href="https://www.facebook.com/profile.php?id=100087821345166"
                     target="_blank"
                     className="facebook"
                   >
@@ -283,7 +372,7 @@ class Speakers extends React.Component {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/subhrojyoti-mukherjee-0b59b3226"
+                    href="https://www.linkedin.com/in/soham-jagtap-8a9977256/"
                     target="_blank"
                     className="linkedin"
                   >

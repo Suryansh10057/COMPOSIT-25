@@ -792,7 +792,8 @@ Main Banner CSS
 .slideshow-banner .event-countdown {
   position: relative;
   right: 0;
-  bottom: 0;
+  /* bottom: 0; */
+  top: 50%;
   text-align: left;
 }
 

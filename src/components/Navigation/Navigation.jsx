@@ -87,7 +87,7 @@ const Navigation = () => {
             <div className={classOne} id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <Link exact="true" to="/" onClick={toggleNavbar} className="nav-link">
+                  <Link exact="true" to="/home" onClick={toggleNavbar} className="nav-link">
                     Home
                   </Link>
                 </li>

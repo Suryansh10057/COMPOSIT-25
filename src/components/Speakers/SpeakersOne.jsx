@@ -9,7 +9,7 @@ class SpeakersOne extends React.Component {
           <div className="section-title">
             <h2>
               Our Faculty Advisors
-            </h2>
+            </h2> 
 
             <div className="bar"></div>
           </div>

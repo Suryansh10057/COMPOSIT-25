@@ -24,7 +24,7 @@ import PrivacyPolicy from "./components/pages/PrivacyPolicy/PrivacyPolicy";
 import TermsCondition from "./components/pages/TermsCondition/TermsCondition";
 import CancellationRefund from "./components/pages/CancellationRefund/CancellationRefund";
 import ShippingDelivery from "./components/pages/ShippingDelivery/ShippingDelivery";
-
+import SpeakersOne from "./components/Speakers/SpeakersOne";
 const AppRouter = () => {
     const renderNavigation = () => {
         const excludedRoutes = ['/login', '/signup', '/error-404'];
@@ -37,7 +37,8 @@ const AppRouter = () => {
         <Router>
             {renderNavigation()}
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Signup />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/events" element={<Events />} />
                 <Route path="/events/:id" element={<Events />} />
@@ -59,6 +60,7 @@ const AppRouter = () => {
                 <Route path="/sponsors" element={<Sponsor />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/edit-profile" element={<EditProfile />} />
+                <Route path="/ourteam" element={<SpeakersOne />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </Router>

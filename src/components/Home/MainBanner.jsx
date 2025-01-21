@@ -17,7 +17,7 @@ class MainBanner extends React.Component {
     }
 
     makeTimer = () => {
-        let endTime = new Date("March 29, 2024 17:00:00 PDT");			
+        let endTime = new Date("March 21, 2025 17:00:00 PDT");			
         let endTimeParse = (Date.parse(endTime)) / 1000;
         let now = new Date();
         let nowParse = (Date.parse(now) / 1000);
@@ -59,10 +59,10 @@ class MainBanner extends React.Component {
                                 
                                 <div className="main-banner-content">
                                     <p>Are you <span>ready</span> to attend?</p>
-                                    <h1>COMPOSIT <b>2</b><b>0</b><b>2</b><b>4</b></h1>
+                                    <h1>COMPOSIT <b>2</b><b>0</b><b>2</b><b>5</b></h1>
                                     <ul>
                                         <li><i className="icofont-compass"></i> IIT Kharagpur</li>
-                                        <li><i className="icofont-calendar"></i> 29th March - 31st March, 2024</li>
+                                        <li><i className="icofont-calendar"></i> 21th March - 23rd March, 2025</li>
                                     </ul>
                                     <div className="button-box">
                                     {this.userData ?
@@ -77,14 +77,14 @@ class MainBanner extends React.Component {
                         </div>
                     </div>
     
-                    {/* <div className="event-countdown">
+                    <div className="event-countdown">
                         <div id="timer">
                             <div id="days">{this.state.days} <span>Days</span></div>
                             <div id="hours">{24-this.state.hours} <span>Hours</span></div>
                             <div id="minutes">{this.state.minutes} <span>Minutes</span></div>
                             <div id="seconds">{this.state.seconds} <span>Seconds</span></div>
                         </div>
-                    </div> */}
+                    </div>
 
                     <div className="shape1">
                         <img src={require("../../assets/images/shapes/1.png")} alt="shape1" />
