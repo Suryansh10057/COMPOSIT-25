@@ -12,22 +12,37 @@ import Preloader from './components/Shared/Preloader';
 const App = () => {
     const [phase, setPhase] = useState("enter"); // "enter", "video", "content"
     const videoRef = useRef(null);
+    const audioRef = useRef(null);
     const [loading, setLoading] = useState(true);
 
+
+
     const handleEnterClick = () => {
-        setPhase("video"); // Switch to video phase
-        if (videoRef.current) {
-            videoRef.current.play(); // Play video
-        }
-    };
+      setPhase("video"); // Switch to video phase
+      if (videoRef.current && audioRef.current) {
+          videoRef.current.play(); // Play video
+          audioRef.current.volume = 1.0; // Play audio
+          audioRef.current.play(); // Play audio
+      }
+  };
+
+
+
 
     const handleVideoEnd = () => {
-        setPhase("content"); // Switch to main app content after video ends
-    };
-
+      setPhase("content"); // Switch to main app content after video ends
+      if (audioRef.current) {
+          audioRef.current.pause(); // Stop background music
+          audioRef.current.currentTime = 0; // Reset music
+      }
+  };
     const handleSkipClick = () => {
-        setPhase("content"); // Skip video and switch to main app content
-    };
+      setPhase("content"); // Skip video and switch to main app content
+      if (audioRef.current) {
+          audioRef.current.pause(); // Stop background music
+          audioRef.current.currentTime = 0; // Reset music
+      }
+  };
 
     useEffect(() => {
         const demoAsyncCall = () => {
@@ -71,6 +86,13 @@ const App = () => {
                             left: "0",
                         }}
                         autoPlay
+                    />
+                     <audio
+                        ref={audioRef}
+                        src="/blast.mp3" // Replace with your music file path
+                        loop // Loop the music if needed
+                        autoPlay
+                        controls={false} 
                     />
                     <button
                         onClick={handleSkipClick}
