@@ -112,7 +112,7 @@ class PricingOne extends React.Component {
             <section className="pricing-area ptb-120 bg-image">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-4 col-md-6">
+                        {/* <div className="col-lg-4 col-md-6">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
                                     <h3 className="title">Technova</h3>
@@ -127,24 +127,17 @@ class PricingOne extends React.Component {
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 }
                             </div>
-                        </div>
+                        </div> */}
 
-                        {/* /* <EventsCard
-                            title="Techquiz"
-                            description= "Test your research acumen and get a glimpse of presenting scientific work in a conference-like environment!"
-                            eventlink= ""
-                            registerevent= ""
-                        /> */ }
-
-                        <EventsCard
-                        title="Techquiz"
+                        /* <EventsCard
+                        title="Technova"
                         description="Test your research acumen and get a glimpse of presenting scientific work in a conference-like environment!"
-                        eventlink="/events/techquiz"  // Actual path
-                        registerevent="/register/techquiz"  // Actual path
+                        eventlink="/events/technova"  // Actual path
+                        registerevent="/register/technova"  // Actual path
                         userData={userData}  // Pass from parent component
-                        />
+                        /> 
 
-                        <div className="col-lg-4 col-md-6">
+                        {/* <div className="col-lg-4 col-md-6">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
                                     <h3 className="title">Ideathon</h3>
@@ -159,9 +152,42 @@ class PricingOne extends React.Component {
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 }
                             </div>
-                        </div>
+                        </div> */}
 
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                        /* <EventsCard
+                        title="Ideathon"
+                        description="Pitch your next amazing business idea and get valuable feedback!"
+                        eventlink="/events/ideathon"  // Actual path
+                        registerevent="/register/ideathon"  // Actual path
+                        userData={userData}  // Pass from parent component
+                        /> 
+
+                        {/* <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                            <div className="pricing-table-box">
+                                <div className="pricingTable-header">
+                                    <h3 className="title">Case Study</h3>
+                                </div>
+                                <ul className="pricing-content">
+                                    <p>Challenge your critical thinking ability and grab this opportunity to do in depth research about a problem statement!</p>
+                                </ul>
+                                <Link to="/event_casestudy" className="btn btn-primary">READ MORE</Link>
+                                {userData ?
+                                    <Link to="/register_caseStudy" className="btn btn-secondary">Register</Link>
+                                    :
+                                    <Link to="/signup" className="btn btn-secondary">Register</Link>
+                                }
+                            </div>
+                        </div> */}
+
+                        /* <EventsCard
+                        title="Case Study"
+                        description="Challenge your critical thinking ability and grab this opportunity to do in depth research about a problem statement!"
+                        eventlink="/events/case_study"  // Actual path
+                        registerevent="/register/case_study"  // Actual path
+                        userData={userData}  // Pass from parent component
+                        /> 
+
+                        {/*/* <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
                                     <h3 className="title">Enigma</h3>
@@ -176,8 +202,70 @@ class PricingOne extends React.Component {
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 }
                             </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                        </div> */}
+
+                        /* <EventsCard
+                        title="Enigma"
+                        description="Test your knowledge in general as well as core topics. So Quizzers, get ready for Buzzers!"
+                        eventlink="/events/enigma"  // Actual path
+                        registerevent="/register/enigma"  // Actual path
+                        userData={userData}  // Pass from parent component
+                        /> 
+
+                        {/* <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                            <div className="pricing-table-box">
+                                <div className="pricingTable-header">
+                                    <h3 className="title">Excavate</h3>
+                                </div>
+                                <ul className="pricing-content">
+                                    <p>Get ready to put your analytical skills to the test in the ultimate data analytics competition!</p>
+                                </ul>
+                                <Link to="/event_excavate" className="btn btn-primary">READ MORE</Link>
+                                {userData ?
+                                    <Link to="/register_excavate" className="btn btn-secondary">Register</Link>
+                                    :
+                                    <Link to="/signup" className="btn btn-secondary">Register</Link>
+                                }
+                            </div>
+                        </div> */}
+
+                        /* <EventsCard
+                        title="Excavate"
+                        description="Get ready to put your analytical skills to the test in the ultimate data analytics competition!"
+                        eventlink="/events/excavate"  // Actual path
+                        registerevent="/register/excavate"  // Actual path
+                        userData={userData}  // Pass from parent component
+                        /> 
+
+                        {/* <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                            <div className="pricing-table-box">
+                                <div className="pricingTable-header">
+                                    <h3 className="title">Metaclix</h3>
+                                </div>
+                                <ul className="pricing-content">
+                                    <p>Enter our online photography contest and capture everyday materials, industrial applications, or the universe beyond!</p>
+                                </ul>
+                                <Link to="/event_metaclix" className="btn btn-primary">READ MORE</Link>
+                                {userData ?
+                                    <Link to="/register_metaclix" className="btn btn-secondary">Register</Link>
+                                    :
+                                    <Link to="/signup" className="btn btn-secondary">Register</Link>
+                                }
+                            </div>
+                        </div> */}
+
+                        /* <EventsCard
+                        title="Metaclix"
+                        description="Enter our online photography contest and capture everyday materials, industrial applications, or the universe beyond!"
+                        eventlink="/events/metaclix"  // Actual path
+                        registerevent="/register/metaclix"  // Actual path
+                        userData={userData}  // Pass from parent component
+                        /> 
+
+                        
+
+                        
+                        {/* <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
                                     <h3 className="title">Enigma</h3>
@@ -192,7 +280,7 @@ class PricingOne extends React.Component {
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 }
                             </div>
-                        </div>
+                        </div> */ }
                         {/* <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
@@ -209,23 +297,8 @@ class PricingOne extends React.Component {
                                 }
                             </div>
                         </div> */}
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                            <div className="pricing-table-box">
-                                <div className="pricingTable-header">
-                                    <h3 className="title">Excavate</h3>
-                                </div>
-                                <ul className="pricing-content">
-                                    <p>Get ready to put your analytical skills to the test in the ultimate data analytics competition!</p>
-                                </ul>
-                                <Link to="/event_excavate" className="btn btn-primary">READ MORE</Link>
-                                {userData ?
-                                    <Link to="/register_excavate" className="btn btn-secondary">Register</Link>
-                                    :
-                                    <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                }
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                       
+                        {/* <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
                                     <h3 className="title">Techtoon</h3>
@@ -240,24 +313,9 @@ class PricingOne extends React.Component {
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 }
                             </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                            <div className="pricing-table-box">
-                                <div className="pricingTable-header">
-                                    <h3 className="title">Metaclix</h3>
-                                </div>
-                                <ul className="pricing-content">
-                                    <p>Enter our online photography contest and capture everyday materials, industrial applications, or the universe beyond!</p>
-                                </ul>
-                                <Link to="/event_metaclix" className="btn btn-primary">READ MORE</Link>
-                                {userData ?
-                                    <Link to="/register_metaclix" className="btn btn-secondary">Register</Link>
-                                    :
-                                    <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                }
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                        </div> */}
+                       
+                        {/* <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
                                     <h3 className="title">CAD</h3>
@@ -272,24 +330,9 @@ class PricingOne extends React.Component {
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 }
                             </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                            <div className="pricing-table-box">
-                                <div className="pricingTable-header">
-                                    <h3 className="title">Case Study</h3>
-                                </div>
-                                <ul className="pricing-content">
-                                    <p>Challenge your critical thinking ability and grab this opportunity to do in depth research about a problem statement!</p>
-                                </ul>
-                                <Link to="/event_casestudy" className="btn btn-primary">READ MORE</Link>
-                                {userData ?
-                                    <Link to="/register_caseStudy" className="btn btn-secondary">Register</Link>
-                                    :
-                                    <Link to="/signup" className="btn btn-secondary">Register</Link>
-                                }
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                        </div> */}
+                       
+                        {/* <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
                                     <h3 className="title">Metallomania</h3>
@@ -304,7 +347,7 @@ class PricingOne extends React.Component {
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 }
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
