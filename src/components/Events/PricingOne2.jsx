@@ -10,6 +10,75 @@ class PricingOne extends React.Component {
         };
     }
     render() {
+        // const EventsCard = ({title, description, eventlink, registerevent}) => {
+        //     return (
+        //         <div className="col-lg-4 col-md-6">
+        //                     <div className="pricing-table-box">
+        //                         <div className="pricingTable-header">
+        //                             <h3> {title} </h3>
+        //                         </div>
+        //                         <ul className="pricing-content">
+        //                             <p> {description} </p>
+        //                         </ul>
+        //                         <Link to={eventlink} className="btn btn-primary">READ MORE</Link>
+        //                         {userData ?
+        //                             <Link to= {registerevent} className="btn btn-secondary">Register</Link>
+        //                             :
+        //                             <Link to="/signup" className="btn btn-secondary">Register</Link>
+        //                         }
+        //                     </div>
+        //                 </div>
+        //     )
+        // }
+
+        // Fixed component with improvements
+            const EventsCard = ({ 
+                title, 
+                description, 
+                eventlink, 
+                registerevent,
+                userData // Make sure this is passed from parent or context
+            }) => {
+                return (
+                <div className="col-lg-4 col-md-6 mb-4">
+                    <div className="pricing-table-box card h-100">
+                    <div className="pricingTable-header card-header">
+                        <h3 className="card-title">{title}</h3>
+                    </div>
+                    
+                    <ul className="pricing-content">
+                        <p>{description}</p>
+                    </ul>
+            
+                    <div className="card-footer bg-transparent border-top-0">
+                        <Link 
+                        to={eventlink || '#'} 
+                        className="btn btn-primary me-2"
+                        >
+                        READ MORE
+                        </Link>
+                        
+                        <Link 
+                        to={userData ? (registerevent || '#') : '/signup'} 
+                        className="btn btn-secondary"
+                        >
+                        {userData ? 'Register' : 'Sign Up to Register'}
+                        </Link>
+                    </div>
+                    </div>
+                </div>
+                );
+            };
+  
+            //   // Add prop validation (install prop-types package)
+            //   EventsCard.propTypes = {
+            //     title: PropTypes.string.isRequired,
+            //     description: PropTypes.string.isRequired,
+            //     eventlink: PropTypes.string,
+            //     registerevent: PropTypes.string,
+            //     userData: PropTypes.object
+            //   };
+
         const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
         console.log(userData)
         const participantId = userData._id
@@ -59,6 +128,21 @@ class PricingOne extends React.Component {
                                 }
                             </div>
                         </div>
+
+                        {/* /* <EventsCard
+                            title="Techquiz"
+                            description= "Test your research acumen and get a glimpse of presenting scientific work in a conference-like environment!"
+                            eventlink= ""
+                            registerevent= ""
+                        /> */ }
+
+                        <EventsCard
+                        title="Techquiz"
+                        description="Test your research acumen and get a glimpse of presenting scientific work in a conference-like environment!"
+                        eventlink="/events/techquiz"  // Actual path
+                        registerevent="/register/techquiz"  // Actual path
+                        userData={userData}  // Pass from parent component
+                        />
 
                         <div className="col-lg-4 col-md-6">
                             <div className="pricing-table-box">
