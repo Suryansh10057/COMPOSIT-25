@@ -1,24 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-class EventCasestudy extends React.Component {
-  openTabSection = (evt, tabNmae) => {
-    let i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabs_item");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-
-    tablinks = document.getElementsByTagName("li");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace("current", "");
-    }
-
-    document.getElementById(tabNmae).style.display = "block";
-    evt.currentTarget.className += "current";
-  };
-  render() {
-    const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
+const EventCasestudy = () => {
+ const openTabSection = (evt, tabName) => {
+     let tabcontent = document.getElementsByClassName("tabs_item");
+     for (let i = 0; i < tabcontent.length; i++) {
+       tabcontent[i].style.display = "none";
+     }
+ 
+     let tablinks = document.getElementsByTagName("li");
+     for (let i = 0; i < tablinks.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace("current", "");
+     }
+ 
+     document.getElementById(tabName).style.display = "block";
+     evt.currentTarget.className += "current";
+   };
+ 
+ 
+     const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
+     
+     console.log("user is : ". userData)
+     
+     console.log(userData)
+     
+     const [teamId, setTeamId] = useState(null);
+     
+     
+         function getEventDetails(events, eventName) {
+             const eventDetails = events.find(event => event.eventName === eventName);
+             return eventDetails || false; // Returns event details if found, otherwise null
+           }
+     
+           
+           const eventNameToCheck = "CaseStudy";
+           const events = userData.events
+     const eventData = getEventDetails(events, eventNameToCheck);
+     
+     console.log(eventData);
     return (
       <div className="event-details-area ptb-120">
         <section className="event-area bg-image ptb-120">
@@ -45,14 +64,46 @@ class EventCasestudy extends React.Component {
                                     :
                                     <Link to="/signup" className="btn btn-secondary">Register</Link>
                                 } */}
+
+                    {eventData &&
+                                <div>
+                                 <h5>You are already Registered for this event</h5> 
+                                                <p>Team Name : <b className="font-bold"> {eventData && eventData.teamName}</b></p>
+                                                <p>Team Id : <b className="font-bold">{eventData && eventData.teamId}</b></p> 
+                                                <p>Your Team Members can join your team through your Team code. </p>
+                                </div>
+                                                }
+                                
+                                                {!eventData && <Link
+                                                    to={{
+                                                      pathname: "/createTeam/CaseStudy",
+                                                      // state: { eventName: "Enigma" }
+                                                    }}                
+                                                    
+                                                    className="btn btn-primary"
+                                                >
+                                                  {/* Submission Link */}
+                                                  Create Team
+                                               </Link>
+                                               }
+                                
+                                                { !eventData &&   
+                                                <Link
+                                                  to="/joinTeam/CaseStudy"
+                                                  className="btn btn-primary"
+                                                >
+                                                  {/* Submission Link */}
+                                                  Join Team
+                                                </Link>}
+{/* 
                 <a
                   href="https://drive.google.com/file/d/1GI__f_FmL9qIjNGgXdDjGqtqjjtE8vps/view?usp=sharing"
                   className="btn btn-primary"
                   target="_blank"
                 >
                   Problem Statement
-                </a>
-                {userData ? <a
+                </a> */}
+                {/* {userData ? <a
                   href="https://forms.gle/yZ5zTEcdxQz6rV2F9"
                   target="_blank"
                   className="btn btn-secondary"
@@ -60,7 +111,7 @@ class EventCasestudy extends React.Component {
                   Submission Link
                 </a> :
                 <Link to="/login" className="btn btn-secondary">Register Here</Link>
-                }
+                } */}
                 <a
                   href="https://drive.google.com/file/d/1EMan4nZwkR0dUEWR4wu_He5uyrIZCD8R/view?usp=sharing"
                   className="btn btn-primary"
@@ -78,21 +129,21 @@ class EventCasestudy extends React.Component {
                 <div className="tab">
                   <ul className="tabs active">
                     <li
-                      onClick={(e) => this.openTabSection(e, "tab1")}
+                      onClick={(e) =>  openTabSection(e, "tab1")}
                       className="current"
                     >
                       <Link to="#">About</Link>
                     </li>
 
-                    <li onClick={(e) => this.openTabSection(e, "tab2")}>
+                    <li onClick={(e) =>  openTabSection(e, "tab2")}>
                       <Link to="#">Structure</Link>
                     </li>
 
-                    <li onClick={(e) => this.openTabSection(e, "tab3")}>
+                    <li onClick={(e) =>  openTabSection(e, "tab3")}>
                       <Link to="#">Timeline</Link>
                     </li>
 
-                    <li onClick={(e) => this.openTabSection(e, "tab4")}>
+                    <li onClick={(e) =>  openTabSection(e, "tab4")}>
                       <Link to="#">Contacts</Link>
                     </li>
                   </ul>
@@ -297,7 +348,7 @@ class EventCasestudy extends React.Component {
         </section>
       </div>
     );
-  }
+  
 }
 
 export default EventCasestudy;

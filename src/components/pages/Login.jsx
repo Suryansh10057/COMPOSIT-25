@@ -10,10 +10,15 @@ const Login = () => {
 
   const handleClick = async (e) => {
     e.preventDefault();
+
+    const submit = document.getElementById('submitbtn');
+    submit.innerText = 'Loging in, please wait...';
+    submit.disabled = true;
+
     try {
       const response = await fetch(`${BaseUrl}/api/user/login`, {
         method: 'POST',
-        headers: {
+        headers: { 
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ email: email, password: password }),
@@ -26,12 +31,15 @@ const Login = () => {
 
       const compUser = await response.json();
       console.log(compUser);
-      localStorage.setItem('COMPOSITuser', JSON.stringify(compUser));
+      localStorage.setItem('COMPOSITuser', JSON.stringify(compUser.user));
+      localStorage.setItem('COMPOSITuserToken', JSON.stringify(compUser.token));
 
       setErrorr(null);
       setSuccess(`Login Successful ${compUser.name}`);
       window.location = `/`;
     } catch (err) {
+      submit.innerText = 'Login';
+      submit.disabled = false;
       setErrorr(err.message);
     }
   };
@@ -69,7 +77,7 @@ const Login = () => {
                 />
               </div>
 
-              <button type="submit" className="btn-modal btn-primary">
+              <button type="submit" id="submitbtn" className="btn-modal btn-primary">
                 Login
               </button>
               {success && <p className="popupLink center">{success}</p>}

@@ -56,7 +56,8 @@ console.log(signupData)
             submit.innerText = 'Signup';
             submit.disabled = false;
             console.log(result);
-            localStorage.setItem('COMPOSITuser', JSON.stringify(result));
+            localStorage.setItem('COMPOSITuser', JSON.stringify(result.user));
+            localStorage.setItem('COMPOSITuserToken', JSON.stringify(result.token));
       
             window.location = `/`;
 

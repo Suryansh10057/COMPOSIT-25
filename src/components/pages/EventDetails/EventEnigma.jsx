@@ -1,37 +1,41 @@
-import React from 'react';
-import MainBanner from '../../EventDetails/MainBanner';
-// import EventDetails from '../EventDetails/EventDetails';
-import EventEnigma from '../../EventDetails/EventEnigma';
-import Footer from '../../Common/Footer';
+import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import lax from 'lax.js';
+import MainBanner from '../../EventDetails/MainBanner';
+import Footer from '../../Common/Footer';
 import GoTop from '../../Shared/GoTop';
- 
-class EventEnigmaPage extends React.Component {
-    constructor(props) {
-        super(props)
-        lax.setup()
-    
-        document.addEventListener('scroll', function(x) {
-            lax.update(window.scrollY)
-        }, false)
-    
-        lax.update(window.scrollY)
-    }
-    render(){
-        return (
-            <React.Fragment>
-                {/* Main Banner */}
-                <MainBanner />
-                {/* EventTechnova Area */}
-                <EventEnigma />
+import EventEnigma from '../../EventDetails/EventEnigma';
+import EventTechnova from '../../EventDetails/EventTechnova';
 
-                <Footer />
 
-                {/* Back Top top */}
-                <GoTop scrollStepInPx="50" delayInMs="16.66" />
-            </React.Fragment>
-        );
-    }
-}
- 
-export default EventEnigmaPage;
+const eventComponents = {
+    enigma: EventEnigma,
+    technova: EventTechnova,
+    // Add more events here as needed
+};
+
+const EventPage = () => {
+    const { eventId } = useParams();
+    const EventComponent = eventComponents[eventId];
+
+    useEffect(() => {
+        lax.setup();
+        
+        const handleScroll = () => lax.update(window.scrollY);
+        document.addEventListener('scroll', handleScroll, false);
+        lax.update(window.scrollY);
+        
+        return () => document.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    return (
+        <>
+            <MainBanner />
+            {EventComponent ? <EventComponent /> : <p>Event not found</p>}
+            <Footer />
+            <GoTop scrollStepInPx="50" delayInMs="16.66" />
+        </>
+    );
+};
+
+export default EventPage;

@@ -5,8 +5,8 @@ import Navigation from '../Navigation/Navigation';
 
 export default function Profile() {
     
-    const localData = JSON.parse(localStorage.getItem("COMPOSITuser"))
-    const userData = localData.user.userData
+    const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
+    // const userData = localData.user
 
     console.log("data from localStorage",userData)
     return (

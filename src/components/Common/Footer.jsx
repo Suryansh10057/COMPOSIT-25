@@ -9,14 +9,14 @@ class Footer extends React.Component {
                     <div className="row">
                         <div className="col-lg-6 col-md-6">
                             <div className="single-footer-widget">
-                                <h3>Venue Location</h3>
-                                <span>
+                                <h3>Contact Information</h3>
+                                {/* <span>
                                     <i className="icofont-calendar"></i> 21 March-23 March, 2025
                                 </span>
 
                                 <p className="location">
                                     <i className="icofont-google-map"></i> Indian Institute of Technology, Kharagpur
-                                </p>
+                                </p> */}
 
                                 <p>
                                     <i className="icofont-phone"></i> Krishna Chaudhari( General Secretary ) : 8767650199

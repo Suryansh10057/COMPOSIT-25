@@ -1,24 +1,49 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import BaseUrl from "../../const";
 
-class EventEnigma extends React.Component {
-  openTabSection = (evt, tabNmae) => {
-    let i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabs_item");
-    for (i = 0; i < tabcontent.length; i++) {
+import { useState } from "react";
+
+const EventEnigma = () => {
+
+  const openTabSection = (evt, tabName) => {
+    let tabcontent = document.getElementsByClassName("tabs_item");
+    for (let i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
 
-    tablinks = document.getElementsByTagName("li");
-    for (i = 0; i < tablinks.length; i++) {
+    let tablinks = document.getElementsByTagName("li");
+    for (let i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace("current", "");
     }
 
-    document.getElementById(tabNmae).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += "current";
   };
-  render() {
+
+
     const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
+    
+    console.log("user is : ". userData)
+    
+    console.log(userData)
+    
+    const [teamId, setTeamId] = useState(null);
+    
+    
+        function getEventDetails(events, eventName) {
+            const eventDetails = events.find(event => event.eventName === eventName);
+            return eventDetails || null; // Returns event details if found, otherwise null
+          }
+    
+          
+          const eventNameToCheck = "Enigma";
+          const events = userData.events
+    const eventData = getEventDetails(events, eventNameToCheck);
+    
+    console.log(eventData);
+
+    
     return (
       <div className="event-details-area ptb-120">
         <section className="event-area bg-image ptb-120">
@@ -40,19 +65,47 @@ class EventEnigma extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-                <a
+                {/* <button
                   href="https://unstop.com/quiz/composit-2024-iit-kharagpur-918548"
                   target="_blank"
                   className="btn btn-primary"
                 >
-                  {/* Submission Link */}
                   Register Here
-                </a>
+                </button> */}
+                 {eventData &&
+              <div>
+               <h5>You are already Registered for this event</h5> 
+                              <p>Team Name : <b className="font-bold"> {eventData && eventData.teamName}</b></p>
+                              <p>Team Id : <b className="font-bold">{eventData && eventData.teamId}</b></p> 
+                              <p>Your Team Members can join your team through your Team code. </p>
+              </div>
+                              }
+                {!eventData && <Link
+                    to={{
+                      pathname: "/createTeam/Enigma",
+                      // state: { eventName: "Enigma" }
+                    }}                
+                    
+                    className="btn btn-primary"
+                >
+                  {/* Submission Link */}
+                  Create Team
+               </Link>
+               }
+
+                { !eventData &&   
+                <Link
+                  to="/joinTeam/Enigma"
+                  className="btn btn-primary"
+                >
+                  {/* Submission Link */}
+                  Join Team
+                </Link>}
 
                 <a
                   href="https://drive.google.com/file/d/1azn1d0qknPTXObOCS0XQqi3wIphAN-Hd/view?usp=sharing"
                   target="_blank"
-                  className="btn btn-secondary"
+                  className="btn btn-primary"
                 >
                   Rules & Regulations
                 </a>
@@ -66,21 +119,21 @@ class EventEnigma extends React.Component {
                 <div className="tab">
                   <ul className="tabs active">
                     <li
-                      onClick={(e) => this.openTabSection(e, "tab1")}
+                      onClick={(e) => openTabSection(e, "tab1")}
                       className="current"
                     >
                       <Link to="#">About</Link>
                     </li>
 
-                    <li onClick={(e) => this.openTabSection(e, "tab2")}>
+                    <li onClick={(e) => openTabSection(e, "tab2")}>
                       <Link to="#">Structure</Link>
                     </li>
 
-                    <li onClick={(e) => this.openTabSection(e, "tab3")}>
+                    <li onClick={(e) => openTabSection(e, "tab3")}>
                       <Link to="#">FAQ`s</Link>
                     </li>
 
-                    <li onClick={(e) => this.openTabSection(e, "tab4")}>
+                    <li onClick={(e) => openTabSection(e, "tab4")}>
                       <Link to="#">Contacts</Link>
                     </li>
                   </ul>
@@ -348,11 +401,11 @@ class EventEnigma extends React.Component {
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                      {/* <h3>
+                      <h3>
                         <i className="icofont-wall-clock"></i> Coming Soon ....
-                      </h3> */}
+                      </h3>
 
-                      <ul className="accordion">
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -387,7 +440,7 @@ class EventEnigma extends React.Component {
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
                   </div>
                 </div>
@@ -423,6 +476,6 @@ class EventEnigma extends React.Component {
       </div>
     );
   }
-}
+
 
 export default EventEnigma;

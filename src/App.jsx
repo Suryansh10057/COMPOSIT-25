@@ -55,6 +55,8 @@ const App = () => {
     return (
         <>
             {phase === "enter" && (
+                <div className='enterbg'>
+
                 <button
                     onClick={handleEnterClick}
                     style={{
@@ -66,9 +68,10 @@ const App = () => {
                         left: "50%",
                         transform: "translate(-50%, -50%)",
                     }}
-                >
+                    >
                     Enter
                 </button>
+                </div>
             )}
 
             {phase === "video" && (

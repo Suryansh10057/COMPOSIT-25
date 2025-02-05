@@ -32,16 +32,24 @@ class About extends React.Component {
 
                                 
                                 <h5>Theme Description</h5>
-                                <h3 style={{color:'#00DF75'}}>Molten Ideas, sustainable realities </h3>
+                                <h2 > ESCAPE MATERIALS </h2>
                                 <p>
-                                Sir Pete Seeger said, “If it can’t be reduced, reused, repaired, rebuilt, refurbished, refinished, resold, recycled, or composted, then it should be restricted, designed or removed from production”. As the global population is growing, so does the use of various materials. 
-
+                                The theme ESCAPE Materials focuses on advancing energy solutions through cutting
+edge materials science and innovation. ESCAPE stands for Energetic materials, Solid
+ Oxide Fuel Cells (SOFC), Critical materials, All Solid-State Metal Batteries (ASSMBs),
+ Photo-Catalytic Water Splitting (PCWS), and Thermo-Electric Generators (TEGs)—key
+ technologies shaping the future of sustainable energy systems.
                                 </p>
                                 <p>
-                                India's close relationship with UNEP, increases recognition of the need to move towards more sustainable materials to address environmental challenges such as climate change, resource depletion, and pollution. The 29th edition of COMPOSIT aims to celebrate the glory of materials science with the theme of Sustainability.
+                                This theme highlights the importance of critical resources like lithium, cobalt, and silicon
+ carbide, alongside revolutionary technologies like supercapacitors and thermoelectric
+ generators. These materials and innovations are paving the way for clean energy,
+ efficient power storage, and groundbreaking industrial applications.
                                 </p>
                                 <p>
-                                To untangle your latest ideas and and weave the tapestry of a sustainable tomorrow, COMPOSIT is back with a bang, welcoming you to one of the most insightful scientific conferences and a 3-day long fun and engrossing experience with immense knowledge showcasing and the trade-off between the brilliant minds in presence .
+                                Through this fest, we aim to inspire creative thinking and collaboration, showcasing the
+ transformative potential of materials engineering to build a greener, more sustainable
+ future.
                                 </p>
                                 {/* <div className="signature">
                                     <img src={require("../../assets/images/signature.png")} alt="signature" />

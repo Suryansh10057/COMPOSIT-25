@@ -1,25 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-class EventTechnova extends React.Component {
-  openTabSection = (evt, tabNmae) => {
-    let i, tabcontent, tablinks;
-    
-    tabcontent = document.getElementsByClassName("tabs_item");
-    for (i = 0; i < tabcontent.length; i++) {
+const  EventTechnova = () => {
+
+
+  const openTabSection = (evt, tabName) => {
+    let tabcontent = document.getElementsByClassName("tabs_item");
+    for (let i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
 
-    tablinks = document.getElementsByTagName("li");
-    for (i = 0; i < tablinks.length; i++) {
+    let tablinks = document.getElementsByTagName("li");
+    for (let i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace("current", "");
     }
 
-    document.getElementById(tabNmae).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += "current";
   };
-  render() {
+
+
     const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
+    
+    console.log("user is : ". userData)
+    
+    console.log(userData)
+    
+    const [teamId, setTeamId] = useState(null);
+    
+    
+        function getEventDetails(events, eventName) {
+            const eventDetails = events.find(event => event.eventName === eventName);
+            return eventDetails || false; // Returns event details if found, otherwise null
+          }
+    
+          
+          const eventNameToCheck = "Technova";
+          const events = userData.events
+    const eventData = getEventDetails(events, eventNameToCheck);
+    
+    console.log(eventData);
+
+
     return (
       <div className="event-details-area ptb-120">
         <section className="event-area bg-image ptb-120">
@@ -29,7 +51,7 @@ class EventTechnova extends React.Component {
           >
             <div className="single-events">
               <img
-                src={require("../../assets/images/Technova1.jpg")}
+                src={require("../../assets/images/Enigma.jpg")}
                 alt="Speaker"
               />
 
@@ -41,14 +63,37 @@ class EventTechnova extends React.Component {
             </div>
             <div className="col-lg-13">
               <div className="btn-box" style={{ marginBottom: "20px" }}>
-              <a
-                  href="https://unstop.com/competitions/technova-composit-iit-kharagpur-composit-society-of-metallurgical-engineers-iit-kharagpur-920386"
-                  target="_blank"
-                  className="btn btn-primary"
-                >
-                  {/* Submission Link */}
-                  Register Here
-                </a>
+
+              {eventData &&
+              <div>
+               <h5>You are already Registered for this event</h5> 
+                              <p>Team Name : <b className="font-bold"> {eventData && eventData.teamName}</b></p>
+                              <p>Team Id : <b className="font-bold">{eventData && eventData.teamId}</b></p> 
+                              <p>Your Team Members can join your team through your Team code. </p>
+              </div>
+                              }
+              
+                              {!eventData && <Link
+                                  to={{
+                                    pathname: "/createTeam/Technova",
+                                    // state: { eventName: "Enigma" }
+                                  }}                
+                                  
+                                  className="btn btn-primary"
+                              >
+                                {/* Submission Link */}
+                                Create Team
+                             </Link>
+                             }
+              
+                              { !eventData &&   
+                              <Link
+                                to="/joinTeam/Technova"
+                                className="btn btn-primary"
+                              >
+                                {/* Submission Link */}
+                                Join Team
+                              </Link>}
               
                 <a
                   href="https://drive.google.com/file/d/1sT-yjr8HX6IuKY19iIdUOhzQjde-H36G/view?usp=sharing"
@@ -67,21 +112,21 @@ class EventTechnova extends React.Component {
                 <div className="tab">
                   <ul className="tabs active">
                     <li
-                      onClick={(e) => this.openTabSection(e, "tab1")}
+                      onClick={(e) => openTabSection(e, "tab1")}
                       className="current"
                     >
                       <Link to="#">About</Link>
                     </li>
 
-                    <li onClick={(e) => this.openTabSection(e, "tab2")}>
+                    <li onClick={(e) =>  openTabSection(e, "tab2")}>
                       <Link to="#">Structure</Link>
                     </li>
 
-                    <li onClick={(e) => this.openTabSection(e, "tab3")}>
+                    <li onClick={(e) =>  openTabSection(e, "tab3")}>
                       <Link to="#">FAQ`s</Link>
                     </li>
 
-                    <li onClick={(e) => this.openTabSection(e, "tab4")}>
+                    <li onClick={(e) =>  openTabSection(e, "tab4")}>
                       <Link to="#">Contacts</Link>
                     </li>
                   </ul>
@@ -395,6 +440,5 @@ Authors are requested to kindly restrict plagiarism in any form. Authors should 
       </div>
     );
   }
-}
 
 export default EventTechnova;

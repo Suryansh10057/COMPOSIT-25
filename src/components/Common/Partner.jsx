@@ -74,7 +74,9 @@ class Partner extends React.Component {
                 </div>
               </div> */}
 
-              <OwlCarousel
+          <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+
+              {/* <OwlCarousel
                 className="gold-partner-slides owl-carousel owl-theme"
                 {...options}
               >
@@ -112,7 +114,7 @@ class Partner extends React.Component {
                                         <img src={require("../../assets/sponsors/Media1.png")} alt="Partner Logo" />
                                         <img src={require("../../assets/sponsors/Media1.png")} alt="Partner Logo" />
                                     </a>
-                                    {/* <h5 className="py-1">Major Sponsors</h5> */}
+                                    <h5 className="py-1">Major Sponsors</h5>
                   </div>
                 </div>
                 <div className="col-lg-12 col-md-12">
@@ -177,24 +179,8 @@ class Partner extends React.Component {
                   </div>
                 </div>
 
-                {/* <div className="col-lg-12 col-md-12">
-                  <div className="partner-item p-5">
-                    <a
-                      href="https://instagram.com/greysocialpopcorns?igshid=ZDdkNTZiNTM="
-                      target="_blank"
-                    >
-                      <img
-                        src={require("../../assets/images/greypopcorn.png")}
-                        alt="Partner Logo"
-                      />
-                      <img
-                        src={require("../../assets/images/greypopcorn.png")}
-                        alt="Partner Logo"
-                      />
-                    </a>
-                  </div>
-                </div> */}
-              </OwlCarousel>
+             
+              </OwlCarousel> */}
 
               {/* <div className="col-lg-12">
                 <div className="border"></div>

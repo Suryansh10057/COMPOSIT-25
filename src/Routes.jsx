@@ -16,7 +16,7 @@ import Profile from "./components/pages/Profile";
 import EditProfile from "./components/pages/EditProfile";
 import EventCadPage from "./components/pages/EventDetails/EventCad";
 import EventCasestudyPage from "./components/pages/EventDetails/EventCasestudy";
-import EventEnigmaPage from "./components/pages/EventDetails/EventEnigma";
+// import EventEnigmaPage from "./components/pages/EventDetails/";
 import Success from "./components/pages/Success/Success";
 import Cancel from "./components/pages/Cancel/Cancel";
 import ContactUs from "./components/pages/ContactUs/ContactUs";
@@ -25,6 +25,11 @@ import TermsCondition from "./components/pages/TermsCondition/TermsCondition";
 import CancellationRefund from "./components/pages/CancellationRefund/CancellationRefund";
 import ShippingDelivery from "./components/pages/ShippingDelivery/ShippingDelivery";
 import SpeakersOne from "./components/Speakers/SpeakersOne";
+import HandleEvents from "./components/pages/HandleEvents"
+import EventRegistrationForm from "./components/EventRegistrationForm";
+import JoinForm from "./components/JoinTeamForm";
+import GuestLectures from "./components/GuestLecture/GuestLecture";
+// import HandleEvents from "./components/pages/EventDetails/HandleEvents";
 const AppRouter = () => {
     const renderNavigation = () => {
         const excludedRoutes = ['/login', '/signup', '/error-404'];
@@ -41,10 +46,13 @@ const AppRouter = () => {
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/events" element={<Events />} />
-                <Route path="/events/:id" element={<Events />} />
-                <Route path="/event_cad" element={<EventCadPage />} />
+                <Route  path="/events/:name" element={<HandleEvents />}  />
+                {/* <Route path="/events/:id" element={<Events />} /> */}
+                {/* <Route path="/event_cad" element={<EventCadPage />} />
                 <Route path="/event_casestudy" element={<EventCasestudyPage />} />
-                <Route path="/event_enigma" element={<EventEnigmaPage />} />
+                <Route path="/event_enigma" element={<EventEnigmaPage />} /> */}
+                <Route path="/createTeam/:eventName" element={<EventRegistrationForm />} />
+                <Route path="/joinTeam/:eventName" element={<JoinForm />} />
                 <Route path="/schedule" element={<Schedule />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
@@ -59,9 +67,10 @@ const AppRouter = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/sponsors" element={<Sponsor />} />
                 <Route path="/profile" element={<Profile />} />
+                <Route path="/guestlecture" element={<GuestLectures />} />
                 <Route path="/edit-profile" element={<EditProfile />} />
                 <Route path="/ourteam" element={<SpeakersOne />} />
-                <Route path="*" element={<NotFound />} />
+                {/* <Route path="*" element={<NotFound />} /> */}
             </Routes>
         </Router>
     );

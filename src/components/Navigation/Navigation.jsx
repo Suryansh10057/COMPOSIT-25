@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
+import BaseUrl from "../../const";
 import { IoIosNotifications } from "react-icons/io";
 
 const Navigation = () => {
@@ -17,7 +18,7 @@ const Navigation = () => {
     e.preventDefault();
     setCollapsed(true);
     try {
-      await fetch("/api/user/logout", {
+      await fetch(`${BaseUrl}/api/user/logout`, {
         method: "POST",
         credentials: "include",
       });
@@ -116,23 +117,23 @@ const Navigation = () => {
                   </NavLink>
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <NavLink to="/sponsors" className="nav-link" onClick={toggleNavbar}>
                     Sponsors
                   </NavLink>
-                </li>
+                </li> */}
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <NavLink to="/contactus" className="nav-link" onClick={toggleNavbar}>
                     Contact Us
                   </NavLink>
-                </li>
+                </li> */}
 
                 <li className="nav-item">
                   {userData ? (
-                    <NavLink to="/events" className="nav-link" onClick={logout}>
-                      Logout
-                    </NavLink>
+                   <Link  className="nav-link" onClick={logout}>
+                    Logout
+                  </Link>
                   ) : (
                     <NavLink to="/login" className="nav-link" onClick={login}>
                       Login
@@ -152,7 +153,7 @@ const Navigation = () => {
                   )}
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   {userData ? (
                     <NavLink to="/accommodation" className="nav-link" onClick={toggleNavbar}>
                       Accommodation
@@ -162,7 +163,7 @@ const Navigation = () => {
                       <IoIosNotifications size={27} />
                     </NavLink>
                   )}
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
