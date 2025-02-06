@@ -586,6 +586,7 @@ Navbar CSS
   width: 100%;
   z-index: 999;
   height: auto;
+  /* min-width: 429px !important; */
 }
 
 .elkevent-nav nav ul {
