@@ -111,11 +111,11 @@ const Navigation = () => {
                   </NavLink>
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <NavLink to="/guestlecture" className="nav-link" onClick={toggleNavbar}>
                     Our Speakers
                   </NavLink>
-                </li>
+                </li> */}
 
                 {/* <li className="nav-item">
                   <NavLink to="/sponsors" className="nav-link" onClick={toggleNavbar}>

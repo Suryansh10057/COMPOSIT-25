@@ -1,8 +1,57 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-class SpeakersOne extends React.Component {
-  render() {
+
+const TeamCard = (props)=>{
+  return(
+    <>
+         <div className="col-lg-3 col-md-6 p-0">
+            <div className="single-speakers">
+              <img
+                src={require(`${props.img}`)}
+                alt="speakers"
+              />
+
+              <div className="speakers-content">
+                <h3 style={{ color: "#fec66d" }}>${props.name} </h3>
+                <span>${props.position}</span>
+              </div>
+              <ul>
+              <li>
+                  <a
+                    href={`${props.facebook}`}
+                    target="_blank"
+                    className="facebook"
+                  >
+                    <i className="icofont-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={`mailto:${props.email}`}
+                    target="_blank"
+                    className="twitter"
+                  >
+                    <i className="icofont-envelope"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={`${props.linkedin}`}
+                    target="_blank"
+                    className="linkedin"
+                  >
+                    <i className="icofont-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </>
+  )
+}
+const  SpeakersOne = () => {
+
     return (
       <section className="speakers-area ptb-120">
         <div className="row m-0">
@@ -79,6 +128,8 @@ class SpeakersOne extends React.Component {
               </ul>
             </div>
           </div>
+
+
           <div className="section-title">
             <h2>
               Our Advisors
@@ -1122,6 +1173,5 @@ class SpeakersOne extends React.Component {
       </section>
     );
   }
-}
 
 export default SpeakersOne;
