@@ -20,6 +20,7 @@ export default function Profile() {
         <ul className='profile-page'>
     <li className='form-group form-control mt-4'><strong>Name:</strong> {userData.name}</li>
     <li className='form-group form-control'><strong>Registration ID:</strong> {userData._id}</li>
+    {userData.SaId && <li className='form-group form-control'><strong>SA ID:</strong> {userData.SaId}</li>}
     <li className='form-group form-control'><strong>Email:</strong> {userData.email}</li>
     <li className='form-group form-control'><strong>Institute ID / Roll No.:</strong> {userData.collegeId}</li>
     <li className='form-group form-control'><strong>Department:</strong> {userData.department}</li>
@@ -27,7 +28,7 @@ export default function Profile() {
     <li className='form-group form-control'><strong>Contact:</strong> {userData.phone}</li>
     <li className='form-group form-control'><strong>Address:</strong> {userData.city} , {userData.state}</li>
     <li className='form-group form-control'><strong>Gender:</strong> {userData.gender}</li>
-    <Link to='/events' className="btn btn-primary">Go to our Events</Link>
+    <Link to='/events' className="btn btn-primary profile-btn">Go to our Events</Link>
 </ul>
 
 </div> 

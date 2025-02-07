@@ -344,9 +344,9 @@ class EventCasestudy extends React.Component {
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
 
-                    <ul className="accordion">
+                    {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -383,7 +383,7 @@ class EventCasestudy extends React.Component {
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
                   </div>
                 </div>

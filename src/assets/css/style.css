@@ -3789,6 +3789,10 @@ Signup CSS
   font-size: 13px;
 }
 
+.profile-page{
+  padding: 0 20px 20px 20px !important;
+}
+
 .signup-area .signup-form form .profile-page .form-control {
   background: transparent;
   font-size: 17px;
@@ -3822,7 +3826,9 @@ Signup CSS
 .signup-area .signup-form p a:hover, .signup-area .signup-form p a:focus {
   color: var(--formback-color);
 }
-
+.profile-btn{
+  width: 100% !important;
+}
 /*================================================
 404 Error CSS
 =================================================*/
