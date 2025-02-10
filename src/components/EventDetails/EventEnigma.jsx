@@ -22,27 +22,22 @@ const EventEnigma = () => {
   };
 
 
-    const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
-    
-    console.log("user is : ". userData)
-    
-    console.log(userData)
-    
-    const [teamId, setTeamId] = useState(null);
-    
-    
-        function getEventDetails(events, eventName) {
-            const eventDetails = events.find(event => event.eventName === eventName);
-            return eventDetails || null; // Returns event details if found, otherwise null
-          }
-    
-          
-          const eventNameToCheck = "Enigma";
-          const events = userData.events
-    const eventData = getEventDetails(events, eventNameToCheck);
-    
-    console.log(eventData);
+  const userData = JSON.parse(localStorage.getItem("COMPOSITuser")) || {}; // Default to empty object
 
+  console.log("user is:", userData);
+  
+  const [teamId, setTeamId] = useState(null);
+  
+  function getEventDetails(events, eventName) {
+      if (!events) return null; // Safeguard against undefined/null events
+      return events.find(event => event.eventName === eventName) || null;
+  }
+  
+  const eventNameToCheck = "Enigma";
+  const events = userData.events || []; // Default to empty array if events is null/undefined
+  const eventData = getEventDetails(events, eventNameToCheck);
+  
+  console.log(eventData);
     
     return (
       <div className="event-details-area ptb-120">
@@ -59,7 +54,7 @@ const EventEnigma = () => {
 
               <div className="events-content">
                 <h2>Enigma</h2>
-                <h3>Prize worth 10K</h3>
+                <h3>Prize worth 20K</h3>
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -147,23 +142,23 @@ const EventEnigma = () => {
                               <h3>Enigma</h3>
 
                               <p>
-                                Quizzing Event which will involve questions from
-                                all areas, general science as well as
-                                core-specific. Questions format is stated as
-                                follows: <br />
+                              Step into the world of intellect and curiosity with ENIGMA, an exciting
+online quiz competition that challenges your knowledge across a
+spectrum of captivating topics: <br />
                                 <ul className="rules-list">
-                                  <li>Logical Reasoning / Puzzles. </li> <br />
+                                  <li>Logical Reasoning / Puzzles. </li> 
                                   <li>
                                     {""} Metallurgy and Materials Science {""}
                                   </li>{" "}
-                                  <br />
+                                  {/* <br /> */}
                                   <li> GK / History </li>
-                                  <br />
-                                  <li>Sports related (Olympics 2024)</li>
-                                  <br />
+                                  {/* <br /> */}
+                                  <li>Sustainability</li>
+                                  {/* <br /> */}
                                   <li>Science and Engineering</li>
-                                  <br />
-                                </ul>
+                                  {/* <br /> */}
+                                </ul> <br />
+                                This event is designed to provide a perfect mix of fun and learning, with questions ranging from thought-provoking trivia to mind-bending puzzles. Whether you're a quiz enthusiast or just looking to test your intellectual mettle, ENIGMA promises an unforgettable experience. Compete individually, showcase your brilliance, and seize the opportunity to win exciting prizes.
                               </p>
                             </div>
                           </Link>
@@ -210,13 +205,13 @@ const EventEnigma = () => {
                                   <li>
                                     <b>Prelims Round:</b>
                                   </li>
-                                  <li> 15th March 2024 12:00 PM IST</li>
+                                  <li> 2nd March 2025 </li>
                                   <br></br>
                                   <br></br>
                                   <li>
                                     <b>Final Event:</b>
                                   </li>
-                                  <li>30th March 2024</li>
+                                  <li>22nd March 2024</li>
                                 </ul>
                               </div>
                             </div>
@@ -227,11 +222,11 @@ const EventEnigma = () => {
                             <div className="author author-multi"></div>
 
                             <div className="schedule-info">
-                              <h2>Rules of the Event</h2>
+                            
                               {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                               <div className="schedule-info">
                                 <br />
-                                <h3>Rules for round 1:-</h3>
+                                <h3>Number of Rounds:-</h3>
 
                                 <ul
                                   className="rules-list"
@@ -242,34 +237,24 @@ const EventEnigma = () => {
                                 >
                                   <li>
                                     {" "}
-                                    This round will be conducted in online mode
-                                    on Unstop platform. <br />{" "}
+                                    <b> Round 1 :</b> This round will be conducted in online mode on Unstop platform. <br />{" "}
                                   </li>
+
 
                                   <li>
                                     {" "}
-                                    The time limit to attempt the quiz is 1
-                                    hour. The quiz window will be open for four
-                                    hours.{" "}
-                                  </li>
-
-                                  <li>
-                                    {" "}
-                                    The top 20 scorers will qualify for the
-                                    final round.{" "}
+                                     <b>Round 2 : </b>General
+                                    Trivia.{" "}
                                   </li>
                                   <br />
 
-                                  <li>
-                                    {" "}
-                                    In the case of team participation, only the
-                                    team leader can give the online quiz.{" "}
-                                  </li>
+                                
                                 </ul>
                               </div>
                               <div className="schedule-info">
                                 <br />
-                                <h3>Rules for round 2:-</h3>
+                                <h2>Rules of the Event</h2>
+                                <h3>Quiz Rules :-</h3>
 
                                 <ul
                                   className="rules-list"
@@ -280,29 +265,105 @@ const EventEnigma = () => {
                                 >
                                   <li>
                                     {" "}
-                                    The final round will also be held online on
-                                    the Unstop platform. <br />{" "}
+                                    Each question carries 1 point for a correct answer.
+ <br />{" "}
                                   </li>
 
                                   <li>
                                     {" "}
-                                    Questions will be based on the topics of
-                                    General trivia, Material Sciences, Basic
-                                    Engineering, Puzzles, etc.{" "}
+                                    0.25 marks will be deducted for incorrect answers.
+{" "}
                                   </li>
 
                                   <li>
                                     {" "}
-                                    Rules and format will be the same as that of
-                                    the previous round.{" "}
+                                    The quiz must be completed within the stipulated time.{" "}
                                   </li>
                                   <br />
 
+                               
+                                </ul>
+                                <h3>Integrity :-</h3>
+
+                                <ul
+                                  className="rules-list"
+                                  style={{
+                                    listStyleType: "circle !important",
+                                    color: "red",
+                                  }}
+                                >
                                   <li>
                                     {" "}
-                                    The top 3 teams with the highest scores will
-                                    be declared winners.{" "}
+                                    Participants’ screens will be monitored throughout the quiz.
+ {" "}
                                   </li>
+
+                                  <li>
+                                    {" "}
+                                    Participants must provide permission to access the device's
+camera, which will monitor for any unfair means being adopted
+during the quiz.
+{" "}
+                                  </li>
+
+                                  <li>
+                                    {" "}
+                                    Any attempt to cheat or use external help will lead to immediate
+                                    disqualification.{" "}
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    The organizers’ decision will be final in case of any disputes.{" "}
+                                  </li>
+                                  <br />
+
+                               
+                                </ul>
+                                <h3>Platform Guidlines :-</h3>
+
+                                <ul
+                                  className="rules-list"
+                                  style={{
+                                    listStyleType: "circle !important",
+                                    color: "red",
+                                  }}
+                                >
+                                  <li>
+                                    {" "}
+                                    Ensure a stable internet connection during the quiz.{" "}
+                                  </li>
+
+                                  <li>
+                                    {" "}
+                                    Participants are responsible for ensuring device readiness (laptops,
+                                      tablets, or smartphones).
+{" "}
+                                  </li>
+
+                                 
+                                  <br />
+
+                               
+                                </ul>
+                                <h3>Tie-Breaker :-</h3>
+
+                                <ul
+                                  className="rules-list"
+                                  style={{
+                                    listStyleType: "circle !important",
+                                    color: "red",
+                                  }}
+                                >
+                                  <li>
+                                    {" "}
+                                    In case of a tie, the participant with the fastest overall time will be
+                                    declared the winner. <br />{" "}
+                                  </li>
+
+                                
+                                  <br />
+
+                               
                                 </ul>
                               </div>
                             </div>
@@ -324,7 +385,7 @@ const EventEnigma = () => {
                                   </li>
                                   <li>
                                     {" "}
-                                    {""} Cash Prizes worth 10k for winners and
+                                    {""} Cash Prizes worth 20k for winners and
                                     runner-ups.{""}{" "}
                                   </li>
                                 </ul>
@@ -361,12 +422,94 @@ const EventEnigma = () => {
                                   round of registration, the team leader has to
                                   enter the participant IDs in the Unstop portal{" "}
                                 </li>
-                                <br /> <br />
                               </ul>
                               <ul className="accordion faqs">
                                 <li>
                                   {" "}
-                                  2 : &nbsp; What type of questions may be
+                                  2 : &nbsp; Who can participate in ENIGMA?  {" "}
+                                </li>
+                                <li>
+                                  {" "}
+                                  -&nbsp;  ENIGMA is open to all students, professionals, and quiz enthusiasts. There
+                                  are no restrictions based on academic background or experience.{" "}
+                                </li>
+                              </ul>
+                              <ul className="accordion faqs">
+                                <li>
+                                  {" "}
+                                  3 : &nbsp; Is there a registration fee?{" "}
+                                </li>
+                                <li>
+                                  {" "}
+                                  -&nbsp; No, registration is completely free on Unstop.
+                                  {" "}
+                                </li>
+                              </ul>
+                              <ul className="accordion faqs">
+                                <li>
+                                  {" "}
+                                  4 : &nbsp; Do I need any special software or tools to participate? {" "}
+                                </li>
+                                <li>
+                                  {" "}
+                                  -&nbsp;  No, you only need a stable internet connection and a device (laptop,
+tablet, or smartphone) to access the Unstop platform.
+ {" "}
+                                </li>
+                              </ul>
+                              <ul className="accordion faqs">
+                                <li>
+                                  {" "}
+                                  5 : &nbsp;  Is prior knowledge in a specific subject required? {" "}
+                                </li>
+                                <li>
+                                  {" "}
+                                  -&nbsp; The quiz covers a variety of topics like General Knowledge, Science, and
+Sustainability of Materials. Having basic knowledge in these areas of
+Metallurgy and Materials Engineering may provide an advantage, but the
+questions are designed to be accessible to participants from all
+backgrounds.
+ {" "}
+                                </li>
+                              </ul>
+                              <ul className="accordion faqs">
+                                <li>
+                                  {" "}
+                                  6 : &nbsp; What if there’s a tie between participants? {" "}
+                                </li>
+                                <li>
+                                  {" "}
+                                  -&nbsp; . In case of a tie, the participant with the fastest overall time to complete the
+quiz will be declared the winner.
+ {" "}
+                                </li>
+                              </ul>
+                              <ul className="accordion faqs">
+                                <li>
+                                  {" "}
+                                  7 : &nbsp; Will all participants receive a certificate? {" "}
+                                </li>
+                                <li>
+                                  {" "}
+                                  -&nbsp; No, only the winners will receive a Winner certificate. {" "}
+                                </li>
+                              </ul>
+                              <ul className="accordion faqs">
+                                <li>
+                                  {" "}
+                                  8 : &nbsp; When will the results be announced?{" "}
+                                </li>
+                                <li>
+                                  {" "}
+                                  -&nbsp; The results will be announced shortly after the quiz is completed.
+Participants will be informed via email to their registered ID.
+{" "}
+                                </li>
+                              </ul>
+                              <ul className="accordion faqs">
+                                <li>
+                                  {" "}
+                                  9 : &nbsp; What type of questions may be
                                   asked?{" "}
                                 </li>
                                 <li>
@@ -375,25 +518,8 @@ const EventEnigma = () => {
                                   and it will be related to concepts of high
                                   school and intermediate-level.{" "}
                                 </li>{" "}
-                                <br /> <br />
                               </ul>
-                              <ul className="accordion faqs">
-                                <li>
-                                  {" "}
-                                  3 : &nbsp; From where can the questionsbe
-                                  asked?{" "}
-                                </li>{" "}
-                                <br />
-                                <li>
-                                  {" "}
-                                  -&nbsp; Questions would be based on
-                                  sustainability, general knowledge, and
-                                  materials science.It will be a 30-minute quiz
-                                  to be attempted within a window of 4 hr. The
-                                  quiz can contain certain 1 word answers as
-                                  well. .{" "}
-                                </li>{" "}
-                              </ul>
+                             
                             </div>
                           </Link>
                         </li>
@@ -401,11 +527,11 @@ const EventEnigma = () => {
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                      <h3>
+                      {/* <h3>
                         <i className="icofont-wall-clock"></i> Coming Soon ....
-                      </h3>
+                      </h3> */}
 
-                      {/* <ul className="accordion">
+                      <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -413,12 +539,12 @@ const EventEnigma = () => {
                             <div className="schedule-info">
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Subhrojyoti Mukherjee</b>
+                                <b>Suryansh Singh</b>
                               </p>
                               <p>
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
-                                <b>9112230084</b>
+                                <b>9670006875</b>
                               </p>
                             </div>
                           </Link>
@@ -430,17 +556,19 @@ const EventEnigma = () => {
                             <div className="schedule-info">
                               <p>
                                 Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Mayuresh Lohani</b>
+                                <b>Aarya Joshi</b>
                               </p>
                               <p>
                                 Contact:{" "}
                                 <i className="icofont-phone-circle"></i>{" "}
-                                <b>8709471451</b>
+                                <b>7045020804</b>
                               </p>
                             </div>
                           </Link>
                         </li>
-                      </ul> */}
+                      </ul>
+
+
                     </div>
                   </div>
                 </div>

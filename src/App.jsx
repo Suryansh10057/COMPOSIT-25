@@ -10,16 +10,23 @@ import AppRouter from './Routes';
 import Preloader from './components/Shared/Preloader';
 
 const App = () => {
-    const [phase, setPhase] = useState("video"); // "enter", "video", "content"
+    const [phase, setPhase] = useState("enter"); // "enter", "video", "content"
     const videoRef = useRef(null);
-    const audioRef = useRef(null);
+    // const audioRef = useRef(null);
     const [loading, setLoading] = useState(true);
 
+
+    useEffect(() => {
+        const demoAsyncCall = () => {
+            return new Promise((resolve) => setTimeout(() => resolve(), 2000));
+        };
+        demoAsyncCall().then(() => setLoading(false));
+    }, []); // Empty dependency array ensures the effect runs only once when the component mounts.
 
 
     const handleEnterClick = () => {
       setPhase("video"); // Switch to video phase
-      if (videoRef.current && audioRef.current) {
+      if (videoRef.current ) {
           videoRef.current.play(); // Play video
         //   audioRef.current.volume = 1.0; // Play audio
         //   audioRef.current.play(); // Play audio
@@ -44,13 +51,6 @@ const App = () => {
     //   }
   };
 
-    useEffect(() => {
-        const demoAsyncCall = () => {
-            return new Promise((resolve) => setTimeout(() => resolve(), 2000));
-        };
-
-        demoAsyncCall().then(() => setLoading(false));
-    }, []); // Empty dependency array ensures the effect runs only once when the component mounts.
 
     return (
         <>
@@ -61,13 +61,13 @@ const App = () => {
                     onClick={handleEnterClick}
                     style={{
                         padding: "10px 20px",
-                        fontSize: "18px",
                         cursor: "pointer",
                         position: "absolute",
                         top: "50%",
                         left: "50%",
                         transform: "translate(-50%, -50%)",
                     }}
+                    className='enter-btn'
                     >
                     Enter
                 </button>
@@ -90,13 +90,13 @@ const App = () => {
                         }}
                         autoPlay
                     />
-                     <audio
+                     {/* <audio
                         ref={audioRef}
                         src="/blast.mp3" // Replace with your music file path
                         loop // Loop the music if needed
                         autoPlay
                         controls={false} 
-                    />
+                    /> */}
                     <button
                         onClick={handleSkipClick}
                         style={{

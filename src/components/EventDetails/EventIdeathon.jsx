@@ -18,26 +18,24 @@ const EventIdeathon = () => {
    };
  
  
-     const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
-     
-     console.log("user is : ". userData)
-     
-     console.log(userData)
-     
-     const [teamId, setTeamId] = useState(null);
-     
-     
-         function getEventDetails(events, eventName) {
-             const eventDetails = events.find(event => event.eventName === eventName);
-             return eventDetails || false; // Returns event details if found, otherwise null
-           }
-     
-           
-           const eventNameToCheck = "Ideathon";
-           const events = userData.events
-     const eventData = getEventDetails(events, eventNameToCheck);
-     
-     console.log(eventData);
+  const userData = JSON.parse(localStorage.getItem("COMPOSITuser")) || {}; // Default to empty object
+
+  console.log("user is:", userData);
+  
+  const [teamId, setTeamId] = useState(null);
+  
+  function getEventDetails(events, eventName) {
+      if (!events) return null; // Safeguard against undefined/null events
+      return events.find(event => event.eventName === eventName) || null;
+  }
+  
+  const eventNameToCheck = "Ideathon";
+  const events = userData.events || []; // Default to empty array if events is null/undefined
+  const eventData = getEventDetails(events, eventNameToCheck);
+  
+  console.log(eventData);
+    
+  
     return (
       <div className="event-details-area ptb-120">
         <section className="event-area bg-image ptb-120">
@@ -107,7 +105,7 @@ const EventIdeathon = () => {
                             <Link to="/login" className="btn btn-primary">Login to Submit</Link>
                           } */}
                           <a
-                            href="https://drive.google.com/file/d/1rWJihDnNFAehHEjSaB6HpYphzc6OXXjO/view?usp=sharing"
+                            // href="https://drive.google.com/file/d/1rWJihDnNFAehHEjSaB6HpYphzc6OXXjO/view?usp=sharing"
                             target="_blank"
                             className="btn btn-primary "
                           >

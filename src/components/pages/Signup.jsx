@@ -208,7 +208,7 @@ console.log(signupData)
                                     type="text"
                                     className="form-control"
                                     placeholder="Leave blank if no Student Ambassador has referred"
-                                    name="referal"
+                                    name="referral"
                                     onChange={handleChange}
                                 />
                             </div>

@@ -20,26 +20,22 @@ const  EventTechnova = () => {
   };
 
 
-    const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
-    
-    console.log("user is : ". userData)
-    
-    console.log(userData)
-    
-    const [teamId, setTeamId] = useState(null);
-    
-    
-        function getEventDetails(events, eventName) {
-            const eventDetails = events.find(event => event.eventName === eventName);
-            return eventDetails || false; // Returns event details if found, otherwise null
-          }
-    
-          
-          const eventNameToCheck = "Technova";
-          const events = userData.events
-    const eventData = getEventDetails(events, eventNameToCheck);
-    
-    console.log(eventData);
+     const userData = JSON.parse(localStorage.getItem("COMPOSITuser")) || {}; // Default to empty object
+   
+     console.log("user is:", userData);
+     
+     const [teamId, setTeamId] = useState(null);
+     
+     function getEventDetails(events, eventName) {
+         if (!events) return null; // Safeguard against undefined/null events
+         return events.find(event => event.eventName === eventName) || null;
+     }
+     
+     const eventNameToCheck = "Technova";
+     const events = userData.events || []; // Default to empty array if events is null/undefined
+     const eventData = getEventDetails(events, eventNameToCheck);
+     
+     console.log(eventData);
 
 
     return (

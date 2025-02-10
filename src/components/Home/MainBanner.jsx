@@ -68,7 +68,11 @@ class MainBanner extends React.Component {
                                     {this.userData ?
                                     <Link to="/events" className="btn btn-primary">Go to Events</Link>
                                     :
-                                    <Link to="/signup" className="btn btn-primary">Sign Up</Link>
+                                    <div className='btn-container'>
+                                    <Link to="/signup" className="btn btn-primary">Sign Up</Link> <br />
+                                    <Link to="https://ca.composit.in" target='_blank' className="btn btn-primary">Register for Campus Ambassador</Link> <br />
+                                    {/* <Link to="https://ca.composit.in" className='mt-5'  target='_blank' ><h5 className=' text-white'> Click here to Register as Campus Ambassador</h5></Link> */}
+                                    </div>
                                 }
                                         
                                     </div>

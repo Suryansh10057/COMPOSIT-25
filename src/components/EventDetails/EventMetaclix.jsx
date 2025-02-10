@@ -17,23 +17,21 @@ const EventMetaclix = () => {
     evt.currentTarget.className += "current";
   };
 
-  const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
+  const userData = JSON.parse(localStorage.getItem("COMPOSITuser")) || {}; // Default to empty object
 
-  // console.log("user is : ".userData);
-
-  console.log(userData);
-
+  console.log("user is:", userData);
+  
   const [teamId, setTeamId] = useState(null);
-
+  
   function getEventDetails(events, eventName) {
-    const eventDetails = events.find((event) => event.eventName === eventName);
-    return eventDetails || false; // Returns event details if found, otherwise null
+      if (!events) return null; // Safeguard against undefined/null events
+      return events.find(event => event.eventName === eventName) || null;
   }
-
-  const eventNameToCheck = "Metaclix";
-  const events = userData.events;
+  
+  const eventNameToCheck = "MetaClix";
+  const events = userData.events || []; // Default to empty array if events is null/undefined
   const eventData = getEventDetails(events, eventNameToCheck);
-
+  
   console.log(eventData);
 
   return (

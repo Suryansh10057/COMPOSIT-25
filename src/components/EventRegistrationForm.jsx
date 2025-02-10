@@ -46,7 +46,7 @@ console.log("My Event Nmae is : ",eventName)
         console.log(userData, token)
 
         const submit = document.getElementById('submitbtn');
-        submit.innerText = 'Signing up, please wait...';
+        submit.innerText = 'Creating team, please wait...';
         submit.disabled = true;
         const DataToSend = {
             userId: userData._id,
@@ -71,12 +71,13 @@ console.log("My Event Nmae is : ",eventName)
             const updatedUser = result.userData;
             console.log(updatedUser)
             if (!response.ok) {
-                throw new Error(result.message || 'Signup failed');
+                throw new Error(result.message || 'Team Creation failed');
+                submit.innerText = 'Team Creation failed';
             }
 
             setError(result.message);
             // openForm();
-            submit.innerText = `Your Team code is ${result.teamCode}. Share it with your team members to join your the team.`;
+            submit.innerText = `Your Team code is ${result.teamCode}.`;
             // submit.disabled = false;
             console.log(result);
             localStorage.setItem('COMPOSITuser', JSON.stringify(result.userData));
@@ -121,12 +122,12 @@ console.log("My Event Nmae is : ",eventName)
                 </div>
             </div>
 
-            <div className="loginPopup" id='loginPopup'>
+            {/* <div className="loginPopup" id='loginPopup'>
                 <div className="formPopup" id="popupForm">
                     <p className='popupMsg'>{error}</p>
                     <Link to="/login" className='popupLink'>Login now to register for event</Link>
                 </div>
-            </div>
+            </div> */}
         </section>
         </>
 

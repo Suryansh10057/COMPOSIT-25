@@ -2,14 +2,20 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import './Popup/PopupMsg.css';
 import BaseUrl from '../const';
+import { useParams } from 'react-router-dom';
+
 
 const JoinForm = () => {
     const [signupData, setSignupData] = useState({});
     const [error, setError] = useState(null);
+    const { eventName } = useParams(); // Default to empty 
 
     const openForm = () => {
         document.getElementById("popupForm").style.display = "block";
     };
+
+    const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
+    const token = JSON.parse(localStorage.getItem("COMPOSITuserToken"));
 
     const closeForm = () => {
         document.getElementById("popupForm").style.display = "none";
@@ -20,6 +26,9 @@ const JoinForm = () => {
         setSignupData({
             ...signupData,
             [event.target.name]: event.target.value,
+            "eventName": eventName,
+            "userId": userData._id,
+            "token": token
         });
     };
 
@@ -36,7 +45,7 @@ const JoinForm = () => {
 console.log(signupData)
 
         try {
-            const response = await fetch(`${BaseUrl}/api/user/register`, {
+            const response = await fetch(`${BaseUrl}/api/user/jointeam`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -53,8 +62,8 @@ console.log(signupData)
 
             setError(result.message);
             openForm();
-            submit.innerText = 'Signup';
-            submit.disabled = false;
+            submit.innerText = 'Team Joined Successfully';
+            submit.disabled = true;
             console.log(result);
             localStorage.setItem('COMPOSITuser', JSON.stringify(result.userData));
       
@@ -63,14 +72,14 @@ console.log(signupData)
         } catch (err) {
             setError(err.message);
             openForm();
-            submit.innerText = 'Join';
+            submit.innerText = 'Joinnig Failed';
             submit.disabled = false;
         }
     };
 
-    const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
+    // const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
     // const userData = Data.user.userData
-    console.log(userData)
+    console.log(userData._id)
     
     return (
         <>
@@ -78,9 +87,9 @@ console.log(signupData)
             <div className="d-table mt-9">
                 <div className="d-table-cell">
                     <div className="signup-form" >
-                        <Link to='/events' className="btn-modal btn-primary">&#xab; Back to Home</Link>
+                        <Link to='/events' className="btn-modal btn-primary">&#xab; Back to Events</Link>
 
-                        <h3>Join a  Team </h3>
+                        <h3>Join a Team for {eventName} </h3>
 
                         <form>
                         
@@ -91,7 +100,7 @@ console.log(signupData)
                                     className="form-control"
                                     placeholder="Enter the Team Code Provided by team creator "
                                     onChange={handleChange}
-                                    name="teamCode"
+                                    name="teamId"
                                 />
                             </div>
 
@@ -102,12 +111,12 @@ console.log(signupData)
                 </div>
             </div>
 
-            <div className="loginPopup" id='loginPopup'>
+            {/* <div className="loginPopup" id='loginPopup'>
                 <div className="formPopup" id="popupForm">
                     <p className='popupMsg'>{error}</p>
                     <Link to="/login" className='popupLink'>Login now to register for event</Link>
                 </div>
-            </div>
+            </div> */}
         </section>
         </>
 
