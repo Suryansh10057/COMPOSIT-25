@@ -65,15 +65,13 @@ const  EventExcavate = () => {
                                              </div>
                                                              }
                                              
-                                                             {!eventData && <Link
+                                                             {/* {!eventData && <Link
                                                                  to={{
                                                                    pathname: "/createTeam/Excavate",
-                                                                   // state: { eventName: "Enigma" }
                                                                  }}                
                                                                  
                                                                  className="btn btn-primary"
                                                              >
-                                                               {/* Submission Link */}
                                                                Create Team
                                                             </Link>
                                                             }
@@ -83,9 +81,8 @@ const  EventExcavate = () => {
                                                                to="/joinTeam/Excavate"
                                                                className="btn btn-primary"
                                                              >
-                                                               {/* Submission Link */}
                                                                Join Team
-                                                             </Link>}
+                                                             </Link>} */}
              {/* 
               {/* <a
                   href="https://drive.google.com/file/d/1h0Oqq4aEW829mEtZW-SvAlLiNloDg3jT/view?usp=sharing"
@@ -103,13 +100,13 @@ const  EventExcavate = () => {
                 </a> :
                   <Link to="/login" className="btn btn-primary">Login to Submit</Link>
                 } */}
-                <a
-                  href="https://drive.google.com/file/d/1rWJihDnNFAehHEjSaB6HpYphzc6OXXjO/view?usp=sharing"
-                  target="_blank"
+                {/* <a
+                  // href="https://drive.google.com/file/d/1rWJihDnNFAehHEjSaB6HpYphzc6OXXjO/view?usp=sharing"
+                  // target="_blank"
                   className="btn btn-primary "
                 >
                  Rules & Regulations
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -148,9 +145,16 @@ const  EventExcavate = () => {
                               <h3>Excavate</h3>
 
                               <p>
-                              In the world today where sustainability holds excellent importance, mastering data usage has become crucial. 'Excavate' aims to showcase the power of data analysis through its use in metallurgical and materials engineering. It also promotes critical thinking and presentation skills apart from analytical skills.
-The event will be conducted in the following rounds – a qualifying cum bonus round in the form of an aptitude quiz, a submission round, and a final presentation round where teams will present an in-depth analysis of the results offline at IIT Kharagpur.
-With Excavate, both the novice and the more experienced data enthusiasts will get a chance to improve their skills and appreciate the field of data science.
+                              Excavate is an exciting team-based event that brings data analysis to
+the forefront of metallurgical and materials engineering. Designed to
+challenge your analytical and problem-solving skills, it’s all about
+diving into real-world data, uncovering insights, and presenting
+innovative solutions. Whether you're just starting with data science
+or already a pro, this event is a great way to sharpen your skills,
+connect with peers, and see the impact of data in engineering. Teams
+will analyze data, present their findings, and defend their approach in
+a fun and competitive environment. Don’t miss the chance to learn,
+compete, and showcase your talent!
 
 
                               </p>

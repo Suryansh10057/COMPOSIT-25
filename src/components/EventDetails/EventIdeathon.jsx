@@ -105,7 +105,7 @@ const EventIdeathon = () => {
                             <Link to="/login" className="btn btn-primary">Login to Submit</Link>
                           } */}
                           <a
-                            // href="https://drive.google.com/file/d/1rWJihDnNFAehHEjSaB6HpYphzc6OXXjO/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1isxxZWe9nVSh3PpDPzJsIIRsuY5UnQpC/view?usp=drive_link"
                             target="_blank"
                             className="btn btn-primary "
                           >
@@ -149,7 +149,14 @@ const EventIdeathon = () => {
                               <h3>Ideathon</h3>
 
                               <p>
-                              Ideathon is an event that encourages budding entrepreneurs and recognises the fast-growing start-up ecosystem in India. It provides participating teams with an open platform to pitch their ideas for a business venture or improvements in existing technology in any field. These will be evaluated by a panel of judges based on innovation, feasibility, impact, and pitch quality. Participants are encouraged to register and refine their next big idea and convincing skills!
+                              Ideathon empowers aspiring entrepreneurs and celebrates India's
+vibrant start-up culture. This platform invites teams to pitch
+innovative business ideas or technological improvements in any
+field. A panel of judges evaluates submissions based on creativity,
+feasibility, impact, and presentation. This is your chance to gain
+recognition, valuable feedback, and the momentum to turn your
+vision into reality!
+
 
                               </p>
 
@@ -176,7 +183,7 @@ const EventIdeathon = () => {
                               <ul>
                                 <li>
                                   {" "}
-                                  Max 3 (Team Participation event){" "}
+                                  Both Individual & Group participation(Max 3 people are allowed).{" "}
                                 </li>
                                 <li>
                                   {" "}
@@ -205,7 +212,7 @@ const EventIdeathon = () => {
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                22nd March 2024
+                                3rd March 2025
                                 </li>
                                 <br></br>
                                 <br></br>
@@ -213,7 +220,7 @@ const EventIdeathon = () => {
                                   <b>Final Event:</b>
                                 </li>
                                 <li>
-                                30th March 2024                                </li>
+                                22nd March 2025                                </li>
                               </ul>
                             </div>
                             </div>
@@ -231,7 +238,9 @@ const EventIdeathon = () => {
                               <h3>General Rules:-</h3>
 
                               <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
-                                <li>{""}The maximum number of participants in a Team is 3. Individual participation is also permitted.
+                                <li>{""}The maximum number of participants in a Team is 3. Individual
+participation is also permitted.
+
   {" "} </li>
                                 <li>{""}The best presenting team will be awarded.
   {" "} </li>
@@ -240,6 +249,8 @@ const EventIdeathon = () => {
                                 <li>{""}Any action that violates the stated rules will result in immediate disqualification of the team from the competition. {" "} </li>                                
                               </ul>
                             </div>
+
+
                               <div className="schedule-info">
                                 <br />
                               <h3>Rules for round 1:-</h3>
@@ -275,11 +286,7 @@ const EventIdeathon = () => {
                                 <li>{" "}Top 3 teams will receive cash prizes. Decisions made by the judges are final and binding. {" "} </li>    
 
 
-                                <li>{" "}  The presentation has to be completed in 7 to 10 minutes.{" "} </li>                                                       
-                                <li>{" "}  There would be penalties if the time exceeds the time limit as follows— <br />min: 10% of the presentation marks of the team <br />
-                 1-2 mins: 20% of the presentation marks of the team <br />
-                Greater than 2 mins: 100% of the presentation marks of the team
-{" "} </li>                                                       
+                                
 
                               </ul>
                             </div>
@@ -297,7 +304,7 @@ const EventIdeathon = () => {
                               <ul className="rules-list">
                                 <li> {""}Top 3 teams will be awarded based on the score by the judges.{""} </li>
                                 <li> {""} The teams will be judged on the following parameters:  <br />
-&nbsp;1. &nbsp; Idea<br />
+&nbsp;1. &nbsp; Idea/Innovation<br />
 &nbsp;2. &nbsp; Issue addressed and its proposed solution<br />
 &nbsp;3. &nbsp; Quality of the pitch <br />
 &nbsp;4. &nbsp; Impact
@@ -323,7 +330,7 @@ const EventIdeathon = () => {
                               <h3>Frequently Asked Questions</h3>
                               <ul className="accordion faqs">
                               <li>{" "}1 : &nbsp; What is the procedure of registration for the event?  {" "}</li>
-                                <li>{" "}-&nbsp;  Yes, as with all events, all the participants must first be registered through the COMPOSIT website, after which they will be provided with a participant ID.
+                                <li>{" "}-&nbsp;  All team members need to register through the COMPOSIT Website. Team leader will create Team from Website on Events page and other team members can join the team through provided team code by leader.
  {" "}</li><br /> <br />
         </ul>
                               <ul className="accordion faqs">
@@ -363,43 +370,41 @@ const EventIdeathon = () => {
                     {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
 
                     <ul className="accordion">
-                        <li className="accordion-item">
-                          <Link className="accordion-title" to="#">
-                            <div className="author"></div>
-
-                            <div className="schedule-info">
-
-                              <p>
-                                Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Subhrojyoti Mukherjee</b>
-                              </p>
-                              <p>
-                                Contact:{" "}
-                                <i className="icofont-phone-circle"></i>{" "}
-                                <b>9112230084</b>
-                              </p>
-                            </div>
-                          </Link>
-                        </li>
-                        <li className="accordion-item">
-                          <Link className="accordion-title" to="#">
-                            <div className="author"></div>
-
-                            <div className="schedule-info">
-
-                              <p>
-                                Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Mayuresh Lohani</b>
-                              </p>
-                              <p>
-                                Contact:{" "}
-                                <i className="icofont-phone-circle"></i>{" "}
-                                <b>8709471451</b>
-                              </p>
-                            </div>
-                          </Link>
-                        </li>
-                      </ul>
+                                                                                  <li className="accordion-item">
+                                                                                    <Link className="accordion-title" to="#">
+                                                                                      <div className="author"></div>
+                                                          
+                                                                                      <div className="schedule-info">
+                                                                                        <p>
+                                                                                          Name: <i className="icofont-user-suited"></i>{" "}
+                                                                                          <b>Suryansh Singh</b>
+                                                                                        </p>
+                                                                                        <p>
+                                                                                          Contact:{" "}
+                                                                                          <i className="icofont-phone-circle"></i>{" "}
+                                                                                          <b>9670006875</b>
+                                                                                        </p>
+                                                                                      </div>
+                                                                                    </Link>
+                                                                                  </li>
+                                                                                  <li className="accordion-item">
+                                                                                    <Link className="accordion-title" to="#">
+                                                                                      <div className="author"></div>
+                                                          
+                                                                                      <div className="schedule-info">
+                                                                                        <p>
+                                                                                          Name: <i className="icofont-user-suited"></i>{" "}
+                                                                                          <b>Aarya Joshi</b>
+                                                                                        </p>
+                                                                                        <p>
+                                                                                          Contact:{" "}
+                                                                                          <i className="icofont-phone-circle"></i>{" "}
+                                                                                          <b>7045020804</b>
+                                                                                        </p>
+                                                                                      </div>
+                                                                                    </Link>
+                                                                                  </li>
+                                                                                </ul>
                     </div>
                   </div>
                 </div>

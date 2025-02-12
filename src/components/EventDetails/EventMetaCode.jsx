@@ -17,39 +17,35 @@ const EventMetaCode = () => {
     evt.currentTarget.className += "current";
   };
 
-  const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
-
-  // console.log("user is : ".userData);
-
-  console.log(userData);
-
-  const [teamId, setTeamId] = useState(null);
-
-  function getEventDetails(events, eventName) {
-    const eventDetails = events.find((event) => event.eventName === eventName);
-    return eventDetails || false; // Returns event details if found, otherwise null
-  }
-
-  const eventNameToCheck = "MetaCode";
-  const events = userData.events;
-  const eventData = getEventDetails(events, eventNameToCheck);
-
-  console.log(eventData);
-
+  const userData = JSON.parse(localStorage.getItem("COMPOSITuser")) || {}; // Default to empty object
+ 
+   console.log("user is:", userData);
+   
+   const [teamId, setTeamId] = useState(null);
+   
+   function getEventDetails(events, eventName) {
+       if (!events) return null; // Safeguard against undefined/null events
+       return events.find(event => event.eventName === eventName) || null;
+   }
+   
+   const eventNameToCheck = "MetaCode";
+   const events = userData.events || []; // Default to empty array if events is null/undefined
+   const eventData = getEventDetails(events, eventNameToCheck);
+   
+   console.log(eventData);
   return (
     <div className="event-details-area ptb-120">
       <section className="event-area bg-image ptb-120">
         <div className="col-lg-3 col-sm-6 p-0" style={{ textAlign: "center" }}>
           <div className="single-events">
             <img
-              src={require("../../assets/images/MetaClix.jpg")}
+              src={require("../../assets/images/metacode.jpg")}
               alt="Speaker"
             />
 
             <div className="events-content">
-              <h2>Metaclix</h2>
-              <h3>Prize worth 6K</h3>
-              {/* <span>12000</span> */}
+              <h2>MetaCode</h2>
+              {/* <h3>Prize worth 6K</h3> */}
             </div>
           </div>
           <div className="col-lg-13">
@@ -73,19 +69,17 @@ const EventMetaCode = () => {
                   </p>
                 </div>
               )}
-
+{/* 
               {!eventData && (
                 <Link
                   to={{
                     pathname: "/createTeam/MetaCode",
-                    // state: { eventName: "Enigma" }
                   }}
                   className="btn btn-primary"
                 >
-                  {/* Submission Link */}
-                  Create Team
+                  Coming Soon
                 </Link>
-              )}
+              )} */}
 {/* 
               {!eventData && (
                 <Link to="/joinTeam/Metaclix" className="btn btn-primary">
@@ -93,13 +87,13 @@ const EventMetaCode = () => {
                 </Link>
               )} */}
 
-              <a
+              {/* <a
                 href="https://drive.google.com/file/d/1k5oe8KblKND9twCk0Tum-yTJMel5GQus/view?usp=sharing"
                 className="btn btn-secondary"
                 target="_blank"
               >
                 Rules & Regulations
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -131,8 +125,8 @@ const EventMetaCode = () => {
 
                 <div className="tab_content">
                   <div id="tab1" className="tabs_item">
-                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
-                    <ul className="accordion">
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                    {/* <ul className="accordion">
                       <li className="accordion-item">
                         <Link className="accordion-title" to="#">
                           <div className="schedule-info">
@@ -173,13 +167,17 @@ const EventMetaCode = () => {
                             </ul>
                             <br />
                           </div>
+
+
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
 
                   <div id="tab2" className="tabs_item">
-                    <ul className="accordion">
+                            <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+
+                    {/* <ul className="accordion">
                       <li className="accordion-item">
                         <Link className="accordion-title" to="#">
                           <div className="author"></div>
@@ -200,8 +198,6 @@ const EventMetaCode = () => {
                           <div className="author author-multi"></div>
 
                           <div className="schedule-info">
-                            {/* <h2>Rounds of the Event</h2> */}
-                            {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                             <div className="schedule-info">
                               <h3>Important Dates</h3>
 
@@ -227,7 +223,6 @@ const EventMetaCode = () => {
 
                           <div className="schedule-info">
                             <h2>Rules of the Event</h2>
-                            {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                             <div className="schedule-info">
                               <br />
                               <h3>General Rules:-</h3>
@@ -324,7 +319,6 @@ const EventMetaCode = () => {
 
                           <div className="schedule-info">
                             <h2>Judging Criteria</h2>
-                            {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                             <div className="schedule-info">
                               <ul className="rules-list">
                                 <li>
@@ -351,13 +345,13 @@ const EventMetaCode = () => {
                           </div>
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
 
                   <div id="tab3" className="tabs_item">
-                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
 
-                    <ul className="accordion">
+                    {/* <ul className="accordion">
                       <li className="accordion-item">
                         <Link className="accordion-title" to="#">
                           <div className="author"></div>
@@ -445,13 +439,13 @@ const EventMetaCode = () => {
                           </div>
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
 
                   <div id="tab4" className="tabs_item">
-                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
 
-                    <ul className="accordion">
+                    {/* <ul className="accordion">
                       <li className="accordion-item">
                         <Link className="accordion-title" to="#">
                           <div className="author"></div>
@@ -484,7 +478,9 @@ const EventMetaCode = () => {
                           </div>
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
+
+                    
                   </div>
                 </div>
               </div>

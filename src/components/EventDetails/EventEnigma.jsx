@@ -98,7 +98,7 @@ const EventEnigma = () => {
                 </Link>}
 
                 <a
-                  href="https://drive.google.com/file/d/1azn1d0qknPTXObOCS0XQqi3wIphAN-Hd/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1TXM9pjwOrrMzaIlI_V4mEZ6xRQ_cFQAs/view?usp=drive_link"
                   target="_blank"
                   className="btn btn-primary"
                 >
@@ -415,12 +415,7 @@ during the quiz.
                                 </li>
                                 <li>
                                   {" "}
-                                  -&nbsp; Yes, as with all events, all the
-                                  participants must first be registered through
-                                  the COMPOSIT website, after which they will be
-                                  provided with a participant ID. For the final
-                                  round of registration, the team leader has to
-                                  enter the participant IDs in the Unstop portal{" "}
+                                  -&nbsp;Yes, all team members need to register through the COMPOSIT Website. Team leader will create Team from Website on Events page and other team members can join the team through provided team code by leader.{" "}
                                 </li>
                               </ul>
                               <ul className="accordion faqs">
@@ -441,7 +436,7 @@ during the quiz.
                                 </li>
                                 <li>
                                   {" "}
-                                  -&nbsp; No, registration is completely free on Unstop.
+                                  -&nbsp; No, registration is completely free.
                                   {" "}
                                 </li>
                               </ul>
@@ -491,7 +486,7 @@ quiz will be declared the winner.
                                 </li>
                                 <li>
                                   {" "}
-                                  -&nbsp; No, only the winners will receive a Winner certificate. {" "}
+                                  -&nbsp; No, only the winners will receive a Winner certificate and Participant qualified for round 2 will recive Participation Certificate. {" "}
                                 </li>
                               </ul>
                               <ul className="accordion faqs">

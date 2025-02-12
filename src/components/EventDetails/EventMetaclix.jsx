@@ -46,8 +46,7 @@ const EventMetaclix = () => {
 
             <div className="events-content">
               <h2>Metaclix</h2>
-              <h3>Prize worth 6K</h3>
-              {/* <span>12000</span> */}
+              <h3>Prize worth 5K</h3>
             </div>
           </div>
           <div className="col-lg-13">
@@ -92,7 +91,7 @@ const EventMetaclix = () => {
               )} */}
 
               <a
-                href="https://drive.google.com/file/d/1k5oe8KblKND9twCk0Tum-yTJMel5GQus/view?usp=sharing"
+                href="https://drive.google.com/file/d/1V-lqDAU-cvN2AIFYlWYiHQMplF8jpqsB/view?usp=drive_link"
                 className="btn btn-secondary"
                 target="_blank"
               >
@@ -137,10 +136,12 @@ const EventMetaclix = () => {
                             <h3>Metaclix</h3>
 
                             <p>
-                              A photography contest that challenges participants
-                              to capture stunning images based on theme at the
-                              intersection of materials and sustainabilty. In
-                              this individual event, participants will be
+                            Metaclix, a photography contest, is a fantastic platform to combine your
+artistic vision with technical expertise, bringing the beauty and
+significance of materials into focus. With exciting prizes up for grabs, it's
+your chance to let your lens tell a story that inspires change and
+highlights the critical role of materials in everyday life. Capture, create,
+and compete!. In this individual event, participants will be
                               required to click and upload pictures that fall
                               under the following categories:{" "}
                             </p>
@@ -150,8 +151,7 @@ const EventMetaclix = () => {
                                 1.&nbsp;
                                 <b>
                                   {" "}
-                                  METALS AND MATERIALS IN EVERYDAY LIFE AND
-                                  NATURE{" "}
+                                  Metals and Materials in Everyday Life and Nature{" "}
                                 </b>
                               </li>
                               <br /> <br />
@@ -166,7 +166,7 @@ const EventMetaclix = () => {
                               <br />
                               <br />
                               <li>
-                                3.&nbsp; <b> SUSTAINABILITY </b>
+                                3.&nbsp; <b> Photos from Energy Sector </b>
                               </li>
                             </ul>
                             <br />
@@ -207,7 +207,7 @@ const EventMetaclix = () => {
                                 <li>
                                   <b>Submission Deadline:</b>
                                 </li>
-                                <li>30th March 2024</li>
+                                <li>21st March 2025</li>
                                 <br></br>
                                 <br></br>
                                 <li>
@@ -238,19 +238,16 @@ const EventMetaclix = () => {
                                 }}
                               >
                                 <li>
-                                  {""}This event is for individual
-                                  participation. No group participation is
+                                  {""}This event is for individual participation. No group participation is
                                   allowed.{" "}
                                 </li>
                                 <li>
-                                  {""}Although entries may be submitted for
-                                  multiple themes, only one entry can be for
-                                  each theme.{" "}
+                                  {""}Although entries may be submitted for multiple themes, only one entry
+                                  can be submitted for each theme.{" "}
                                 </li>
                                 <li>
-                                  {""}Participants are required to submit only
-                                  one photo and caption per theme through
-                                  Unstop.{" "}
+                                  {""}Participants are required to submit only one photo and caption per
+                                  theme through the Google form.{" "}
                                 </li>
                                 <li>
                                   {""} The best submission from each category
@@ -302,12 +299,6 @@ const EventMetaclix = () => {
                                 </li>
                                 <li>
                                   {" "}
-                                  Any malpractice during the event and
-                                  submissions will be penalised as judged by
-                                  COMPOSIT.{" "}
-                                </li>
-                                <li>
-                                  {" "}
                                   Any instances of plagiarism may result in
                                   disqualification.{" "}
                                 </li>
@@ -335,7 +326,7 @@ const EventMetaclix = () => {
                                   &nbsp;3. &nbsp; Creativity and originality
                                   <br />
                                   &nbsp;4. &nbsp; Technical Quality <br />
-                                  &nbsp;5. &nbsp; Technical Quality
+                                  &nbsp;5. &nbsp; Caption
                                   {""}{" "}
                                 </li>
                                 <br />
@@ -373,11 +364,8 @@ const EventMetaclix = () => {
                                 {" "}
                                 -&nbsp; As with all events, all the participants
                                 must first be registered through the COMPOSIT
-                                website, after which they will be provided with
-                                a participant ID. After registration, the final
-                                submission must be done through Unstop.{" "}
+                                website.{" "}
                               </li>
-                              <br /> <br />
                             </ul>
                             <ul className="accordion faqs">
                               <li>
@@ -391,7 +379,6 @@ const EventMetaclix = () => {
                                 in JPEG format, and the caption should be
                                 submitted through Unstop.{" "}
                               </li>{" "}
-                              <br /> <br />
                             </ul>
                             <ul className="accordion faqs">
                               <li>
@@ -399,14 +386,12 @@ const EventMetaclix = () => {
                                 3 : &nbsp; What is the total number of
                                 submissions that can be made?{" "}
                               </li>{" "}
-                              <br />
                               <li>
                                 {" "}
                                 -&nbsp; Participants may submit entries for
                                 multiple themes, but only one entry can be
                                 submitted per theme.{" "}
                               </li>{" "}
-                              <br /> <br /> <br />
                             </ul>
                             <ul className="accordion faqs">
                               <li>
@@ -414,7 +399,6 @@ const EventMetaclix = () => {
                                 4 : &nbsp; What can be the caption for the entry
                                 that should be submitted?{" "}
                               </li>
-                              <br />
                               <li>
                                 {" "}
                                 -&nbsp; Caption can be any creative title of the
@@ -423,22 +407,18 @@ const EventMetaclix = () => {
                                 could be a artistic or even humorous perspective
                                 of the same image.{" "}
                               </li>{" "}
-                              <br /> <br />
                             </ul>
                             <ul className="accordion faqs">
                               <li>
                                 {" "}
-                                5 : &nbsp; What do I need to cover in the final
-                                presentation?{" "}
+                                5 : &nbsp; Can we edit the image?{" "}
                               </li>{" "}
-                              <br />
                               <li>
                                 {" "}
                                 -&nbsp; Only Global editing is permitted.
                                 Submissions with Modifications or alterations in
                                 image will be disqualified.{" "}
                               </li>
-                              <br /> <br />
                             </ul>
                           </div>
                         </Link>
@@ -449,40 +429,42 @@ const EventMetaclix = () => {
                   <div id="tab4" className="tabs_item">
                     {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
 
-                    <ul className="accordion">
-                      <li className="accordion-item">
-                        <Link className="accordion-title" to="#">
-                          <div className="author"></div>
-
-                          <div className="schedule-info">
-                            <p>
-                              Name: <i className="icofont-user-suited"></i>{" "}
-                              <b>Subhrojyoti Mukherjee</b>
-                            </p>
-                            <p>
-                              Contact: <i className="icofont-phone-circle"></i>{" "}
-                              <b>9112230084</b>
-                            </p>
-                          </div>
-                        </Link>
-                      </li>
-                      <li className="accordion-item">
-                        <Link className="accordion-title" to="#">
-                          <div className="author"></div>
-
-                          <div className="schedule-info">
-                            <p>
-                              Name: <i className="icofont-user-suited"></i>{" "}
-                              <b>Mayuresh Lohani</b>
-                            </p>
-                            <p>
-                              Contact: <i className="icofont-phone-circle"></i>{" "}
-                              <b>8709471451</b>
-                            </p>
-                          </div>
-                        </Link>
-                      </li>
-                    </ul>
+                         <ul className="accordion">
+                                           <li className="accordion-item">
+                                             <Link className="accordion-title" to="#">
+                                               <div className="author"></div>
+                   
+                                               <div className="schedule-info">
+                                                 <p>
+                                                   Name: <i className="icofont-user-suited"></i>{" "}
+                                                   <b>Suryansh Singh</b>
+                                                 </p>
+                                                 <p>
+                                                   Contact:{" "}
+                                                   <i className="icofont-phone-circle"></i>{" "}
+                                                   <b>9670006875</b>
+                                                 </p>
+                                               </div>
+                                             </Link>
+                                           </li>
+                                           <li className="accordion-item">
+                                             <Link className="accordion-title" to="#">
+                                               <div className="author"></div>
+                   
+                                               <div className="schedule-info">
+                                                 <p>
+                                                   Name: <i className="icofont-user-suited"></i>{" "}
+                                                   <b>Aarya Joshi</b>
+                                                 </p>
+                                                 <p>
+                                                   Contact:{" "}
+                                                   <i className="icofont-phone-circle"></i>{" "}
+                                                   <b>7045020804</b>
+                                                 </p>
+                                               </div>
+                                             </Link>
+                                           </li>
+                                         </ul>
                   </div>
                 </div>
               </div>

@@ -5299,6 +5299,9 @@ Back To Top CSS
   margin-top: .1rem !important;
   margin-left: 20px  !important;
 }
+.subrules b{
+  color: black !important;
+}
 .subrules li::before{
   content: "-" !important; /* Unicode character for bullet point */
   margin-right: 0.5em; /* Adjust spacing */

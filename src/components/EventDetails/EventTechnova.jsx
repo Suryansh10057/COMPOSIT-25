@@ -22,11 +22,11 @@ const  EventTechnova = () => {
   const faqs = [
     {
       question: "What is the procedure for the registration of the event? Do all members have to be registered?",
-      answer: "Yes, all team members need to register through the COMPOSIT Website after which they will receive a participant ID. Participants will then need to enter their participant ID on the Unstop portal to complete the registration process.",
+      answer: "Yes, all team members need to register through the COMPOSIT Website. Team leader will create Team from Website on Events page and other team members can join the team through provided team code by leader.",
     },
     {
       question: "Is there a registration fee?",
-      answer: "No, registration is completely free on Unstop.",
+      answer: "No, registration is completely free.",
     },
     {
       question: "Can a team comprise participants from different departments or institutions?",
@@ -122,7 +122,7 @@ const  EventTechnova = () => {
                               </Link>}
               
                 <a
-                  href="https://drive.google.com/file/d/1sT-yjr8HX6IuKY19iIdUOhzQjde-H36G/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1ehhfk_MHEBSFVSxKmREPFy3oHaUU5Smn/view?usp=drive_link"
                   target="_blank"
                   className="btn btn-secondary"
                 >
@@ -185,7 +185,7 @@ const  EventTechnova = () => {
                                 <li>Thermoelectric Materials for Waste Heat Recovery</li>
                                 <li>Piezoelectric and Triboelectric Energy Harvesting</li>
                               </ul>
-                              <b>Theme 4 : : Nuclear Energy Materials</b>
+                              <b>Theme 4 : Nuclear Energy Materials</b>
 
                               <ul className="rules-list">
                                 <li> Radiation-resistant Materials</li>
@@ -377,46 +377,44 @@ time limit will be penalized as follows:
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
 
-                    {/* <ul className="accordion">
-                        <li className="accordion-item">
-                          <Link className="accordion-title" to="#">
-                            <div className="author"></div>
-
-                            <div className="schedule-info">
-
-                              <p>
-                                Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Subhrojyoti Mukherjee</b>
-                              </p>
-                              <p>
-                                Contact:{" "}
-                                <i className="icofont-phone-circle"></i>{" "}
-                                <b>9112230084</b>
-                              </p>
-                            </div>
-                          </Link>
-                        </li>
-                        <li className="accordion-item">
-                          <Link className="accordion-title" to="#">
-                            <div className="author"></div>
-
-                            <div className="schedule-info">
-
-                              <p>
-                                Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Mayuresh Lohani</b>
-                              </p>
-                              <p>
-                                Contact:{" "}
-                                <i className="icofont-phone-circle"></i>{" "}
-                                <b>8709471451</b>
-                              </p>
-                            </div>
-                          </Link>
-                        </li>
-                      </ul> */}
+                             <ul className="accordion">
+                                          <li className="accordion-item">
+                                            <Link className="accordion-title" to="#">
+                                              <div className="author"></div>
+                  
+                                              <div className="schedule-info">
+                                                <p>
+                                                  Name: <i className="icofont-user-suited"></i>{" "}
+                                                  <b>Suryansh Singh</b>
+                                                </p>
+                                                <p>
+                                                  Contact:{" "}
+                                                  <i className="icofont-phone-circle"></i>{" "}
+                                                  <b>9670006875</b>
+                                                </p>
+                                              </div>
+                                            </Link>
+                                          </li>
+                                          <li className="accordion-item">
+                                            <Link className="accordion-title" to="#">
+                                              <div className="author"></div>
+                  
+                                              <div className="schedule-info">
+                                                <p>
+                                                  Name: <i className="icofont-user-suited"></i>{" "}
+                                                  <b>Aarya Joshi</b>
+                                                </p>
+                                                <p>
+                                                  Contact:{" "}
+                                                  <i className="icofont-phone-circle"></i>{" "}
+                                                  <b>7045020804</b>
+                                                </p>
+                                              </div>
+                                            </Link>
+                                          </li>
+                                        </ul>
                     </div>
                   </div>
                 </div>
