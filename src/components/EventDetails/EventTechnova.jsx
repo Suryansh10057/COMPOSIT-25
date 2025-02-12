@@ -111,7 +111,10 @@ const  EventTechnova = () => {
               
                               { !eventData &&   
                               <Link
-                                to="/joinTeam/Technova"
+                              to={{
+                                pathname: "/joinTeam/Technova",
+                                // state: { eventName: "Enigma" }
+                              }}  
                                 className="btn btn-primary"
                               >
                                 {/* Submission Link */}
@@ -356,7 +359,7 @@ time limit will be penalized as follows:
       <h3>Frequently Asked Questions</h3>
         {faqs.map((faq, index) => (
     <ul className="accordion faqs">
-    <li>
+    <li >
       {" "}
       {index + 1} : &nbsp; {faq.question}{" "}
     </li>

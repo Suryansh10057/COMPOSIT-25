@@ -3773,6 +3773,7 @@ Signup CSS
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100% ;
 }
 
 .signup-area::before {
@@ -3785,6 +3786,7 @@ Signup CSS
   height: 100%;
   background: #3727a67a;
   opacity: .77;
+
 }
 
 .signup-area .signup-form {

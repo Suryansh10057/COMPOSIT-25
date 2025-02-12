@@ -77,13 +77,12 @@ console.log(signupData)
         }
     };
 
-    // const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
-    // const userData = Data.user.userData
-    console.log(userData._id)
+
+    // console.log(userData._id)
     
     return (
         <>
-        <section className="signup-area">
+        <section className="signup-area" style={{height:"100vh"}}>
             <div className="d-table mt-9">
                 <div className="d-table-cell">
                     <div className="signup-form" >

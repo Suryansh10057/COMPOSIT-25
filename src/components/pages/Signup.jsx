@@ -219,12 +219,12 @@ console.log(signupData)
                 </div>
             </div>
 
-            <div className="loginPopup" id='loginPopup'>
+            {/* <div className="loginPopup" id='loginPopup'>
                 <div className="formPopup" id="popupForm">
                     <p className='popupMsg'>{error}</p>
                     <Link to="/login" className='popupLink'>Login now to register for event</Link>
                 </div>
-            </div>
+            </div> */}
         </section>
         </>
 

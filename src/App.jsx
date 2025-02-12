@@ -26,15 +26,15 @@ const App = () => {
 
 
     const handleEnterClick = () => {
-      setPhase("video"); // Switch to video phase
-      if (videoRef.current ) {
-          videoRef.current.play(); 
-       
-      }
-  };
-
-
-
+        if (window.innerWidth < 500) {
+            setPhase("content"); // Skip video for small screens
+        } else {
+            setPhase("video"); // Play video for larger screens
+            if (videoRef.current) {
+                videoRef.current.play();
+            }
+        }
+    };
 
     const handleVideoEnd = () => {
       setPhase("content"); // Switch to main app content after video ends

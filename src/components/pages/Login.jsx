@@ -80,8 +80,8 @@ const Login = () => {
               <button type="submit" id="submitbtn" className="btn-modal btn-primary">
                 Login
               </button>
-              {success && <p className="popupLink center">{success}</p>}
-              {errorr && <p className="error center">{errorr}</p>}
+              {/* {success && <p className="popupLink center">{success}</p>}
+              {errorr && <p className="error center">{errorr}</p>} */}
 
               <p>
                 <Link to="/signup" className="pull-left">

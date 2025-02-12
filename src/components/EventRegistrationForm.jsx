@@ -71,8 +71,8 @@ console.log("My Event Nmae is : ",eventName)
             const updatedUser = result.userData;
             console.log(updatedUser)
             if (!response.ok) {
-                throw new Error(result.message || 'Team Creation failed');
                 submit.innerText = 'Team Creation failed';
+                throw new Error(result.message || 'Team Creation failed');
             }
 
             setError(result.message);
@@ -96,11 +96,11 @@ console.log("My Event Nmae is : ",eventName)
 
     return (
         <>
-        <section className="signup-area">
+        <section className="signup-area" style={{height:"100vh"}}>
             <div className="d-table mt-9">
                 <div className="d-table-cell">
                     <div className="signup-form" >
-                        <Link to='/events' className="btn-modal btn-primary">&#xab; Back to Events</Link>
+                        <Link to={`/events`} className="btn-modal btn-primary">&#xab; Back to Events</Link>
                         <h3>Create new Team in {eventName} </h3>
 
                         <form>

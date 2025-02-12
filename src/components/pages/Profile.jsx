@@ -12,7 +12,7 @@ export default function Profile() {
     return (
         <>
         <Navigation/>
-        <section className="signup-area">
+        <section className="signup-area" style={{height:"100%"}}>
         <div className="signup-form">
         <Link to='/' className="btn-modal btn-primary">&#xab; Back to Home</Link>
         <h3>Profile Information</h3>
