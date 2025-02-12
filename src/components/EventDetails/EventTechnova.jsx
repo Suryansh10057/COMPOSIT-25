@@ -19,6 +19,33 @@ const  EventTechnova = () => {
     evt.currentTarget.className += "current";
   };
 
+  const faqs = [
+    {
+      question: "What is the procedure for the registration of the event? Do all members have to be registered?",
+      answer: "Yes, all team members need to register through the COMPOSIT Website after which they will receive a participant ID. Participants will then need to enter their participant ID on the Unstop portal to complete the registration process.",
+    },
+    {
+      question: "Is there a registration fee?",
+      answer: "No, registration is completely free on Unstop.",
+    },
+    {
+      question: "Can a team comprise participants from different departments or institutions?",
+      answer: "Yes.",
+    },
+    {
+      question: "Do I need to bring my laptop with me?",
+      answer: "Yes, you need to bring your own laptop. Make sure you have a working HDMI port or a connector with you.",
+    },
+    {
+      question: "What is the format of the abstract to be submitted in the first round?",
+      answer: "The abstract should be a short summary of the research paper or technical paper. This should highlight the objective, methodology, and key findings or insights of your work, all in a PDF with a maximum of 1000 words. Participants need to bring their own laptop with a proper HDMI connection for the presentation. Evaluation will be done based on both round performance by the team. In case of any disputes, the final decision rests with the organizers.",
+    },
+    {
+      question: "Is there a slide limit for the presentation?",
+      answer: "No. Any number of slides may be used as long as the overall presentation is kept within the time limit.",
+    },
+  ];
+ 
 
      const userData = JSON.parse(localStorage.getItem("COMPOSITuser")) || {}; // Default to empty object
    
@@ -53,7 +80,7 @@ const  EventTechnova = () => {
 
               <div className="events-content">
                 <h2>Technova</h2>
-                <h3>Prize worth 20K</h3>
+                {/* <h3>Prize worth 20K</h3> */}
                 {/* <span>12000</span> */}
               </div>
             </div>
@@ -137,23 +164,39 @@ const  EventTechnova = () => {
 
                               <p>
                               This event involves presentation of a technical paper (based on existing literature, on a specific topic) or any scientific work (original) in one of the following themes: <br />
-                              <b>Theme A :</b>
+                              <b className="mt-3"> Theme 1 : Renewable Energy Materials</b>
                               <ul className="rules-list">
-                                <li>Electronic Materials and Nanotechnology </li> <br />
-                                <li>{""} Computational Material Science{""}</li> <br />
-                                <li>Microelectromechanical Systems (MEMS)</li><br />
+                                <li>Materials for Solar Energy Conversion (e.g., Photovoltaics)</li> 
+                                <li>{""} Advanced Wind Turbine Materials{""}</li> 
+                                <li>Materials for Hydrogen Production and Storage</li>
                               </ul> 
-                              <b>Theme B :</b>
+                              <b>Theme 2 : Energy Storage Technologies</b>
                               <ul className="rules-list">
-                                <li>Advanced and Functional Materials</li><br />
-                                <li>Biomaterials</li><br />
-                                <li>Energy Materials</li><br />
+                                <li>Lithium-ion and Sodium-ion Batteries</li>
+                                <li>Supercapacitors and Ultracapacitors</li>
+                                <li>Solid-State Batteries</li>
                               </ul>
-                              <b>Theme C :</b>
+                              <b>Theme 3 : Emerging Energy Materials</b>
                               <ul className="rules-list">
-                                <li>Material Processes</li><br />
-                                <li>Physical, Extractive Metallurgy and Mechanical Metallurgy</li>
-                              </ul><br />
+                                <li>Perovskite Materials for Energy Applications</li>
+                                <li>Thermoelectric Materials for Waste Heat Recovery</li>
+                                <li>Piezoelectric and Triboelectric Energy Harvesting</li>
+                              </ul>
+                              <b>Theme 4 : : Nuclear Energy Materials</b>
+
+                              <ul className="rules-list">
+                                <li> Radiation-resistant Materials</li>
+                                <li> Materials for Nuclear Fuel Cycles</li>
+                                <li>Fusion Reactor Materials </li>
+                              </ul> 
+                              <b>Theme 5 : Carbon-neutral Energy Solutions </b>
+
+                              <ul className="rules-list">
+                                <li>Catalysts for CO2 Capture and Conversion </li>
+                                <li>Bio-based Energy Materials </li>
+                                <li>Materials for Fuel Cells and Electrochemical Devices </li>
+                              </ul> 
+                              <br />
 
                               </p>
 
@@ -206,15 +249,14 @@ Bachelors/Masters/PHD in any science and engineering college
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                28th March 2024
-                                </li>
+                                3rd March , 2025                                </li>
                                 <br></br>
                                 <br></br>
                                 <li>
                                   <b>Final Event:</b>
                                 </li>
                                 <li>
-                                31st March 2024
+                                23rd March 2025
                              </li>
                               </ul>
                             </div>
@@ -226,64 +268,37 @@ Bachelors/Masters/PHD in any science and engineering college
                             <div className="author author-multi"></div>
 
                             <div className="schedule-info">
-                              <h2>Rules of the Event</h2>
+                              <h2>Rounds</h2>
                               {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                               <div className="schedule-info">
                                 <br />
-                              <h3>General Rules:-</h3>
+                              <h3>Abstract submission:-</h3>
 
                               <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
-                                <li>{""}The maximum number of participants in a Team is 3. Individual participation is also permitted.
+                                <li>{""}Participants must submit an abstract (maximum
+1000 words) of their paper, highlighting the objective, methodology, and
+key findings or insights at Unstop. Shortlisted teams will be notified of the
+final presentation.
+
   {" "} </li>
-                                <li>{""}Teams must submit only in one of the mentioned categories
-  {" "} </li>
-                                <li>{""}The best presenter from each category will be awarded.{" "} </li>                                
-                                <li>{""}Participants must present either their original paper OR a technical paper on any topic they choose (within the given themes) referring to existing work.{" "} </li>                                
-                                                                
+                              
                               </ul>
                             </div>
                               <div className="schedule-info">
                                 <br />
-                              <h3>Rules for round 1:-</h3>
+                              <h3>Technical Conference:-</h3>
 
                               <ul className="" style={{listStyleType:'circle !important',color:'red',textAlign:'left'}}>
-                                <li>{" "}For this round, participants must submit the abstract of their paper through the submission form before the deadline in the appropriate category.
-The abstract must be at most 1000 words. {" "}</li>     
+                                <li>{" "}Qualified teams will present their paper in front of
+a panel of judges at the IIT Kharagpur campus. Presentations must be
+completed within 10 minutes, followed by a 5-minute Q&A session with
+the judges. {" "}</li>     
 
 
-                                <li>{" "}1.&nbsp; <b>Category A:</b> <br /> Competitors are supposed to submit original research work that falls within the scope of the themes. All submissions will be thoroughly peer-reviewed by experts based on originality, significance, and clarity. Citations and references must be mentioned properly where suitable.{" "}</li>             
-
-                                <li>{" "}2.&nbsp; <b> Category B:</b><br /> Participation may also be done through a well-researched technical paper or report or presentation on the given theme that is written by them. Proper citations and references to all papers used, must be mentioned. {" "}</li>                                
-                                <li>{" "} <b>In the case of category A:</b> <br />
-Authors are requested to kindly restrict plagiarism in any form. Authors should submit their original and unpublished research work not under consideration for publication elsewhere. Papers found to be plagiarized during any stage of review shall be rejected. {" "}</li>                                
-                                                                                         
+                               
                               </ul>
                             </div>
-                              <div className="schedule-info">
-                                <br />
-                              <h3>Rules for round 2:-</h3>
-
-                              <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
-                                <li>{" "} This round will be conducted in the form of a ‘classical technical conference’ at the IIT Kharagpur campus. {" "} <br /> </li>  
-
-
-                                <li>{" "} Participants must prepare presentation slides that should not exceed a time limit of 10 minutes, followed by 5 minutes of the Q&A session. Teams exceeding the time limit will be penalized.{" "} </li>  
-
-                                
-
-
-
-                                <li>{" "}Evaluation will be based on both round performances by the team {" "} </li>    
-
-
-                                <li>{" "}  The presentation has to be completed in 7 to 10 minutes.{" "} </li>                                                       
-                                <li>{" "}  For Category A, the two best original papers will be awarded.
-{" "} </li>                                                       
-                                <li>{" "} For Category B, the best presentation from each Theme A, B and C will be awarded cash prizes.
-{" "} </li>                                                       
-
-                              </ul>
-                            </div>
+                          
                             </div>
                           </Link>
                         </li>
@@ -292,16 +307,35 @@ Authors are requested to kindly restrict plagiarism in any form. Authors should 
                             <div className="author author-multi"></div>
 
                             <div className="schedule-info">
-                              <h2>Judging Criteria</h2>
+                              <h2>Rules :-</h2>
                               {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                               <div className="schedule-info">
                               <ul className="rules-list">
-                                <li> {""} A standard panel will judge all categories based on presentation skills, innovative ideas, difficulty and understanding of the presented work.{""} </li>
-                                <li> {""} Best two original works will be awarded for Category A
+                                <li> {""} Each team can have a maximum of three members. Individual
+                                participation is allowed{""} </li>
+                                <li> {""} Every participant must carry their own ID proof.
 
 {""} </li> 
-<li>{""}	For Category B, the best presenter of each theme will be awarded.{""} </li>
-<li>{""}	The judges’ decision is final on all matters.{""} </li>
+<li>{""}	Team must submit abstract only in one mentioned theme.
+{""} </li>
+<li>{""}Having a publication currently is not required, but it must be a proper
+draft.
+{""} </li>
+<li>Participants will be disqualified if any type of plagiarism is detected.
+</li>
+<li>Participants need to bring their own laptop with a proper HDMI
+connection for the presentation.</li>
+<li>Evaluation will be done based on both round performance by the team.</li>
+<li>In case of any disputes, the final decision rests with the organizers.</li>
+<li>There’s a time limit for presentation in round 2. Teams exceeding the
+time limit will be penalized as follows:
+<ul className=" subrules">
+  
+<li><b>0-1 min :</b>10% of the presentation marks of the team.</li>
+<li><b>1-2 min</b> 20% of the presentation marks of the team.</li>
+<li><b> more than 2 min :</b> 50% of the presentation marks of the team.</li>
+</ul>
+</li>
                               </ul>
                             </div>
                             </div>
@@ -319,51 +353,30 @@ Authors are requested to kindly restrict plagiarism in any form. Authors should 
                             <div className="author"></div>
 
                             <div className="schedule-info">
-                              <h3>Frequently Asked Questions</h3>
-                              <ul className="accordion faqs">
-                              <li>{" "}1 : &nbsp; What is the procedure of registration for the event? Do all the members have to be registered?  {" "}</li>
-                                <li>{" "}-&nbsp;   Yes, as with all events, all the participants must first be registered through the COMPOSIT website, after which they will be provided with a participant ID.
- {" "}</li><br /> <br />
-        </ul>
-                              <ul className="accordion faqs">
-                              <li>{" "} 2 : &nbsp; How is Category A different from category B?
-{" "}</li>
-                                <li>{" "}-&nbsp;  In category A , we look forward to seeing submission of original scientific work of the participant. In Category B, we encourage participants to prepare an analysis report based on literature review of the topic of their choice and present their understanding in front of the panel of judges. Both categories will be adjudged accordingly with appropriate weightage to original work in Category A and presentation skills in Category B.
-{" "}</li> <br /> <br />
-        </ul>
-                              <ul className="accordion faqs">
-                              <li>{" "}3 : &nbsp; What is the format of the abstract to be submitted in the first round?
-{" "}</li> <br />
-
-                                <li>{" "}-&nbsp;  The abstract, like those for every scientific paper, should be a short summary of the research paper (Category A) or technical paper/ report (Category B) submitted by the team. It should begin with a brief on the issue addressed or the aim of the work, the research method and findings, touching upon key elements. {" "}</li> <br /> <br /> <br />
-
-        </ul>
-                              <ul className="accordion faqs">
-                              <li>{" "}4 : &nbsp; What does 'technical paper' imply for Category B submissions?
- {" "}</li><br />
-                                <li>{" "}-&nbsp;  A technical paper for a chosen topic/ issue analyses existing work in the area (similar to a 'term paper') and comprises a brief literature review and analysis on a specific domain. It should follow the same format as a scientific paper.
-
- {" "}</li> <br /> <br />
-        </ul>
-                              <ul className="accordion faqs">
-                              <li>{" "}5 : &nbsp; Is there a slide limit for the presentation?
- {" "}</li> <br />
-                                <li>{" "}-&nbsp;  No. Any number of slides may be used as long as the overall presentation is kept within the time limit.
-
- {" "}</li><br /> <br />
-        </ul>
-                             
-                              
-                            </div>
+      <h3>Frequently Asked Questions</h3>
+        {faqs.map((faq, index) => (
+    <ul className="accordion faqs">
+    <li>
+      {" "}
+      {index + 1} : &nbsp; {faq.question}{" "}
+    </li>
+    <li>
+      {" "}
+      -&nbsp; {faq.answer}
+{" "}
+    </li>
+  </ul>
+        ))}
+    </div>
                           </Link>
                         </li>
                       </ul>
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
 
-                    <ul className="accordion">
+                    {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -400,7 +413,7 @@ Authors are requested to kindly restrict plagiarism in any form. Authors should 
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
                   </div>
                 </div>

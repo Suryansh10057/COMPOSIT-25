@@ -8,7 +8,8 @@ import './assets/css/responsive.css';
 import React, { useState, useEffect, useRef } from 'react';
 import AppRouter from './Routes';
 import Preloader from './components/Shared/Preloader';
-
+import Orb from './components/Animations/Particle';
+import ParticlesBackground from './components/Animations/WebBackground';
 const App = () => {
     const [phase, setPhase] = useState("enter"); // "enter", "video", "content"
     const videoRef = useRef(null);
@@ -21,15 +22,14 @@ const App = () => {
             return new Promise((resolve) => setTimeout(() => resolve(), 2000));
         };
         demoAsyncCall().then(() => setLoading(false));
-    }, []); // Empty dependency array ensures the effect runs only once when the component mounts.
+    }, []); 
 
 
     const handleEnterClick = () => {
       setPhase("video"); // Switch to video phase
       if (videoRef.current ) {
-          videoRef.current.play(); // Play video
-        //   audioRef.current.volume = 1.0; // Play audio
-        //   audioRef.current.play(); // Play audio
+          videoRef.current.play(); 
+       
       }
   };
 
@@ -38,26 +38,28 @@ const App = () => {
 
     const handleVideoEnd = () => {
       setPhase("content"); // Switch to main app content after video ends
-    //   if (audioRef.current) {
-    //       audioRef.current.pause(); // Stop background music
-    //       audioRef.current.currentTime = 0; // Reset music
-    //   }
+    
   };
     const handleSkipClick = () => {
       setPhase("content"); // Skip video and switch to main app content
-    //   if (audioRef.current) {
-    //       audioRef.current.pause(); // Stop background music
-    //       audioRef.current.currentTime = 0; // Reset music
-    //   }
+    //
   };
 
 
     return (
         <>
             {phase === "enter" && (
-                <div className='enterbg'>
-
-                <button
+               
+                <>
+                <div style={{ width: '100%', height: '100vh', position: 'relative', backgroundColor: 'black', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    {/* <ParticlesBackground /> */}
+                    <Orb
+                        hoverIntensity={0.5}
+                        rotateOnHover={true}
+                        hue={0.6}
+                        forceHoverState={true}
+                    />
+                     <p
                     onClick={handleEnterClick}
                     style={{
                         padding: "10px 20px",
@@ -70,8 +72,9 @@ const App = () => {
                     className='enter-btn'
                     >
                     Enter
-                </button>
-                </div>
+                </p>
+</div>
+</>
             )}
 
             {phase === "video" && (
@@ -90,13 +93,7 @@ const App = () => {
                         }}
                         autoPlay
                     />
-                     {/* <audio
-                        ref={audioRef}
-                        src="/blast.mp3" // Replace with your music file path
-                        loop // Loop the music if needed
-                        autoPlay
-                        controls={false} 
-                    /> */}
+
                     <button
                         onClick={handleSkipClick}
                         style={{

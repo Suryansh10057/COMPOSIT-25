@@ -104,20 +104,13 @@ body {
 }
 
 .enter-btn{
-margin-left: 10px;
-background: rgba(194, 189, 189, 0.589);
 border: 0px solid transparent;
-border-radius: 50%;
-aspect-ratio: 1;
-width: 100px;
+background-color: transparent;
+color: white;
+transform: translateX(-50%);
 font-size: 20px;
 font-weight: 700;
 transition: all .1s;
-box-shadow: 0 0 0 20px rgba(194, 189, 189, 0.589);
-}
-.enter-btn:hover{
-  background: white;
-  box-shadow: 0 0 0 20px white;
 
 }
 
@@ -5289,13 +5282,25 @@ Back To Top CSS
   list-style-type: circle !important;
   display: flex;
   flex-direction: column;
-  margin-top: 1rem !important;
-  gap: .8rem;
+  margin-top: .1rem !important;
+  gap: .2rem;
 
   text-align: left;
   /* & li{
     margin-bottom: 1rem;
   } */
+}
+.subrules{
+  list-style-type: disc !important;
+  display: flex;
+  flex-direction: column;
+  margin-top: .1rem !important;
+  margin-left: 20px  !important;
+}
+.subrules li::before{
+  content: "-" !important; /* Unicode character for bullet point */
+  margin-right: 0.5em; /* Adjust spacing */
+  color: black;
 }
 .rules-list li::before {
   content: "•"; /* Unicode character for bullet point */

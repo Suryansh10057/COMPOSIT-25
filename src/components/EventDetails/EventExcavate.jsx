@@ -108,7 +108,7 @@ const  EventExcavate = () => {
                   target="_blank"
                   className="btn btn-primary "
                 >
-                  Rules & Regulations
+                 Rules & Regulations
                 </a>
               </div>
             </div>
@@ -155,11 +155,6 @@ With Excavate, both the novice and the more experienced data enthusiasts will ge
 
                               </p>
 
-                              {/* <ul>
-                                                            <li><i className="icofont-wall-clock"></i> Electronic Materials and Nanotechnology, Computational Material Science</li>
-                                                            <li><i className="icofont-wall-clock"></i> Advanced Materials and Functional Materials Biomaterials</li>
-                                                            <li><i className="icofont-wall-clock"></i> Material Processes Physical, Extractive and Mechanical Metallurgy</li>
-                                                        </ul> */}
                             </div>
                           </Link>
                         </li>
@@ -168,7 +163,8 @@ With Excavate, both the novice and the more experienced data enthusiasts will ge
 
                     <div id="tab2" className="tabs_item">
                       <ul className="accordion">
-                        <li className="accordion-item">
+                      <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                        {/* <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
 
@@ -191,15 +187,14 @@ Bachelors/Masters/PHD in any science and engineering college
                               </ul>
                             </div>
                           </Link>
-                        </li>
+                        </li> */}
 
-                        <li className="accordion-item">
+                        {/* <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author author-multi"></div>
 
                             <div className="schedule-info">
-                              {/* <h2>Rounds of the Event</h2> */}
-                              {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                              <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
                               <div className="schedule-info">
                               <h3>Important Dates</h3>
 
@@ -229,14 +224,15 @@ Bachelors/Masters/PHD in any science and engineering college
                             </div>
                             </div>
                           </Link>
-                        </li>
-                        <li className="accordion-item">
+                        </li> */}
+
+
+                        {/* <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author author-multi"></div>
 
                             <div className="schedule-info">
                               <h2>Rules of the Event</h2>
-                              {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                               <div className="schedule-info">
                                 <br />
                               <h3>General Rules:-</h3>
@@ -303,14 +299,13 @@ Bachelors/Masters/PHD in any science and engineering college
                             </div>
                             </div>
                           </Link>
-                        </li>
-                        <li className="accordion-item">
+                        </li> */}
+                        {/* <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author author-multi"></div>
 
                             <div className="schedule-info">
                               <h2>Judging Criteria</h2>
-                              {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                               <div className="schedule-info">
                               <ul className="rules-list">
                                 <li> {" "} Round 2 will be evaluated based on the idea and approach and towards the problem statement. {" "} <br /> </li>
@@ -327,14 +322,14 @@ Bachelors/Masters/PHD in any science and engineering college
                             </div>
                             </div>
                           </Link>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
 
                     <div id="tab3" className="tabs_item">
-                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
 
-                      <ul className="accordion ">
+                      {/* <ul className="accordion ">
                         <li className="accordion-item faqs-head">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -410,13 +405,13 @@ Bachelors/Masters/PHD in any science and engineering college
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
 
-                      <ul className="accordion">
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -453,7 +448,7 @@ Bachelors/Masters/PHD in any science and engineering college
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
                   </div>
                 </div>

@@ -63,7 +63,7 @@ class FunFact extends React.Component {
                                             start={0}
                                             end={
                                                 this.state.didViewCountUp
-                                                    ? 9
+                                                    ? 8
                                                     : 0
                                             }
                                             duration={3}
