@@ -28,9 +28,9 @@ const eventComponents = {
 const HandleEvents = () => {
 
     const { name } = useParams();
-    console.log(name)
+    //console.log(name)
     const EventComponent = eventComponents[name];
-    console.log(EventComponent)
+    //console.log(EventComponent)
 
     useEffect(() => {
         lax.setup();

@@ -40,7 +40,7 @@ export default function RegisterExcavate() {
             openForm()
         }
         catch (error) {
-            console.log(error)
+            //console.log(error)
             setState({ displayMsg: `Dear ${userData.name}. ${error.response.data} for ${eventName}` })
             openForm()
         }

@@ -80,9 +80,9 @@ class PricingOne extends React.Component {
             //   };
 
         const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
-        console.log(userData)
+        //console.log(userData)
         const participantId = userData._id
-        console.log(participantId)
+        //console.log(participantId)
 
         // const postId = location.pathname.split("/")[2]
         // const [registerData, setRegisterData] = useState({});
@@ -97,7 +97,7 @@ class PricingOne extends React.Component {
         //     e.preventDefault()
 
         //     try {
-        //         console.log(source)
+        //         //console.log(source)
         //         await axios.post(`${process.env.REACT_APP_API_KEY}/eventRegistration/${source}/${participantId}`, participantId)
         //         this.setState({ displayMsg: `Registered Successfully for ${source}` })
         //         alert(this.state.displayMsg)

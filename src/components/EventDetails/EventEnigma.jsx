@@ -24,7 +24,7 @@ const EventEnigma = () => {
 
   const userData = JSON.parse(localStorage.getItem("COMPOSITuser")) || {}; // Default to empty object
 
-  console.log("user is:", userData);
+  //console.log("user is:", userData);
   
   const [teamId, setTeamId] = useState(null);
   
@@ -37,7 +37,7 @@ const EventEnigma = () => {
   const events = userData.events || []; // Default to empty array if events is null/undefined
   const eventData = getEventDetails(events, eventNameToCheck);
   
-  console.log(eventData);
+  //console.log(eventData);
     
     return (
       <div className="event-details-area ptb-120">

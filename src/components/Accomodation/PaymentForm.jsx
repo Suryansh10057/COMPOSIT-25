@@ -35,7 +35,7 @@ const CheckoutForm = () => {
         amount: amount * 100,
       });
 
-      console.log(data.message);
+      //console.log(data.message);
     } catch (error) {
       console.error('Error processing payment:', error);
     }

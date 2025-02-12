@@ -20,7 +20,7 @@ const EventCasestudy = () => {
  
     const userData = JSON.parse(localStorage.getItem("COMPOSITuser")) || {}; // Default to empty object
   
-    console.log("user is:", userData);
+    //console.log("user is:", userData);
     
     const [teamId, setTeamId] = useState(null);
     
@@ -33,7 +33,7 @@ const EventCasestudy = () => {
     const events = userData.events || []; // Default to empty array if events is null/undefined
     const eventData = getEventDetails(events, eventNameToCheck);
     
-    console.log(eventData);
+    //console.log(eventData);
 
     const eventRules = [
       "The event will have the following rounds: Aptitude Quiz + Submission Round + Final Presentation Round.",

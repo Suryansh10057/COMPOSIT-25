@@ -12,7 +12,7 @@ const ContactForm = () => {
             ...contactData,
             [event.target.name]: event.target.value,
         })
-        console.log('something changed')
+        //console.log('something changed')
     }
     const submit = document.getElementById('submitbtn')
 
@@ -22,15 +22,15 @@ const ContactForm = () => {
         // const str1 = str.toUpperCase()
         // const ph = signupData.contact
         // signupData.regID = `C24${str1.substring(0, 3)}${ph.substring(0, 2)}${Math.floor(Math.random() * 90 + 10)}`
-        console.log('wait...')
+        //console.log('wait...')
         submit.innerText = 'Sending Message....'
         submit.disabled=true;
         try {
             const res = await axios.post(`http://localhost:8800/contact`, contactData)
             setErrorr(res.data)
             // openForm()
-            console.log(res)
-            console.log('submitted')
+            //console.log(res)
+            //console.log('submitted')
             submit.innerText='Message Sent!'
             submit.disabled = false
         }
@@ -39,18 +39,18 @@ const ContactForm = () => {
             setErrorr(error.response.data)
             // openForm()
             // if (error.response.data.message.split(" ")[0] === "E11000") {
-            //     console.log("in if")
+            //     //console.log("in if")
             //     setErrorr("Email or Phone already in use")
             //     openForm()
             // }
             // else {
-            //     console.log("in else")
+            //     //console.log("in else")
             //     setErrorr(error.response.data)
 
             //     openForm()
-            //     console.log(error.response.data,"err here")
+            //     //console.log(error.response.data,"err here")
             // }
-            console.log(error)
+            //console.log(error)
         }
 
     }

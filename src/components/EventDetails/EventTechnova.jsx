@@ -49,7 +49,7 @@ const  EventTechnova = () => {
 
      const userData = JSON.parse(localStorage.getItem("COMPOSITuser")) || {}; // Default to empty object
    
-     console.log("user is:", userData);
+     //console.log("user is:", userData);
      
      const [teamId, setTeamId] = useState(null);
      
@@ -62,7 +62,7 @@ const  EventTechnova = () => {
      const events = userData.events || []; // Default to empty array if events is null/undefined
      const eventData = getEventDetails(events, eventNameToCheck);
      
-     console.log(eventData);
+     //console.log(eventData);
 
 
     return (

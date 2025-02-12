@@ -40,7 +40,7 @@ export default function RegisterCad() {
             openForm()
         }
         catch (error) {
-            console.log(error)
+            //console.log(error)
             setState({ displayMsg: `Dear ${userData.name}. ${error.response.data} for ${eventName}` })
             openForm()
         }

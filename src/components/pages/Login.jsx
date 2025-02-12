@@ -30,7 +30,7 @@ const Login = () => {
       }
 
       const compUser = await response.json();
-      console.log(compUser);
+      //console.log(compUser);
       localStorage.setItem('COMPOSITuser', JSON.stringify(compUser.user));
       localStorage.setItem('COMPOSITuserToken', JSON.stringify(compUser.token));
 

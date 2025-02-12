@@ -26,15 +26,15 @@
 //         try {
 //           const res = await axios.post("/contactUs", this.state);
 //           this.setState({ displayMsg: res })
-//           console.log(res)
+//           //console.log(res)
 //           const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
     
-//           console.log(userData)
+//           //console.log(userData)
 //         //   window.location = `/events/${compUser._id}`
 //         window.location = `/events`
 //         } catch (err) {
 //           this.setState({ errorr: err.response.data.message })
-//           console.log(err.response.data.message, "error")
+//           //console.log(err.response.data.message, "error")
 //         }
 //       };
 
@@ -111,7 +111,7 @@
 //                 openForm()
 //             }
 //             catch (error) {
-//                 console.log(error)
+//                 //console.log(error)
 //                 setState({ displayMsg: `Dear ${userData.name}. ${error.response.data} for ${eventName}` })
 //                 openForm()
 //             }

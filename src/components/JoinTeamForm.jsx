@@ -42,7 +42,7 @@ const JoinForm = () => {
         const submit = document.getElementById('submitbtn');
         submit.innerText = 'Joining team, please wait...';
         submit.disabled = true;
-console.log(signupData)
+//console.log(signupData)
 
         try {
             const response = await fetch(`${BaseUrl}/api/user/jointeam`, {
@@ -60,8 +60,8 @@ console.log(signupData)
             }
             
             const result = await response.json();
-            console.log(result);
-            console.log(result.userData);
+            //console.log(result);
+            //console.log(result.userData);
             setError(result.message);
             // openForm();
             submit.innerText = 'Team Joined Successfully';
@@ -79,7 +79,7 @@ console.log(signupData)
     };
 
 
-    // console.log(userData._id)
+    // //console.log(userData._id)
     
     return (
         <>

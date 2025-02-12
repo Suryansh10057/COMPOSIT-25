@@ -33,7 +33,7 @@ const Signup = () => {
         const submit = document.getElementById('submitbtn');
         submit.innerText = 'Signing up, please wait...';
         submit.disabled = true;
-console.log(signupData)
+//console.log(signupData)
 
         try {
             const response = await fetch(`${BaseUrl}/api/user/register`, {
@@ -55,7 +55,7 @@ console.log(signupData)
             openForm();
             submit.innerText = 'Signup';
             submit.disabled = false;
-            console.log(result);
+            //console.log(result);
             localStorage.setItem('COMPOSITuser', JSON.stringify(result.user));
             localStorage.setItem('COMPOSITuserToken', JSON.stringify(result.token));
       

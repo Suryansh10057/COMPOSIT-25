@@ -65,7 +65,7 @@ class Accomodation extends React.Component {
   //       },
   //     });
   //     const order = await response.json();
-  //     console.log(order);
+  //     //console.log(order);
 
   //     var options = {
   //       key: "rzp_test_01a1YvfIYNa8vJ", // Enter the Key ID generated from the Dashboard
@@ -91,7 +91,7 @@ class Accomodation extends React.Component {
   //           }
   //         );
   //         const jsonRes = await validateRes.json();
-  //         console.log(jsonRes);
+  //         //console.log(jsonRes);
   //       },
   //       prefill: {
   //         //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
@@ -144,7 +144,7 @@ class Accomodation extends React.Component {
   //     });
 
   //     if(result.error){
-  //         console.log(result.error);
+  //         //console.log(result.error);
   //     }
   // }
 

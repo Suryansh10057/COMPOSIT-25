@@ -8,7 +8,7 @@ export default function Profile() {
     const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
     // const userData = localData.user
 
-    console.log("data from localStorage",userData)
+    //console.log("data from localStorage",userData)
     return (
         <>
         <Navigation/>

@@ -40,7 +40,7 @@ const GetAllUsers = () => {
             const regUsers = res.data
             setRegistrations(regUsers)
         } catch (err) {
-            console.log(err)
+            //console.log(err)
             setRegistrations(err)
         }
     };

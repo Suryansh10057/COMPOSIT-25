@@ -26,11 +26,11 @@ class Contact extends React.Component {
         try {
             const res = await axios.post(`${process.env.REACT_APP_API_KEY}/contactUs`, this.state);
             this.setState({ displayMsg: res })
-            console.log(res, "successfully contacted")
+            //console.log(res, "successfully contacted")
         } catch (err) {
             this.setState({ displayMsg: err })
-            // console.log(err.response.data.message, "error")
-            console.log(err, "error in contacting")
+            // //console.log(err.response.data.message, "error")
+            //console.log(err, "error in contacting")
         }
     };
 
@@ -63,8 +63,8 @@ class Contact extends React.Component {
         const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
         const participantId = userData._id
         const a = process.env.REACT_APP_API_KEY
-        console.log(process.env.REACT_APP_API_KEY)
-        console.log(a, "api")
+        //console.log(process.env.REACT_APP_API_KEY)
+        //console.log(a, "api")
         // function openForm() {
         //     document.getElementById("popupForm").style.display = "block";
         // }
@@ -89,7 +89,7 @@ class Contact extends React.Component {
         //         openForm()
         //     }
         //     catch (error) {
-        //         console.log(error)
+        //         //console.log(error)
         //         setState({ displayMsg: `Dear ${userData.name}. ${error.response.data} for ${eventName}` })
         //         openForm()
         //     }

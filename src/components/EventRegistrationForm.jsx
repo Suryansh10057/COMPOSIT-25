@@ -13,7 +13,7 @@ const EventRegistrationForm = () => {
     const { eventName } = useParams(); // Default to empty 
  
   
-console.log("My Event Nmae is : ",eventName)
+// //console.log("My Event Nmae is : ",eventName)
 
     const [teamName, setTeamName] = useState({});
     const [error, setError] = useState(null);
@@ -29,7 +29,7 @@ console.log("My Event Nmae is : ",eventName)
     const handleChange = (event) => {
         setTeamName(event.target.value);
     };
-    console.log(teamName)
+    // //console.log(teamName)
  
   
     const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
@@ -43,7 +43,7 @@ console.log("My Event Nmae is : ",eventName)
         // signupData.regID = `C24${str1.substring(0, 3)}${ph.substring(0, 2)}${Math.floor(Math.random() * 90 + 10)}`;
     
 
-        console.log(userData, token)
+        // //console.log(userData, token)
 
         const submit = document.getElementById('submitbtn');
         submit.innerText = 'Creating team, please wait...';
@@ -55,7 +55,7 @@ console.log("My Event Nmae is : ",eventName)
             token:token
         }
     
-// console.log(signupData)
+// //console.log(signupData)
 
         try {
             const response = await fetch(`${BaseUrl}/api/user/maketeam`, {
@@ -69,7 +69,7 @@ console.log("My Event Nmae is : ",eventName)
             const result = await response.json();
           
             const updatedUser = result.userData;
-            console.log(updatedUser)
+            //console.log(updatedUser)
             if (!response.ok) {
                 submit.innerText = 'Team Creation failed';
                 throw new Error(result.message || 'Team Creation failed');
@@ -79,7 +79,7 @@ console.log("My Event Nmae is : ",eventName)
             // openForm();
             submit.innerText = `Your Team code is ${result.teamCode}.`;
             // submit.disabled = false;
-            console.log(result);
+            // //console.log(result);
             localStorage.setItem('COMPOSITuser', JSON.stringify(result.userData));
       
         } catch (err) {

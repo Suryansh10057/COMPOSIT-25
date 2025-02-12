@@ -32,7 +32,7 @@ const PricingOne = () => {
         e.preventDefault();
 
         try {
-            console.log(source);
+            //console.log(source);
             await axios.post(`/eventRegistration/${source}/${participantId}`, participantId);
             const successMsg = `Registered Successfully for ${source}`;
             setDisplayMsg(successMsg);
