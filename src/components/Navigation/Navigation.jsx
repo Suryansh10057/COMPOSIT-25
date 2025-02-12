@@ -20,7 +20,7 @@ const Navigation = () => {
     try {
       await fetch(`${BaseUrl}/api/user/logout`, {
         method: "POST",
-        credentials: "include",
+        // credentials: "include",
       });
       localStorage.clear();
       navigate("/");
