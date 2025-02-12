@@ -10,9 +10,9 @@ const JoinForm = () => {
     const [error, setError] = useState(null);
     const { eventName } = useParams(); // Default to empty 
 
-    const openForm = () => {
-        document.getElementById("popupForm").style.display = "block";
-    };
+    // const openForm = () => {
+    //     document.getElementById("popupForm").style.display = "block";
+    // };
 
     const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
     const token = JSON.parse(localStorage.getItem("COMPOSITuserToken"));
@@ -53,25 +53,26 @@ console.log(signupData)
                 body: JSON.stringify(signupData),
             });
 
-            const result = await response.json();
-          
-
+            
+            
             if (!response.ok) {
                 throw new Error(result.message || 'Signup failed');
             }
-
+            
+            const result = await response.json();
+            console.log(result);
+            console.log(result.userData);
             setError(result.message);
-            openForm();
+            // openForm();
             submit.innerText = 'Team Joined Successfully';
             submit.disabled = true;
-            console.log(result);
             localStorage.setItem('COMPOSITuser', JSON.stringify(result.userData));
       
             // window.location = `/`;
 
         } catch (err) {
             setError(err.message);
-            openForm();
+            // openForm();
             submit.innerText = 'Joinnig Failed';
             submit.disabled = false;
         }
