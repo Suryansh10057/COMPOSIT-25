@@ -18,7 +18,7 @@ class About extends React.Component {
 
     render() {
         return (
-            <section className="about-area ptb-120 bg-image">
+            <section className="about-area ptb-120 bg-image mt-5">
                 <div className="container">
                     <div className="row h-100 align-items-center">
                         <div className="col-lg-6">

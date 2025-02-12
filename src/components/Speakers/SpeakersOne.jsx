@@ -53,7 +53,7 @@ const TeamCard = (props)=>{
 const  SpeakersOne = () => {
 
     return (
-      <section className="speakers-area ptb-120">
+      <section className="speakers-area ptb-120 mt-5">
         <div className="row m-0">
           <div className="section-title">
             <h2>

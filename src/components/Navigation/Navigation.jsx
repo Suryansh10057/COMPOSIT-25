@@ -6,7 +6,7 @@ import { IoIosNotifications } from "react-icons/io";
 
 const Navigation = () => {
   const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
