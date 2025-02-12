@@ -7,14 +7,14 @@ import GoTop from '../../Shared/GoTop';
  
 class EventTresureHuntPage extends React.Component {
     constructor(props) {
-        super(props)
-        lax.setup()
+        // super(props)
+        // lax.setup()
     
-        document.addEventListener('scroll', function(x) {
-            lax.update(window.scrollY)
-        }, false)
+        // document.addEventListener('scroll', function(x) {
+        //     lax.update(window.scrollY)
+        // }, false)
     
-        lax.update(window.scrollY)
+        // lax.update(window.scrollY)
     }
     render(){
         return (

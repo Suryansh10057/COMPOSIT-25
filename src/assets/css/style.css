@@ -166,6 +166,10 @@ p:last-child {
 .text-left {
   text-align: start;
 }
+.error-text{
+  /* font-size: 10px; */
+  text-align: left;
+}
 
 .form-group {
   margin-bottom: 30px;

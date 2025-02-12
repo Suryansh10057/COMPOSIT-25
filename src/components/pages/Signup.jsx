@@ -1,11 +1,25 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Popup/PopupMsg.css';
-import BaseUrl from '../../const';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./Popup/PopupMsg.css";
+import BaseUrl from "../../const";
 
 const Signup = () => {
-    const [signupData, setSignupData] = useState({});
+    const [signupData, setSignupData] = useState({
+        name: "",
+        email: "",
+        password: "",
+        collegeId: "",
+        department: "",
+        collegeName: "",
+        phone: "",
+        city: "",
+        state: "",
+        gender: "default",
+        referral: ""
+    });
+
     const [error, setError] = useState(null);
+    const [isValid, setIsValid] = useState(false);
 
     const openForm = () => {
         document.getElementById("popupForm").style.display = "block";
@@ -17,217 +31,222 @@ const Signup = () => {
     };
 
     const handleChange = (event) => {
-        setSignupData({
-            ...signupData,
-            [event.target.name]: event.target.value,
-        });
+        const { name, value } = event.target;
+        setSignupData({ ...signupData, [name]: value });
     };
+
+    // Validation function
+    useEffect(() => {
+        const isEmailValid = /\S+@\S+\.\S+/.test(signupData.email);
+        const isPhoneValid = /^[0-9]{10}$/.test(signupData.phone);
+        const isPasswordValid = signupData.password.length >= 6;
+        const areFieldsFilled = Object.values(signupData).every(
+            (val) => val.trim() !== "" && val !== "default"
+        );
+
+        setIsValid(isEmailValid && isPhoneValid && isPasswordValid && areFieldsFilled);
+    }, [signupData]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // const str = signupData.name;
-        // const str1 = str.toUpperCase();
-        // const ph = signupData.contact;
-        // signupData.regID = `C24${str1.substring(0, 3)}${ph.substring(0, 2)}${Math.floor(Math.random() * 90 + 10)}`;
+        if (!isValid) return;
 
-        const submit = document.getElementById('submitbtn');
-        submit.innerText = 'Signing up, please wait...';
+        const submit = document.getElementById("submitbtn");
+        submit.innerText = "Signing up, please wait...";
         submit.disabled = true;
-//console.log(signupData)
 
         try {
             const response = await fetch(`${BaseUrl}/api/user/register`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(signupData),
             });
 
             const result = await response.json();
-          
-
-            if (!response.ok) {
-                throw new Error(result.message || 'Signup failed');
-            }
+            if (!response.ok) throw new Error(result.message || "Signup failed");
 
             setError(result.message);
             openForm();
-            submit.innerText = 'Signup';
-            submit.disabled = false;
-            //console.log(result);
-            localStorage.setItem('COMPOSITuser', JSON.stringify(result.user));
-            localStorage.setItem('COMPOSITuserToken', JSON.stringify(result.token));
-      
-            window.location = `/`;
+            localStorage.setItem("COMPOSITuser", JSON.stringify(result.user));
+            localStorage.setItem("COMPOSITuserToken", JSON.stringify(result.token));
 
+            window.location = `/`;
         } catch (err) {
             setError(err.message);
             openForm();
-            submit.innerText = 'Signup';
+        } finally {
+            submit.innerText = "Signup";
             submit.disabled = false;
         }
     };
 
     return (
         <>
-        <section className="signup-area">
-            <div className="d-table mt-9">
-                <div className="d-table-cell">
-                    <div className="signup-form" >
-                        <Link to="/" className="btn-modal btn-primary">&#xab; Back to Home</Link>
-                        <h3>Create your Account</h3>
+            <section className="signup-area">
+                <div className="d-table mt-9">
+                    <div className="d-table-cell">
+                        <div className="signup-form">
+                            <Link to="/" className="btn-modal btn-primary">
+                                &#xab; Back to Home
+                            </Link>
+                            <h3>Create your Account</h3>
 
-                        <form>
-                            <div className="form-group">
-                                <label>Name</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Name"
-                                    onChange={handleChange}
-                                    name="name"
-                                />
-                            </div>
+                            <form>
+                                <div className="form-group">
+                                    <label>Name</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Name"
+                                        name="name"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
 
-                            <div className="form-group">
-                                <label>Email</label>
-                                <input
-                                    type="email"
-                                    className="form-control"
-                                    placeholder="Email Address"
-                                    name="email"
-                                    onChange={handleChange}
-                                />
-                            </div>
+                                <div className="form-group">
+                                    <label>Email</label>
+                                    <input
+                                        type="email"
+                                        className="form-control"
+                                        placeholder="Email Address"
+                                        name="email"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                    {!/\S+@\S+\.\S+/.test(signupData.email) && signupData.email && (
+                                        <p className="error-text">Invalid email format</p>
+                                    )}
+                                </div>
 
-                            <div className="form-group">
-                                <label>Password</label>
-                                <input
-                                    type="password"
-                                    className="form-control"
-                                    placeholder="Password"
-                                    name="password"
-                                    onChange={handleChange}
-                                />
-                            </div>
+                                <div className="form-group">
+                                    <label>Password</label>
+                                    <input
+                                        type="password"
+                                        className="form-control"
+                                        placeholder="Password (Min 6 chars)"
+                                        name="password"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                    {/* {signupData.password.length > 0 && signupData.password.length < 6 && (
+                                        <p className="error-text">Password must be at least 6 characters</p>
+                                    )} */}
+                                </div>
 
+                                <div className="form-group">
+                                    <label>Institute ID / Roll No.</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Institute ID"
+                                        name="collegeId"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
 
-                            <div className="form-group">
-                                <label>Institute ID / Roll No.</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Institute ID"
-                                    name="collegeId"
-                                    onChange={handleChange}
-                                />
-                            </div>
+                                <div className="form-group">
+                                    <label>Department</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Department"
+                                        name="department"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
 
-                            <div className="form-group">
-                                <label>Department</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Department"
-                                    name="department"
-                                    onChange={handleChange}
-                                />
-                            </div>
+                                <div className="form-group">
+                                    <label>Institution</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Institution"
+                                        name="collegeName"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
 
-                            <div className="form-group">
-                                <label>Institution</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Institution"
-                                    name="collegeName"
-                                    onChange={handleChange}
-                                />
-                            </div>
+                                <div className="form-group">
+                                    <label>Contact</label>
+                                    <input
+                                        type="number"
+                                        className="form-control"
+                                        name="phone"
+                                        placeholder="Contact Number(10 digits)"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                    {!/^[0-9]{10}$/.test(signupData.phone) && signupData.phone && (
+                                        <p className="error-text">Phone number must be 10 digits</p>
+                                    )}
+                                </div>
 
-                            <div className="form-group">
-                                <label>Contact</label>
-                                <input
-                                    type="number"
-                                    className="form-control"
-                                    name="phone"
-                                    placeholder="Contact Number"
-                                    onChange={handleChange}
-                                />
-                            </div>
+                                <div className="form-group">
+                                    <label>City</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="City"
+                                        name="city"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
 
-                            <div className="form-group">
-                                <label>City</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="city"
-                                    name="city"
-                                    onChange={handleChange}
-                                />
-                            </div>
-                            <div className="form-group">
-                                <label>State</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="State"
-                                    name="state"
-                                    onChange={handleChange}
-                                />
-                            </div>
+                                <div className="form-group">
+                                    <label>State</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="State"
+                                        name="state"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
 
-                            {/* <div className="form-group">
-                                <label>Year of Graduation</label>
-                                <input
-                                    type="number"
-                                    className="form-control"
-                                    placeholder="Year of Graduation"
-                                    name="gradyear"
-                                    onChange={handleChange}
-                                />
-                            </div> */}
+                                <div className="form-group">
+                                    <label>Gender</label>
+                                    <select name="gender" className="form-control" required onChange={handleChange}>
+                                        <option value="default">Please Select</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
 
-                            <div className="form-group">
-                                <label>Gender</label>
-                                <select
-                                    name="gender"
-                                    className="form-control"
-                                    onChange={handleChange}
+                                <div className="form-group">
+                                    <label>Referral Id (if given by Student's Ambassador)</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Leave blank if no Student Ambassador has referred"
+                                        name="referral"
+                                        onChange={handleChange}
+                                    />
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    id="submitbtn"
+                                    className="btn-modal btn-primary"
+                                    onClick={handleSubmit}
+                                    disabled={!isValid}
                                 >
-                                    <option value="default">Please Select</option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                    <option value="Others">Others</option>
-                                </select>
-                            </div>
-                            <div className="form-group">
-                                <label>Referral Id (if given by Student's Ambassador)</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Leave blank if no Student Ambassador has referred"
-                                    name="referral"
-                                    onChange={handleChange}
-                                />
-                            </div>
-                            <button type="submit" id='submitbtn' className="btn-modal btn-primary" onClick={handleSubmit}>Signup</button>
-                            <p>Already a registered user? <Link to="/login">Login!</Link></p>
-                        </form>
+                                    Signup
+                                </button>
+
+                                <p>Already a registered user? <Link to="/login">Login!</Link></p>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            {/* <div className="loginPopup" id='loginPopup'>
-                <div className="formPopup" id="popupForm">
-                    <p className='popupMsg'>{error}</p>
-                    <Link to="/login" className='popupLink'>Login now to register for event</Link>
-                </div>
-            </div> */}
-        </section>
+            </section>
         </>
-
     );
 };
 

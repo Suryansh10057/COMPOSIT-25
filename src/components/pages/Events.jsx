@@ -7,20 +7,31 @@ import WhyUs from '../Common/WhyUs';
 import Footer from '../Common/Footer';
 class EventPage extends React.Component {
     constructor(props) {
-        super(props)
-        lax.setup()
-    
-        document.addEventListener('scroll', function(x) {
-            lax.update(window.scrollY)
-        }, false)
-    
-        lax.update(window.scrollY)
+        super(props);
+        this.handleScroll = this.handleScroll.bind(this);
     }
+
+    componentDidMount() {
+        lax.setup();
+
+        document.addEventListener('scroll', this.handleScroll, false);
+
+        lax.update(window.scrollY);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll() {
+        lax.update(window.scrollY);
+    }
+
     render(){
         return (
             <React.Fragment>
                 {/* Main Banner */}
-                <MainBanner />
+                {/* <MainBanner /> */}
                 <PricingOne/>
                 
                 {/* Why Choose Us Area */}

@@ -29,6 +29,7 @@ import HandleEvents from "./components/pages/HandleEvents"
 import EventRegistrationForm from "./components/EventRegistrationForm";
 import JoinForm from "./components/JoinTeamForm";
 import GuestLectures from "./components/GuestLecture/GuestLecture";
+import Professor from "./components/Teams/professor";
 // import HandleEvents from "./components/pages/EventDetails/HandleEvents";
 const AppRouter = () => {
     const renderNavigation = () => {
@@ -39,8 +40,10 @@ const AppRouter = () => {
     };
 
     return (
+        // <BrowserRouter>
         <Router>
-            {renderNavigation()}
+            {/* {renderNavigation()} */}
+            <Navigation/>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
@@ -70,9 +73,13 @@ const AppRouter = () => {
                 <Route path="/guestlecture" element={<GuestLectures />} />
                 <Route path="/edit-profile" element={<EditProfile />} />
                 <Route path="/ourteam" element={<SpeakersOne />} />
+                <Route path="/teams" element={<Professor />} />
+
                 {/* <Route path="*" element={<NotFound />} /> */}
             </Routes>
         </Router>
+        // </BrowserRouter>
+
     );
 };
 

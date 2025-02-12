@@ -8,11 +8,17 @@ const Login = () => {
   const [success, setSuccess] = useState(null);
   const [errorr, setErrorr] = useState(null);
 
+  const isValidEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
+  const isFormValid = isValidEmail(email) && password.length > 0;
+
   const handleClick = async (e) => {
     e.preventDefault();
 
     const submit = document.getElementById('submitbtn');
-    submit.innerText = 'Loging in, please wait...';
+    submit.innerText = 'Logging in, please wait...';
     submit.disabled = true;
 
     try {
@@ -30,7 +36,6 @@ const Login = () => {
       }
 
       const compUser = await response.json();
-      //console.log(compUser);
       localStorage.setItem('COMPOSITuser', JSON.stringify(compUser.user));
       localStorage.setItem('COMPOSITuserToken', JSON.stringify(compUser.token));
 
@@ -64,6 +69,9 @@ const Login = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
+                {!isValidEmail(email) && email.length > 0 && (
+                  <small className="error-text">Invalid email format</small>
+                )}
               </div>
 
               <div className="form-group">
@@ -75,13 +83,19 @@ const Login = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
+                {password.length === 0 && (
+                  <small className="error-text">Password is required</small>
+                )}
               </div>
 
-              <button type="submit" id="submitbtn" className="btn-modal btn-primary">
+              <button
+                type="submit"
+                id="submitbtn"
+                className="btn-modal btn-primary"
+                disabled={!isFormValid}
+              >
                 Login
               </button>
-              {/* {success && <p className="popupLink center">{success}</p>}
-              {errorr && <p className="error center">{errorr}</p>} */}
 
               <p>
                 <Link to="/signup" className="pull-left">
@@ -89,6 +103,9 @@ const Login = () => {
                 </Link>
               </p>
             </form>
+
+            {success && <p className="popupLink center">{success}</p>}
+            {errorr && <p className="error center">{errorr}</p>}
           </div>
         </div>
       </div>

@@ -1,0 +1,25 @@
+.show-cards{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0fr));
+    /* gap: 1rem; */
+    gap: 2rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-auto-rows: minmax(500px, auto); /* Ensures flexibility in row heights */
+}
+
+.professor{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    & h1{
+        text-align: center;
+    }
+}
+
+@media (width<1027px){
+    .show-cards{
+        gap: 1rem;
+    }
+}

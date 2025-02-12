@@ -100,7 +100,7 @@ const Navigation = () => {
                 </li>
 
                 <li className="nav-item">
-                  <Link to="/ourteam" className="nav-link" onClick={toggleNavbar}>
+                  <Link to="/teams" className="nav-link" onClick={toggleNavbar}>
                     Our Team
                   </Link>
                 </li>

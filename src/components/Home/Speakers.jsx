@@ -2,6 +2,10 @@ import React from "react";
 import lax from "lax.js";
 import { Link } from "react-router-dom";
 import LaxDiv from "../Shared/LaxDiv";
+import Card from "../Teams/TeamCard";
+import Heads from "../Teams/Heads";
+import '../Teams/professor.css'
+import '../Teams/card.css'
 
 class Speakers extends React.Component {
   constructor(props) {
@@ -40,6 +44,19 @@ class Speakers extends React.Component {
           </div>
           {/* Current Heads */}
 
+          {/* <div className="show-cards">
+          {Heads.map((professor, index) => (
+            <Card
+              key={index}
+              img={professor.img}
+              name={professor.name}
+              mail={professor.mail}
+              linkedin={professor.linkedin}
+              facebook={professor.facebook}
+              position={professor.position}
+            />
+          ))}
+        </div> */}
           <div className="col-lg-3 col-md-6 p-0">
             <div className="single-speakers">
               <img

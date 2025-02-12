@@ -6,6 +6,7 @@ import './assets/css/style.css';
 import './assets/css/responsive.css';
 
 import React, { useState, useEffect, useRef } from 'react';
+import { BrowserRouter } from "react-router-dom";
 import AppRouter from './Routes';
 import Preloader from './components/Shared/Preloader';
 import Orb from './components/Animations/Particle';
@@ -116,7 +117,10 @@ const App = () => {
 
             {phase === "content" && (
                 <React.Fragment>
-                    <AppRouter />
+                    
+                    {/* <BrowserRouter> */}
+                        <AppRouter />
+    {/* </BrowserRouter> */}
                     {loading && <Preloader />}
                 </React.Fragment>
             )}

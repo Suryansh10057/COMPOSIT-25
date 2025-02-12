@@ -1,137 +1,122 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-// import './Popup/PopupMsg.css';
-
-import BaseUrl from "../const" ;
-import { useParams } from 'react-router-dom';
-
-// import { useLocation } from "react-router-dom";
-
+import { Link, useParams } from 'react-router-dom';
+import BaseUrl from '../const';
 
 const EventRegistrationForm = () => {
-    // const location = useLocation();
-    const { eventName } = useParams(); // Default to empty 
- 
-  
-// //console.log("My Event Nmae is : ",eventName)
+  const { eventName } = useParams();
+  const [teamName, setTeamName] = useState('');
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(null);
+  const [loading, setLoading] = useState(false);
 
-    const [teamName, setTeamName] = useState({});
-    const [error, setError] = useState(null);
-    // const openForm = () => {
-    //     document.getElementById("popupForm").style.display = "block";
-    // };
+  const userData = JSON.parse(localStorage.getItem('COMPOSITuser'));
+  const token = JSON.parse(localStorage.getItem('COMPOSITuserToken'));
 
-    const closeForm = () => {
-        document.getElementById("popupForm").style.display = "none";
-        setError(null);
+  const handleChange = (event) => {
+    setTeamName(event.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(null);
+    setSuccess(null);
+
+    const submit = document.getElementById('submitbtn');
+    submit.innerText = 'Creating team, please wait...';
+    submit.disabled = true;
+
+    const dataToSend = {
+      userId: userData._id,
+      eventName,
+      teamName,
+      token,
     };
 
-    const handleChange = (event) => {
-        setTeamName(event.target.value);
-    };
-    // //console.log(teamName)
- 
-  
-    const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
-        const token = JSON.parse(localStorage.getItem("COMPOSITuserToken"));
+    try {
+      const response = await fetch(`${BaseUrl}/api/user/maketeam`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(dataToSend),
+      });
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        // const str = signupData.name;
-        // const str1 = str.toUpperCase();
-        // const ph = signupData.contact;
-        // signupData.regID = `C24${str1.substring(0, 3)}${ph.substring(0, 2)}${Math.floor(Math.random() * 90 + 10)}`;
-    
+      const result = await response.json();
+      if (!response.ok) {
+        throw new Error(result.message || 'Team Creation failed');
+      }
 
-        // //console.log(userData, token)
+      localStorage.setItem('COMPOSITuser', JSON.stringify(result.userData));
 
-        const submit = document.getElementById('submitbtn');
-        submit.innerText = 'Creating team, please wait...';
-        submit.disabled = true;
-        const DataToSend = {
-            userId: userData._id,
-            eventName: eventName,
-            teamName: teamName,
-            token:token
-        }
-    
-// //console.log(signupData)
+      setSuccess(`Your Team Code is: **${result.teamCode}**`);
+      setError(null);
+      submit.innerText = 'Team Created Successfully';
+    } catch (err) {
+      setError(err.message);
+      setSuccess(null);
+      submit.innerText = 'Create a Team';
+      submit.disabled = false;
+    } finally {
+      setLoading(false);
+    }
+  };
 
-        try {
-            const response = await fetch(`${BaseUrl}/api/user/maketeam`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(DataToSend),
-            });
+  return (
+    <section className="signup-area" style={{ height: '100vh' }}>
+      <div className="d-table mt-9">
+        <div className="d-table-cell">
+          <div className="signup-form">
+            <Link to="/events" className="btn-modal btn-primary">
+              &#xab; Back to Events
+            </Link>
 
-            const result = await response.json();
-          
-            const updatedUser = result.userData;
-            //console.log(updatedUser)
-            if (!response.ok) {
-                submit.innerText = 'Team Creation failed';
-                throw new Error(result.message || 'Team Creation failed');
-            }
+            {!userData ? (
+              <>
+                <p className="error-msg">
+                  ⚠️ You need to **log in first** to create a team.
+                </p>
+                <Link to="/login" className="btn-modal btn-primary">
+                  Login to Register
+                </Link>
+              </>
+            ) : (
+                <>
+            <h3>Create a New Team in {eventName}</h3>
 
-            setError(result.message);
-            // openForm();
-            submit.innerText = `Your Team code is ${result.teamCode}.`;
-            // submit.disabled = false;
-            // //console.log(result);
-            localStorage.setItem('COMPOSITuser', JSON.stringify(result.userData));
-      
-        } catch (err) {
-            setError(err.message);
-            // openForm();
-            submit.innerText =  `${err.message}`;
-            submit.disabled = false;
-        }
-    };
-
-    // Check for the events : 
-
-  
-
-    return (
-        <>
-        <section className="signup-area" style={{height:"100vh"}}>
-            <div className="d-table mt-9">
-                <div className="d-table-cell">
-                    <div className="signup-form" >
-                        <Link to={`/events`} className="btn-modal btn-primary">&#xab; Back to Events</Link>
-                        <h3>Create new Team in {eventName} </h3>
-
-                        <form>
-                            <div className="form-group">
-                                <label>Team Name</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Enter the Team Name"
-                                    onChange={handleChange}
-                                    name="name"
-                                />
-                            </div>
-
-                           
-                            <button type="submit" id='submitbtn' className="btn-modal btn-primary" onClick={handleSubmit}>Create a Team</button>
-                        </form>
-                    </div>
+              <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <label>Team Name</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Enter the Team Name"
+                    value={teamName}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
-            </div>
 
-            {/* <div className="loginPopup" id='loginPopup'>
-                <div className="formPopup" id="popupForm">
-                    <p className='popupMsg'>{error}</p>
-                    <Link to="/login" className='popupLink'>Login now to register for event</Link>
-                </div>
-            </div> */}
-        </section>
-        </>
+                <button
+                  type="submit"
+                  id="submitbtn"
+                  className="btn-modal btn-primary"
+                  disabled={loading}
+                >
+                  {loading ? 'Creating team, please wait...' : 'Create a Team'}
+                </button>
 
-    );
+                {success && <p className="success-msg">{success}</p>}
+                {error && <p className="error-msg">{error}</p>}
+              </form>
+              </>
+
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default EventRegistrationForm;
