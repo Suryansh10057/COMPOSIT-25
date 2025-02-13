@@ -3,6 +3,7 @@ import Card from './TeamCard.jsx';
 import FacadData from './facad.jsx';
 import Heads from './Heads.jsx'
 import Data from './governers.jsx';
+import compositTeam from './SubHeads.jsx';
 
 import './professor.css';
 import Footer from '../Common/Footer.jsx';
@@ -62,6 +63,20 @@ const Professor = () => {
         <h1 className=''>Heads : </h1>
         <div className="show-cards">
           {Heads.map((professor, index) => (
+            <Card
+              key={index}
+              img={professor.img}
+              name={professor.name}
+              mail={professor.mail}
+              linkedin={professor.linkedin}
+              facebook={professor.facebook}
+              position={professor.position}
+            />
+          ))}
+        </div>
+        <h1 className=''>Sub Heads : </h1>
+        <div className="show-cards">
+          {compositTeam.map((professor, index) => (
             <Card
               key={index}
               img={professor.img}
