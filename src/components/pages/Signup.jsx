@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Popup/PopupMsg.css";
 import BaseUrl from "../../const";
+import Loader from "../Animations/loading";
 
 const Signup = () => {
     const [signupData, setSignupData] = useState({
@@ -52,7 +53,7 @@ const Signup = () => {
         if (!isValid) return;
 
         const submit = document.getElementById("submitbtn");
-        submit.innerText = "Signing up, please wait...";
+        submit.innerText =   <Loader/>;
         submit.disabled = true;
 
         try {
@@ -233,11 +234,12 @@ const Signup = () => {
                                 <button
                                     type="submit"
                                     id="submitbtn"
-                                    className="btn-modal btn-primary"
+                                    className="btn-modal btn-primary flex-row flex"
                                     onClick={handleSubmit}
                                     disabled={!isValid}
+
                                 >
-                                    Signup
+                                   Signup 
                                 </button>
 
                                 <p>Already a registered user? <Link to="/login">Login!</Link></p>

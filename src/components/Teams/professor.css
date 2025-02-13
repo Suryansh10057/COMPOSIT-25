@@ -11,8 +11,9 @@
 }
 
 .professor{
-    margin-top: 2rem;
-    padding-top: 2rem;
+    /* margin-top: 2rem; */
+    background-color: rgb(251, 248, 248);
+    padding-top: 4rem;
     & h1{
         text-align: center;
     }

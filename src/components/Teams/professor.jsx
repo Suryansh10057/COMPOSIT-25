@@ -6,6 +6,7 @@ import Data from './governers.jsx';
 
 import './professor.css';
 import Footer from '../Common/Footer.jsx';
+import SplashCursor from '../Animations/SplashCursor.jsx';
 
 const Professor = () => {
   const [professorsPerPage, setProfessorsPerPage] = useState(calculateProfessorsPerPage());
@@ -26,7 +27,8 @@ const Professor = () => {
 
   return (
     <>
-      <section className="professor mt-5" id="professors">
+    {/* <SplashCursor/> */}
+      <section className="professor" id="professors">
         <h1 className='mt-5'>Faculty Advisor</h1>
         <div className="bar"></div>
         <div className="show-cards">

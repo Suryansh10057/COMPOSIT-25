@@ -31,7 +31,7 @@ class EventPage extends React.Component {
         return (
             <React.Fragment>
                 {/* Main Banner */}
-                {/* <MainBanner /> */}
+                <MainBanner />
                 <PricingOne/>
                 
                 {/* Why Choose Us Area */}

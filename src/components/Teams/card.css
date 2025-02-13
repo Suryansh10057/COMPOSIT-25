@@ -1,5 +1,5 @@
 .hodcard1{
-    border: 1px solid black;
+    border: 1px solid rgb(7, 7, 7);
     padding: 5px;
     min-width: 18rem;
     max-width: 292px;
@@ -10,9 +10,11 @@
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    background-color: #0a97f500;
-    box-shadow: 3px 3px 10px black;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
     transition: all .8s ease ;
+    border-radius: 10px;
+    /* color: white !important; */
 
 }
 .mailid a{
@@ -65,7 +67,7 @@
 
 
 .hod-img1{
-    border-radius: 50%;
+    border-radius: 50% ;
     border: 5px solid #000000;
     
     position: absolute;
@@ -83,7 +85,7 @@
    
 }
 .hodcard1:hover{
-    /* height: 460px; */
+    /* height: 490px; */
     & .hod-cnt1{
         bottom: 0;
     }
