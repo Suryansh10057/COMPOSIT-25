@@ -53,7 +53,7 @@ const Signup = () => {
         if (!isValid) return;
 
         const submit = document.getElementById("submitbtn");
-        submit.innerText =   <Loader/>;
+        submit.innerText = "Signig up, please wait...";
         submit.disabled = true;
 
         try {
@@ -75,9 +75,6 @@ const Signup = () => {
         } catch (err) {
             setError(err.message);
             openForm();
-        } finally {
-            submit.innerText = "Signup";
-            submit.disabled = false;
         }
     };
 

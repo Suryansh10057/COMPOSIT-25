@@ -28,7 +28,7 @@ export default function Profile() {
     <li className='form-group form-control'><strong>Contact:</strong> {userData.phone}</li>
     <li className='form-group form-control'><strong>Address:</strong> {userData.city} , {userData.state}</li>
     <li className='form-group form-control'><strong>Gender:</strong> {userData.gender}</li>
-    <Link to='/events' className="btn btn-primary profile-btn">Go to our Events</Link>
+    <Link to='/events' className="btn btn-primary ">Go to our Events</Link>
 </ul>
 
 </div> 

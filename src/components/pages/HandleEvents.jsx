@@ -14,14 +14,14 @@ import EventCad from '../EventDetails/EventCad';
 import EventMetaCode from '../EventDetails/EventMetaCode';
 
 const eventComponents = {
-    enigma: EventEnigma,
-    technova: EventTechnova,
-    casestudy:EventCasestudy,
-    excavate : EventExcavate,
-    metaclix:EventMetaclix,
-    ideathon:EventIdeathon,
-    cadvolution:EventCad,
-    metacode:EventMetaCode
+    Enigma: EventEnigma,
+    Technova: EventTechnova,
+    CaseStudy:EventCasestudy,
+    Excavate : EventExcavate,
+    Metaclix:EventMetaclix,
+    Ideathon:EventIdeathon,
+    Cadvolution:EventCad,
+    MetaCode:EventMetaCode
     // Add more events here as needed
 };
 

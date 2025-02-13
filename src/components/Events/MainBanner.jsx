@@ -6,8 +6,8 @@ class MainBanner extends React.Component {
     render(){
         return (
             <div className="page-title-area item-bg1">
-                <div className="container">
                     <SplashCursor/>
+                <div className="container">
                     <h1>Events</h1>
                     <span>Are you excited?</span>
                     <ul>

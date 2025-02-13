@@ -495,7 +495,7 @@ Preloader CSS
   height: 100%;
   z-index: 999999;
   overflow: hidden;
-  background: #00DF75;
+  background: var(--mainbanner-color);
 }
 
 .preloader .loader {
@@ -508,7 +508,7 @@ Preloader CSS
   margin: -80px 0 0 -75px;
   border-radius: 50%;
   border: 7px solid transparent;
-  border-top-color: #009F7D;
+  border-top-color: var(--btnbg-color);
   -webkit-animation: spin 1.7s linear infinite;
           animation: spin 1.7s linear infinite;
   z-index: 11;
@@ -732,7 +732,7 @@ Navbar CSS
 }
 
 .navbar-brand img{
-  max-width: 67% !important;
+  max-width: 50% !important;
 }
 
 /*================================================

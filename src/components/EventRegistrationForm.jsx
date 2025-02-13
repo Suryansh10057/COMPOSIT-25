@@ -67,7 +67,7 @@ const EventRegistrationForm = () => {
       <div className="d-table mt-9">
         <div className="d-table-cell">
           <div className="signup-form">
-            <Link to="/events" className="btn-modal btn-primary">
+            <Link to={`/events/${eventName}`} className="btn-modal btn-primary">
               &#xab; Back to Events
             </Link>
 
