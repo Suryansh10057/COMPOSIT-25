@@ -11,6 +11,7 @@ import AppRouter from './Routes';
 import Preloader from './components/Shared/Preloader';
 import Orb from './components/Animations/Particle';
 import ParticlesBackground from './components/Animations/WebBackground';
+import SplashCursor from './components/Animations/SplashCursor';
 const App = () => {
     const [phase, setPhase] = useState("enter"); // "enter", "video", "content"
     const videoRef = useRef(null);
@@ -54,6 +55,7 @@ const App = () => {
                 <>
                 <div style={{ width: '100%', height: '100vh', position: 'relative', backgroundColor: 'black', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     {/* <ParticlesBackground /> */}
+                    <SplashCursor/>
                     <Orb
                         hoverIntensity={0.5}
                         rotateOnHover={true}

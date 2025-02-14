@@ -18,6 +18,8 @@ const Signup = () => {
         gender: "default",
         referral: ""
     });
+    const [loading, setLoading] = useState(false);
+    const [btntxt, setBtntxt] = useState("Sign Up");
 
     const [error, setError] = useState(null);
     const [isValid, setIsValid] = useState(false);
@@ -41,20 +43,22 @@ const Signup = () => {
         const isEmailValid = /\S+@\S+\.\S+/.test(signupData.email);
         const isPhoneValid = /^[0-9]{10}$/.test(signupData.phone);
         const isPasswordValid = signupData.password.length >= 6;
-        const areFieldsFilled = Object.values(signupData).every(
-            (val) => val.trim() !== "" && val !== "default"
-        );
+        // const areFieldsFilled = Object.values(signupData).every(
+        //     (val) => val.trim() !== "" && val !== "default"
+        // );
 
-        setIsValid(isEmailValid && isPhoneValid && isPasswordValid && areFieldsFilled);
+        setIsValid(isEmailValid && isPhoneValid && isPasswordValid);
     }, [signupData]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (!isValid) return;
 
-        const submit = document.getElementById("submitbtn");
-        submit.innerText = "Signig up, please wait...";
-        submit.disabled = true;
+        setLoading(true);
+
+        // const submit = document.getElementById("submitbtn");
+        // submit.innerText = "Signig up, please wait...";
+        setBtntxt("Signig up, please wait...");
+        // submit.disabled = true;
 
         try {
             const response = await fetch(`${BaseUrl}/api/user/register`, {
@@ -63,17 +67,21 @@ const Signup = () => {
                 body: JSON.stringify(signupData),
             });
 
-            const result = await response.json();
-            if (!response.ok) throw new Error(result.message || "Signup failed");
-
-            setError(result.message);
-            openForm();
-            localStorage.setItem("COMPOSITuser", JSON.stringify(result.user));
-            localStorage.setItem("COMPOSITuserToken", JSON.stringify(result.token));
-
-            window.location = `/`;
+            if (!response.ok) {
+                const errorResponse = await response.json();
+                throw new Error(errorResponse.message || 'Something went wrong');
+              }
+        
+              const compUser = await response.json();
+              localStorage.setItem('COMPOSITuser', JSON.stringify(compUser.user));
+              localStorage.setItem('COMPOSITuserToken', JSON.stringify(compUser.token));
+        
+            //   setErrorr(null);
+            //   setSuccess(`Login Successful ${compUser.name}`);
+              window.location = `/`;
         } catch (err) {
             setError(err.message);
+            setBtntxt("Sign Up");
             openForm();
         }
     };
@@ -89,7 +97,7 @@ const Signup = () => {
                             </Link>
                             <h3>Create your Account</h3>
 
-                            <form>
+                            <form onSubmit={handleSubmit}>
                                 <div className="form-group">
                                     <label>Name</label>
                                     <input
@@ -127,9 +135,9 @@ const Signup = () => {
                                         onChange={handleChange}
                                         required
                                     />
-                                    {/* {signupData.password.length > 0 && signupData.password.length < 6 && (
+                                    {signupData.password.length > 0 && signupData.password.length < 6 && (
                                         <p className="error-text">Password must be at least 6 characters</p>
-                                    )} */}
+                                    )}
                                 </div>
 
                                 <div className="form-group">
@@ -232,11 +240,11 @@ const Signup = () => {
                                     type="submit"
                                     id="submitbtn"
                                     className="btn-modal btn-primary flex-row flex"
-                                    onClick={handleSubmit}
-                                    disabled={!isValid}
+                                    // onClick={handleSubmit}
+                                    disabled={loading}
 
                                 >
-                                   Signup 
+                                   {btntxt} 
                                 </button>
 
                                 <p>Already a registered user? <Link to="/login">Login!</Link></p>
