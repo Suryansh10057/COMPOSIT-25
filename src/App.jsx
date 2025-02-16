@@ -13,7 +13,7 @@ import Orb from './components/Animations/Particle';
 import ParticlesBackground from './components/Animations/WebBackground';
 import SplashCursor from './components/Animations/SplashCursor';
 const App = () => {
-    const [phase, setPhase] = useState("enter"); // "enter", "video", "content"
+    const [phase, setPhase] = useState("content"); // "enter", "video", "content"
     const videoRef = useRef(null);
     // const audioRef = useRef(null);
     const [loading, setLoading] = useState(true);

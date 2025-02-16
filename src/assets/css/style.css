@@ -220,14 +220,67 @@ label {
   background: #00158a;
   position: relative;
   z-index: 1;
+} 
+
+
+.register-btn {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(40, 144, 241);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(40, 144, 241);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  width:auto;
+
 }
+
+.register-btn span {
+  margin: 10px;
+}
+
+.register-btn::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.register-btn:hover {
+  color: #fff;
+  border: 1px solid rgb(40, 144, 241);
+}
+
+.register-btn:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(40, 144, 241);
+}
+ 
 
 .btn-primary::before, .btn-primary::after {
   content: '';
   position: absolute;
   top: 0;
   width: 51%;
-  /* background: #3F0071; */
   background: var(--btnbg-color);
   height: 100%;
   z-index: -1;
@@ -735,6 +788,16 @@ Navbar CSS
   max-width: 50% !important;
 }
 
+.event-container{
+  width:90%;
+  margin:auto;
+}
+
+.event-row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 /*================================================
 Main Banner CSS
 =================================================*/
@@ -2440,7 +2503,16 @@ Schedule CSS
 
 .btn-box {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  
+  padding: 0 20px;
+  gap: 20px;
 }
 
 .btn-box .btn {
@@ -3598,8 +3670,8 @@ Page Title CSS
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding-top: 250px;
-  padding-bottom: 180px;
+  padding-top: 106px;
+  padding-bottom: 65px;
 }
 
 .page-title-area::before {
@@ -3778,6 +3850,9 @@ Signup CSS
   background-size: cover;
   background-repeat: no-repeat;
   height: 100% ;
+}
+.event-form{
+  padding-top: 6rem !important;
 }
 
 .signup-area::before {
@@ -4783,6 +4858,11 @@ Contact Us CSS
   margin-top: 20px;
 }
 
+.success-msg{
+  color: green !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
 #contactForm .h4 {
   font-size: 15px;
 }
@@ -5034,6 +5114,10 @@ Back To Top CSS
 .single-events {
   display: flex;
   flex-direction: column;
+}
+.single-events img{
+  width:70%;
+  margin: auto;
 }
 
 /*profile*/
@@ -5390,6 +5474,80 @@ Back To Top CSS
 
 */
 
+.profile-form{
+  padding-top: 7rem;
+  background-color: white;
+}
+.profile-page{
+  padding-top: 10px;
+  /* background-color: red; */
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+.profile-ids{
+  display: flex;
+  justify-content: space-evenly;
+  /* font-size: 17px; */
+  cursor: pointer;
+  list-style: none;
+  gap: 40px;
+}
+.profile-tabs{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.profile-info{
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  font-size: 14px !important;
+
+}
+.profile-info p{
+  width: 200px;  /* Define a width for truncation */
+
+}
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  max-width: 150px; /* Adjust width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: black;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  transition: opacity 0.2s ease-in-out;
+  z-index: 10;
+}
 
 
 /* 

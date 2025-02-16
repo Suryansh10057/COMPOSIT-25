@@ -34,7 +34,7 @@ const EventMetaCode = () => {
    
    //console.log(eventData);
   return (
-    <div className="event-details-area ptb-120">
+    <div className="event-details-area pt-20">
       <section className="event-area bg-image ptb-120">
         <div className="col-lg-3 col-sm-6 p-0" style={{ textAlign: "center" }}>
           <div className="single-events">
@@ -75,21 +75,21 @@ const EventMetaCode = () => {
                   to={{
                     pathname: "/createTeam/MetaCode",
                   }}
-                  className="btn btn-primary"
+                  className="register-btn"
                 >
                   Coming Soon
                 </Link>
               )} */}
 {/* 
               {!eventData && (
-                <Link to="/joinTeam/Metaclix" className="btn btn-primary">
+                <Link to="/joinTeam/Metaclix" className="register-btn">
                   Join Team
                 </Link>
               )} */}
 
               {/* <a
                 href="https://drive.google.com/file/d/1k5oe8KblKND9twCk0Tum-yTJMel5GQus/view?usp=sharing"
-                className="btn btn-secondary"
+                className="register-btn"
                 target="_blank"
               >
                 Rules & Regulations

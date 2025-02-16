@@ -55,15 +55,14 @@ const EventRegistrationForm = () => {
     } catch (err) {
       setError(err.message);
       setSuccess(null);
+      setLoading(false);
       submit.innerText = 'Create a Team';
       submit.disabled = false;
-    } finally {
-      setLoading(false);
-    }
+    } 
   };
 
   return (
-    <section className="signup-area" style={{ height: '100vh' }}>
+    <section className="signup-area event-form" style={{ height: '100vh' }}>
       <div className="d-table mt-9">
         <div className="d-table-cell">
           <div className="signup-form">
@@ -105,7 +104,7 @@ const EventRegistrationForm = () => {
                 >
                   {loading ? 'Creating team, please wait...' : 'Create a Team'}
                 </button>
-
+                {/* <p className="success-msg">Hello</p> */}
                 {success && <p className="success-msg">{success}</p>}
                 {error && <p className="error-msg">{error}</p>}
               </form>

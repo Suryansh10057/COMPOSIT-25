@@ -37,7 +37,7 @@ const EventIdeathon = () => {
     
   
     return (
-      <div className="event-details-area ptb-120">
+      <div className="event-details-area pt-120">
         <section className="event-area bg-image ptb-120">
           <div
             className="col-lg-3 col-sm-6 p-0"
@@ -72,7 +72,7 @@ const EventIdeathon = () => {
                                                                              // state: { eventName: "Enigma" }
                                                                            }}                
                                                                            
-                                                                           className="btn btn-primary"
+                                                                           className="register-btn"
                                                                        >
                                                                          {/* Submission Link */}
                                                                          Create Team
@@ -82,7 +82,7 @@ const EventIdeathon = () => {
                                                                        { !eventData &&   
                                                                        <Link
                                                                          to="/joinTeam/Ideathon"
-                                                                         className="btn btn-primary"
+                                                                         className="register-btn"
                                                                        >
                                                                          {/* Submission Link */}
                                                                          Join Team
@@ -107,7 +107,7 @@ const EventIdeathon = () => {
                           <a
                             href="https://drive.google.com/file/d/1isxxZWe9nVSh3PpDPzJsIIRsuY5UnQpC/view?usp=drive_link"
                             target="_blank"
-                            className="btn btn-primary "
+                            className="register-btn"
                           >
                             Rules & Regulations
                           </a>

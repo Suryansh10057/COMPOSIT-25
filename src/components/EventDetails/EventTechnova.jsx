@@ -102,7 +102,7 @@ const  EventTechnova = () => {
                                     // state: { eventName: "Enigma" }
                                   }}                
                                   
-                                  className="btn btn-primary"
+                                  className="register-btn"
                               >
                                 {/* Submission Link */}
                                 Create Team
@@ -115,7 +115,7 @@ const  EventTechnova = () => {
                                 pathname: "/joinTeam/Technova",
                                 // state: { eventName: "Enigma" }
                               }}  
-                                className="btn btn-primary"
+                                className="register-btn"
                               >
                                 {/* Submission Link */}
                                 Join Team
@@ -124,7 +124,7 @@ const  EventTechnova = () => {
                 <a
                   href="https://drive.google.com/file/d/1ehhfk_MHEBSFVSxKmREPFy3oHaUU5Smn/view?usp=drive_link"
                   target="_blank"
-                  className="btn btn-secondary"
+                  className="register-btn"
                 >
                   Rules & Regulations
                 </a>

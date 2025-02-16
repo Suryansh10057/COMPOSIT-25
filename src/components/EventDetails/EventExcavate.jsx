@@ -70,7 +70,7 @@ const  EventExcavate = () => {
                                                                    pathname: "/createTeam/Excavate",
                                                                  }}                
                                                                  
-                                                                 className="btn btn-primary"
+                                                                 className="register-btn"
                                                              >
                                                                Create Team
                                                             </Link>
@@ -79,7 +79,7 @@ const  EventExcavate = () => {
                                                              { !eventData &&   
                                                              <Link
                                                                to="/joinTeam/Excavate"
-                                                               className="btn btn-primary"
+                                                               className="register-btn"
                                                              >
                                                                Join Team
                                                              </Link>} */}
@@ -103,7 +103,7 @@ const  EventExcavate = () => {
                 {/* <a
                   // href="https://drive.google.com/file/d/1rWJihDnNFAehHEjSaB6HpYphzc6OXXjO/view?usp=sharing"
                   // target="_blank"
-                  className="btn btn-primary "
+                  className="register-btn"
                 >
                  Rules & Regulations
                 </a> */}

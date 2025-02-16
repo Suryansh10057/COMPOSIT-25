@@ -1,78 +1,41 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import NewCard from './NewEventCard';
 
-const EventCard = (props)=>{
-    return(
-        <>
-        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                        <div className="pricing-table-box">
-                            <div className="pricingTable-header">
-                                <h3 className="title">{props.event}</h3>
-                            </div>
-                            <ul className="pricing-content">
-                                <p>
-                                    {props.description}
-                                </p>
-                            </ul>
-                            <Link to={props.link} className="btn btn-primary card-btn">
-                                READ MORE
-                            </Link>
-                        </div>
-                    </div>
-        </>
-    )
-}
 const PricingOne = () => {
     const [displayMsg, setDisplayMsg] = useState(null);
     const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
     const participantId = window.location.pathname.split("/")[2];
 
-    const onClickHandler = async (e, source) => {
-        e.preventDefault();
-
-        try {
-            //console.log(source);
-            await axios.post(`/eventRegistration/${source}/${participantId}`, participantId);
-            const successMsg = `Registered Successfully for ${source}`;
-            setDisplayMsg(successMsg);
-            alert(successMsg);
-            window.location = '/events';
-        } catch (error) {
-            const errorMsg = `${error.response?.data || 'Error'} for ${source}`;
-            setDisplayMsg(errorMsg);
-            alert(errorMsg);
-        }
-    };
-
     return (
         <section className="pricing-area ptb-120 bg-image">
-            <div className="container">
-                <div className="row">
+            <div className="event-container">
+                <div className="event-row">
                  
                     
-                   <EventCard event="Technova" description="Unleash your scientific prowess and redefine innovation—join Technova to present groundbreaking research and ideas in materials science and engineering." link="/events/Technova"/>
+                   <NewCard event="Technova" description="Present groundbreaking research and innovative ideas in materials science and engineering to redefine the future." link="/events/Technova"/>
 
 
-                   <EventCard event=" Enigma " description=" Test your knowledge by joining an exciting online quiz competition featuring a diverse range of questions, from engineering to general knowledge. " link="/events/Enigma "/>
+                   <NewCard event=" Enigma " description=" Test your knowledge in an exciting online quiz featuring diverse questions from engineering to general awareness. " link="/events/Enigma "/>
 
 
-                   <EventCard event=" Excavate " description=" Sharpen your critical thinking, problem-solving, and analytical skills to uncover data-driven innovations in metallurgical and materials engineering.
+                   <NewCard event=" Excavate " description="  Apply critical thinking and analytical skills to uncover data-driven insights and innovative solutions.
  " link="/events/Excavate "/>
 
 
-                   <EventCard event=" Metaclix " description=" Showcase the fascinating world of Metallurgical and Materials Engineering through your lens! Capture stunning photos, from industries to everyday world, and compete in an online photography competition to exhibit your vision." link="/events/Metaclix "/>
+                   <NewCard event=" Metaclix " description=" Capture the beauty of science and technology through photography and compete in a dynamic contest." link="/events/Metaclix "/>
 
 
-                   <EventCard event=" Case Study " description="  Dive into the world of strategy and innovation! Analyze real-world business challenges, craft impactful solutions, and showcase your problem-solving skills in this dynamic case study competition" link="/events/CaseStudy "/>
+                   <NewCard event=" Case Study " description=" Analyze real-world challenges, craft strategic solutions, and showcase your problem-solving expertise." link="/events/CaseStudy "/>
 
-                   <EventCard event=" Ideathon " description="Ideathon: An event for aspiring entrepreneurs to pitch innovative ideas, receive expert feedback, and propel their vision into reality.
+                   <NewCard event=" Ideathon " description="An event for aspiring entrepreneurs to pitch innovative ideas, receive expert feedback, and propel their vision into reality.
 " link="/events/Ideathon "/>
 
-                   <EventCard event=" MetaCode " description=" An intriguing coding challenge combining the realm of material Science and Computation 
+                   <NewCard event=" MetaCode " description="Solve engaging coding challenges that blend innovation, problem-solving, and computation. 
  " link="/events/MetaCode"/>
 
-                   <EventCard event=" Cadvolution " description="Showcase your CAD expertise by designing innovative products based on real-world problem statements. Justify your material choices with engineering precision to create the perfect synergy of design and functionality. " link="/events/Cadvolution"/>
+                   <NewCard event=" Cadvolution " description="Design creative CAD models, justify your choices, and develop solutions for real-world challenges." link="/events/Cadvolution"/>
                  
 
 

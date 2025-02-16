@@ -81,7 +81,7 @@ const EventEnigma = () => {
                       // state: { eventName: "Enigma" }
                     }}                
                     
-                    className="btn btn-primary"
+                    className="register-btn"
                 >
                   {/* Submission Link */}
                   Create Team
@@ -91,7 +91,7 @@ const EventEnigma = () => {
                 { !eventData &&   
                 <Link
                   to="/joinTeam/Enigma"
-                  className="btn btn-primary"
+                  className="register-btn"
                 >
                   {/* Submission Link */}
                   Join Team
@@ -100,7 +100,7 @@ const EventEnigma = () => {
                 <a
                   href="https://drive.google.com/file/d/1TXM9pjwOrrMzaIlI_V4mEZ6xRQ_cFQAs/view?usp=drive_link"
                   target="_blank"
-                  className="btn btn-primary"
+                  className="register-btn"
                 >
                   Rules & Regulations
                 </a>

@@ -44,7 +44,7 @@ const HandleEvents = () => {
 
     return (
         <>
-            <MainBanner />
+            {/* <MainBanner /> */}
             {EventComponent ? <EventComponent /> : <p>Event not found</p>}
             <Footer />
             <GoTop scrollStepInPx="50" delayInMs="16.66" />

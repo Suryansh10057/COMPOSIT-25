@@ -71,7 +71,7 @@ const EventCad = () => {
                                                                    pathname: "/createTeam/CadVolution",
                                                                  }}                
                                                                  
-                                                                 className="btn btn-primary"
+                                                                 className="register-btn"
                                                              >
                                                                Create Team
                                                             </Link>
@@ -80,7 +80,7 @@ const EventCad = () => {
                                                              { !eventData &&   
                                                              <Link
                                                                to="/joinTeam/CadVolution"
-                                                               className="btn btn-primary"
+                                                               className="register-btn"
                                                              >
                                                                Join Team
                                                              </Link>} */}
@@ -104,7 +104,7 @@ const EventCad = () => {
                 {/* <a
                   href="https://drive.google.com/file/d/1rWJihDnNFAehHEjSaB6HpYphzc6OXXjO/view?usp=sharing"
                   target="_blank"
-                  className="btn btn-primary "
+                  className="register-btn "
                 >
                   Rules & Regulations
                 </a> */}

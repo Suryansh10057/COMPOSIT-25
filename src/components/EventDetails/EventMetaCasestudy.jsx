@@ -120,7 +120,7 @@ const EventCasestudy = () => {
                                                       pathname: "/createTeam/CaseStudy",
                                                     }}                
                                                     
-                                                    className="btn btn-primary"
+                                                    className="register-btn"
                                                 >
                                                   Create Team
                                                </Link>
@@ -129,7 +129,7 @@ const EventCasestudy = () => {
                                                 { !eventData &&   
                                                 <Link
                                                   to="/joinTeam/CaseStudy"
-                                                  className="btn btn-primary"
+                                                  className="register-btn"
                                                 >
                                                   Join Team
                                                 </Link>}
@@ -152,7 +152,7 @@ const EventCasestudy = () => {
                 } */}
                 <a
                   href="https://drive.google.com/file/d/1hPKWm-BGLSuFoWPJtg8HOiOyFkoJiznG/view?usp=drive_link"
-                  className="btn btn-primary"
+                  className="register-btn"
                   target="_blank"
                 >
                   Rules & Regulations

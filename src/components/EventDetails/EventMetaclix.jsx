@@ -77,7 +77,7 @@ const EventMetaclix = () => {
                     pathname: "/createTeam/Metaclix",
                     // state: { eventName: "Enigma" }
                   }}
-                  className="btn btn-primary"
+                  className="register-btn"
                 >
                   {/* Submission Link */}
                   Create Team
@@ -92,7 +92,7 @@ const EventMetaclix = () => {
 
               <a
                 href="https://drive.google.com/file/d/1V-lqDAU-cvN2AIFYlWYiHQMplF8jpqsB/view?usp=drive_link"
-                className="btn btn-secondary"
+                className="register-btn"
                 target="_blank"
               >
                 Rules & Regulations
