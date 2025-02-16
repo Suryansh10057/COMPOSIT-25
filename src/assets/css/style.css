@@ -5514,6 +5514,7 @@ Back To Top CSS
 }
 .profile-info p{
   width: 200px;  /* Define a width for truncation */
+  margin-bottom: 0 !important;
 
 }
 .tooltip-container {
@@ -5549,7 +5550,17 @@ Back To Top CSS
   z-index: 10;
 }
 
+@media (width < 486px){
+  .profile-info{
+    flex-direction: column;
+    gap: 0;
 
+  }
+  .profile-info p{
+    margin: 0 !important;
+
+  }
+}
 /* 
 .signup-area{
   z-index: -1;
