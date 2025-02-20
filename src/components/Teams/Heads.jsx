@@ -16,7 +16,7 @@ const Heads = [
       "position": "General Secretary and PR Head"
     },
     {
-      "img": require("../../assets/images/SubHeads/kamal.jpeg"),
+      "img": require("../../assets/images/SubHeads/kamalnew.jpeg"),
       "name": "Kamal Bajoriya",
       "linkedin": "https://www.linkedin.com/in/kamal-bajoria-7b47a7262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "mail": "bajoria30kamal@gmail.com",
@@ -50,7 +50,7 @@ const Heads = [
 
     },
     {
-      "img": require("../../assets/images/SubHeads/manash.jpg"),
+      "img": require("../../assets/images/SubHeads/manasnew.jpeg"),
       "name": "Manash shit",
       "linkedin": "https://www.linkedin.com/in/manash-shit-03a178252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "mail": "shitmanash78@gmail.com",

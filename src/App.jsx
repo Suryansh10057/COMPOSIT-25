@@ -12,6 +12,8 @@ import Preloader from './components/Shared/Preloader';
 import Orb from './components/Animations/Particle';
 import ParticlesBackground from './components/Animations/WebBackground';
 import SplashCursor from './components/Animations/SplashCursor';
+import Threads from './components/Animations/threads';
+import CircularText from './components/Animations/composittxt';
 const App = () => {
     const [phase, setPhase] = useState("enter"); // "enter", "video", "content"
     const videoRef = useRef(null);
@@ -54,6 +56,13 @@ const App = () => {
                
                 <>
                 <div style={{ width: '100%', height: '100vh', position: 'relative', backgroundColor: 'black', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    {/* <CircularText
+                    text="COMPOSIT*2025*IITKGP*"
+                    onHover="speedUp"
+                    spinDuration={20}
+                    className="custom-class"
+                    /> */}
+                    {/* <Threads/> */}
                     {/* <ParticlesBackground /> */}
                     <SplashCursor/>
                     <Orb

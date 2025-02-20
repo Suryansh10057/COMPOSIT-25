@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from "axios";
 import Navigation from '../Navigation/Navigation';
 import NewCard from '../Events/NewEventCard';
+import Footer from '../Common/Footer';
 
 export default function Profile() {
     
@@ -11,6 +12,18 @@ export default function Profile() {
     const [registeredEvents, setRegisteredEvents] = useState([]);
     const [notRegisteredEvents, setNotRegisteredEvents] = useState([]);
 
+    const [copyMessage, setCopyMessage] = useState("");
+
+    const copyToClipboard = () => {
+      navigator.clipboard.writeText(userData.email)
+        .then(() => {
+          setCopyMessage("Email ID copied to clipboard!");
+          setTimeout(() => setCopyMessage(""), 3000); // Hide message after 3 seconds
+        })
+        .catch(err => {
+          console.error("Failed to copy: ", err);
+        });
+    };
 
     useEffect(() => {
         if (userData?.events?.length > 0) {
@@ -67,8 +80,8 @@ export default function Profile() {
            {tab==="profile" && <>
         <h3 className='text-center mt-2 pt-2'>Profile Information</h3>
         <ul className='profile-ids mt-3'>
-            <li className=''><strong>Registration ID:</strong> {userData._id}</li>
-            {userData.SaId && <li className=''><strong>SA ID:</strong> {userData.SaId}</li>}
+            <li className='uid'><strong>Registration ID:</strong> {userData._id}</li>
+            {userData.SaId && <li className='said'><strong>SA ID:</strong> {userData.SaId}</li>}
         </ul>
 
         <div className='profile-page  mt-4'>
@@ -85,7 +98,7 @@ export default function Profile() {
     
         <div className='profile-info'>
             <p><b>Email :</b> 
-            <span className="tooltip-container">
+            <span className="tooltip-container" onClick={copyToClipboard}>
             <span className="email-text">{userData.email}</span>
             <span className="tooltip">{userData.email}</span>
         </span>
@@ -95,6 +108,12 @@ export default function Profile() {
         </div>
 
         </div>
+
+        {copyMessage && (
+        <div className="copy-message">
+          {copyMessage}
+        </div>
+      )}
 </>}
 {tab==="events" && <>  
 
@@ -112,7 +131,7 @@ export default function Profile() {
                     )}
                 </div>
 
-                <h2>Not Registered Events</h2>
+                <h2>Events Not Registered </h2>
                 <div className="event-row">
                     {notRegisteredEvents.length > 0 ? (
                         notRegisteredEvents.map(event => (
@@ -128,12 +147,16 @@ export default function Profile() {
 
 
 
+
+
  </>}
 
 
         </div>
 </div> 
         </section>
+        <Footer/>
+
         </>
 
     )
