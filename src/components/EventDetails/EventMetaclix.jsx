@@ -75,12 +75,10 @@ const EventMetaclix = () => {
                 <Link
                   to={{
                     pathname: "/createTeam/Metaclix",
-                    // state: { eventName: "Enigma" }
                   }}
                   className="register-btn"
                 >
-                  {/* Submission Link */}
-                  Create Team
+                  Register Here
                 </Link>
               )}
 {/* 

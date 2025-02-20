@@ -116,23 +116,23 @@ const EventCasestudy = () => {
                                                 }
                                 
                                                 {!eventData && <Link
-                                                    to={{
-                                                      pathname: "/createTeam/CaseStudy",
-                                                    }}                
+                                                    // to={{
+                                                    //   pathname: "/createTeam/CaseStudy",
+                                                    // }}                
                                                     
                                                     className="register-btn"
                                                 >
-                                                  Create Team
+                                                  Register Here
                                                </Link>
                                                }
                                 
-                                                { !eventData &&   
+                                                {/* { !eventData &&   
                                                 <Link
                                                   to="/joinTeam/CaseStudy"
                                                   className="register-btn"
                                                 >
                                                   Join Team
-                                                </Link>}
+                                                </Link>} */}
 {/* 
                 <a
                   href="https://drive.google.com/file/d/1GI__f_FmL9qIjNGgXdDjGqtqjjtE8vps/view?usp=sharing"

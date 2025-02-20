@@ -97,19 +97,18 @@ const  EventTechnova = () => {
                               }
               
                               {!eventData && <Link
-                                  to={{
-                                    pathname: "/createTeam/Technova",
-                                    // state: { eventName: "Enigma" }
-                                  }}                
+                                  // to={{
+                                  //   pathname: "/createTeam/Technova",
+                                  // }}                
                                   
                                   className="register-btn"
                               >
                                 {/* Submission Link */}
-                                Create Team
+                                Register Here
                              </Link>
                              }
               
-                              { !eventData &&   
+                              {/* { !eventData &&   
                               <Link
                               to={{
                                 pathname: "/joinTeam/Technova",
@@ -117,9 +116,8 @@ const  EventTechnova = () => {
                               }}  
                                 className="register-btn"
                               >
-                                {/* Submission Link */}
                                 Join Team
-                              </Link>}
+                              </Link>} */}
               
                 <a
                   href="https://drive.google.com/file/d/1ehhfk_MHEBSFVSxKmREPFy3oHaUU5Smn/view?usp=drive_link"

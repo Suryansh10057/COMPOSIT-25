@@ -58,7 +58,7 @@ export default function Profile() {
         <div className="profile-form">
         {/*  */}
         <div>
-        <div className="profile-tabs">
+        {/* <div className="profile-tabs">
         <button
           variant={tab === "profile" ? "default" : "ghost"}
           onClick={() => setTab("profile")}
@@ -73,7 +73,7 @@ export default function Profile() {
         >
           My Events
         </button>
-      </div>
+      </div> */}
      
         </div>
         <div className='mt-3 px-3'> 
@@ -115,7 +115,7 @@ export default function Profile() {
         </div>
       )}
 </>}
-{tab==="events" && <>  
+{/* {tab==="events" && <>  
 
 <div className='mt-5'>
 <section className="pricing-area ptb-50 bg-image">
@@ -149,7 +149,7 @@ export default function Profile() {
 
 
 
- </>}
+ </>} */}
 
 
         </div>
