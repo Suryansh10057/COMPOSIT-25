@@ -67,24 +67,26 @@ const EventIdeathon = () => {
                                                                        }
                                                        
                                                                        {!eventData && <Link
-                                                                          //  to={{
-                                                                          //    pathname: "/createTeam/Ideathon",
-                                                                          //  }}                
+                                                                           to={{
+                                                                             pathname: "/createTeam/Ideathon",
+                                                                             // state: { eventName: "Enigma" }
+                                                                           }}                
                                                                            
                                                                            className="register-btn"
                                                                        >
                                                                          {/* Submission Link */}
-                                                                         Register Here
+                                                                         Create Team
                                                                       </Link>
                                                                       }
                                                        
-                                                                       {/* { !eventData &&   
+                                                                       { !eventData &&   
                                                                        <Link
                                                                          to="/joinTeam/Ideathon"
                                                                          className="register-btn"
                                                                        >
+                                                                         {/* Submission Link */}
                                                                          Join Team
-                                                                       </Link>} */}
+                                                                       </Link>}
                        {/* 
                         {/* <a
                             href="https://drive.google.com/file/d/1h0Oqq4aEW829mEtZW-SvAlLiNloDg3jT/view?usp=sharing"

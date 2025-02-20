@@ -76,23 +76,26 @@ const EventEnigma = () => {
               </div>
                               }
                 {!eventData && <Link
-                    // to={{
-                    //   pathname: "/createTeam/Enigma",
-                    // }}                
+                    to={{
+                      pathname: "/createTeam/Enigma",
+                      // state: { eventName: "Enigma" }
+                    }}                
                     
                     className="register-btn"
                 >
-                  Register Here
+                  {/* Submission Link */}
+                  Create Team
                </Link>
                }
 
-                {/* { !eventData &&   
+                { !eventData &&   
                 <Link
                   to="/joinTeam/Enigma"
                   className="register-btn"
                 >
+                  {/* Submission Link */}
                   Join Team
-                </Link>} */}
+                </Link>}
 
                 <a
                   href="https://drive.google.com/file/d/1TXM9pjwOrrMzaIlI_V4mEZ6xRQ_cFQAs/view?usp=drive_link"
