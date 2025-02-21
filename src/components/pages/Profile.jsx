@@ -34,7 +34,7 @@ export default function Profile() {
             // If no events registered, all events go to the 'not registered' section
             setNotRegisteredEvents(allEvents);
         }
-    }, []);
+    }, [userData]);
 
 
     const allEvents = [
@@ -49,8 +49,8 @@ export default function Profile() {
     ];
 
 
-    console.log("data from localStorage",userData)
-    console.log("Events are, ",registeredEvents)
+    // console.log("data from localStorage",userData)
+    // console.log("Events are, ",registeredEvents)
     return (
         <>
         <Navigation/>
