@@ -8,7 +8,7 @@
 const compositTeam = [
     {
       name: "Sushabhan Majumdar",
-      img: require("../../assets/images/SubHeads2025/sushabhan.jpg"),
+      img: "https://res.cloudinary.com/dmdhj9jdq/image/upload/v1740159132/sushabhan_zicrtk.jpg",
       position: "SubHead",
       email: "sushabhan.composit@gmail.com",
       linkedin: "https://www.linkedin.com/in/sushabhan-majumdar-099564292/",
@@ -16,7 +16,7 @@ const compositTeam = [
     },
     {
       name: "Vijendra Singh Shyam",
-      img: require("../../assets/images/SubHeads2025/vijendra.JPG"),
+      img: "https://res.cloudinary.com/dmdhj9jdq/image/upload/v1740159133/vijendra_ngc85q.jpg",
       position: "SubHead",
       email: "vijendra.composit@gmail.com",
       linkedin: "https://www.linkedin.com/in/vijendra-singh-shyam-360131283",
@@ -24,7 +24,7 @@ const compositTeam = [
     },
     {
       name: "Omkar Prajapati",
-      img: require("../../assets/images/SubHeads2025/omkar.jpg"),
+      img: "https://res.cloudinary.com/dmdhj9jdq/image/upload/v1740159130/omkar_h44dwc.jpg",
       position: "SubHead",
       email: "om24prajapati04@gmail.com",
       linkedin: "https://www.linkedin.com/in/omkar-prajapati-05810a297/",
@@ -32,7 +32,7 @@ const compositTeam = [
     },
     {
       name: "Souradeep Das",
-      img: require("../../assets/images/SubHeads2025/souradeep.jpg"),
+      img:"https://res.cloudinary.com/dmdhj9jdq/image/upload/v1740159131/souradeep_rrrkn0.jpg",
       position: "SubHead",
       email: "souraofficial14@gmail.com",
       linkedin: "https://www.linkedin.com/in/souradeep-das-23631b2b2",
@@ -40,7 +40,7 @@ const compositTeam = [
     },
     {
       name: "Itisha Roy",
-      img: require("../../assets/images/SubHeads2025/itisha.jpg"),
+      img: "https://res.cloudinary.com/dmdhj9jdq/image/upload/v1740159129/itisha_nmpclo.jpg",
       position: "SubHead",
       emails: ["itisha.2718@gmail.com", "itisha.cmp25@gmail.com"],
       linkedin: "https://www.linkedin.com/in/itisha-roy-284985287",
@@ -48,7 +48,7 @@ const compositTeam = [
     },
     {
       name: "Ayush R. Ogale",
-      img: require("../../assets/images/SubHeads2025/ayush.jpeg"),
+      img: "https://res.cloudinary.com/dmdhj9jdq/image/upload/v1740159128/ayush_z8wdxy.jpg",
       position: "SubHead",
       email: "ayushogale4@gmail.com",
       linkedin: "https://www.linkedin.com/in/ayush-ogale-9b449528a",
@@ -56,7 +56,7 @@ const compositTeam = [
     },
     {
       name: "Jitam Barman",
-      img: require("../../assets/images/SubHeads2025/jitam.jpeg"),
+      img: "https://res.cloudinary.com/dmdhj9jdq/image/upload/v1740159129/jitam_ckbmbb.jpg",
       position: "SubHead",
       email: "jitam.cmp25@gmail.com",
       linkedin: "https://www.linkedin.com/in/jitam-barman/",
@@ -64,7 +64,7 @@ const compositTeam = [
     },
     {
       name: "Jayesh Andhale",
-      img: require("../../assets/images/SubHeads2025/jayesh.jpg"),
+      img:"https://res.cloudinary.com/dmdhj9jdq/image/upload/v1740159129/jayesh_obrxtj.jpg",
       position: "SubHead",
       email: "jayeshandhale05@gmail.com",
       linkedin: "https://www.linkedin.com/in/jayesh-andhale-2638b9287",
