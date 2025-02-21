@@ -33,7 +33,7 @@ const App = () => {
         if (window.innerWidth < 500) {
             setPhase("content"); // Skip video for small screens
         } else {
-            setPhase("video"); // Play video for larger screens
+            setPhase("content"); // Play video for larger screens
             if (videoRef.current) {
                 videoRef.current.play();
             }

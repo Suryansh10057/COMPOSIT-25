@@ -51,7 +51,7 @@ const StyledWrapper = styled.div`
 
   .card:hover {
     background-position: -100px 100px, -100px 100px;
-    transform: rotate3d(0.5, 1, 0, 30deg);
+    /* transform: rotate3d(0.5, 1, 0, 30deg); */
   }
 
   .content-box {
@@ -60,7 +60,7 @@ const StyledWrapper = styled.div`
     /* border-radius: 10px 100px 10px 10px; */
     transition: all 0.3s ease-in-out;
     padding: 35px 25px 25px 25px;
-    transform-style: preserve-3d;
+    /* transform-style: preserve-3d; */
   }
 
   .content-box .card-title {
@@ -69,12 +69,12 @@ const StyledWrapper = styled.div`
     font-size: 25px;
     font-weight: 900;
     transition: all 0.3s ease-in-out;
-    transform: translate3d(0px, 0px, 50px);
+    /* transform: translate3d(0px, 0px, 50px); */
   }
 
-  .content-box .card-title:hover {
+  /* .content-box .card-title:hover {
     transform: translate3d(0px, 0px, 60px);
-  }
+  } */
 
   .content-box .card-content {
     margin-top: 10px;
@@ -82,14 +82,14 @@ const StyledWrapper = styled.div`
     font-weight: 600;
     color: #f2f2f2;
     transition: all 0.3s ease-in-out;
-    transform: translate3d(0px, 0px, 30px);
+    /* transform: translate3d(0px, 0px, 30px); */
     min-height: 117px;
     width:95%;
   }
 
-  .content-box .card-content:hover {
+  /* .content-box .card-content:hover {
     transform: translate3d(0px, 0px, 60px);
-  }
+  } */
 
   .content-box .see-more {
     cursor: pointer;
@@ -105,11 +105,11 @@ const StyledWrapper = styled.div`
     text-align: center;
     width: 50%;
     transition: all 0.3s ease-in-out;
-    transform: translate3d(0px, 0px, 20px);
+    /* transform: translate3d(0px, 0px, 20px); */
   }
 
   .content-box .see-more:hover {
-    transform: translate3d(0px, 0px, 60px);
+    /* transform: translate3d(0px, 0px, 60px); */
     width:70%;
   }
 
@@ -123,7 +123,7 @@ const StyledWrapper = styled.div`
     border: 1px solid rgb(7, 185, 255);
     /* border-radius: 10px; */
     padding: 10px;
-    transform: translate3d(0px, 0px, 80px);
+    /* transform: translate3d(0px, 0px, 80px); */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
   }
 
