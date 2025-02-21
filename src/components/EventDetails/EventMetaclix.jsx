@@ -84,11 +84,11 @@ const EventMetaclix = () => {
                 </Link>
               )}
 
-              {!eventData && (
+              {/* {!eventData && (
                 <Link to="/joinTeam/Metaclix" className="btn btn-primary">
                   Join Team
                 </Link>
-              )}
+              )} */}
 
               <a
                 href="https://drive.google.com/file/d/1V-lqDAU-cvN2AIFYlWYiHQMplF8jpqsB/view?usp=drive_link"

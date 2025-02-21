@@ -69,7 +69,7 @@ const EventMetaCode = () => {
                   </p>
                 </div>
               )}
-{/* 
+
               {!eventData && (
                 <Link
                   to={{
@@ -77,9 +77,9 @@ const EventMetaCode = () => {
                   }}
                   className="register-btn"
                 >
-                  Coming Soon
+                  Create Team
                 </Link>
-              )} */}
+              )}
 {/* 
               {!eventData && (
                 <Link to="/joinTeam/Metaclix" className="register-btn">
