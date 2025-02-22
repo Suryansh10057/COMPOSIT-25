@@ -36,10 +36,9 @@ const EventCasestudy = () => {
     //console.log(eventData);
 
     const eventRules = [
-      "The event will have the following rounds: Aptitude Quiz + Submission Round + Final Presentation Round.",
-      "Round 1 will be held online on Unstop as an Aptitude Quiz.",
-      "On-spot registration at Unstop is allowed up to the round deadline. Round 1 results will be mailed to the participants selected for the final round.",
-      "There is no fixed number of teams for qualification, although approximately the top 25 teams will be selected from the first round, and the top 7 teams will be selected from the second round.",
+      "The event will have the following rounds: Submission Round + Final Presentation Round.",
+      "On-spot registration is allowed up to the round deadline. Submission Round results will be mailed to the participants selected for the final round within 24 hours after submission.",
+      "There is no fixed number of teams for qualification.",
       "Everything is allowed in the presentation, including sound effects, video clips, and graphics.",
       "There is a slide limit for the presentation; it should be between 8-10 slides. The presentation time should not exceed 10 minutes.",
       "The presentation will also be followed by a Q&A session with the judging panel for 5 minutes, which will also be considered for final evaluation.",
@@ -54,7 +53,7 @@ const EventCasestudy = () => {
       },
       {
         question: "How will we know if we are qualified for the final round?",
-        answer: "All teams submitting the abstract following all the rules and themes of the problem statement will be sent a confirmation mail regarding further details about the final round. There will be no elimination after the first round."
+        answer: "All teams submitting the abstract following all the rules and themes of the problem statement will be sent a confirmation mail regarding further details about the final round within 24 hours of your submission."
       },
       {
         question: "Is there a slide limit for the presentation?",
@@ -242,28 +241,28 @@ and show their problem-solving abilities in addressing real-life challenges.{" "
                               <h3>Important Dates</h3>
 
                               <ul className="subrules">
-                                <>
+                                {/* <>
                                   <b>Round 1 : </b>
                                 </>
                                 <li>
                                   This will be an aptitude test round held online on Unstop (2nd March 2025).
+                                </li>
+                                <br /> */}
+                                <>
+                                  <b>Round 1:</b>
+                                </>
+                                <li>
+                                For this round, the Problem Statement will be released on
+Unstop and the official website of COMPOSIT on 28th Feb 2025. The
+deadline for the submission will be 7th March 2025.
+
                                 </li>
                                 <br />
                                 <>
                                   <b>Round 2:</b>
                                 </>
                                 <li>
-                                For this round, the Problem Statement will be released on
-Unstop and the official website of COMPOSIT on 9th March 2025. The
-deadline for the submission will be 19th March 2025.
-
-                                </li>
-                                <br />
-                                <>
-                                  <b>Round 3:</b>
-                                </>
-                                <li>
-                                This offline round will be held on 23rd March 2025.
+                                This offline round will be held on 22nd March 2025.
 
                                 </li>
                               </ul>
@@ -277,10 +276,10 @@ deadline for the submission will be 19th March 2025.
 
                             <div className="schedule-info">
                               <h2>Rounds of the Event</h2>
-                              <p>The event will have three rounds as follows:</p>
+                              <p>The event will have two rounds as follows:</p>
 
                               <ul>
-                                <li>
+                                {/* <li>
                                   <h5>Round 1 : Online Aptitude Quiz:</h5>
                                   <ul>
                                     <li>
@@ -298,13 +297,13 @@ next round based on their scores in the quiz.</li>
 </div>
                                     </li>
                                   </ul>
-                                </li>
+                                </li> */}
                                 <li>
-                                  <h5>Round 2 : Problem Statement Analysis : </h5>
+                                  <h5>Round 1 : Problem Statement Analysis : </h5>
                                   <ul>
                                     <li>
-                                    The top 25 teams from Round 1 will be invited to participate in this round.
-Invitations will be sent via email to the registered team leads.
+                                    {/* The top 25 teams from Round 1 will be invited to participate in this round.
+Invitations will be sent via email to the registered team leads. */}
 <div className="mx-4 rules-list">
   <ul style={{ textAlign: "left", color: "#fff", listStyleType: "disc" }} className="list-disc">
     <li><b>Problem Statement : </b> A unique problem statement will be released on
@@ -326,7 +325,7 @@ provided along with the problem statement.
                                 <br></br>
                                 <br />
                                 <li>
-                                  <h5>Round 3: Offline Participation:</h5>
+                                  <h5>Round 2: Offline Participation:</h5>
                                   <ul>
                                     <li>
                                     The final round will take place offline at the IIT Kharagpur campus. This round

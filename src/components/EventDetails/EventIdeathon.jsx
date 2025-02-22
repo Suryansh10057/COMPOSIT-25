@@ -212,7 +212,7 @@ vision into reality!
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                3rd March 2025
+                                6th March 2025 ( Submission will be done through Mail : "ideathon.composit@gmail.com" )
                                 </li>
                                 <br></br>
                                 <br></br>
@@ -261,7 +261,8 @@ participation is also permitted.
 
                                 <li>{" "}The teams have to submit their presentation that must describe the idea proposed, its impact and implementation as required. {" "}</li>             
 
-                                <li>{" "}Submissions that are incomplete or ambiguous, with presentations that are not up to the     mark will not be given the permission to present in the second round.  {" "}</li>                                
+                                <li>{" "}Submissions that are incomplete or ambiguous, with presentations that are not up to the mark will not be given the permission to present in the second round.  {" "}</li>                                
+                                <li>{" "}You will get your result within 24 hours after submission via mail.  {" "}</li>                                
                                                                                          
                               </ul>
                             </div>
