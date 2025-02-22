@@ -56,7 +56,7 @@ class Home extends React.Component {
                 {/* FunFacts Area */}
                 <FunFact />
                 {/* Pricing Area */}
-                <Partner />
+                {/* <Partner /> */}
                 {/* Speakers Area */}
                 <Speakers />
                 {/* <div className="loginPopup" id='loginPopup'>
