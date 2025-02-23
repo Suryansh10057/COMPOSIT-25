@@ -4,6 +4,7 @@ import axios from "axios";
 import Navigation from '../Navigation/Navigation';
 import NewCard from '../Events/NewEventCard';
 import Footer from '../Common/Footer';
+import BaseUrl from '../../const';
 
 export default function Profile() {
     
@@ -12,8 +13,30 @@ export default function Profile() {
     const [registeredEvents, setRegisteredEvents] = useState([]);
     const [notRegisteredEvents, setNotRegisteredEvents] = useState([]);
 
-    const [copyMessage, setCopyMessage] = useState("");
+    const [copyMessage, setCopyMessage] = useState("")
+    const token = JSON.parse(localStorage.getItem('COMPOSITuserToken'));
 
+
+    const [formData, setFormData] = useState({
+        userId: userData._id,
+        name: userData.name,
+        email: userData.email,
+        phone: userData.phone,
+        city: userData.city,
+        state: userData.state,
+        token:token
+
+    });
+    const [message, setMessage] = useState(" ");
+
+// const [signupData, setSignupData] = useState({
+//     name: '',
+//     email: '',
+//     phone: '',
+//     collegeName: '',
+//     city: '',
+//     state: '',
+// })
     const copyToClipboard = () => {
       navigator.clipboard.writeText(userData.email)
         .then(() => {
@@ -34,8 +57,29 @@ export default function Profile() {
             // If no events registered, all events go to the 'not registered' section
             setNotRegisteredEvents(allEvents);
         }
-    }, [userData]);
+    }, []);
 
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch(  `${BaseUrl}/api/user/updateprofile`,
+                {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(formData),
+                }
+             );
+             const data = await response.json();
+            setMessage(data.message);
+            localStorage.setItem("COMPOSITuser", JSON.stringify(data.user));
+        } catch (error) {
+            setMessage("Failed to update profile");
+        }
+    };
 
     const allEvents = [
         { event: "Technova", description: "Present groundbreaking research and innovative ideas in materials science and engineering to redefine the future.", link: "/events/Technova" },
@@ -53,7 +97,7 @@ export default function Profile() {
     // console.log("Events are, ",registeredEvents)
     return (
         <>
-        <Navigation/>
+        {/* <Navigation/> */}
         <section className="signup-area" style={{height:"100%",padding:0}}>
         <div className="profile-form">
         {/*  */}
@@ -72,6 +116,13 @@ export default function Profile() {
           className="register-btn"
         >
           My Events
+        </button>
+        <button
+          variant={tab === "update" ? "default" : "ghost"}
+          onClick={() => setTab("update")}
+          className="register-btn"
+        >
+          Update profile
         </button>
       </div>
      
@@ -150,7 +201,25 @@ export default function Profile() {
 
 
  </>}
+ {tab === "update" && (
+            <>
+            <div className='prfile-page'>
 
+                <h3 className='text-center mt-2 pt-2'>Update Profile</h3>
+                <form onSubmit={handleSubmit} className='update-form'>
+                    <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Name"  />
+                    <input type="text" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone"  />
+                    <input type="text" name="email" value={formData.email} onChange={handleChange} placeholder="Email"  />
+                    {/* <input type="text" name="collegeId" value={formData.collegeId} onChange={handleChange} placeholder="College ID"  /> */}
+                    <input type="text" name="city" value={formData.city} onChange={handleChange} placeholder="City"  />
+                    <input type="text" name="state" value={formData.state} onChange={handleChange} placeholder="State"  />
+                    <button type="submit" className=' btn-primary'>Update</button>
+                </form>
+            </div>
+
+                {message && <p className='update-message'>{message}</p>}
+            </>
+        )}
 
         </div>
 </div> 
@@ -163,12 +232,4 @@ export default function Profile() {
 }
 
 
-{/* 
-    
 
-<form>
-
-</form>
-
-
-*/}

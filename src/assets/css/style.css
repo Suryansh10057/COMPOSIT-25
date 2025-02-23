@@ -5583,3 +5583,32 @@ Back To Top CSS
 .signup-area{
   z-index: -1;
 } */
+
+
+.update-form{
+  /* width: 80% !important; */
+  margin: auto !important;
+
+}
+.update-form input{
+  padding: 5px 20px;
+  margin: auto;
+ border: 1px solid black !important;
+  width: fit-content;
+}
+.prfile-page{
+  border: 2px solid black; 
+  padding: 5px 30px;
+  width: fit-content;
+  margin:auto;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  
+}
+.update-form button {
+  width: fit-content;
+  padding: 10px 30px;
+  margin: auto;
+
+
+}
