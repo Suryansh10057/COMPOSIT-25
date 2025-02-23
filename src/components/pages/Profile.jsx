@@ -80,7 +80,7 @@ export default function Profile() {
            {tab==="profile" && <>
         <h3 className='text-center mt-2 pt-2'>Profile Information</h3>
         <ul className='profile-ids mt-3'>
-            <li className='uid'><strong>Registration ID:</strong> {userData._id}</li>
+            <li className='uid'><strong>COMPOSIT ID:</strong> {userData._id}</li>
             {userData.SaId && <li className='said'><strong>SA ID:</strong> {userData.SaId}</li>}
         </ul>
 
