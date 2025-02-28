@@ -132,14 +132,14 @@ const EventCasestudy = () => {
                                                 >
                                                   Join Team
                                                 </Link>}
-{/* 
+
                 <a
-                  href="https://drive.google.com/file/d/1GI__f_FmL9qIjNGgXdDjGqtqjjtE8vps/view?usp=sharing"
-                  className="btn btn-primary"
+                  href="https://drive.google.com/file/d/1EkmOviBij90UL_2zm6PDh19r8kEmboHW/view?usp=sharing"
+                  className="register-btn"
                   target="_blank"
                 >
                   Problem Statement
-                </a> */}
+                </a> 
                 {/* {userData ? <a
                   href="https://forms.gle/yZ5zTEcdxQz6rV2F9"
                   target="_blank"
