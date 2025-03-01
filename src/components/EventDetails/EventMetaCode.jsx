@@ -88,7 +88,7 @@ const EventMetaCode = () => {
               )} */}
 
               {/* <a
-                href="https://drive.google.com/file/d/1k5oe8KblKND9twCk0Tum-yTJMel5GQus/view?usp=sharing"
+                href="https://drive.google.com/file/d/1EFtoQhAzmvahop8Ubss7_VTLgDTn9g0X/view?usp=drivesdk"
                 className="register-btn"
                 target="_blank"
               >
