@@ -32,35 +32,20 @@ const EventCad = () => {
    const events = userData.events || []; // Default to empty array if events is null/undefined
    const eventData = getEventDetails(events, eventNameToCheck);
    
-   //console.log(eventData);
+   console.log(eventData);
    const faqs = [
     {
       question: "What is the procedure for the registration of the event?",
       answer: "All participants must register through the official COMPOSIT’25 website, after which they will receive a COMPOSIT ID and individual Team ID. Participants will then need to enter their Team ID on the Unstop portal to complete the registration process."
     },
-    {
-      question: "Who can participate in MetaCode Challenge?",
-      answer: "It is open to all students, professionals, and quiz enthusiasts. There are no restrictions based on academic background or experience."
-    },
+   
     {
       question: "Is there a registration fee?",
       answer: "No, registration is completely free on Unstop and Website for everyone."
     },
     {
-      question: "Do I need any special software or tools to participate?",
-      answer: "No, you only need a stable internet connection and a device (laptop, pc) to access the Unstop platform."
-    },
-    {
-      question: "Is prior knowledge in a specific subject required?",
-      answer: "The quiz covers a few domains including General Trivia, Computer Science, Data Structures and Algorithms, Puzzles, Aptitudes and Application of Materials. Having basic knowledge in these areas of Metallurgy and Materials Engineering may provide an advantage, but the questions are designed to be accessible to participants from all backgrounds."
-    },
-    {
       question: "Will all participants receive a certificate?",
       answer: "Yes, all the participants will receive their respective certificates."
-    },
-    {
-      question: "When will the results be announced?",
-      answer: "The results will be announced shortly after the quiz is completed. Participants will be informed via email through COMPOSIT’25 and Unstop."
     }
   ];
 
@@ -231,38 +216,11 @@ science and engineering college</li>
                           <div className="author author-multi"></div>
 
                           <div className="schedule-info">
-                            {/* <h2>Rules of the Event</h2> */}
-                            {/* <div className="schedule-info">
-                              <br />
-                              <h3>General Rules:-</h3>
+                            <h2>Rules of the Event</h2>
 
-                              <ul
-                                className="rules-list"
-                                style={{
-                                  listStyleType: "circle !important",
-                                  color: "red",
-                                }}
-                              >
-                                <li>
-                                  {""}Every participant must register online on Unstop as well as on the
-                                  official website of COMPOSIT’25{" "}
-                                </li>
-                                <li>
-                                  {""}A Team ID will be allocated after registration, which must be used for
-                                  all future references{" "}
-                                </li>
-                                <li>
-                                  {""}The decision of the organizers and judges will be final and binding{" "}
-                                </li>
-                                <li>
-                                  {""} COMPOSIT’25, IIT Kharagpur is not responsible for any late, lost, or
-                                  misdirected entries{" "}
-                                </li>
-                              </ul>
-                            </div> */}
                             {/* <div className="schedule-info">
                               <br />
-                              <h3>Rules for Round 1 (Quiz Round) :-</h3>
+                              <h3>Rules for Round 1  :-</h3>
 
                               <ul
                                 className="rules-list"
@@ -403,10 +361,10 @@ be taken into consideration.
                           <div className="author"></div>
 
                           <div className="schedule-info">
-                            {/* <h3>Frequently Asked Questions</h3> */}
-                            <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                            <h3>Frequently Asked Questions</h3>
+                            {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
 
-                            {/* {faqs.map((faq, index) => (
+                            {faqs.map((faq, index) => (
     <ul className="accordion faqs">
     <li >
       {" "}
@@ -418,7 +376,7 @@ be taken into consideration.
 {" "}
     </li>
   </ul>
-        ))} */}
+        ))}
                           </div>
                         </Link>
                       </li>
