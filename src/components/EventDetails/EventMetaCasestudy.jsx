@@ -134,7 +134,7 @@ const EventCasestudy = () => {
                                                 </Link>}
 
                 <a
-                  href="https://drive.google.com/file/d/1EFtoQhAzmvahop8Ubss7_VTLgDTn9g0X/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1EkmOviBij90UL_2zm6PDh19r8kEmboHW/view?usp=drivesdk"
                   className="register-btn"
                   target="_blank"
                 >
