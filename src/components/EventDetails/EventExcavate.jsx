@@ -34,6 +34,57 @@ const  EventExcavate = () => {
     const eventData = getEventDetails(events, eventNameToCheck);
     
     //console.log(eventData);
+    const faqs = [
+      {
+        question: "What is the registration procedure for the event?",
+        answer: "All participants must register through the COMPOSIT website to receive a participant ID. The final submission must be done through Unstop."
+      },
+      {
+        question: "Can we make changes to our team after registration?",
+        answer: "No changes to the team composition will be allowed after the registration deadline."
+      },
+      {
+        question: "Can a team consist of participants from different institutions?",
+        answer: "Yes, cross-institutional teams are allowed as long as all members register and provide valid identification."
+      },
+      {
+        question: "Are there any prerequisites for participating in the data analytics event?",
+        answer: "No specific prerequisites are required. However, basic knowledge of data science and the problem domain is encouraged."
+      },
+      {
+        question: "Is there a slide limit for the presentation?",
+        answer: "Yes. There is a slide limit of 8-10 slides for the presentation."
+      },
+      {
+        question: "What will happen if the participating team submits their report after the deadline?",
+        answer: "The team will be disqualified and not allowed to continue further in the event."
+      },
+      {
+        question: "What report will be submitted in the first round?",
+        answer: "The report should explain the model approach and include code snippets from the Jupyter notebook. It must use Arial font style and font size 12."
+      },
+      {
+        question: "How will we know if we are qualified for the final round?",
+        answer: "Teams submitting the report correctly will receive a confirmation email regarding their selection for the final round."
+      },
+      {
+        question: "What are the evaluation criteria for the data analysis?",
+        answer: "Evaluation will be based on the model approach, accuracy, insights, and clarity of presentation."
+      },
+      {
+        question: "Will there be a Q&A session during the final presentation?",
+        answer: "Yes, judges will conduct a 5-minute Q&A session after each team's presentation."
+      },
+      {
+        question: "What happens in case of a tie in the final scores?",
+        answer: "In case of a tie, the team with a better score in the presentation section will be declared the winner."
+      },
+      {
+        question: "Will certificates be provided to all participants?",
+        answer: "Yes, all participants will receive a participation certificate, and winners will receive additional recognition and prizes."
+      }
+    ];
+    
 
     return (
       <div className="event-details-area ptb-120">
@@ -65,7 +116,7 @@ const  EventExcavate = () => {
                                              </div>
                                                              }
                                              
-                                                             {/* {!eventData && <Link
+                                                             {!eventData && <Link
                                                                  to={{
                                                                    pathname: "/createTeam/Excavate",
                                                                  }}                
@@ -82,7 +133,7 @@ const  EventExcavate = () => {
                                                                className="register-btn"
                                                              >
                                                                Join Team
-                                                             </Link>} */}
+                                                             </Link>}
              {/* 
               {/* <a
                   href="https://drive.google.com/file/d/1h0Oqq4aEW829mEtZW-SvAlLiNloDg3jT/view?usp=sharing"
@@ -100,13 +151,13 @@ const  EventExcavate = () => {
                 </a> :
                   <Link to="/login" className="btn btn-primary">Login to Submit</Link>
                 } */}
-                {/* <a
-                  // href="https://drive.google.com/file/d/1rWJihDnNFAehHEjSaB6HpYphzc6OXXjO/view?usp=sharing"
-                  // target="_blank"
+                <a
+                  href="https://drive.google.com/file/d/1YamapvbpFfGlqKPNmH_zq3LMnjYE-eJD/view?usp=drive_link"
+                  target="_blank"
                   className="register-btn"
                 >
                  Rules & Regulations
-                </a> */}
+                </a>
               </div>
             </div>
           </div>
@@ -167,8 +218,8 @@ compete, and showcase your talent!
 
                     <div id="tab2" className="tabs_item">
                       <ul className="accordion">
-                      <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
-                        {/* <li className="accordion-item">
+                      {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                        <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
 
@@ -191,31 +242,31 @@ Bachelors/Masters/PHD in any science and engineering college
                               </ul>
                             </div>
                           </Link>
-                        </li> */}
+                        </li>
 
-                        {/* <li className="accordion-item">
+                        <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author author-multi"></div>
 
                             <div className="schedule-info">
-                              <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                              {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
                               <div className="schedule-info">
                               <h3>Important Dates</h3>
 
                               <ul>
-                              <li>
+                              {/* <li>
                                   <b>Quiz Date:</b>
                                 </li>
                                 <li>
                                 12th March 2024
                                 </li>
                                 <br></br>
-                                <br></br>
+                                <br></br> */}
                                 <li>
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                22nd March 2024
+                                10th March 2025 ( Submission will be done through Mail : "excavate.composit@gmail.com" )
                                 </li>
                                 <br></br>
                                 <br></br>
@@ -223,15 +274,15 @@ Bachelors/Masters/PHD in any science and engineering college
                                   <b>Final Event:</b>
                                 </li>
                                 <li>
-                                30th March 2024                                </li>
+                                23rd March 2025                               </li>
                               </ul>
                             </div>
                             </div>
                           </Link>
-                        </li> */}
+                        </li>
 
 
-                        {/* <li className="accordion-item">
+                        <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author author-multi"></div>
 
@@ -244,11 +295,11 @@ Bachelors/Masters/PHD in any science and engineering college
                               <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
                                 <li>{""}This is a team participation event where team size should be at most 3.
   {" "} </li>
-                                <li>{""}The event will have the following rounds: Aptitude Quiz + Submission Round, + Final Presentation Round.
+                                <li>{""}The event will have the following rounds: Submission Round, + Final Presentation Round.
 
   {" "} </li>
-                                <li>{""}Round 1 will be held online on Unstop as an Aptitude Quiz.
-  {" "} </li>                    
+                                {/* <li>{""}Round 1 will be held online on Unstop as an Aptitude Quiz.
+  {" "} </li>                     */}
                                 <li>{""}The on-spot registration at Unstop is allowed up to the PS submission round.
 
   {" "} </li>                     
@@ -258,9 +309,9 @@ Bachelors/Masters/PHD in any science and engineering college
                             </div>
                             <div className="schedule-info">
                                 <br />
-                              <h3>Rules for round 1:-</h3>
+                              {/* <h3>Rules for round 1:-</h3> */}
 
-                              <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
+                              {/* <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
                                 <li>{" "}	This will be an aptitude test round held online on Unstop (12th March 2024). <br />{" "}</li>                                
                                 <li>{" "} This will be a bonus round. {" "}</li>                                
                                 <li>{" "} The top scorers from this round will be invited to come offline for the final round at the IIT Kharagpur campus. {" "}</li> 
@@ -271,40 +322,55 @@ Bachelors/Masters/PHD in any science and engineering college
                                 <li>{" "} The marks scored in the Quiz Round held at Unstop will be scaled to 5, and those who miss this round will get 0 for the same. {" "}</li> 
                                 <p><b>Those who miss this round can directly make the PS submission at Unstop.</b></p>
                                                                                      
-                              </ul>
+                              </ul> */}
                             </div>
                               <div className="schedule-info">
                                 <br />
-                              <h3>Rules for round 2:-</h3>
+                              <h3>Rules for round 1:-</h3>
 
                               <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
-                                <li>{" "} The top teams from the first round will be invited for the final round. The selected teams will be notified via email.  {" "} <br /> </li>                                                       
-                                <li>{" "} The on-spot registration at Unstop is allowed up to the PS submission round.  {" "} </li>                                                       
-                                <li>{" "} For this round, the Problem Statement will be released on Unstop and the official website of COMPOSIT on 15th March 2024.  {" "} </li>                                                       
-                                <li>{" "} Participants who miss the bonus round can also attempt this round and submit it on Unstop. {" "} </li>                                                       
-                                <li>{" "} The teams that complete the submission by the deadline will be called for an offline presentation round at the IIT Kharagpur campus. {" "} </li>                                                                                                           
+                                <li>{" "}The Submission Round will require participants to submit their
+Jupyter notebook along with a detailed report via email
+“excavate.composit@gmail.com”.  {" "} <br /> </li>                                                       
+                                <li>{" "}The problem statement will be released on Unstop and the official
+                                website of COMPOSIT.  {" "} </li>                                                       
+                                <li>{" "}The teams that complete the submission by the deadline will be
+called for an offline presentation round at the IIT Kharagpur
+campus.  {" "} </li>                                                       
+                                <li>{" "}Results of the Submission Round will be sent through the same
+email to the top teams to participate in the Final Presentation
+Round.{" "} </li>                                                       
+                                {/* <li>{" "} The teams that complete the submission by the deadline will be called for an offline presentation round at the IIT Kharagpur campus. {" "} </li>                                                                                                            */}
                               </ul>
                             </div>
                             <div className="schedule-info">
                                 <br />
-                              <h3>Rules for round 3:-</h3>
+                              <h3>Rules for round 2:-</h3>
 
                               <ul className="rules-list" style={{listStyleType:'circle !important',color:'red'}}>
-                                <li>{" "} This offline round will be held on 30th March 2024, from 12 PM to 4 PM.  {" "} <br /> </li>                                                       
-                                <li>{" "} For this round, the teams must prepare a presentation that a panel of judges will judge. {" "} </li>                                                       
-                                <li>{" "} During the presentation, finalist teams must briefly describe their approach and follow a list of pointers that will be provided in the selection email.  {" "} </li>                                                       
+                                {/* <li>{" "} This offline round will be held on 30th March 2024, from 12 PM to 4 PM.  {" "} <br /> </li>                                                        */}
+                                <li>{" "} For this round, selected teams must prepare a presentation for the
+                                panel of judges. {" "} </li>                                                       
+                                <li>{" "}There is a slide limit for the presentation, it should be between 8-10
+                                slides. And the presentation time limit would be 10 minutes.  {" "} </li>       
+
                                 <li>{" "} There would be penalties if the time exceeds the time limit as follows:- <br />
                                             &nbsp; 0-1 min: 10% of the presentation marks of the team <br />
                                             &nbsp; 1-2 mins: 20% of the presentation marks of the team <br /> 
                                             &nbsp; Greater than 2 mins : 100% of the presentation marks of the team{" "} </li>                                                       
-                                <li>{" "} The presentation will also be followed by a Q&A session with the judging panel for 5 minutes, which will also be considered for final evaluation. {" "} </li>
-                                <li>{" "} The top 3 teams will receive cash prizes. Decisions made by the judges are final and binding. {" "} </li>                                                                                                                                                                                                    
+                                <li>{" "} The presentation will also be followed by a Q&A session with the
+judging panel for 5 minutes, which will also be considered for final
+evaluation. {" "} </li>
+                                <li>{" "} The top 3 teams will receive cash prizes. Decisions made by the
+                                judges are final and binding. {" "} </li>                                                                                                                                                                                                    
+                                <li>{" "}Any action that violates the stated rules will immediately disqualify
+                                the team from the competition. {" "} </li>                                                                                                                                                                                                    
                               </ul>
                             </div>
                             </div>
                           </Link>
-                        </li> */}
-                        {/* <li className="accordion-item">
+                        </li>
+                        <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author author-multi"></div>
 
@@ -312,28 +378,34 @@ Bachelors/Masters/PHD in any science and engineering college
                               <h2>Judging Criteria</h2>
                               <div className="schedule-info">
                               <ul className="rules-list">
-                                <li> {" "} Round 2 will be evaluated based on the idea and approach and towards the problem statement. {" "} <br /> </li>
-                                <li> {" "} Round 3 will be held offline as a final presentation round. <br /> {" "} </li>
-                                <li> {" "} Evaluation will be done based on the following four factors:<br />
-                                            &nbsp; Quiz Round Score: 5 <br />
-                                            &nbsp; Model Accuracy: 20 <br /> 
-                                            &nbsp; Questionnaire solutions: 30 <br /> 
-                                            &nbsp; Quality of presentation: 20 <br /> 
-                                            &nbsp; Q&A session: 25 {" "} <br />
+                                {/* <li> {" "} Round 2 will be evaluated based on the idea and approach and towards the problem statement. {" "} <br /> </li>
+                                <li> {" "} Round 3 will be held offline as a final presentation round. <br /> {" "} </li> */}
+                                <li> {" "} <b>Submission Round - </b> Evaluted on the :<br />
+                                            &nbsp;- Submitted Report <br />
+                                            &nbsp;- Accuracy: 20 <br /> 
+                                            &nbsp;- Model Approach <br /> 
+
+                                            </li>
+                                <li> {" "} <b>Final Presentation Round -</b> Evaluated on : <br />
+                                            &nbsp;- Approach (10%)  <br />
+                                            &nbsp;- Model and Accuracy (30%) <br /> 
+                                            &nbsp;- Questionnaire Solutions (20%) <br /> 
+                                            &nbsp;- Quality of presentation (15%) <br /> 
+                                            &nbsp;- Q&A session (25%) {" "} <br />
                                             </li>
                                 <li>{" "} The decision of the judges shall be final and conclusive. {" "}</li>
                               </ul>
                             </div>
                             </div>
                           </Link>
-                        </li> */}
+                        </li>
                       </ul>
                     </div>
 
                     <div id="tab3" className="tabs_item">
-                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
 
-                      {/* <ul className="accordion ">
+                      <ul className="accordion ">
                         <li className="accordion-item faqs-head">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -341,118 +413,71 @@ Bachelors/Masters/PHD in any science and engineering college
                             <div className="schedule-info">
                               <h3>Frequently Asked Questions</h3>
 
-                              <ul className="accordion faqs">
-                                          <li style={{color:'blue'}}>{" "}1 : &nbsp; What technical knowledge do I need to have to participate in this event?  {" "}</li>
-                                          <li>{" "}-&nbsp; Basic knowledge of Data Science, programming in Python and machine learning libraries would be needed for the event.
-          {" "}</li><br /> <br />
-          </ul>
-                                            
-
-<ul className="accordion faqs">
-                                          <li style={{color:'blue'}}>{" "} 2 : &nbsp; What is the procedure for registration for the event? Do all the members have to be registered?{" "}</li>
-                                          <li>{" "}-&nbsp;  Yes, as with all events, all the participants must first be registered through the COMPOSIT website, after which they will be provided with a participant ID. 
-
-          {" "}</li> <br /> <br />
-                                
-          </ul>
-          <ul className="accordion faqs">
-          <li style={{color:'blue'}}>{" "}3 : &nbsp;  Are personal laptops required in the final round? {" "}</li> <br />
-
-<li>{" "}-&nbsp; Yes {" "}</li> <br /> <br /> 
-
-
-</ul>
-          <ul className="accordion faqs">
-          <li style={{color:'blue'}}>{" "}4 : &nbsp; Is there a slide limit for the presentation? {" "}</li><br />
-                                          <li>{" "}-&nbsp; No. Any number of slides may be used as long as the overall presentation is kept within the time limit.
-          {" "}</li> <br /> <br />
-</ul>
-          <ul className="accordion faqs">
-          <li style={{color:'blue'}}>{" "}5 : &nbsp; What do I need to cover in the final presentation? {" "}</li> <br />
-                                          <li>{" "}-&nbsp;  A brief description of the code, basic analysis and interpretation is expected based on the pointers in the questionnaire. Additional analysis will also be rewarded accordingly.
-          {" "}</li><br /> <br />
-</ul>
-          <ul className="accordion faqs">
-
-          <li style={{color:'blue'}}>{" "}6 : &nbsp;  Will the first-round results have weightage in the final results?
-          {" "}</li>
-                                          <li >{" "}-&nbsp; Yes. 5 points are devoted for the first round. {" "}</li> <br /> <br />
-
-</ul>
-          <ul className="accordion faqs">
-          <li style={{color:'blue'}}>{" "}7 : &nbsp;   Will the second-round results have weightage in the final results?
- {" "}</li> <br />
-                                          <li>{" "}-&nbsp; Yes. Since model accuracy is a factor in the final evaluation  {" "}</li>
-</ul>
-          <ul className="accordion faqs">
-          <li style={{color:'blue'}}>{" "}8 : &nbsp;   Are more than one submission allowed for the second round? 
- {" "}</li> <br />
-                                          <li>{" "}-&nbsp; No  {" "}</li>
-</ul>
+                              {faqs.map((faq, index) => (
+    <ul className="accordion faqs">
+    <li >
+      {" "}
+      {index + 1} : &nbsp; {faq.question}{" "}
+    </li>
+    <li>
+      {" "}
+      -&nbsp; {faq.answer}
+{" "}
+    </li>
+  </ul>
+        ))}
        
 
 
 
 
                                           
-
-                                          
-
-
-
-                                         
-
-
-
-                                          
                                           
                             </div>
                           </Link>
                         </li>
-                      </ul> */}
+                      </ul>
                     </div>
 
                     <div id="tab4" className="tabs_item">
-                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
 
-                      {/* <ul className="accordion">
-                        <li className="accordion-item">
-                          <Link className="accordion-title" to="#">
-                            <div className="author"></div>
-
-                            <div className="schedule-info">
-
-                              <p>
-                                Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Subhrojyoti Mukherjee</b>
-                              </p>
-                              <p>
-                                Contact:{" "}
-                                <i className="icofont-phone-circle"></i>{" "}
-                                <b>9112230084</b>
-                              </p>
-                            </div>
-                          </Link>
-                        </li>
-                        <li className="accordion-item">
-                          <Link className="accordion-title" to="#">
-                            <div className="author"></div>
-
-                            <div className="schedule-info">
-
-                              <p>
-                                Name: <i className="icofont-user-suited"></i>{" "}
-                                <b>Mayuresh Lohani</b>
-                              </p>
-                              <p>
-                                Contact:{" "}
-                                <i className="icofont-phone-circle"></i>{" "}
-                                <b>8709471451</b>
-                              </p>
-                            </div>
-                          </Link>
-                        </li>
-                      </ul> */}
+                       <ul className="accordion">
+                                                                                      <li className="accordion-item">
+                                                                                        <Link className="accordion-title" to="#">
+                                                                                          <div className="author"></div>
+                                                              
+                                                                                          <div className="schedule-info">
+                                                                                            <p>
+                                                                                              Name: <i className="icofont-user-suited"></i>{" "}
+                                                                                              <b>Suryansh Singh</b>
+                                                                                            </p>
+                                                                                            <p>
+                                                                                              Contact:{" "}
+                                                                                              <i className="icofont-phone-circle"></i>{" "}
+                                                                                              <b>9670006875</b>
+                                                                                            </p>
+                                                                                          </div>
+                                                                                        </Link>
+                                                                                      </li>
+                                                                                      <li className="accordion-item">
+                                                                                        <Link className="accordion-title" to="#">
+                                                                                          <div className="author"></div>
+                                                              
+                                                                                          <div className="schedule-info">
+                                                                                            <p>
+                                                                                              Name: <i className="icofont-user-suited"></i>{" "}
+                                                                                              <b>Aarya Joshi</b>
+                                                                                            </p>
+                                                                                            <p>
+                                                                                              Contact:{" "}
+                                                                                              <i className="icofont-phone-circle"></i>{" "}
+                                                                                              <b>7045020804</b>
+                                                                                            </p>
+                                                                                          </div>
+                                                                                        </Link>
+                                                                                      </li>
+                                                                                    </ul>
                     </div>
                   </div>
                 </div>

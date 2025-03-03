@@ -197,8 +197,8 @@ spectrum of captivating topics: <br />
 
                             <div className="schedule-info">
                               {/* <h2>Rounds of the Event</h2> */}
-                              {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
-                              <div className="schedule-info">
+                              <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                              {/* <div className="schedule-info">
                                 <h3>Important Dates</h3>
 
                                 <ul>
@@ -213,7 +213,7 @@ spectrum of captivating topics: <br />
                                   </li>
                                   <li>22nd March 2024</li>
                                 </ul>
-                              </div>
+                              </div> */}
                             </div>
                           </Link>
                         </li>
@@ -223,8 +223,8 @@ spectrum of captivating topics: <br />
 
                             <div className="schedule-info">
                             
-                              {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
-                              <div className="schedule-info">
+                              <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                              {/* <div className="schedule-info">
                                 <br />
                                 <h3>Number of Rounds:-</h3>
 
@@ -250,8 +250,8 @@ spectrum of captivating topics: <br />
 
                                 
                                 </ul>
-                              </div>
-                              <div className="schedule-info">
+                              </div> */}
+                              {/* <div className="schedule-info">
                                 <br />
                                 <h2>Rules of the Event</h2>
                                 <h3>Quiz Rules :-</h3>
@@ -365,7 +365,7 @@ during the quiz.
 
                                
                                 </ul>
-                              </div>
+                              </div> */}
                             </div>
                           </Link>
                         </li>
@@ -375,8 +375,8 @@ during the quiz.
 
                             <div className="schedule-info">
                               <h2>Prizes</h2>
-                              {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
-                              <div className="schedule-info">
+                              <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                              {/* <div className="schedule-info">
                                 <ul className="rules-list">
                                   <li>
                                     {" "}
@@ -389,7 +389,7 @@ during the quiz.
                                     runner-ups.{""}{" "}
                                   </li>
                                 </ul>
-                              </div>
+                              </div> */}
                             </div>
                           </Link>
                         </li>
@@ -397,9 +397,9 @@ during the quiz.
                     </div>
 
                     <div id="tab3" className="tabs_item">
-                      {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                      <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
 
-                      <ul className="accordion">
+                      {/* <ul className="accordion">
                         <li className="accordion-item">
                           <Link className="accordion-title" to="#">
                             <div className="author"></div>
@@ -518,7 +518,7 @@ Participants will be informed via email to their registered ID.
                             </div>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </div>
 
                     <div id="tab4" className="tabs_item">

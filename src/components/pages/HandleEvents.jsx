@@ -20,7 +20,7 @@ const eventComponents = {
     Excavate : EventExcavate,
     Metaclix:EventMetaclix,
     Ideathon:EventIdeathon,
-    Cadvolution:EventCad,
+    CadVolution:EventCad,
     MetaCode:EventMetaCode
     // Add more events here as needed
 };

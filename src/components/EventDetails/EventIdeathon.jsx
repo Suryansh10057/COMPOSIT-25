@@ -105,7 +105,7 @@ const EventIdeathon = () => {
                             <Link to="/login" className="btn btn-primary">Login to Submit</Link>
                           } */}
                           <a
-                            href="https://drive.google.com/file/d/1isxxZWe9nVSh3PpDPzJsIIRsuY5UnQpC/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/1M7oksLT2wa1u52YC2m8k-cspRIEG0XIt/view?usp=drive_link"
                             target="_blank"
                             className="register-btn"
                           >
@@ -187,7 +187,7 @@ vision into reality!
                                 </li>
                                 <li>
                                   {" "}
-                                  Open to all 
+                                  {/* Open to all  */}
 {" "}
                                 </li>
                                
@@ -207,12 +207,12 @@ vision into reality!
                               <div className="schedule-info">
                               <h3>Important Dates</h3>
 
-                              <ul>
+                              <ul >
                                 <li>
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                6th March 2025 ( Submission will be done through Mail : "ideathon.composit@gmail.com" )
+                                10th March 2025 ( Submission will be done through Mail : "ideathon.composit@gmail.com" )
                                 </li>
                                 <br></br>
                                 <br></br>
@@ -220,7 +220,8 @@ vision into reality!
                                   <b>Final Event:</b>
                                 </li>
                                 <li>
-                                22nd March 2025                                </li>
+                                22nd March 2025         
+                                </li>
                               </ul>
                             </div>
                             </div>
@@ -310,7 +311,7 @@ participation is also permitted.
 &nbsp;3. &nbsp; Quality of the pitch <br />
 &nbsp;4. &nbsp; Impact
 
-{""} </li> <br />
+{""} </li> 
 <li>{""}		The judges’ decision is final on all matters.{""} </li>
                               </ul>
                             </div>

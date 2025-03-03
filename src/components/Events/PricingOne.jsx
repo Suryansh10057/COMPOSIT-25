@@ -35,7 +35,7 @@ const PricingOne = () => {
                    <NewCard event=" MetaCode " description="Solve engaging coding challenges that blend innovation, problem-solving, and computation. 
  " link="/events/MetaCode"/>
 
-                   <NewCard event=" Cadvolution " description="Design creative CAD models, justify your choices, and develop solutions for real-world challenges." link="/events/Cadvolution"/>
+                   <NewCard event=" Cadvolution " description="Design creative CAD models, justify your choices, and develop solutions for real-world challenges." link="/events/CadVolution"/>
                  
 
 

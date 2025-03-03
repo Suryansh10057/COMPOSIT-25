@@ -122,7 +122,7 @@ const  EventTechnova = () => {
                               </Link>}
               
                 <a
-                  href="https://drive.google.com/file/d/1ehhfk_MHEBSFVSxKmREPFy3oHaUU5Smn/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1IHVS48jJUBY63Bh3hf9P-SHJGpH2b79l/view?usp=drive_link"
                   target="_blank"
                   className="register-btn"
                 >
@@ -252,7 +252,7 @@ Bachelors/Masters/PHD in any science and engineering college
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                3rd March , 2025                                </li>
+                                10th March , 2025 ( Submission will be done through Mail : "technova.composit@gmail.com" )                      </li>
                                 <br></br>
                                 <br></br>
                                 <li>

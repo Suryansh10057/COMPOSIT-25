@@ -33,6 +33,38 @@ const EventMetaCode = () => {
    const eventData = getEventDetails(events, eventNameToCheck);
    
    //console.log(eventData);
+   const faqs = [
+    {
+      question: "What is the procedure for the registration of the event?",
+      answer: "All participants must register through the official COMPOSIT’25 website, after which they will receive a COMPOSIT ID and individual Team ID. Participants will then need to enter their Team ID on the Unstop portal to complete the registration process."
+    },
+    {
+      question: "Who can participate in MetaCode Challenge?",
+      answer: "It is open to all students, professionals, and quiz enthusiasts. There are no restrictions based on academic background or experience."
+    },
+    {
+      question: "Is there a registration fee?",
+      answer: "No, registration is completely free on Unstop and Website for everyone."
+    },
+    {
+      question: "Do I need any special software or tools to participate?",
+      answer: "No, you only need a stable internet connection and a device (laptop, pc) to access the Unstop platform."
+    },
+    {
+      question: "Is prior knowledge in a specific subject required?",
+      answer: "The quiz covers a few domains including General Trivia, Computer Science, Data Structures and Algorithms, Puzzles, Aptitudes and Application of Materials. Having basic knowledge in these areas of Metallurgy and Materials Engineering may provide an advantage, but the questions are designed to be accessible to participants from all backgrounds."
+    },
+    {
+      question: "Will all participants receive a certificate?",
+      answer: "Yes, all the participants will receive their respective certificates."
+    },
+    {
+      question: "When will the results be announced?",
+      answer: "The results will be announced shortly after the quiz is completed. Participants will be informed via email through COMPOSIT’25 and Unstop."
+    }
+  ];
+
+  
   return (
     <div className="event-details-area pt-20">
       <section className="event-area bg-image ptb-120">
@@ -87,13 +119,13 @@ const EventMetaCode = () => {
                 </Link>
               )} */}
 
-              {/* <a
-                href="https://drive.google.com/file/d/1EFtoQhAzmvahop8Ubss7_VTLgDTn9g0X/view?usp=drivesdk"
+              <a
+                href="https://drive.google.com/file/d/1SgbPQRNmjDJEo-9d_Qjcff4yGxP4wRDb/view?usp=drive_link"
                 className="register-btn"
                 target="_blank"
               >
                 Rules & Regulations
-              </a> */}
+              </a>
             </div>
           </div>
         </div>
@@ -125,59 +157,38 @@ const EventMetaCode = () => {
 
                 <div className="tab_content">
                   <div id="tab1" className="tabs_item">
-                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
-                    {/* <ul className="accordion">
+                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                    <ul className="accordion">
                       <li className="accordion-item">
                         <Link className="accordion-title" to="#">
                           <div className="schedule-info">
-                            <h3>Metaclix</h3>
+                            <h3>MetaCode</h3>
 
                             <p>
-                              A photography contest that challenges participants
-                              to capture stunning images based on theme at the
-                              intersection of materials and sustainabilty. In
-                              this individual event, participants will be
-                              required to click and upload pictures that fall
-                              under the following categories:{" "}
+                            MetaCode is a competitive programming event designed to fuse
+Computational Power with Metallurgical Innovation, showcasing the
+application of coding in solving real-world challenges in materials
+science and engineering. The event emphasizes critical thinking,
+technical proficiency, and problem-solving skills through rounds that
+test aptitude, coding expertise, and innovative solutions. In the final
+round, participants will use programming languages like C++, C, or Java
+to tackle domain-specific problems, which will feature long competitive
+programming at IIT Kharagpur.{" "}
                             </p>
 
-                            <ul>
-                              <li>
-                                1.&nbsp;
-                                <b>
-                                  {" "}
-                                  METALS AND MATERIALS IN EVERYDAY LIFE AND
-                                  NATURE{" "}
-                                </b>
-                              </li>
-                              <br /> <br />
-                              <li>
-                                2.&nbsp;{" "}
-                                <b>
-                                  {" "}
-                                  SNAPS TAKEN IN INDUSTRIES (COULD BE ELECTRONIC
-                                  INDUSTRY, CONSTRUCTION , AEROSPACE AND MORE){" "}
-                                </b>
-                              </li>
-                              <br />
-                              <br />
-                              <li>
-                                3.&nbsp; <b> SUSTAINABILITY </b>
-                              </li>
-                            </ul>
                             <br />
                           </div>
 
 
                         </Link>
                       </li>
-                    </ul> */}
+                    </ul>
                   </div>
 
                   <div id="tab2" className="tabs_item">
-                            <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                            {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
 
-                    {/* <ul className="accordion">
+                    <ul className="accordion">
                       <li className="accordion-item">
                         <Link className="accordion-title" to="#">
                           <div className="author"></div>
@@ -203,15 +214,15 @@ const EventMetaCode = () => {
 
                               <ul>
                                 <li>
-                                  <b>Submission Deadline:</b>
+                                  <b>Quiz Round (Online):</b>
                                 </li>
-                                <li>30th March 2024</li>
+                                <li>7th March 2025</li>
                                 <br></br>
                                 <br></br>
                                 <li>
-                                  <b>Final Event:</b>
+                                  <b>Coding Round (Offline): </b>
                                 </li>
-                                <li>Result Declaration Online Mode </li>
+                                <li>22th March 2025 </li>
                               </ul>
                             </div>
                           </div>
@@ -235,29 +246,25 @@ const EventMetaCode = () => {
                                 }}
                               >
                                 <li>
-                                  {""}This event is for individual
-                                  participation. No group participation is
-                                  allowed.{" "}
+                                  {""}Every participant must register online on Unstop as well as on the
+                                  official website of COMPOSIT’25{" "}
                                 </li>
                                 <li>
-                                  {""}Although entries may be submitted for
-                                  multiple themes, only one entry can be for
-                                  each theme.{" "}
+                                  {""}A Team ID will be allocated after registration, which must be used for
+                                  all future references{" "}
                                 </li>
                                 <li>
-                                  {""}Participants are required to submit only
-                                  one photo and caption per theme through
-                                  Unstop.{" "}
+                                  {""}The decision of the organizers and judges will be final and binding{" "}
                                 </li>
                                 <li>
-                                  {""} The best submission from each category
-                                  will be rewarded.{" "}
+                                  {""} COMPOSIT’25, IIT Kharagpur is not responsible for any late, lost, or
+                                  misdirected entries{" "}
                                 </li>
                               </ul>
                             </div>
                             <div className="schedule-info">
                               <br />
-                              <h3>Rules for Submission:-</h3>
+                              <h3>Rules for Round 1 (Quiz Round) :-</h3>
 
                               <ul
                                 className="rules-list"
@@ -268,34 +275,25 @@ const EventMetaCode = () => {
                               >
                                 <li>
                                   {" "}
-                                  Submission should be done through Unstop and
-                                  should include <br />
-                                  &nbsp; - Image of the photograph in JPEG
-                                  format. <br /> &nbsp; - A relevant caption for
-                                  the same{" "}
+                                  This round will be conducted online on the Unstop platform.{" "}
                                 </li>
 
                                 <li>
                                   {" "}
-                                  The snaps submitted in the form must contain
-                                  the EXIF details. Entries without EXIF data
-                                  will be penalized.{" "}
+                                  The time limit to attempt the quiz is 20 minutes. The quiz window will
+be open for 4 hours.{" "}
                                 </li>
                                 <li>
                                   {" "}
-                                  The caption for the image should be short. It
-                                  should be relevant to the theme and must
-                                  describe the participants' perspective in the
-                                  photograph. The participants may also submit
-                                  describe the reason behind choosing the
-                                  caption for the image in case of more clarity.{" "}
+                                  Questions will be based on the topics of Computer Science and DSA,
+Application of Materials in Computer Architecture and Tools, Aptitude,
+Puzzles, etc.{" "}
                                 </li>
 
                                 <li>
                                   {" "}
-                                  Only Global editing is permitted. Submissions
-                                  with Modifications or alterations in image
-                                  will be disqualified.{" "}
+                                  This is an elimination round, top scorers will qualify for the final
+coding round.{" "}
                                 </li>
                                 <li>
                                   {" "}
@@ -305,15 +303,63 @@ const EventMetaCode = () => {
                                 </li>
                                 <li>
                                   {" "}
-                                  Any instances of plagiarism may result in
-                                  disqualification.{" "}
+                                  The shortlisted candidates from the first round will be invited to come
+offline for the final round at the IIT Kharagpur campus.{" "}
+                                </li>
+                              </ul>
+                            </div>
+                            <div className="schedule-info">
+                              <br />
+                              <h3>Rules for Round 2 (Offline Coding Round) :-</h3>
+
+                              <ul
+                                className="rules-list"
+                                style={{
+                                  listStyleType: "circle !important",
+                                  color: "red",
+                                }}
+                              >
+                                <li>
+                                  {" "}
+                                  The top teams from the first round will be invited for the final coding
+round. The selected teams will be notified via email.{" "}
+                                </li>
+
+                                <li>
+                                  {" "}
+                                  This offline coding round will be held in the CIC lab at IIT Kharagpur.{" "}
+                                </li>
+                                <li>
+                                  {" "}
+                                  This would be a competitive programming contest that will consist of
+                                  3-5 coding questions and a time limit of 90 minutes.{" "}
+                                </li>
+
+                                <li>
+                                  {" "}
+                                  Allowed Languages:- C++/C/Java/Python{" "}
+                                </li>
+                                <li>
+                                  {" "}
+                                  The number of test cases passed will determine the final marks.{" "}
+                                </li>
+                                <li>
+                                  {" "}
+                                  In case of a tie between two or more participant marks, their timing will
+be taken into consideration.
+                                 {" "}
+                                </li>
+                                <li>
+                                  {" "}
+                                  Top three winners will be selected based on their final score.
+                                 {" "}
                                 </li>
                               </ul>
                             </div>
                           </div>
                         </Link>
                       </li>
-                      <li className="accordion-item">
+                      {/* <li className="accordion-item">
                         <Link className="accordion-title" to="#">
                           <div className="author author-multi"></div>
 
@@ -344,14 +390,14 @@ const EventMetaCode = () => {
                             </div>
                           </div>
                         </Link>
-                      </li>
-                    </ul> */}
+                      </li> */}
+                    </ul>
                   </div>
 
                   <div id="tab3" className="tabs_item">
-                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
+                    {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
 
-                    {/* <ul className="accordion">
+                    <ul className="accordion">
                       <li className="accordion-item">
                         <Link className="accordion-title" to="#">
                           <div className="author"></div>
@@ -359,126 +405,64 @@ const EventMetaCode = () => {
                           <div className="schedule-info">
                             <h3>Frequently Asked Questions</h3>
 
-                            <ul className="accordion faqs">
-                              <li>
-                                {" "}
-                                1 : &nbsp; What is the procedure of registration
-                                for the event?{" "}
-                              </li>
-                              <li>
-                                {" "}
-                                -&nbsp; As with all events, all the participants
-                                must first be registered through the COMPOSIT
-                                website, after which they will be provided with
-                                a participant ID. After registration, the final
-                                submission must be done through Unstop.{" "}
-                              </li>
-                              <br /> <br />
-                            </ul>
-                            <ul className="accordion faqs">
-                              <li>
-                                {" "}
-                                2 : &nbsp; What can be the format of
-                                submissions?{" "}
-                              </li>
-                              <li>
-                                {" "}
-                                -&nbsp; As stated above, the pictures should be
-                                in JPEG format, and the caption should be
-                                submitted through Unstop.{" "}
-                              </li>{" "}
-                              <br /> <br />
-                            </ul>
-                            <ul className="accordion faqs">
-                              <li>
-                                {" "}
-                                3 : &nbsp; What is the total number of
-                                submissions that can be made?{" "}
-                              </li>{" "}
-                              <br />
-                              <li>
-                                {" "}
-                                -&nbsp; Participants may submit entries for
-                                multiple themes, but only one entry can be
-                                submitted per theme.{" "}
-                              </li>{" "}
-                              <br /> <br /> <br />
-                            </ul>
-                            <ul className="accordion faqs">
-                              <li>
-                                {" "}
-                                4 : &nbsp; What can be the caption for the entry
-                                that should be submitted?{" "}
-                              </li>
-                              <br />
-                              <li>
-                                {" "}
-                                -&nbsp; Caption can be any creative title of the
-                                image that best describes the photography and
-                                can relate to the theme in a better way. It
-                                could be a artistic or even humorous perspective
-                                of the same image.{" "}
-                              </li>{" "}
-                              <br /> <br />
-                            </ul>
-                            <ul className="accordion faqs">
-                              <li>
-                                {" "}
-                                5 : &nbsp; What do I need to cover in the final
-                                presentation?{" "}
-                              </li>{" "}
-                              <br />
-                              <li>
-                                {" "}
-                                -&nbsp; Only Global editing is permitted.
-                                Submissions with Modifications or alterations in
-                                image will be disqualified.{" "}
-                              </li>
-                              <br /> <br />
-                            </ul>
+                            {faqs.map((faq, index) => (
+    <ul className="accordion faqs">
+    <li >
+      {" "}
+      {index + 1} : &nbsp; {faq.question}{" "}
+    </li>
+    <li>
+      {" "}
+      -&nbsp; {faq.answer}
+{" "}
+    </li>
+  </ul>
+        ))}
                           </div>
                         </Link>
                       </li>
-                    </ul> */}
+                    </ul>
                   </div>
 
                   <div id="tab4" className="tabs_item">
-                    <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3>
-
-                    {/* <ul className="accordion">
-                      <li className="accordion-item">
-                        <Link className="accordion-title" to="#">
-                          <div className="author"></div>
-
-                          <div className="schedule-info">
-                            <p>
-                              Name: <i className="icofont-user-suited"></i>{" "}
-                              <b>Subhrojyoti Mukherjee</b>
-                            </p>
-                            <p>
-                              Contact: <i className="icofont-phone-circle"></i>{" "}
-                              <b>9112230084</b>
-                            </p>
-                          </div>
-                        </Link>
-                      </li>
-                      <li className="accordion-item">
-                        <Link className="accordion-title" to="#">
-                          <div className="author"></div>
-
-                          <div className="schedule-info">
-                            <p>
-                              Name: <i className="icofont-user-suited"></i>{" "}
-                              <b>Mayuresh Lohani</b>
-                            </p>
-                            <p>
-                              Contact: <i className="icofont-phone-circle"></i>{" "}
-                              <b>8709471451</b>
-                            </p>
-                          </div>
-                        </Link>
-                      </li>
-                    </ul> */}
+                   {/* <h3><i className="icofont-wall-clock"></i> Coming Soon ....</h3> */}
+                  
+                                         <ul className="accordion">
+                                                                                                        <li className="accordion-item">
+                                                                                                          <Link className="accordion-title" to="#">
+                                                                                                            <div className="author"></div>
+                                                                                
+                                                                                                            <div className="schedule-info">
+                                                                                                              <p>
+                                                                                                                Name: <i className="icofont-user-suited"></i>{" "}
+                                                                                                                <b>Suryansh Singh</b>
+                                                                                                              </p>
+                                                                                                              <p>
+                                                                                                                Contact:{" "}
+                                                                                                                <i className="icofont-phone-circle"></i>{" "}
+                                                                                                                <b>9670006875</b>
+                                                                                                              </p>
+                                                                                                            </div>
+                                                                                                          </Link>
+                                                                                                        </li>
+                                                                                                        <li className="accordion-item">
+                                                                                                          <Link className="accordion-title" to="#">
+                                                                                                            <div className="author"></div>
+                                                                                
+                                                                                                            <div className="schedule-info">
+                                                                                                              <p>
+                                                                                                                Name: <i className="icofont-user-suited"></i>{" "}
+                                                                                                                <b>Aarya Joshi</b>
+                                                                                                              </p>
+                                                                                                              <p>
+                                                                                                                Contact:{" "}
+                                                                                                                <i className="icofont-phone-circle"></i>{" "}
+                                                                                                                <b>7045020804</b>
+                                                                                                              </p>
+                                                                                                            </div>
+                                                                                                          </Link>
+                                                                                                        </li>
+                                                                                                      </ul>
 
 
                   </div>
