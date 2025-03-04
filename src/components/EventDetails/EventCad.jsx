@@ -111,6 +111,13 @@ const EventCad = () => {
               >
                 Rules & Regulations
               </a>
+              <a
+                href="https://drive.google.com/file/d/1EkmOviBij90UL_2zm6PDh19r8kEmboHW/view?usp=drive_link"
+                className="register-btn"
+                target="_blank"
+              >
+                Problem Statement
+              </a>
             </div>
           </div>
         </div>
