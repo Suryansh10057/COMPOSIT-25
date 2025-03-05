@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./accomodation.css";
+import BaseUrl from "../../const";
 
 const Accomodation = () => {
   const [days, setDays] = useState(1);
@@ -73,7 +74,7 @@ const Accomodation = () => {
     // console.log(screenshot)
 
        try {
-      const response = await fetch("http://localhost:5000/api/user/accommodation", {
+      const response = await fetch(`${BaseUrl}/api/user/accommodation`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
