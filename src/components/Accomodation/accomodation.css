@@ -1,0 +1,90 @@
+/* Container */
+.accommodation-container {
+    max-width: 500px;
+    margin: 40px auto;
+    margin-top: 8rem;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Heading */
+  .accommodation-container h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  /* Charges List */
+  .charges-list {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    list-style: disc;
+  }
+  
+  .charges-list li {
+    margin: 2px 0;
+    color: #34495e;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .Accorules-list{
+    margin: 0;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .Accorules-list li{
+    margin: 0;
+    text-align: left;
+
+  }
+  
+  /* Form */
+  .accommodation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+  }
+  
+  /* Inputs */
+  .accommodation-form input,
+  .accommodation-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Amount Display */
+  .amount-display {
+    font-size: 16px;
+    font-weight: bold;
+    color: #27ae60;
+  }
+  
+  /* Button */
+  .accommodation-form button {
+    background: #2980b9;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .accommodation-form button:hover {
+    background: #1f618d;
+  }
+  
+  .qr-code{
+    width: 200px;
+    margin: auto;
+  }

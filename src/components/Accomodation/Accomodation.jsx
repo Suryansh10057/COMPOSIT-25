@@ -1,275 +1,167 @@
-import React from "react";
-import lax from "lax.js";
-import axios from "axios";
-import { Link } from "react-router-dom";
-import LaxButton from "../Shared/LaxButton";
-import { loadStripe } from "@stripe/stripe-js";
-import PaymentForm from "./PaymentForm";
-import './accomodation.css'
+import React, { useEffect, useState } from "react";
+import "./accomodation.css";
 
-class Accomodation extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      paymentDetails: "",
-      error: "",
-      success: "",
-      loading: false,
-    };
-  }
-  userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
+const Accomodation = () => {
+  const [days, setDays] = useState(1);
+  const [amount, setAmount] = useState(200);
+  const [payment, setPayment] = useState(false);
+  const [btn, setBtn] = useState("Submit");
+  const [text, setText] = useState("");
+  const [screenshot, setScreenshot] = useState(null);
+  const [qrlink, setQrLink] = useState("https://res.cloudinary.com/dmdhj9jdq/image/upload/v1741155709/WhatsApp_Image_2025-03-05_at_11.37.20_AM_f7dah0.jpg");
 
-  handleClick = async (e) => {
-    e.preventDefault();
-    if (this.state.paymentDetails == "") {
-      this.setState({
-        error: "Please Enter UPI Transaction ID/UPI Reference Number",
-      });
-      return;
-    }
-    this.setState({ loading: true });
-    try {
-      const res = await axios.post(
-        // `http://localhost:8800/accommodation`,
-        `https://composit2024backend.onrender.com/accommodation`,
-        {
-          name: this.userData.name,
-          email: this.userData.email,
-          regID: this.userData.regID,
-          paymentDetails: this.state.paymentDetails,
-        }
-      );
-      this.setState({ success: res.data });
-      //   window.location = `/`;
-    } catch (err) {
-      this.setState({ errorr: err.response.data.message });
-    } finally {
-      this.setState({ loading: false });
+
+  const handleDaysChange = (e) => {
+    const selectedDays = parseInt(e.target.value);
+    if (selectedDays === 1) {
+      setAmount(200);
+      setDays(1)
+      setQrLink("https://res.cloudinary.com/dmdhj9jdq/image/upload/v1741155709/WhatsApp_Image_2025-03-05_at_11.37.20_AM_f7dah0.jpg");
+    } else if (selectedDays === 2) {
+      setAmount(400);
+      setDays(2)
+      setQrLink("https://res.cloudinary.com/dmdhj9jdq/image/upload/v1741155709/WhatsApp_Image_2025-03-05_at_11.37.46_AM_ajisql.jpg");
+    } else if (selectedDays === 3) {
+      setAmount(500);
+      setDays(3)
+      setQrLink("https://res.cloudinary.com/dmdhj9jdq/image/upload/v1741155708/WhatsApp_Image_2025-03-05_at_11.38.05_AM_jgjjrc.jpg");
     }
   };
 
-  //   PaymentHandler = async (e) => {
-  //     const amount = 500;
-  //     const currency = "INR";
-  //     const receiptId = "receipt#1";
 
-  //     const response = await fetch("http://localhost:8800/order", {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         amount,
-  //         currency,
-  //         receipt: receiptId,
-  //       }),
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     });
-  //     const order = await response.json();
-  //     //console.log(order);
+  const handleFileChange = (e) => {
+    setScreenshot(e.target.files[0]);
+  };
 
-  //     var options = {
-  //       key: "rzp_test_01a1YvfIYNa8vJ", // Enter the Key ID generated from the Dashboard
-  //       amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-  //       currency,
-  //       name: "COMPOSIT, IIT KGP", //your business name
-  //       description: "Test Transaction",
-  //       image: "https://example.com/your_logo",
-  //       order_id: order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-  //       handler: async function (response) {
-  //         const body = {
-  //           ...response,
-  //         };
+  const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
+  const token = JSON.parse(localStorage.getItem('COMPOSITuserToken'));
+  // console.log(token)
+  // console.log(userData)
+  useEffect(() => {
+    if (userData?.payment) {
+      setPayment(true);
+      setText("You have Successfully paid for the accommodation.");
+    }
+  }, [userData]); // Runs only when `userData` changes
 
-  //         const validateRes = await fetch(
-  //           "http://localhost:8800/order/validate",
-  //           {
-  //             method: "POST",
-  //             body: JSON.stringify(body),
-  //             headers: {
-  //               "Content-Type": "application/json",
-  //             },
-  //           }
-  //         );
-  //         const jsonRes = await validateRes.json();
-  //         //console.log(jsonRes);
-  //       },
-  //       prefill: {
-  //         //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
-  //         name: "Gaurav Testo", //your customer's name
-  //         email: "gaurav.kumar@example.com",
-  //         contact: "9000000000", //Provide the customer's phone number for better conversion rates
-  //       },
-  //       notes: {
-  //         address: "Razorpay Corporate Office",
-  //       },
-  //       theme: {
-  //         color: "#3399cc",
-  //       },
-  //     };
-  //     var rzp1 = new window.Razorpay(options);
-  //     rzp1.on("payment.failed", function (response) {
-  //       alert(response.error.code);
-  //       alert(response.error.description);
-  //       alert(response.error.source);
-  //       alert(response.error.step);
-  //       alert(response.error.reason);
-  //       alert(response.error.metadata.order_id);
-  //       alert(response.error.metadata.payment_id);
-  //     });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!screenshot) return alert("Please upload a payment screenshot.");
+    setBtn("Submitting payment, please wait...")
 
-  //     rzp1.open();
-  //     e.preventDefault();
-  //   };
+    const formData = new FormData();
+ 
+    formData.append("file", screenshot);
+    formData.append("upload_preset", "COMPOSIT_PAYMENT");
+    formData.append("cloud_name", "dmdhj9jdq");
 
-  // makePayment = async() => {
-  //     const stripe = await loadStripe("pk_test_51OqsJ5SCPuWiCxONKcpqZhXMmiwdImAVsdAZaTN7dk6Drg61bO4z5Gy28qPQfgyNEAwFde2FRJCeQcdc7qrBi7cn00bOvXVHcj");
+   const response =  await fetch("https://api.cloudinary.com/v1_1/dmdhj9jdq/image/upload",{
+      method: "POST",
+      body: formData
+    })
 
-  //     const body = {
-  //         name:this.userData.name,
-  //         registrationId: this.userData.regID
-  //     }
-  //     const headers = {
-  //         "Content-Type":"application/json"
-  //     }
-  //     const response = await fetch("http://localhost:8800/api/create-checkout-session",{
-  //         method:"POST",
-  //         headers:headers,
-  //         body:JSON.stringify(body)
-  //     });
+    const uploadedImgUrl = await response.json();
+    if (!uploadedImgUrl) {
+      return (
+        setText(
+          "Something went wrong while uploading the payment screenshot. Please try again.")
+      )
+    }
 
-  //     const session = await response.json();
+    console.log(uploadedImgUrl)
 
-  //     const result = stripe.redirectToCheckout({
-  //         sessionId:session.id
-  //     });
+    // console.log(screenshot)
 
-  //     if(result.error){
-  //         //console.log(result.error);
-  //     }
-  // }
+       try {
+      const response = await fetch("http://localhost:5000/api/user/accommodation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          amount: amount,
+      days:days,
+      screenshot: uploadedImgUrl.secure_url,
+      UserId: userData._id,
+      phone: userData.phone,
+      name: userData.name,
+      email: userData.email,
+      token:token
+        }),
+      });
 
-  render() {
-    return (
-      <section className="login-area">
-        <div className="d-table">
-          <div className="d-table-cell">
-            <div className="login-form">
-              <Link to="/" className="btn-modal btn-primary">
-                &#xab; Back to Home
-              </Link>
-              <h3>Accommodation</h3>
-              {/* {
-                              this.registeredData ? <h3>Welcome {this.registeredData}</h3>
-                              :
-                              <h3>Welcome Back!</h3>
-                            } */}
-                            
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.message || "Something went wrong!");
+      }
+      console.log(data)
+const recivedData = data.user
+localStorage.setItem("COMPOSITuser", JSON.stringify(recivedData));
+setText("Payment successflly submitted!, our team will reach you out within 24 hours to confirm your booking.");
+setPayment(true)
+        console.log(data)
+      // alert(data.message);
+    } catch (error) {
+      console.log("Error:", error.message);
+      setBtn("Submit")
+      // alert("Something went wrong!");
+    }
+  };
 
-              <form>
-                <div className="form-group">
-                  <label>Self-Declaration</label>
-                  <ul>
-                    <li>
-                      We accept the dormitory-style accommodation provided at Rs
-                      399 for 3 days and 2 nights.
-                    </li>
-                    <li>
-                      We will maintain respectful conduct and refrain from
-                      causing disturbances to fellow residents.
-                    </li>
-                    <li>
-                      We will secure our personal belongings, understanding that
-                      the management is not liable for any losses.
-                    </li>
-                    <li>
-                      We acknowledge that access to other halls of residence is
-                      restricted.
-                    </li>
-                    <li>
-                      We understand that usage of the hall mess is not
-                      permitted.
-                    </li>
-                    <li>
-                      We recognize our responsibility for personal safety
-                      post-midnight.
-                    </li>
-                  </ul>
-                </div>
-                <div className="profile-page">
-                  <li className="form-group form-control">
-                    <strong>Name:</strong> {this.userData.name}
-                  </li>
-                  <li className="form-group form-control">
-                    <strong>Registration ID:</strong> {this.userData.regID}
-                  </li>
-                  <li className="form-group form-control">
-                    <strong>Email:</strong> {this.userData.email}
-                  </li>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <img
-                    src={require("../../assets/images/PaymentQr.jpg")}
-                    style={{ width: "150px" }}
-                    alt=""
-                  />
-                  <p style={{ textAlign: 'justify' }}>
-                    To make payment, scan this QR Code from any UPI App or you
-                    can pay directly to our UPI ID{" "}
-                    <b>harshakashsharma@okicici</b> After making the payment of
-                    Rs. 399/-, fill your UPI Transaction ID OR UPI Reference
-                    Number below and Submit.
-                  </p>
-                </div>
-                <div className="form-group">
-                  <label>Payment Details</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Enter UPI Transaction ID/UPI Reference Number"
-                    value={this.state.paymentDetails}
-                    onChange={(e) =>
-                      this.setState({ paymentDetails: e.target.value })
-                    }
-                    required
-                  />
-                </div>
-                {this.state.error && (
-                  <p className="error center">{this.state.error}</p>
-                )}
-                {this.state.success && (
-                  <p className="popupLink center">{this.state.success}</p>
-                )}
-                <button
-                  type="submit"
-                  className="btn-modal btn-primary"
-                  onClick={this.handleClick}
-                  disabled={this.state.loading}
-                >
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      //         <section className="speakers-area ptb-120">
-      //     <div className="row m-0">
-      //       <div className="section-title">
-      //         <h2>
-      //           Important Instructions
-      //         </h2>
+  return (
+    <div className="accommodation-container">
+      <h2>Accommodation Portal</h2>
+<p>We are excited to welcome you to IIT Kharagpur for COMPOSIT 2025. To ensure a smooth and hassle-free stay, please carefully read the accommodation guidelines and rules mentioned below.</p>
+      <b>General Rules and Guidelines : </b>
+      <ul className="charges-list Accorules-list">
+        <li>Participants must carry a valid college ID card for verification during check-in</li>
+        <li>Participants must adhere to the hostel rules and regulations. Any misconduct or violation may lead to cancellation of accommodation without a refund</li>
+        <li>Alcohol, drugs, smoking, and any form of illegal activities are strictly prohibited inside the IIT Kharagpur campus. Violation of this rule will lead to strict disciplinary action</li>
+        <li>Team COMPOSIT reserves the right to modify or cancel accommodation if any unforeseen circumstances arise</li>
+        <li>Accomodation payment is non-refundable</li>
+        <li>For any accommodation-related queries, please feel free to reach out to our team at [<a href="mailto:composit2025@gmail.com" target="_blank">composit2025@gmail.com</a> / 8767650199]</li>
+      </ul>
 
-      //         <div className="bar"></div>
-      //         <span>Dormitory type accomodation will be provided.</span>
-      //         <span>The cost of Accomodation will be Rs400</span>
-      //         <span>Payment once done will not be refunded</span>
-      //         {/* <PaymentForm /> */}
-      //         <button type="submit" className="btn-modal btn-primary" onClick={this.PaymentHandler}>Pay Rs 400</button>
-      //       </div>
-      //     </div>
-      //   </section>
-    );
-  }
-}
+{payment===false &&<>
+      <p>Accommodation Details & Charges:
+      </p>
+      <ul className="charges-list">
+        <li>1 Day: ₹200</li>
+        <li>2 Days: ₹400</li>
+        <li>3 Days: ₹500</li>
+      </ul>
+
+      <form onSubmit={handleSubmit} className="accommodation-form">
+
+      {/* <label>Select Number of Days:</label>
+      <select value={days} onChange={handleDaysChange}>
+        <option value="" disabled >Select Number of Days</option>
+        <option value={1}>1 Day - ₹200</option>
+        <option value={2}>2 Days - ₹400</option>
+        <option value={3}>3 Days - ₹500</option>
+      </select> */}
+      <label><b>Select the Number of Days :</b></label>
+                                    <select name="gender" className="form-control" required onChange={handleDaysChange}>
+                                        <option value="default">Please Select</option>
+                                        <option value={1}>1 Day - ₹200</option>
+        <option value={2}>2 Days - ₹400</option>
+        <option value={3}>3 Days - ₹500</option>
+                                    </select>
+
+
+        <p className="amount-display">Total Amount: ₹{amount}</p>
+
+        <img src={qrlink} className="qr-code" alt="" />
+        <label>Upload Payment Screenshot:</label>
+        {/* <a href="">click here to pay</a> */}
+        <input type="file" accept="image/*" onChange={handleFileChange} required />
+
+        <button type="submit">{btn}</button>
+      </form>
+        </>}
+
+        <p className="amount-display">{text}</p>
+
+    </div>
+  );
+};
 
 export default Accomodation;

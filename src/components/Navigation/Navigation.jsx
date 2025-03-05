@@ -153,17 +153,13 @@ const Navigation = () => {
                   )}
                 </li>
 
-                {/* <li className="nav-item">
-                  {userData ? (
+                <li className="nav-item">
+                  {userData &&
                     <NavLink to="/accommodation" className="nav-link" onClick={toggleNavbar}>
                       Accommodation
                     </NavLink>
-                  ) : (
-                    <NavLink to="/announcement" className="nav-link" onClick={toggleNavbar}>
-                      <IoIosNotifications size={27} />
-                    </NavLink>
-                  )}
-                </li> */}
+                }
+                </li>
               </ul>
             </div>
           </div>

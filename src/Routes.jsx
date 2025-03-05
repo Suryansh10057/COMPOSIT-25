@@ -30,6 +30,7 @@ import EventRegistrationForm from "./components/EventRegistrationForm";
 import JoinForm from "./components/JoinTeamForm";
 import GuestLectures from "./components/GuestLecture/GuestLecture";
 import Professor from "./components/Teams/professor";
+import Accomodation from "./components/Accomodation/Accomodation";
 // import HandleEvents from "./components/pages/EventDetails/HandleEvents";
 const AppRouter = () => {
     const renderNavigation = () => {
@@ -74,6 +75,7 @@ const AppRouter = () => {
                 <Route path="/edit-profile" element={<EditProfile />} />
                 <Route path="/ourteam" element={<SpeakersOne />} />
                 <Route path="/teams" element={<Professor />} />
+                <Route path="/accommodation" element={<Accomodation />} />
 
                 {/* <Route path="*" element={<NotFound />} /> */}
             </Routes>
