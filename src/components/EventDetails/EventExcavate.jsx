@@ -136,7 +136,7 @@ const  EventExcavate = () => {
                                                              </Link>}
              {/* 
               {/* <a
-                  href="https://drive.google.com/file/d/1h0Oqq4aEW829mEtZW-SvAlLiNloDg3jT/view?usp=sharing"
+                  href="https://drive.google.com/drive/folders/1svmGIbjIVL1B0eW3eXiAwQ31rZePvnP6?usp=drive_link"
                   className="btn btn-secondary"
                   target="_blank"
                 >
