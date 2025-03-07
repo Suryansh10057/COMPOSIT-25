@@ -97,6 +97,12 @@ const Login = () => {
                 Login
               </button>
 
+              {/* <p>
+                <Link to="/forhotPassword" className="pull-left">
+                  Forgot password ? 
+                </Link>
+              </p> */}
+
               <p>
                 <Link to="/signup" className="pull-left">
                   Create a new account

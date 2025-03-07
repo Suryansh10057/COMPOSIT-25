@@ -246,6 +246,7 @@ const Signup = () => {
                                 >
                                    {btntxt} 
                                 </button>
+                                {error && <p className="error-text" style={{color:"red"}}>{error}</p>}
 
                                 <p>Already a registered user? <Link to="/login">Login!</Link></p>
                             </form>
