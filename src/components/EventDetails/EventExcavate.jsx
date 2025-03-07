@@ -152,7 +152,7 @@ const  EventExcavate = () => {
                   <Link to="/login" className="btn btn-primary">Login to Submit</Link>
                 } */}
                 <a
-                  href="https://drive.google.com/file/d/1YamapvbpFfGlqKPNmH_zq3LMnjYE-eJD/view?usp=drive_link"
+                  href="https://drive.google.com/drive/folders/1svmGIbjIVL1B0eW3eXiAwQ31rZePvnP6?usp=drive_link"
                   target="_blank"
                   className="register-btn"
                 >
