@@ -156,6 +156,13 @@ const  EventExcavate = () => {
                   target="_blank"
                   className="register-btn"
                 >
+                 Problem Statement 
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1YamapvbpFfGlqKPNmH_zq3LMnjYE-eJD/view?usp=drive_link"
+                  target="_blank"
+                  className="register-btn"
+                >
                  Rules & Regulations
                 </a>
               </div>
