@@ -114,6 +114,7 @@ setPayment(true)
       <b>General Rules and Guidelines : </b>
       <ul className="charges-list Accorules-list">
         <li>Participants must carry a valid college ID card for verification during check-in</li>
+        <li>Your team members can book their accomodation through their COMPOSIT account on official COMPOSIT website.</li>
         <li>Participants must adhere to the hostel rules and regulations. Any misconduct or violation may lead to cancellation of accommodation without a refund</li>
         <li>Alcohol, drugs, smoking, and any form of illegal activities are strictly prohibited inside the IIT Kharagpur campus. Violation of this rule will lead to strict disciplinary action</li>
         <li>Team COMPOSIT reserves the right to modify or cancel accommodation if any unforeseen circumstances arise</li>
@@ -125,9 +126,9 @@ setPayment(true)
       <p>Accommodation Details & Charges:
       </p>
       <ul className="charges-list">
-        <li>1 Day: ₹200</li>
-        <li>2 Days: ₹400</li>
-        <li>3 Days: ₹500</li>
+        <li>1 Day: ₹200 / person</li>
+        <li>2 Days: ₹400 / person</li>
+        <li>3 Days: ₹500 / person</li>
       </ul>
 
       <form onSubmit={handleSubmit} className="accommodation-form">
