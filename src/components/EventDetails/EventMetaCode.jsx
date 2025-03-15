@@ -216,7 +216,7 @@ programming at IIT Kharagpur.{" "}
                                 <li>
                                   <b>Quiz Round (Online):</b>
                                 </li>
-                                <li>7th March 2025</li>
+                                <li>18th March 2025</li>
                                 <br></br>
                                 <br></br>
                                 <li>

@@ -254,7 +254,7 @@ and show their problem-solving abilities in addressing real-life challenges.{" "
                                 <li>
                                 For this round, the Problem Statement will be released on
 Unstop and the official website of COMPOSIT on 28th Feb 2025. The
-deadline for the submission will be 10th March 2025, 11:59 AM
+deadline for the submission will be 18th March 2025, 11:59 AM
 
                                 </li>
                                 <br />

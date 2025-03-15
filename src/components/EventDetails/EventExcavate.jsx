@@ -273,7 +273,7 @@ Bachelors/Masters/PHD in any science and engineering college
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                10th March 2025 ( Submission will be done through Mail : "excavate.composit@gmail.com" )
+                                18th March 2025 ( Submission will be done through Mail : "excavate.composit@gmail.com" )
                                 </li>
                                 <br></br>
                                 <br></br>

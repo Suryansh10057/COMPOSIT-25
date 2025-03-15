@@ -212,7 +212,7 @@ vision into reality!
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                10th March 2025 ( Submission will be done through Mail : "ideathon.composit@gmail.com" )
+                                18th March 2025 ( Submission will be done through Mail : "ideathon.composit@gmail.com" )
                                 </li>
                                 <br></br>
                                 <br></br>

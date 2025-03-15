@@ -206,7 +206,7 @@ science and engineering college</li>
                                 <li>
                                   <b>Submission Deadline:</b>
                                 </li>
-                                <li>9th March 2025 (Submission will be done Online via email : cadvolution.composit@gmail.com)</li>
+                                <li>18th March 2025 (Submission will be done Online via email : cadvolution.composit@gmail.com)</li>
                                 <br></br>
                                 <br></br>
                                 <li>

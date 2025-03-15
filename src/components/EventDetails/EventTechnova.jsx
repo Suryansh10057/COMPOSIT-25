@@ -252,7 +252,7 @@ Bachelors/Masters/PHD in any science and engineering college
                                   <b>Submission Deadline:</b>
                                 </li>
                                 <li>
-                                10th March , 2025 ( Submission will be done through Mail : "technova.composit@gmail.com" )                      </li>
+                                18th March , 2025 ( Submission will be done through Mail : "technova.composit@gmail.com" )                      </li>
                                 <br></br>
                                 <br></br>
                                 <li>
