@@ -9,6 +9,9 @@ const Accomodation = () => {
   const [btn, setBtn] = useState("Submit");
   const [text, setText] = useState("");
   const [screenshot, setScreenshot] = useState(null);
+  const [arrival, SetArrival] = useState("");
+  const [arrivalDate, SetArrivalDate] = useState("");
+  const [eventname, SetEventName] = useState("");
   const [qrlink, setQrLink] = useState("https://res.cloudinary.com/dmdhj9jdq/image/upload/v1741155709/WhatsApp_Image_2025-03-05_at_11.37.20_AM_f7dah0.jpg");
 
 
@@ -45,6 +48,22 @@ const Accomodation = () => {
     }
   }, [userData]); // Runs only when `userData` changes
 
+  const handleArrivalTimeChange = async (e)=>{
+    e.preventDefault();
+    const arrivalTime = e.target.value;
+    SetArrival(arrivalTime);
+  }
+  const handleEventChange = async (e)=>{
+    e.preventDefault();
+    const eventName = e.target.value;
+    SetEventName(eventName);
+  }
+  const handleArrivalDateChange = async (e)=>{
+    e.preventDefault();
+    const arrivalDate = e.target.value;
+    SetArrivalDate(arrivalDate);
+    }
+console.log(arrival)
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!screenshot) return alert("Please upload a payment screenshot.");
@@ -55,6 +74,7 @@ const Accomodation = () => {
     formData.append("file", screenshot);
     formData.append("upload_preset", "COMPOSIT_PAYMENT");
     formData.append("cloud_name", "dmdhj9jdq");
+
 
    const response =  await fetch("https://api.cloudinary.com/v1_1/dmdhj9jdq/image/upload",{
       method: "POST",
@@ -85,6 +105,9 @@ const Accomodation = () => {
       phone: userData.phone,
       name: userData.name,
       email: userData.email,
+      arrival: arrival,
+      arrivalDate: arrivalDate,
+      comingEvent: eventname,
       token:token
         }),
       });
@@ -133,19 +156,31 @@ setPayment(true)
 
       <form onSubmit={handleSubmit} className="accommodation-form">
 
-      {/* <label>Select Number of Days:</label>
-      <select value={days} onChange={handleDaysChange}>
-        <option value="" disabled >Select Number of Days</option>
-        <option value={1}>1 Day - ₹200</option>
-        <option value={2}>2 Days - ₹400</option>
-        <option value={3}>3 Days - ₹500</option>
-      </select> */}
+   
+      <label><b>In which event you have participated (Write NA if not participated in any event):  </b> </label>
+      <input type="text" name="eventname" value={eventname} onChange={handleEventChange} ></input>
+      <label><b>Expected Arrival Time: </b> </label>
+      <input type="text" name="arrival" value={arrival} onChange={handleArrivalTimeChange} ></input>
+      <label><b>Select the arrival date :</b></label>
+                                    <select name="gender" className="form-control" required onChange={handleArrivalDateChange}>
+                                        <option value="default">Please Select</option>
+                                        <option value={1}>21st March, 2025</option>
+                                        <option value={2}>22nd March, 2025</option>
+                                        <option value={3}>23rd March, 2025</option>
+                                    </select>
+      {/* <label><b>For which date(s) you are booking accomodation:</b></label>
+                                    <select name="gender" className="form-control" required onChange={handleDaysChange}>
+                                        <option value="default">Please Select</option>
+                                        <option value={1}>21st March, 2025</option>
+                                        <option value={2}>22nd March, 2025</option>
+                                        <option value={3}>23rd March, 2025</option>
+                                    </select> */}
       <label><b>Select the Number of Days :</b></label>
                                     <select name="gender" className="form-control" required onChange={handleDaysChange}>
                                         <option value="default">Please Select</option>
                                         <option value={1}>1 Day - ₹200</option>
-        <option value={2}>2 Days - ₹400</option>
-        <option value={3}>3 Days - ₹500</option>
+                                        <option value={2}>2 Days - ₹400</option>
+                                        <option value={3}>3 Days - ₹500</option>
                                     </select>
 
 
