@@ -164,9 +164,9 @@ setPayment(true)
       <label><b>Select the arrival date :</b></label>
                                     <select name="gender" className="form-control" required onChange={handleArrivalDateChange}>
                                         <option value="default">Please Select</option>
-                                        <option value={1}>21st March, 2025</option>
-                                        <option value={2}>22nd March, 2025</option>
-                                        <option value={3}>23rd March, 2025</option>
+                                        <option value={21}>21st March, 2025</option>
+                                        <option value={22}>22nd March, 2025</option>
+                                        <option value={23}>23rd March, 2025</option>
                                     </select>
       {/* <label><b>For which date(s) you are booking accomodation:</b></label>
                                     <select name="gender" className="form-control" required onChange={handleDaysChange}>
